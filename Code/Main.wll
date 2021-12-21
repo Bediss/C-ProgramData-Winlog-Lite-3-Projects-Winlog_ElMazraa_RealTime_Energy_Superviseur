@@ -5,7 +5,7 @@ function void Main()
 int X;
     Initialisation();
     Event_Runtime_LOG( " Main : End INITAILISATION ");
-    X = ShellExec("WAKEUP_WINLOG.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
+    //X = ShellExec("WAKEUP_WINLOG.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
 
     ShowPage("index");
 end

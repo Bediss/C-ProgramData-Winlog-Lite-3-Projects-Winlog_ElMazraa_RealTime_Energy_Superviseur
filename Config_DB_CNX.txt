@@ -2,4 +2,4 @@
 5432
 postgres
 root
-datamazraa
+vmzdb3

@@ -1,4 +1,4 @@
-#Version: 0x03021e
+#Version: 0x030222
 #Access: 0
 #Pos: 0,70
 #Size: 1350,40
@@ -143,4 +143,28 @@
   #Frame: 1
   #Access: 0
   #NewOnClick: StartF,DEMO()
+#EndObj
+#Object: Button
+  #ID: 0
+  #Pos: 1165,5
+  #Size: 175,25
+  #Cursor: 0
+  #Label: TESTWEV_NAV()
+  #Font: Segoe UI,9,0000
+  #FunctionKey: -1
+  #TabOrder: 1
+  #Access: 0
+  #OnClick: StartF,TESTWEV_NAV()
+#EndObj
+#Object: Button
+  #ID: 0
+  #Pos: 1085,5
+  #Size: 75,25
+  #Cursor: 0
+  #Label: Build()
+  #Font: Segoe UI,9,0000
+  #FunctionKey: -1
+  #TabOrder: 2
+  #Access: 0
+  #OnClick: StartF,Build()
 #EndObj

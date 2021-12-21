@@ -1,0 +1,1174 @@
+#Version: 0x03021d
+#Access: 0
+#Pos: 0,150
+#Size: 1349,530
+#BkColor: clWhite
+#Gates: 87
+  #CMP: MZC00A,37
+  #CMP: MZC00A,40
+  #CMP: MZCB4B,37
+  #CMP: MZCB4B,40
+  #CMP: MZCB4B1,37
+  #CMP: MZCB4B1,40
+  #CMP: MZCB4B2,37
+  #CMP: MZCB4B2,40
+  #CMP: MZCB4B6,37
+  #CMP: MZCB4B6,40
+  #CMP: MZCB4B8,37
+  #CMP: MZCB4B8,40
+  #CMP: MZCC00,37
+  #CMP: MZCC00,40
+  #CMP: MZC011,37
+  #CMP: MZC011,40
+  #CMP: MZC110,37
+  #CMP: MZC110,40
+  #CMP: MZC120,37
+  #CMP: MZC120,40
+  #CMP: MZC130,37
+  #CMP: MZC130,40
+  #CMP: MZV00A,11
+  #CMP: MZV00A,13
+  #CMP: MZV002,11
+  #CMP: MZV002,13
+  #CMP: MZV100,11
+  #CMP: MZV100,13
+  #CMP: MZV110,11
+  #CMP: MZV110,13
+  #CMP: MZV120,11
+  #CMP: MZV120,13
+  #CMP: MZV130,11
+  #CMP: MZV130,13
+  #CMP: MZV131,11
+  #CMP: MZV131,13
+  #CMP: MZV132,11
+  #CMP: MZV132,13
+  #CMP: MZV133,13
+  #CMP: MZB100,7
+  #CMP: MZB100,9
+  #CMP: MZB110,7
+  #CMP: MZB110,9
+  #CMP: MZB111,7
+  #CMP: MZB111,9
+  #CMP: MZB112,7
+  #CMP: MZB112,9
+  #CMP: MZB120,7
+  #CMP: MZB120,9
+  #CMP: MZO100,7
+  #CMP: MZO100,9
+  #CMP: MZO110,7
+  #CMP: MZO110,9
+  #CMP: MZO111,7
+  #CMP: MZO111,9
+  #CMP: MZO112,7
+  #CMP: MZO112,9
+  #CMP: MZO113,7
+  #CMP: MZO113,9
+  #CMP: MZO120,7
+  #CMP: MZO120,9
+  #CMP: MZP002,5
+  #CMP: MZP002,7
+  #CMP: MZP002,22
+  #CMP: MZP010,5
+  #CMP: MZP010,8
+  #CMP: MZP010,22
+  #CMP: MZP020,5
+  #CMP: MZP020,7
+  #CMP: MZP020,22
+  #CMP: MZP030,5
+  #CMP: MZP030,7
+  #CMP: MZP030,22
+  #CMP: MZP03A,5
+  #CMP: MZP03A,7
+  #CMP: MZP03A,22
+  #CMP: MZP03B,5
+  #CMP: MZP03B,7
+  #CMP: MZP03B,22
+  #CMP: MZP03D,5
+  #CMP: MZP03D,7
+  #CMP: MZP03D,22
+  #CMP: MZP010,7
+  #CMP: MZC200,37
+  #CMP: MZCB4B7,37
+  #CMP: MZCB4B7,40
+  #CMP: MZV133,11
+#PBkBmp: 0,0,1350,530,Winlog Synoptiqyue All EnergieV2.jpg
+#Style: FixedNoBorder
+#StayOnTop: 0
+#Object: Label
+  #ID: 0
+  #Pos: 157,20
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 61
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 158,42
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 62
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 157,63
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 63
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 405,32
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 14
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 405,52
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 15
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 654,32
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 24
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 654,52
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 25
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 907,52
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 40
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 907,32
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 39
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,205
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 64
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,220
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 82
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 975,388
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 81
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 762,200
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 20
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 975,357
+  #Size: 105,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 79
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 562,195
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 70
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 562,210
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 71
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 562,223
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 72
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 762,220
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 21
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,257
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 16
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,273
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 17
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,312
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 28
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,328
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 29
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,367
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 57
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,383
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 58
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 139,502
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 4
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 137,440
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 6
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 767,262
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 55
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 767,278
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 56
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 975,419
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 10
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 970,435
+  #Size: 110,12
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 11
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1207,132
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 83
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1207,167
+  #Size: 115,12
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 59
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 776,388
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 78
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 776,360
+  #Size: 105,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 76
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 771,417
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 84
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 771,433
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 85
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 771,472
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 36
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 771,488
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 37
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 572,388
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 75
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 572,372
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 74
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 572,357
+  #Size: 105,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 73
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 572,420
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 8
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 572,438
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 9
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 972,472
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 86
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 972,488
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 38
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 975,372
+  #Size: 105,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 80
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 347,218
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 68
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,233
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 69
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,262
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 18
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,278
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 19
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,312
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 30
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,328
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 31
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,357
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 53
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,373
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 54
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 342,205
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 67
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 776,373
+  #Size: 100,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 77
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1152,32
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 49
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1152,52
+  #Size: 140,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 50
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1207,202
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 47
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 557,262
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 45
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 557,278
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 46
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 967,220
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 33
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 967,200
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 32
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 662,122
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 41
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 662,143
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 42
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 867,122
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 51
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 867,143
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 52
+  #Label: %5.1lf M3/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 247,122
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 2
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 247,143
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 3
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 570,474
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 34
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 570,490
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 35
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 452,122
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 26
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 452,143
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 27
+  #Label: %5.1lf T/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1207,312
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 22
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1207,272
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 0
+  #Label: %5.1lf M3
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 344,412
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 43
+  #Label: %5.1lf Kwh
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 344,428
+  #Size: 110,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 44
+  #Label: %5.1lf Kwh/T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj

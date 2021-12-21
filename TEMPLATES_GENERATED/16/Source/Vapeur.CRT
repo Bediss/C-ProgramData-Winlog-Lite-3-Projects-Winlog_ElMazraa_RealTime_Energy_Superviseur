@@ -1,5 +1,8 @@
-#Gate: Compteur,0,2,0,0,100
-#Gate: Compteur,8,2,330230,0,100
-#Gate: Compteur,12,2,16711680,0,100
-#Gate: Compteur,13,2,16776960,0,100
-#Gate: TonnageCompt,1,2,33023,0,100
+#Gate: Compteur,4,2,6184792,0,100
+#Gate: Compteur,2,2,11842990,0,100
+#Gate: Compteur,67,2,6851072,0,100
+#Gate: Compteur,37,2,10869504,0,100
+#Gate: Compteur,77,2,296078,0,100
+#Gate: Compteur,47,2,317923,0,100
+#Gate: Compteur,87,2,4522122,0,100
+#Gate: Compteur,57,2,7536859,0,100

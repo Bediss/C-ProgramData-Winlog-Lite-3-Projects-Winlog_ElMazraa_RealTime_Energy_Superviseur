@@ -251,7 +251,7 @@
   #Object: Button
     #ID: 0
     #Pos: 811,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
     #Label: ¤ Electrique.           
     #Font: Courier New,12,0001
@@ -261,21 +261,21 @@
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,242
-    #Size: 268,20
+    #Pos: 811,247
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Eau.                  
+    #Label: ¤ Vapeur.               
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_1_5_2_View
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,263
-    #Size: 268,20
+    #Pos: 811,273
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Vapeur.               
+    #Label: ¤ Gaz.                  
     #Font: Courier New,12,0001
      #TabOrder: 0
      #Access: 0
@@ -283,144 +283,48 @@
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,284
-    #Size: 268,20
+    #Pos: 811,299
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Froid.                
+    #Label: ¤ Poid_Liquid.          
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_1_5_4_View
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,305
-    #Size: 268,20
+    #Pos: 811,325
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Gaz.                  
+    #Label: ¤ Poid_Solid.           
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_1_5_5_View
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,326
-    #Size: 268,20
+    #Pos: 811,351
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Air Comprime.         
+    #Label: ¤ Eau_Osmose.           
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_1_5_6_View
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 811,347
-    #Size: 268,20
+    #Pos: 811,377
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Froid (-)  Ammoniac.  
+    #Label: ¤ Eau_Brute.            
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_1_5_7_View
    #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,368
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Froid (+)  Eau Glyco. 
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_8_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,389
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau Traite.           
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_9_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,410
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau Forage.           
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_10_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,431
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau Brute.            
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_11_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,452
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau Sonede.           
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_12_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,473
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau Rejet.            
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_13_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,494
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Tonnage.              
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,8_1_5_14_View
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 811,515
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ 1.                    
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,8_1_5_15_View
-   #EndObj
-
-
-
-
-
-
-
-
 
 
 

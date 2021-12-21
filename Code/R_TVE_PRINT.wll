@@ -21,8 +21,7 @@ function String PRINT_SingleReport_Generator( String ReportLine , String EventAl
     ReportMaster      = PRINT_FETCH_REPORT_GENERATOR(ReportLine,13,",");
     DefaultReportPath = REPORT_PATH_DEFAULT + ReportMaster +".Pdf";
 
-
-
+    //MessageBox(Report_STR_Tableau,"Report_STR_Tableau");
     If ( Report_STR_Tableau == "*" || Report_STR_Tableau == ""  ) Then
         // Error Runlog
         PRINT_REPORT_Runtime_LOG(" Report Not generated : (Single) Tableau not defined " + Report_STR_Tableau);
@@ -219,9 +218,10 @@ function Bool PRINT_PRINT_SINGLE(string ReportLine , String EventAlarme_Name , s
     String DD;  String MM;  String YYYY;    String HH; String mm;   int P;
     String LayoutPath;
     String Report_Directory_Config;
-    String ChartPATH;
+    //String ChartPATH;
     String DefaultReportPath;
-
+    String DefaultReportChartPath   = GetProjectPath() +  "\Template\DefaultReportChart";
+    String SourceChartPath          = GetProjectPath() +  "\Template\Chart_Reports\";
     Bool Creationreport = False;
 
     //// 0. Initialisation
@@ -232,37 +232,37 @@ function Bool PRINT_PRINT_SINGLE(string ReportLine , String EventAlarme_Name , s
       Report_Name  = PRINT_FETCH_REPORT_GENERATOR(ReportLine,2,",");
       ReportMaster = PRINT_FETCH_REPORT_GENERATOR(ReportLine,13,",");
       ReportLayout = PRINT_FETCH_REPORT_GENERATOR(ReportLine,14,",");
-      Report_Chart = PRINT_FETCH_REPORT_GENERATOR(ReportLine,15,",");
+      Report_Chart = SourceChartPath + FETCH_REPORT_GENERATOR(ReportLine,15,",");
     //// 2. Set Report Gates
       SetStrGateValue("ReportView",0,EventAlarme_Name);
       SetStrGateValue("ReportView",1,EmailName);
-      //SetStrGateValue("ReportView",2,Local_TotalRow);
       R_TotalRow= Local_TotalRow;
-      //SetStrGateValue("ReportView",3,Local_TotalCol);
       R_TotalCol = Local_TotalCol;
-      //SetStrGateValue("ReportView",4,Local_MAXRow);
-      //SetStrGateValue("ReportView",5,Local_MAXCol);
       SetStrGateValue("ReportView",6,Report_Name);
-      //SetStrGateValue("ReportView",9,Report_Chart);
-      GLOBAL_CHART_NAME = Report_Chart;
       SetStrGateValue("ReportView",10,CreationDate);
+      //// Copy Report Chart to default
+      FileCopy(Report_Chart,DefaultReportChartPath,False);
     //// 3. Copy Report Layout
+
       LayoutPath   = REPORT_PATH_LAYOUT_SOURCE + ReportLayout + ".RTF";
       Report_Directory_Config = REPORT_PATH_LAYOUT_DESTINATION + ReportMaster+"\"+ ReportMaster +".RTF";
-      //MessageBox(LayoutPath,Report_Directory_Config);
+      MessageBox(LayoutPath,"LayoutPath");
+      MessageBox(Report_Directory_Config,"Report_Directory_Config");
       FileCopy(LayoutPath , Report_Directory_Config , False );
+
     //// 4. Create default Report
       DefaultReportPath = REPORT_PATH_DEFAULT + ReportMaster +".Pdf";
       If (FileExist( DefaultReportPath ) == True) Then    FileDelete(DefaultReportPath);    End
 
-      ChartPATH = REPORT_PATH_CHART + Report_Chart;
+      //ChartPATH = Report_Chart;
 
-       IF ( FileExist( ChartPATH ) == True ) Then
-        PRINT_REPORT_Runtime_LOG(" Report : (Single) Chart Found " + ChartPATH);
+      MessageBox(Report_Chart,FileExist( Report_Chart ));
+       IF ( FileExist( Report_Chart ) == True ) Then
+        PRINT_REPORT_Runtime_LOG(" Report : (Single) Chart Found " + Report_Chart);
          Creationreport = ReportCreate( ReportMaster ) ;
        Else
          Creationreport = False;
-         PRINT_REPORT_Runtime_LOG(" Report Not generated : (Single) Chart not Found " + ChartPATH);
+         PRINT_REPORT_Runtime_LOG(" Report Not generated : (Single) Chart not Found " + Report_Chart);
        End
 
        IF ( Creationreport == True && FileExist( DefaultReportPath ) == True ) Then

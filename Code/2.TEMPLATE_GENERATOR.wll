@@ -8,7 +8,7 @@ function void Create_Desk_Templates()
      String Destination;
      String LastReportCode;
 
-     SetStrGateValue("Errors_GTemplates", 0 , " Deleting old Files 10 : Please wait ...");
+     /*SetStrGateValue("Errors_GTemplates", 0 , " Deleting old Files 10 : Please wait ...");
 
      FileDelete( GetProjectPath()+"\TEMPLATES_GENERATED\10\10_FILES_LIST.txt");
      FileDelete( GetProjectPath()+"\TEMPLATES_GENERATED\14\14_FILES_LIST.txt");
@@ -35,7 +35,7 @@ function void Create_Desk_Templates()
      //ShellExec("Delete.bat","open",ENV_PATH+"\PowerShell\",1,"","");
 
      Destination = GetProjectPath() +"\TEMPLATES_GENERATED\PSDelete.txt";
-     //PS_XCopy_Wait( Destination );
+     //PS_XCopy_Wait( Destination );*/
 
      //LastReportCode = Get_LastReport_Code();
 
@@ -62,9 +62,9 @@ function void Create_Desk_Templates()
 
           //Create_14_Files( ALLCOMPTEUR_LIGNE );
 
-          //Create_15_Files( ALLCOMPTEUR_LIGNE );
+          Create_15_Files( ALLCOMPTEUR_LIGNE );
           //Create_Templates16_17( ALLCOMPTEUR_LIGNE , "16");
-          Create_Templates16_17( ALLCOMPTEUR_LIGNE , "17");
+         //Create_Templates16_17( ALLCOMPTEUR_LIGNE , "17");
         End
      End
 
@@ -72,17 +72,18 @@ function void Create_Desk_Templates()
 
     //Add_Parent_14();
 
-     //Add_Parent_15();
+     Add_Parent_15();
 
      SetStrGateValue("Errors_GTemplates", 0 , " Generate templates 10 : Please wait ...");
 
      //Create_Templates_10();
 
      SetStrGateValue("Errors_GTemplates", 0 , " Generate templates 10 : Created " + Eol() + " Generate templates 14 : Please wait ...");
+
      //Create_Templates_14();
 
      SetStrGateValue("Errors_GTemplates", 0 , " Generate templates 10 and 14 : Created " + Eol() + " Generate templates 15 : Please wait ...");
-     //Create_Templates_15();
+     Create_Templates_15();
     MessageBox("End","");
 end
 
@@ -195,7 +196,7 @@ function void Create_10_Files( String ALLCOMPTEUR_LIGNE )
 end
 
 /*****************************************************************************/
-/*              Create_14_Files                                */
+/*              Create_14_Files                                              */
 /*****************************************************************************/
 function void Create_14_Files( String ALLCOMPTEUR_LIGNE )
  string Ligne="";
@@ -228,13 +229,14 @@ String Lignecode;
 
              CHECK = ANALYSE_Query( GetStrGateValue("Tableau_Query" ,14) , ALLCOMPTEUR_LIGNE );
 
+             //MessageBox(CHECK,"CHECK");
              If ( CHECK == 1 ) then
 
                   CompteurCode = Fetch_TEMP_GENERATOR(ALLCOMPTEUR_LIGNE,4,";");
                   ENERGY = Fetch_TEMP_GENERATOR(ALLCOMPTEUR_LIGNE,3,";");
                   POSTCODE = Fetch_TEMP_GENERATOR(ALLCOMPTEUR_LIGNE,7,";")+"/"+ Fetch_TEMP_GENERATOR(ALLCOMPTEUR_LIGNE,8,";") +"/"+ Fetch_TEMP_GENERATOR(ALLCOMPTEUR_LIGNE,9,";");
 
-                For i = 1 to 4 do
+                For i = 1 to 5 do
                   VIEW = GetStrGateValue("ReportViewNames",i);
 
                   FILENAME = TemplateNameBuilder( "14" , VIEW , ENERGY ,POSTCODE,  CompteurCode)+ ".txt";
@@ -258,7 +260,7 @@ String Lignecode;
                          MessageBox( WEFullPathFileName ,"1");
                         End
                         //////////////////////////////////////////
-
+                        //MessageBox( WriteLigne ,WEFullPathFileName);
                         FileWriteLn(WEFileHandle,WriteLigne);
                     End
 
@@ -543,6 +545,13 @@ function void Add_Parent_15()
 
                   WriteLigne = Recherche_PARENT_15( Compteur_Parent);
 
+                  IF ( WriteLigne == "-1" ) Then
+
+                    WriteLigne = Recherche_PARENT_15( Fetch_TEMP_GENERATOR(Ligne, 4 ,"_"));
+
+                  End
+
+
                         //////////////////////////////////////////
                         IF ( FileHandle == 0 ) Then
                          MessageBox( FullPathFileName ,"5");
@@ -590,6 +599,7 @@ function String Recherche_PARENT_15(String Compteur_Parent)
                                      +";"+ GetStrGateValue("compteur_NameP",i)+";"+ GetStrGateValue("compteur_NameD",i)+";"+ GetStrGateValue("compteur_NameC",i);
        Return ReturnLine;
    Else
+    MessageBox(GetStrGateValue("Compteur_Code",i) +"i : " +i,Compteur_Parent);
     Return "-1";
    End
 
@@ -1027,6 +1037,7 @@ function void Create_Templates_14()
                             RapportOriginalTemplate = GetProjectPath()+"\TEMPLATES_GENERATED\14\Source\Rapport_14_"+NBR_Compteur;
 
                            //////////////////////
+                           //MessageBox(OriginalTemplate,FileExist(OriginalTemplate));
                          If ( FileExist(OriginalTemplate) == True ) Then
                            ////////// Read File
                          FileHandle=FileOpen(CurrPath+LIST_Ligne,"rt");
@@ -1050,6 +1061,8 @@ function void Create_Templates_14()
 
                                     //IF ( j <= NBR_Compteur+1 ) then
 
+
+                                    //MessageBox(COMPTEUR_LIGNE,View);
 
                                      OriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,OriginalTemplate,Fetch_TEMP_GENERATOR(Ligne,1,":"), "Desk" , "14",CurrReportCode);
 
@@ -1138,6 +1151,9 @@ function String Build_Template_14( String COMPTEUR_LIGNE , String LABAL_LIGNE , 
 
  String ENERGY;
  String CompteurCode;
+
+  String Find_CompteurOBJCode;
+
  String w;
  int POS;
  Bool Found = False;
@@ -1148,7 +1164,7 @@ function String Build_Template_14( String COMPTEUR_LIGNE , String LABAL_LIGNE , 
     //LOGFullPathFileName =GetProjectPath()+"\14_ShareTEnergy\LOG.txt";
     //LOGFileHandle = FileOpen(LOGFullPathFileName,"at");
 
-    //MessageBox(TYPE,MASTER);
+    //MessageBox(MASTER,TYPE + "6721");
 
     ENERGY = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,3,";");
 
@@ -1223,11 +1239,13 @@ function String Build_Template_14( String COMPTEUR_LIGNE , String LABAL_LIGNE , 
 
 
                 FindCompteur  = "Compteur_" + NumCompteur + "*" ;
+                Find_CompteurOBJCode = "CompteurOB_"  + NumCompteur + "*";
                 //CName         = "unit_"+NumCompteur;
                 CName         = "Cmp_Name_" + NumCompteur + "*" ;
 
                 CWrite = FINDAndREPLACE_TEMP_GENERATOR( Ligne, FindCompteur , Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,1,";"));
                 NWrite = FINDAndREPLACE_TEMP_GENERATOR( CWrite, CName , Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,2,";"));
+                NWrite = FINDAndREPLACE_TEMP_GENERATOR( NWrite, Find_CompteurOBJCode , "OIN_"+Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,1,";"));
                 FileWriteLn(WFileHandle,NWrite);
 
             End
@@ -1334,6 +1352,7 @@ function String Build_Template_14( String COMPTEUR_LIGNE , String LABAL_LIGNE , 
 
            FindCompteur  = "Compteur_P";
            CName         = "Cmp_Name_P";
+           Find_CompteurOBJCode = "CompteurOB_P*";
 
               Exit = False;
               i=0;
@@ -1382,6 +1401,7 @@ function String Build_Template_14( String COMPTEUR_LIGNE , String LABAL_LIGNE , 
               Write = FINDAndREPLACE_TEMP_GENERATOR( w,"Path",path );
               NWrite = FINDAndREPLACE_TEMP_GENERATOR(Write,CName,Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,2,";"));
               CWrite = FINDAndREPLACE_TEMP_GENERATOR(NWrite,FindCompteur,CompteurCode);
+              CWrite = FINDAndREPLACE_TEMP_GENERATOR( CWrite, Find_CompteurOBJCode , "OIN_"+CompteurCode);
 
                         //////////////////////////////////////////
                         IF ( WFileHandle == 0 ) Then
@@ -1494,9 +1514,9 @@ function void Create_Templates_15()
                                     //IF ( j <= NBR_Compteur+1 ) then
                                     //MessageBox(Fetch_TEMP_GENERATOR(Ligne,1,":"),LIST_Ligne);
 
-                                     //OriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,OriginalTemplate, Fetch_TEMP_GENERATOR(Ligne,1,":") , "Desk" , "15",CurrReportCode);
+                                     OriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,OriginalTemplate, Fetch_TEMP_GENERATOR(Ligne,1,":") , "Desk" , "15",CurrReportCode);
 
-                                     //WebOriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,WebOriginalTemplate,Fetch_TEMP_GENERATOR(Ligne,1,":"), "WEB", "15",CurrReportCode);
+                                     WebOriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,WebOriginalTemplate,Fetch_TEMP_GENERATOR(Ligne,1,":"), "WEB", "15",CurrReportCode);
 
                                      RapportOriginalTemplate = Build_Template_14( COMPTEUR_LIGNE,LABAL_LIGNE , NBR_Compteur ,View,j,RapportOriginalTemplate,Fetch_TEMP_GENERATOR(Ligne,1,":"), "RAPPORT", "15",CurrReportCode);
 
@@ -1559,9 +1579,10 @@ string Ligne="";
 
    If (REEL_GATE != "Reel" ) Then Return; End
     CurrReportCode = Get_LastReport_Code();
-
+    //MessageBox(CurrReportCode,Energy);
     Build_Template_16_17( ALLCOMPTEUR_LIGNE  ,  "DESK",  Template,CurrReportCode);
     Build_Template_16_17( ALLCOMPTEUR_LIGNE  ,  "WEB",  Template,CurrReportCode);
+
 
     Build_Template_16_17( ALLCOMPTEUR_LIGNE  ,  "RAPPORT",  Template,CurrReportCode);
 
@@ -1604,18 +1625,35 @@ int handle;
  String DESK_CLICK = "  #OnClick: StartF,";
  String WEB_CLICK  = "  #OnClick: Template,";
  Bool   BACK = False;
-
+Int i;
   String ReportLine;
  String Report_navigator_Line;
  String CodeUnique;
+ String ObjectifCompt_Code = "";
+ String P_FixEnergy;
+ String CompteurTrueNumber;
 
 
     ENERGY = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,3,";");
     CompteurCode = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,1,";");
     CompteurName = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,2,";");
 
-    CreateGroupeChart( COMPTEUR_LIGNE, "" );
+    For i = 1 to 14 do
+        IF ( ENERGY == GetStrGateValue("Energy_Name",i)) then
+           P_FixEnergy = GetStrGateValue("PreFix_InPut",i);
+           CompteurTrueNumber = StrDelete( CompteurCode ,1,GetNumGateValue("NBR_PRFIX_OUTP",i));
+        End
+     End
 
+     MessageBox(CompteurCode,CompteurTrueNumber);
+
+    ObjectifCompt_Code = "O"+P_FixEnergy+CompteurTrueNumber;
+
+
+    //ObjectifCompt_Code = "";
+//MessageBox("1","1");
+    CreateGroupeChart( COMPTEUR_LIGNE, "" );
+//MessageBox("2","2");
     IF ( WEB_DESK == "DESK" )       Then
         CurrPath = GetProjectPath() + "\TEMPLATES_GENERATED\" + MASTER + "\T_DESKTOP\";
         FullPathFileName = GetProjectPath() + "\TEMPLATES_GENERATED\" + MASTER + "\Source\" + MASTER + "_" + ENERGY ;
@@ -1624,7 +1662,7 @@ int handle;
         CurrPath = GetProjectPath() + "\TEMPLATES_GENERATED\" + MASTER + "\T_WEB\";
         FullPathFileName = GetProjectPath() + "\TEMPLATES_GENERATED\" + MASTER + "\Source\WEB_" + MASTER + "_" + ENERGY ;
     End
-
+//MessageBox("3","3");
     TemplateName = TemplateNameBuilder( MASTER , "" , ENERGY ,"", CompteurCode);
 
     //IF ( MASTER == "16" ) Then
@@ -1635,7 +1673,7 @@ int handle;
         CurrPath = GetProjectPath() + "\TEMPLATES_GENERATED\" + MASTER + "\T_REPORT\";
         CreateGroupeChart( COMPTEUR_LIGNE , "" );
         ///////////////////////////////////////////////////////////////////////
-
+//MessageBox("4","4");
        Report_View      = "-";
        Report_PostCode  = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,9,";")+"&"+Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,10,";")+"&"+Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,11,";");
        Report_Pc_Code   = Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,6,";")+"&"+Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,7,";")+"&"+Fetch_TEMP_GENERATOR(COMPTEUR_LIGNE,8,";");
@@ -1648,6 +1686,7 @@ int handle;
 
        CodeUnique = GET_UNIQUE_CODE( MASTER , Report_View , Report_Energy , Report_Pc_Code , Report_Compteur);
 
+       //MessageBox("5","5");
 
         //Report_NAME =  Report_Tableau_Short;
         Report_NAME = Report_Tableau;
@@ -1716,6 +1755,7 @@ int handle;
             Write = FINDAndREPLACE_TEMP_GENERATOR( Ligne,"PATH",path );
             Write = FINDAndREPLACE_TEMP_GENERATOR( Write,"Cmp_Name",CompteurName );
             Write = FINDAndREPLACE_TEMP_GENERATOR( Write,"CompteurCode", CompteurCode);
+            Write = FINDAndREPLACE_TEMP_GENERATOR( Write,"CompteurOB", ObjectifCompt_Code);
             Write = FINDAndREPLACE_TEMP_GENERATOR( Write,"ElectCompteur_charts", CompteurCode);
 
             IF ( StrPos(Write,LABEL) > 0 ) Then BACK = True ; End
@@ -1724,7 +1764,8 @@ int handle;
                 //MessageBox(StrPos(Write,CLICK),WEB_DESK);
                IF ( StrPos(Write,CLICK) > 0 )Then
                 BACK = False;
-                    //MessageBox(BackTemplate_DESK,"BackTemplate_DESK");
+                    //Create_Template_17();
+                    MessageBox(BackTemplate_DESK,"BackTemplate_DESK");
                     If (WEB_DESK == "DESK") Then    Write = DESK_CLICK + BackTemplate_DESK;    End
                     If (WEB_DESK == "WEB") Then     Write = WEB_CLICK + BackTemplate_WEB;    End
                     //MessageBox(Write,BackTemplate_DESK);
@@ -1849,7 +1890,7 @@ function int NBR_CMP_14( string FullPathFileName )
     int NBR_Compteur = 0;
     Bool Found = False;
     FileHandle = FileOpen(FullPathFileName,"rt");
-    if ( FileHandle == 0 ) then MessageBox(FullPathFileName,"");    return 0 ; end
+    if ( FileHandle == 0 ) then MessageBox(FullPathFileName,"File not found NBR_CMP_14");    return 0 ; end
 
     While(FileEof(FileHandle)==0)
         Ligne = FileReadLn(FileHandle);
@@ -1866,7 +1907,6 @@ function int NBR_CMP_14( string FullPathFileName )
     End
 
     FileClose(FileHandle);
-
     If ( Found == true ) then
       //NBR_Compteur = NBR_Compteur-1;
       Return NBR_Compteur;
@@ -2042,6 +2082,7 @@ function Int ANALYSE_Query( String Query, String DATA_Ligne )
     If ( PCC_CHECK == PCC_Falg) Then                    R6 = 1; End
     If ( EnergyParen_CHECK == EnergyParent_Falg) Then   R7 = 1; End
 
+    //MessageBox("R1:"+R1+Eol()+"R2:"+R2+Eol()+"R3:"+R3+Eol()+"R4:"+R4+Eol()+"R5:"+R5+Eol()+"R6:"+R6+Eol()+"R7:"+R7+Eol(),Query);
     FinalResult = R1*R2*R3*R4*R5*R6*R7;
 
     Return FinalResult;

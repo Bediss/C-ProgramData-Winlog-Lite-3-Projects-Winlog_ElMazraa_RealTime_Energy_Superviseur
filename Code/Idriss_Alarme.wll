@@ -6,7 +6,7 @@ Global String EXECUTE_ALARMELINE = "";
 function void ListenAlarme_Event()
 
 #startup
-Sleep(60000);//1 min to start
+//Sleep(60000);//1 min to start
 //InitialiseGates_Event();
     //int Frequence = GetNumGateValue("ReportingListenF",0);
     //int live = GetDigGateValue("LiveReporting",0);
@@ -49,7 +49,7 @@ Sleep(60000);//1 min to start
     While(WindowIsOpen())
 
 
-
+    //CALCULATOR();
         //Event_Runtime_LOG( " Start ListenAlarme_Event");
         CNX_STATUS_Counter = 0;
         Errors = "";
@@ -80,6 +80,8 @@ Sleep(60000);//1 min to start
             ///////////////////////////////////////////////////////////////////
             //Event_Runtime_LOG( " Start Calcule");
             CALCULATOR();
+            Call_MINMAX_KPIs();
+            Call_Conformite_KPIs();
             ///////////////////////////////////////////////////////////////////
             //ListenHistory();
             ///////////////////////////////////////////////////////////////////
@@ -102,7 +104,7 @@ Sleep(60000);//1 min to start
             End
             ///////////////////////////////////////////////////////////////////
             If ( Laps_TIME_GATEWAY >= GATEWAY_Frequence ) then
-              PING_GATEWAYS();
+              //PING_GATEWAYS();
               STARTTIME_GATEWAY = CURRENTTIME_S;
             End
             ///////////////////////////////////////////////////////////////////
@@ -1166,7 +1168,7 @@ string CCCode;
     else
       if ( PERIOD == "WEEKLY" ) then
           Path =ENV_PATH +  "\Data\1 HISTORY\W_H\";
-          GATESTYPE = "W";
+          GATESTYPE = "S";
         else
             if ( PERIOD == "MONTHLY") then
               Path =ENV_PATH +  "\Data\1 HISTORY\M_H\";
@@ -1185,7 +1187,7 @@ string CCCode;
     for CC = 1 to CCMax do
 
         CCCode = GetStrGateValue("Compteur_Code",CC);
-        CCUpdateHistory_File(CCCode , CC,Path,GATESTYPE);
+        //CCUpdateHistory_File(CCCode , CC,Path,GATESTYPE);
         CCUpdateHistory_Gates(CCCode , CC,Path,GATESTYPE);
     end
     Init_MIN_MAX_MOY( GATESTYPE);
@@ -1339,7 +1341,7 @@ int List_Update;  int List_insert;
 string EnergyInitial;
 string L;
 String Objectif_Gate;
-  string Row =  GetMonth()+"/"+ GetDayOfMonth()+"/"+GetYear()+";"+GetStrGateValue("Compteur_Energy", CC )+";"+CCCode ;
+  string Row =  GetMonth()+"/"+ GetDayOfMonth()+"/"+GetYear()+" " +GetTimeString(":")";"+GetStrGateValue("Compteur_Energy", CC )+";"+CCCode ;
 string update_GATES_FileName;
 int update_GATES_FileHandle;
 string ystrdy_GATES_FileName;
@@ -1475,13 +1477,15 @@ String UPDATE ;
 // Set History Gates  THIS FOR LAST READING INTITIALISATION J-1 W-1 M-1 Y-1
 //NOT HISTORY UPDATE LJ LW,LM LY
 
-        CompteurTrueNumber = CompteurTrueNumber(CCCode, GetStrGateValue("Compteur_Energy", CC ));
+        //CompteurTrueNumber = CompteurTrueNumber(CCCode, GetStrGateValue("Compteur_Energy", CC ));
+        //MessageBox("CCUpdateHistory_Gates","GATESTYPE : "+GATESTYPE);
+        CompteurTrueNumber = "IN_"+CCCode;
         if ( CompteurTrueNumber == "-1") then return; end
 
           ysrdy=CompteurTrueNumber+"_"+GATESTYPE+"-1";
           PathUpdate = ENV_PATH +  "\Data\1 HISTORY\1-UPDATEGATES\";
 
-          ystrdy_GATES_FileName = PathUpdate + GetStrGateValue("Compteur_Energy", CC ) + "_J-1.txt";
+          ystrdy_GATES_FileName = PathUpdate + GetStrGateValue("Compteur_Energy", CC ) + "_"+GATESTYPE+"-1.txt";
 
           ystrdy_GATES_FileHandle = FileOpen(ystrdy_GATES_FileName,"rt");
 
@@ -1511,7 +1515,7 @@ String UPDATE ;
 
                        SetNumGateValue(CompteurTrueNumber,ListNumber,GetCmpGateValue(CCCode,LastNumber));
 
-                       //MessageBox( GetNumGateValue(CompteurTrueNumber,ListNumber ) ,ListNumber );
+                       //MessageBox(CompteurTrueNumber+":"+ GetNumGateValue(CompteurTrueNumber,ListNumber ) ,ListNumber +":"+UPDATE_LastVIEW);
 
                      end
                  End
@@ -1526,10 +1530,12 @@ String UPDATE ;
                           SetNumGateValue(ysrdy,ListNumber,GetNumGateValue(CompteurTrueNumber,LastNumber));
                          //Else
                           //SetNumGateValue(CompteurTrueNumber,17,0);
+                          MessageBox( GetNumGateValue(CompteurTrueNumber,ListNumber ) ,ListNumber+":"+RAZ_VIEW );
                         End
 
                        end
                  End
+
                  IF ( UPDATE == RAZ_Calculated ) Then
                   ListNumber = StrToInt( Fetch_Alarm_search(listln, 2 , ",") );
                   LastNumber = StrToInt( Fetch_Alarm_search(listln, 3 , ",") );

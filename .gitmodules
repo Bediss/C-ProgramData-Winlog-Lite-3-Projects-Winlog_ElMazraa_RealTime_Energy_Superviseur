@@ -1,0 +1,12 @@
+[submodule "DBTABLES"]
+	path = DBTABLES
+	url = https://gitlab.com/bizeyes/Development/DBTABLES.git
+[submodule "Winlog"]
+	path = Winlog
+	url = https://gitlab.com/bizeyes/Development/Winlog.git
+[submodule "Reports"]
+	path = Reports
+	url = https://gitlab.com/bizeyes/Development/Reports.git
+[submodule "Config"]
+	path = Config
+	url = https://gitlab.com/bizeyes/Development/config.git

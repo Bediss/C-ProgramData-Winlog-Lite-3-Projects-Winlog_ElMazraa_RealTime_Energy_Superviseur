@@ -418,7 +418,7 @@ String CodeReport=Fetch_Email(LigneSelectFiltre,1,";");
              SetNumGateValue("Template_Control",0,2);
       end
    end
-    LastFiltre(FilePathSearch,NameTable);
+    //LastFiltre(FilePathSearch,NameTable);
 
 end
 

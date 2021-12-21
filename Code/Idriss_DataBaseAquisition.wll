@@ -107,11 +107,12 @@ Function Void CommitDBTable(String PosDates)
     int FileHandle;
    if  SAVECOMMIT == False then Admin_View_Display(1,  PageOpen );
     SAVECOMMIT=True;  return ; end
+    //MessageBox(SAVECOMMIT,DBON);
     DBON=True;
 
     DirectoryCreate("C:\Winlog\PowerShell\Update_DB_Queue");
     DirectoryCreate("C:\Winlog\PowerShell\Back_Update_DB_Queue");
-
+    //MessageBox("C:\Winlog\PowerShell\Update_DB_Queue",DBON);
     SetStrGateValue("AlarmeEventModifer",17,"Chargement du Base de Donnée en Cours. Attendez SVP!");
             ShowPoPUPs("InfoPopup");
     FileCopy(Admin_View_Temp_File,Path_File_DB+NameTableDB+"_"+Date+".csv",False);
@@ -123,9 +124,10 @@ Function Void CommitDBTable(String PosDates)
     if ExistDelete == True then
         FileCopy(Path_File_DB+"deleteFile_.csv",Path_Delete,False);
     end
-
+//MessageBox(Path_Config,DBON);
 //MessageBox("BFD","");
     Path_Config="C:\Winlog\PowerShell\Update_DB_Queue\Config_Update_DB_"+Date+".txt";
+    FileDelete(Path_Display);
     FileHandle=FileOpen(Path_Config,"wt");
 
     /*if PageOpen=="Report" then
@@ -146,9 +148,11 @@ Function Void CommitDBTable(String PosDates)
             //DisplayDBTable("Auteur","Administrateur");
             //CountDBTable("AdminTotalItems",0);
       else*/
-       FileDelete(Path_Display);
+
+
             FileWriteLn(FileHandle,Path_File_DB+";"+NameTableDB+";"+NameTableDB+"_"+Date+".csv;"+PosDates+";Display");
             FileClose(FileHandle);
+
              FileCopy(Path_Config,"C:\Winlog\PowerShell\Back_Update_DB_Queue\Config_Update_DB_"+Date+".txt",False);
             While (FileExist(Path_Display)==False)
                 Sleep(500);
@@ -431,6 +435,9 @@ function Void ReadDBInitial( String StartBootMode )
          End  // DBInitialFile != Exist
 
          FileDelete(DBInitialFile);
+
+         CNX_STATUS  =True;
+
 end
 ///////////////////////////////////////////////////////////////////////////////
 function String ReadSystemStatus()
@@ -478,6 +485,7 @@ function String ReadSystemStatus()
 
         FileDelete(StatusFile);
 
+        CNX_STATUS = True;
     End
 
     //MessageBox("CNX_STATUS",CNX_STATUS);

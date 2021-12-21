@@ -1177,12 +1177,12 @@ function void Check_AllCompteur()
     Int NBR_Error = 0;
 
 
-    FullPathFileName = Admin_View_Original_File;
+    FullPathFileName = ENV_PATH + GetStrGateValue("AllCompteurs_Path",0);
     FileHandle = FileOpen(FullPathFileName,"rt");
 
     if (FileHandle==0) then   MessageBox("AllCompteur","File Not found");  Return; end
 
-        TEMPFullPathFileName = Admin_View_Temp_File;
+        TEMPFullPathFileName = "C:\ProgramData\Winlog Pro 3\Projects\Energy_Supervisor_V47 Elmazraa\Winlog\Files\AllCompteur\Temp_AllCompteur.csv";
         TEMPFileHandle = FileOpen(TEMPFullPathFileName,"wt");
 
     LOGFullPathFileName = ENV_PATH+"\BuildLOG.txt";
@@ -1843,6 +1843,7 @@ function String ChannelDevice_Control( String AllCompteur_LIGNE , Int LOGFileHan
 
         IF ( GCD_CompteurCode == Compteur ) Then
          Compteur_FLAG = True;
+         //MessageBox(GCD_CompteurCode+"/"+Compteur,Compteur_FLAG);
         Else
          Compteur_FLAG = False;
         End
@@ -1914,7 +1915,7 @@ function String ChannelDevice_Control( String AllCompteur_LIGNE , Int LOGFileHan
 
 
      IF ( Compteur_FLAG == False ) Then
-         FileWriteLn(LOGFileHandle,"Error All compteur ChannelDevice_Control: " + Compteur +" Not Found in (Gateway_Channel_Device.csv)");
+         FileWriteLn(LOGFileHandle,"Error All compteur ChannelDevice_Control: "+GCD_CompteurCode +"||"+ Compteur +" Not Found in (Gateway_Channel_Device.csv)");
          ErrorNBR = ErrorNBR+1;
          AllCompteur_LIGNE = FR_CHECK(AllCompteur_LIGNE, Error_COMs ,19);
          AllCompteur_LIGNE = FR_CHECK(AllCompteur_LIGNE, Error_Master ,18);

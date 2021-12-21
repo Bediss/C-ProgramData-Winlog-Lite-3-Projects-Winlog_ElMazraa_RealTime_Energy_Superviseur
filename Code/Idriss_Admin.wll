@@ -162,7 +162,7 @@ for i = 1 to 12 do
         else
           For j=1 to MaxSP do
                 blob=FetchBlob(Var,i,Char);
-                TSimple=TSimple+" "+blob;
+                TSimple=TSimple+"_"+blob;
             end
 
 

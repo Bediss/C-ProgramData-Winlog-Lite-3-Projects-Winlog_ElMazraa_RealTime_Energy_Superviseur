@@ -1,16 +1,8 @@
 CODE;NAME;ACCESS;SHORTNAME
 1;¤ Electrique.           ;28674;Electrique
-2;¤ Eau.                  ;32767;Eau
-3;¤ Vapeur.               ;28672;Vapeur
-4;¤ Froid.                ;32767;Froid
-5;¤ Gaz.                  ;32767;Gaz
-6;¤ Air Comprime.         ;32767;Air Comprime
-7;¤ Froid (-)  Ammoniac.  ;32767;Froid (-)  Ammoniac
-8;¤ Froid (+)  Eau Glyco. ;32767;Froid (+)  Eau Glycolee
-9;¤ Eau Traite.           ;32767;Eau Traite
-10;¤ Eau Forage.           ;32767;Eau Forage
-11;¤ Eau Brute.            ;32767;Eau Brute
-12;¤ Eau Sonede.           ;32767;Eau Sonede
-13;¤ Eau Rejet.            ;32767;Eau Rejet
-14;¤ Tonnage.              ;32767;Tonnage
-1;¤ 1.                    ;1;1
+2;¤ Vapeur.               ;28672;Vapeur
+3;¤ Gaz.                  ;28674;Gaz
+6;¤ Poid_Liquid.          ;28674;Poid_Liquid
+7;¤ Poid_Solid.           ;28674;Poid_Solid
+4;¤ Eau_Osmose.           ;28674;Eau_Osmose
+5;¤ Eau_Brute.            ;28674;Eau_Brute

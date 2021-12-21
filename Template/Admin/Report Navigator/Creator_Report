@@ -491,7 +491,7 @@
     #Frame: 1
     #Access: 0
     #Enabled: 0,6,11
-    #NewOnClick: StartF,Tableaux_Add()
+    #NewOnClick: StartF,Tableaux_Add_New()
   #EndObj
   #Object: Label
     #ID: 0
@@ -506,7 +506,7 @@
     #Frame: 1
     #Access: 0
     #Enabled: 0,6,11
-    #NewOnClick: StartF,Tableaux_End()
+    #NewOnClick: StartF,Tableaux_End_New()
   #EndObj
   #Object: Label
     #ID: 0

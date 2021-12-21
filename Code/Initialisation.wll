@@ -39,6 +39,8 @@ function void Initialisation()
     Int ConfigSystemFileHandle;
 
     BootMode = Get_BootMode();
+    Generate_KPI_FILEs();
+    SET_Global_Definitions();
 
     ConfigSystemFileHandle = FileOpen(ConfigSystemFile,"wt");
       FileWriteLn(ConfigSystemFileHandle, GetProjectPath() + "\" );

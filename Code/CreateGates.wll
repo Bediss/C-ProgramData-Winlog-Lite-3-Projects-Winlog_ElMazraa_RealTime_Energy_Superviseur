@@ -1,9 +1,9 @@
 function void Build()
 MessageBox("Start","Build");
-    Admin_View_Original_File = "C:\ProgramData\Winlog Lite 3\Projects\Energy_Supervisor_V47 Delice\Winlog\Files\AllCompteur\AllCompteur.csv";
-    Check_AllCompteur();
+    Admin_View_Original_File = ENV_PATH + GetStrGateValue("AllCompteurs_Path",0);
+    //Check_AllCompteur();
     CreateGates();
-    Calculatrice();
+    //Calculatrice();
 MessageBox("End","Build");
 end
 ///////////////////////////////////////////////////////////////////////////////
@@ -15,7 +15,7 @@ end
 ///////////////////////////////////////////////////////////////////////////////
 function void CreateGates()
 
-    String FileFullPathName = ENV_PATH + GetStrGateValue("AllCompteurs_Path",0);
+    String FileFullPathName = ENV_PATH + "\Files\AllCompteur\Temp_AllCompteur.csv";
     String LogFileFullPathName = ENV_PATH+"\BuildLOG.txt" ;
 
     String Final_N_File = GetProjectPath()+"\files\Gates\Final\NUMERIC_GATES_V" +GetStrGateValue("version",0)+ ".csv";
@@ -122,6 +122,7 @@ function void CreateGates()
       /////////////////////////////////////////*/
 
 
+      MessageBox(FileFullPathName,"FileFullPathName ");
         FileHandle = FileOpen(FileFullPathName,"rt");
         If (FileHandle==0) then
             //MessageBox(FileFullPathName,"File not Found");
@@ -436,6 +437,8 @@ function Bool Create_C_Gates(String Final_C_File , int LogFileHandle, String Sou
     String INPUT_CODE;
     Int List ;
     Int LIST2000 = 2000;
+    //String F1;
+    //String F2;
     Bool P_found = False;
 
 
@@ -459,22 +462,55 @@ function Bool Create_C_Gates(String Final_C_File , int LogFileHandle, String Sou
       If (SourceLigne != "") then
          DESTINATION_Ligne = SourceLigne;
 
+
+
         IF (P_found == True) Then
           Find = "PCMPGate";
           DESTINATION_Ligne = FR(DESTINATION_Ligne,Find,CompteurParent ,14);
         End
 
         Find = "CMPGate";
+
+        //F1 = Fetch_BUILGATES(DESTINATION_Ligne,9,";");
+        //F2 = Fetch_BUILGATES(DESTINATION_Ligne,14,";");
+
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, CompteurCode ,3);
+
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, CompteurCode ,9);
+
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, CompteurCode ,14);
+
+
+        /*IF ( Fetch_BUILGATES(SourceLigne,8,";") == "CMP" ||  Fetch_BUILGATES(SourceLigne,13,";") == "CMP" ) Then
+             MessageBox(F1 ,Fetch_BUILGATES(DESTINATION_Ligne,9,";"));
+             MessageBox(F2,Fetch_BUILGATES(DESTINATION_Ligne,14,";"));
+             //MessageBox(SourceFileName,Fetch_BUILGATES(SourceLigne,13,";"));
+             //F1 = Fetch_BUILGATES(DESTINATION_Ligne,9,";");
+             //F2 = Fetch_BUILGATES(DESTINATION_Ligne,14,";");
+        End*/
+
+
 
         Find = "ONUMGate";
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, "O"+INPUT_CODE ,14);
 
+
+        /*IF ( Fetch_BUILGATES(SourceLigne,8,";") == "CMP" ||  Fetch_BUILGATES(SourceLigne,13,";") == "CMP" ) Then
+             //MessageBox(SourceFileName,Fetch_BUILGATES(SourceLigne,9,";"));
+             //MessageBox(SourceFileName,Fetch_BUILGATES(SourceLigne,13,";"));
+             F1 = Fetch_BUILGATES(DESTINATION_Ligne,9,";");
+             F2 = Fetch_BUILGATES(DESTINATION_Ligne,14,";");
+        End*/
+
         Find = "NUMGate";
+
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, INPUT_CODE ,9);
         DESTINATION_Ligne = FR(DESTINATION_Ligne,Find, INPUT_CODE ,14);
+
+        /*IF ( Fetch_BUILGATES(SourceLigne,8,";") == "CMP" ||  Fetch_BUILGATES(SourceLigne,13,";") == "CMP" ) Then
+              MessageBox(F1,"9::"+Fetch_BUILGATES(DESTINATION_Ligne,9,";"));
+              MessageBox(F2,"14::"+Fetch_BUILGATES(DESTINATION_Ligne,14,";"));
+        End*/
 
 
 
@@ -691,12 +727,16 @@ string txt = Ligne;
 String NewLigne ="";
 String CODE = "";
 int i;  int P = 0;
+String ReturnedLine = "";
+Int MaxFor = NumFild-1;
+String AUX = "";
 
      P = StrPos(txt,Find);
-     IF (P == 0 ) Then Return Ligne;
-    Else
 
-      for i =1  to NumFild-1 do
+   IF (P == 0 ) Then Return Ligne;
+   Else
+
+      for i =1  to MaxFor do
         P = StrPos(txt,";");
         CODE=StrSubString(txt,1,P);
         NewLigne = NewLigne + CODE ;
@@ -708,16 +748,31 @@ int i;  int P = 0;
         txt=StrDelete(txt,1,P-1);
 
 
-       P = StrPos(CODE,"_");
-       If ( P == 0 ) Then
-        Return NewLigne + Replace + txt;
-       Else
-       //MessageBox(CODE,NumFild);
-        CODE=StrDelete(CODE,1,P-1);
-                //MessageBox(CODE,Replace);
-        Return NewLigne + Replace + CODE + txt;
+       IF ( CODE == Find ) Then
+
+        ReturnedLine = NewLigne + Replace + txt;
+
+        Else
+
+        P = StrPos(CODE,"_");
+
+            If ( P == 0 ) Then
+                ReturnedLine = Ligne;
+            Else
+                AUX = StrSubString(CODE,1,P-1);
+                CODE = StrDelete(CODE,1,P-1);
+                    IF ( AUX == Find ) Then
+                        ReturnedLine = NewLigne + Replace + CODE +  txt;
+                    Else
+                        ReturnedLine = Ligne;
+                    End
+            End
+
        End
-     End
+
+   END // P == 0
+
+    Return ReturnedLine;
 
 end
 ///////////////////////////////////////////////////////////////////////////////

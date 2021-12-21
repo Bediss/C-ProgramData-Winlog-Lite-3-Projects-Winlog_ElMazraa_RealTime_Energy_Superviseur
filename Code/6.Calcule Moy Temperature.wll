@@ -1,7 +1,18 @@
 
+Global String KPIs_Electrique   = "";
+Global String KPIs_Vapeur       = "";
+Global String KPIs_Eau          = "";
+Global String KPIs_Eau_Brute    = "";
+Global String KPIs_Eau_Osmose   = "";
+Global String KPIs_Gaz          = "";
+Global String KPIs_Poid_Liquid  = "";
+Global String KPIs_Poid_Solid   = "";
+Global String KPIs_Delta_Tc     = "";
+
 Global INT NBR_COM_STATUS = 0;
 Global String COM_FAILED = "";
 Global String COM_FAILED_NAME = "";
+
 
 Function void Calcule_MOY_Temperature()
 
@@ -70,7 +81,7 @@ Function void Calcule_MOY( String GateName )
       LIVE = GetNumGateValue(GateName,16);
 
         //////////////// SET MIN & MAX
-        SET_MIN_AND_MAX( GateName , LIVE);
+        //SET_MIN_AND_MAX( GateName , LIVE);
         //////////////// Calcule Moyenne
         SetNumGateValue(GateName,101, GetNumGateValue(GateName,101)+ LIVE );
         SetNumGateValue(GateName,105, GetNumGateValue(GateName,105)+1 );
@@ -108,11 +119,12 @@ Function void Calcule_MOY( String GateName )
         ////Gate not sampled
         NBR_COM_STATUS = NBR_COM_STATUS + 1 ;
         COM_FAILED = GateName + ";" + COM_FAILED;
-        Calcule_Runtime_LOG(" GATE NOT SAMPLING : " + GateName );
+
+        //Calcule_Runtime_LOG(" GATE NOT SAMPLING : " + GateName );
     End
 end
 ///////////////////////////////////////////////////////////////////////////////
-function void SET_MIN_AND_MAX( String GateName , REAL LIVE_VALUE)
+/*function void SET_MIN_AND_MAX( String GateName , REAL LIVE_VALUE)
 
     Real MIN_J = GetNumGateValue(GateName,4);
     Real MIN_S = GetNumGateValue(GateName,5);
@@ -135,7 +147,7 @@ function void SET_MIN_AND_MAX( String GateName , REAL LIVE_VALUE)
     IF ( LIVE_VALUE > MAX_M ) Then SetNumGateValue(GateName,10,LIVE_VALUE);  End
     IF ( LIVE_VALUE > MAX_A ) Then SetNumGateValue(GateName,11,LIVE_VALUE);  End
 
-end
+end*/
 ///////////////////////////////////////////////////////////////////////////////
 Function void Calcule_Conformite()
 
@@ -161,9 +173,9 @@ Function void Calcule_Conformite()
 
             //C_TrueNbr = StrDelete(Line,1,InputLength);//
             //Input = GetStrGateValue("PreFix_InPut",1) + C_TrueNbr;
-            C_Code = Fetch_MOY(Line, 1, ";");
-            Energy = Fetch_MOY(Line, 3, ";");
-            Input = MOY_CompteurTrueNumber(C_Code,Energy);
+            //C_Code = Fetch_MOYEE(Line, 1, ";");
+            //Energy = Fetch_MOYEE(Line, 3, ";");
+            //Input = MOY_CompteurTrueNumber(C_Code,Energy);
 
                 //MessageBox(CmpGateExists(C_Code, 42),C_Code);
             IF ( CmpGateExists(C_Code, 42) == True ) Then
@@ -307,8 +319,739 @@ function void Create_Conformite_CompteurFILE()
     //FileDelete(Sourcefile);
 
 end
+///////////////////////////////////////////////////////////////////////////////
+function Void Call_MINMAX_KPIs()
 
-function string Fetch_MOY(string Ligne, int Col, string Seperator)
+    String KIP_CompteurFileName = GetProjectPath() + "\Winlog\Files\AllCompteur\MINMAX.csv";
+    Int    KIP_CompteurFileHandle =0;
+    String CompteurLine = "";
+    String CompteurCode = "";
+    String Energy = "";
+    String DefMIN = "";
+    String DefMAX = "";
+    String DefMOY = "";
+    Int NBR_MIN = 0;
+    Int NBR_MAX = 0;
+    Int i;
+
+     // 1. read all compteur min max kpi
+    KIP_CompteurFileHandle = FileOpen(KIP_CompteurFileName,"rt");
+
+    If ( KIP_CompteurFileHandle != 0 ) Then
+
+    CompteurLine = FileReadLn(KIP_CompteurFileHandle);
+   // 2. foreach line
+        While ( FileEof( KIP_CompteurFileHandle ) == 0)
+            CompteurLine = FileReadLn(KIP_CompteurFileHandle);
+            CompteurCode = Fetch_MOYEE(CompteurLine, 1, ";");
+
+            IF ( CompteurLine != "" && CompteurCode != "" && CompteurCode != "*" ) Then
+                Energy = Fetch_MOYEE(CompteurLine, 3, ";");
+                // 2.1 get minlistes and maxlistes
+                    DefMIN = GET_KPI_def( Energy , "MIN" );
+                    DefMAX = GET_KPI_def( Energy , "MAX" );
+                    DefMOY = GET_KPI_def( Energy , "MOY" );
+                // 2.2 Call Function : SET_MIN
+
+                IF ( DefMIN != "" ) Then
+
+                    NBR_MIN = StrToInt( Fetch_MOYEE(DefMIN, 3, ";") );
+
+                      IF ( NBR_MIN > 0 ) Then
+                       IF ( NBR_MIN > 1 ) Then
+                        NBR_MIN = NBR_MIN+4;
+
+                            For i = 4 to  NBR_MIN do
+                                SET_MIN_OR_MAX( CompteurCode , Fetch_MOYEE(DefMIN, i, ";") , 1 );
+                                SET_MIN_OR_MAX( CompteurCode , Fetch_MOYEE(DefMAX, i, ";") , 2 );
+                                SET_MOY( CompteurCode , Fetch_MOYEE(DefMOY, i, ";") );
+                            End
+
+                       Else
+                        SET_MIN_OR_MAX( CompteurCode , Fetch_MOYEE(DefMIN, 4, ";") , 1 );
+                        SET_MIN_OR_MAX( CompteurCode , Fetch_MOYEE(DefMAX, 4, ";") , 2 );
+                        SET_MOY( CompteurCode , Fetch_MOYEE(DefMOY, 4, ";") );
+                       End
+                      End
+
+                End
+                 // 2.3 Call Function : SET_MAX
+                /*IF ( DefMAX != "" ) Then
+
+                    NBR_MAX = StrToInt( Fetch_MOYEE(DefMAX, 3, ";") );
+
+                      IF ( NBR_MAX > 0 ) Then
+                       IF ( NBR_MAX > 1 ) Then
+                        NBR_MAX = NBR_MAX+4;
+                        MessageBox(NBR_MAX,"NBR_MAX");
+                            For i = 4 to  NBR_MAX do
+                                SET_MIN_OR_MAX( CompteurCode , Energy , Fetch_MOYEE(DefMAX, i, ";") ,2 );
+                            End
+
+                       Else
+                        SET_MIN_OR_MAX( CompteurCode , Energy , Fetch_MOYEE(DefMAX, 4, ";") , 2 );
+                       End
+                      End
+
+                End*/
+
+            End
+        end
+        FileClose(KIP_CompteurFileHandle);
+    End
+
+
+
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function void SET_MIN_OR_MAX( String CompteurCode , String Listes , Int Functions )
+
+    ///  Functions = 1  if function Min
+    ///  Functions = 2  if function Max
+
+    Int ListMIN_B = 0;
+    Int ListMIN_J = 0;
+    Int ListMIN_S = 0;
+    Int ListMIN_M = 0;
+    Int ListMIN_A = 0;
+
+    Int ListLive = 0;
+
+    Real LIVE_VALUE =0;
+    String List;
+    String GateName;
+
+    Real MIN_B;
+    Real MIN_J;
+    Real MIN_S;
+    Real MIN_M;
+    Real MIN_A;
+
+    ListLive  = StrToInt( Fetch_MOYEE(Listes, 1, ":"));
+
+    GateName = "IN_" + CompteurCode;
+
+    IF ( GetNumGateCommunicationStatus(GateName,ListLive) == False ) Then   Return; End
+
+    ListMIN_B = StrToInt( Fetch_MOYEE(Listes, 2, ":"));
+    ListMIN_J = StrToInt( Fetch_MOYEE(Listes, 3, ":"));
+    ListMIN_S = StrToInt( Fetch_MOYEE(Listes, 4, ":"));
+    ListMIN_M = StrToInt( Fetch_MOYEE(Listes, 5, ":"));
+    ListMIN_A = StrToInt( Fetch_MOYEE(Listes, 6, ":"));
+
+    MIN_B = GetNumGateValue(GateName,ListMIN_B);
+    MIN_J = GetNumGateValue(GateName,ListMIN_J);
+    MIN_S = GetNumGateValue(GateName,ListMIN_S);
+    MIN_M = GetNumGateValue(GateName,ListMIN_M);
+    MIN_A = GetNumGateValue(GateName,ListMIN_A);
+
+    LIVE_VALUE = GetNumGateValue(GateName,ListLive);
+
+    IF (Functions == 1 ) Then
+        IF ( LIVE_VALUE < MIN_B ) Then SetNumGateValue(GateName,ListMIN_B,LIVE_VALUE);  End
+        IF ( LIVE_VALUE < MIN_J ) Then SetNumGateValue(GateName,ListMIN_J,LIVE_VALUE);  End
+        IF ( LIVE_VALUE < MIN_S ) Then SetNumGateValue(GateName,ListMIN_S,LIVE_VALUE);  End
+        IF ( LIVE_VALUE < MIN_M ) Then SetNumGateValue(GateName,ListMIN_M,LIVE_VALUE);  End
+        IF ( LIVE_VALUE < MIN_A ) Then SetNumGateValue(GateName,ListMIN_A,LIVE_VALUE);  End
+    Else
+
+      IF (Functions == 2 ) Then
+        IF ( LIVE_VALUE > MIN_B ) Then SetNumGateValue(GateName,ListMIN_B,LIVE_VALUE);  End
+        IF ( LIVE_VALUE > MIN_J ) Then SetNumGateValue(GateName,ListMIN_J,LIVE_VALUE);  End
+        IF ( LIVE_VALUE > MIN_S ) Then SetNumGateValue(GateName,ListMIN_S,LIVE_VALUE);  End
+        IF ( LIVE_VALUE > MIN_M ) Then SetNumGateValue(GateName,ListMIN_M,LIVE_VALUE);  End
+        IF ( LIVE_VALUE > MIN_A ) Then SetNumGateValue(GateName,ListMIN_A,LIVE_VALUE);  End
+      End
+
+    End
+end
+///////////////////////////// SET_MOY () //////////////////////////////////////
+function void SET_MOY( String CompteurCode , String Listes )
+
+    Int ListNBR_ECHA_B = 0;
+    Int ListNBR_ECHA_J = 0;
+    Int ListNBR_ECHA_S = 0;
+    Int ListNBR_ECHA_M = 0;
+    Int ListNBR_ECHA_A = 0;
+
+    Int ListSom_B = 0;
+    Int ListSom_J = 0;
+    Int ListSom_S = 0;
+    Int ListSom_M = 0;
+    Int ListSom_A = 0;
+
+    Int ListMoy_B = 0;
+    Int ListMoy_J = 0;
+    Int ListMoy_S = 0;
+    Int ListMoy_M = 0;
+    Int ListMoy_A = 0;
+
+    Int NBR_Echant_B = 0;
+    Int NBR_Echant_J = 0;
+    Int NBR_Echant_S = 0;
+    Int NBR_Echant_M = 0;
+    Int NBR_Echant_A = 0;
+
+    Real SOM_B = 0;
+    Real SOM_J = 0;
+    Real SOM_S = 0;
+    Real SOM_M = 0;
+    Real SOM_A = 0;
+
+    Real Moy_B = 0;
+    Real Moy_J = 0;
+    Real Moy_S = 0;
+    Real Moy_M = 0;
+    Real Moy_A = 0;
+
+    Int ListLive = 0;
+    Real LIVE_VALUE =0;
+
+    String GateName;
+
+    GateName = "IN_" + CompteurCode;
+
+    // 1. Get listes
+
+     ListLive = StrToInt( Fetch_MOYEE(Listes, 1, ":"));
+
+     ListSom_B = StrToInt( Fetch_MOYEE(Listes, 2, ":"));
+     ListSom_J = StrToInt( Fetch_MOYEE(Listes, 3, ":"));
+     ListSom_S = StrToInt( Fetch_MOYEE(Listes, 4, ":"));
+     ListSom_M = StrToInt( Fetch_MOYEE(Listes, 5, ":"));
+     ListSom_A = StrToInt( Fetch_MOYEE(Listes, 6, ":"));
+
+     ListNBR_ECHA_B = StrToInt( Fetch_MOYEE(Listes, 7, ":"));
+     ListNBR_ECHA_J = StrToInt( Fetch_MOYEE(Listes, 8, ":"));
+     ListNBR_ECHA_S = StrToInt( Fetch_MOYEE(Listes, 9, ":"));
+     ListNBR_ECHA_M = StrToInt( Fetch_MOYEE(Listes, 10, ":"));
+     ListNBR_ECHA_A = StrToInt( Fetch_MOYEE(Listes, 11, ":"));
+
+     ListMoy_B = StrToInt( Fetch_MOYEE(Listes, 12, ":"));
+     ListMoy_J = StrToInt( Fetch_MOYEE(Listes, 13, ":"));
+     ListMoy_S = StrToInt( Fetch_MOYEE(Listes, 14, ":"));
+     ListMoy_M = StrToInt( Fetch_MOYEE(Listes, 15, ":"));
+     ListMoy_A = StrToInt( Fetch_MOYEE(Listes, 16, ":"));
+
+     LIVE_VALUE = GetNumGateValue(GateName,ListLive);
+
+     //MessageBox( "ListNBR_ECHA_J = "+ListNBR_ECHA_J ,Fetch_MOYEE(Listes, 3, ":"));
+     //MessageBox( "ListSom_J = "+ListSom_J ,Fetch_MOYEE(Listes, 8, ":"));
+     //MessageBox( "ListMoy_J = "+ListMoy_J ,Fetch_MOYEE(Listes, 13, ":"));
+
+    // 2. Increment nbr checks
+
+     NBR_Echant_B = GetNumGateValue(GateName,ListNBR_ECHA_B) +1;
+     NBR_Echant_J = GetNumGateValue(GateName,ListNBR_ECHA_J) +1;
+     NBR_Echant_S = GetNumGateValue(GateName,ListNBR_ECHA_S) +1;
+     NBR_Echant_M = GetNumGateValue(GateName,ListNBR_ECHA_M) +1;
+     NBR_Echant_A = GetNumGateValue(GateName,ListNBR_ECHA_A) +1;
+
+    // 3. Add Som
+
+     SOM_B = GetNumGateValue(GateName,ListSom_B) + LIVE_VALUE;
+     SOM_J = GetNumGateValue(GateName,ListSom_J) + LIVE_VALUE;
+     SOM_S = GetNumGateValue(GateName,ListSom_S) + LIVE_VALUE;
+     SOM_M = GetNumGateValue(GateName,ListSom_M) + LIVE_VALUE;
+     SOM_A = GetNumGateValue(GateName,ListSom_A) + LIVE_VALUE;
+
+    // 4. Calc Moy
+
+     Moy_B = SOM_B / NBR_Echant_B;
+     Moy_J = SOM_J / NBR_Echant_J;
+     Moy_S = SOM_S / NBR_Echant_S;
+     Moy_M = SOM_M / NBR_Echant_M;
+     Moy_A = SOM_A / NBR_Echant_A;
+
+     //MessageBox( "SOM_J= " +SOM_J+"NBR_Echant_J= "+ NBR_Echant_J,"Moy_J = "+Moy_J);
+
+    // 5. Set Gates
+
+    SetNumGateValue(GateName,ListNBR_ECHA_B,NBR_Echant_B);
+    SetNumGateValue(GateName,ListNBR_ECHA_J,NBR_Echant_J);
+    SetNumGateValue(GateName,ListNBR_ECHA_S,NBR_Echant_S);
+    SetNumGateValue(GateName,ListNBR_ECHA_M,NBR_Echant_M);
+    SetNumGateValue(GateName,ListNBR_ECHA_A,NBR_Echant_A);
+
+    SetNumGateValue(GateName,ListSom_B,SOM_B);
+    SetNumGateValue(GateName,ListSom_J,SOM_J);
+    SetNumGateValue(GateName,ListSom_S,SOM_S);
+    SetNumGateValue(GateName,ListSom_M,SOM_M);
+    SetNumGateValue(GateName,ListSom_A,SOM_A);
+
+    SetNumGateValue(GateName,ListMoy_B,Moy_B);
+    SetNumGateValue(GateName,ListMoy_J,Moy_J);
+    SetNumGateValue(GateName,ListMoy_S,Moy_S);
+    SetNumGateValue(GateName,ListMoy_M,Moy_M);
+    SetNumGateValue(GateName,ListMoy_A,Moy_A);
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function Void Call_Conformite_KPIs()
+
+    String KIP_CompteurFileName = GetProjectPath() + "\Winlog\Files\AllCompteur\Conformite.csv";
+    Int    KIP_CompteurFileHandle =0;
+    String CompteurLine = "";
+    String CompteurCode = "";
+    String Energy = "";
+    String DefConformite = "";
+    Int NBR_Conformit = 0;
+
+    Int i;
+
+     // 1. read all compteur min max kpi
+    KIP_CompteurFileHandle = FileOpen(KIP_CompteurFileName,"rt");
+
+    //MessageBox(KIP_CompteurFileName,KIP_CompteurFileHandle);
+
+    If ( KIP_CompteurFileHandle != 0 ) Then
+
+    CompteurLine = FileReadLn(KIP_CompteurFileHandle);
+   // 2. foreach line
+        While ( FileEof( KIP_CompteurFileHandle ) == 0)
+
+            CompteurLine = FileReadLn(KIP_CompteurFileHandle);
+            CompteurCode = Fetch_MOYEE(CompteurLine, 1, ";");
+
+            IF ( CompteurLine != "" && CompteurCode != "" && CompteurCode != "*" ) Then
+              Energy = Fetch_MOYEE(CompteurLine, 3, ";");
+                // 2.1 get Conformite listes
+                    DefConformite = GET_KPI_def( Energy , "Conformite" );
+                    //MessageBox(DefConformite,"DefConformite");
+               // 2.2 Call Function : Conformite
+
+                IF ( DefConformite != "" ) Then
+
+                    NBR_Conformit = StrToInt( Fetch_MOYEE(DefConformite, 3, ";") );
+
+                      IF ( NBR_Conformit > 0 ) Then
+                       IF ( NBR_Conformit > 1 ) Then
+                        NBR_Conformit = NBR_Conformit+4;
+
+                            For i = 4 to  NBR_Conformit do
+                                SET_CONFORMITE( CompteurCode , Fetch_MOYEE(DefConformite, i, ";"));
+
+                            End
+
+                       Else
+                        SET_CONFORMITE( CompteurCode , Fetch_MOYEE(DefConformite, 4, ";"));
+                       End
+                      End
+
+                End
+            End // IF
+
+
+        End // While
+    End // If ( KIP_CompteurFileHandle != 0 )
+       FileClose(KIP_CompteurFileHandle);
+End
+///////////////////// SET_CONF () /////////////////////////////////////////////
+Function String SET_CONFORMITE( String CompteurCode , String Listes )
+
+    Int ListNBR_ALR_B = 0;
+    Int ListNBR_ALR_J = 0;
+    Int ListNBR_ALR_S = 0;
+    Int ListNBR_ALR_M = 0;
+    Int ListNBR_ALR_A = 0;
+
+    Int List_CONF_B = 0;
+    Int List_CONF_J = 0;
+    Int List_CONF_S = 0;
+    Int List_CONF_M = 0;
+    Int List_CONF_A = 0;
+
+    Int ListTotalChecks = 0;
+
+    Real NBR_ALR_B = 0;
+    Real NBR_ALR_J = 0;
+    Real NBR_ALR_S = 0;
+    Real NBR_ALR_M = 0;
+    Real NBR_ALR_A = 0;
+
+    Real CONF_B = 0;
+    Real CONF_J = 0;
+    Real CONF_S = 0;
+    Real CONF_M = 0;
+    Real CONF_A = 0;
+
+    Real TotalChecks = 0;
+
+    String GateName;
+    GateName = "IN_" + CompteurCode;
+    // 1. Get listes
+
+     ListTotalChecks = StrToInt( Fetch_MOYEE(Listes, 1, ":"));
+    // 2. Get Total Nbr of checks
+      TotalChecks = GetNumGateValue(GateName,ListTotalChecks);
+
+      If (TotalChecks == 0) Then    Return; End
+
+     ListNBR_ALR_B = StrToInt( Fetch_MOYEE(Listes, 2, ":"));
+     ListNBR_ALR_J = StrToInt( Fetch_MOYEE(Listes, 3, ":"));
+     ListNBR_ALR_S = StrToInt( Fetch_MOYEE(Listes, 4, ":"));
+     ListNBR_ALR_M = StrToInt( Fetch_MOYEE(Listes, 5, ":"));
+     ListNBR_ALR_A = StrToInt( Fetch_MOYEE(Listes, 6, ":"));
+
+     List_CONF_B = StrToInt( Fetch_MOYEE(Listes, 7, ":"));
+     List_CONF_J = StrToInt( Fetch_MOYEE(Listes, 8, ":"));
+     List_CONF_S = StrToInt( Fetch_MOYEE(Listes, 9, ":"));
+     List_CONF_M = StrToInt( Fetch_MOYEE(Listes, 10, ":"));
+     List_CONF_A = StrToInt( Fetch_MOYEE(Listes, 11, ":"));
+
+    // 3. Get Nbr des Alarmes
+
+      NBR_ALR_B = GetNumGateValue(GateName,ListNBR_ALR_B);
+      NBR_ALR_J = GetNumGateValue(GateName,ListNBR_ALR_J);
+      NBR_ALR_S = GetNumGateValue(GateName,ListNBR_ALR_S);
+      NBR_ALR_M = GetNumGateValue(GateName,ListNBR_ALR_M);
+      NBR_ALR_A = GetNumGateValue(GateName,ListNBR_ALR_A);
+
+    // 4. Calc Conformité
+
+      CONF_B = ( 1 - (NBR_ALR_B / TotalChecks) ) * 100;
+      CONF_J = ( 1 - (NBR_ALR_J / TotalChecks) ) * 100;
+      CONF_S = ( 1 - (NBR_ALR_S / TotalChecks) ) * 100;
+      CONF_M = ( 1 - (NBR_ALR_M / TotalChecks) ) * 100;
+      CONF_A = ( 1 - (NBR_ALR_A / TotalChecks) ) * 100;
+
+      //MessageBox(NBR_ALR_J +"/"+TotalChecks,GateName +" : " +CONF_J);
+    // 5. Set gates
+
+        SetNumGateValue(GateName,List_CONF_B,CONF_B);
+        SetNumGateValue(GateName,List_CONF_J,CONF_J);
+        SetNumGateValue(GateName,List_CONF_S,CONF_S);
+        SetNumGateValue(GateName,List_CONF_M,CONF_M);
+        SetNumGateValue(GateName,List_CONF_A,CONF_A);
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function String GET_KPI_def( String Energy , String Funct )
+
+    String ReturnedVal = "";
+    String LineDef = "";
+    String ReadFunction = "";
+    Int MaxReadFunction = 0;
+    int i;
+    String Definition = "";
+
+
+    IF ( Energy == "Electrique") Then  LineDef =  KPIs_Electrique;      Else
+    IF ( Energy == "Vapeur")     Then  LineDef =  KPIs_Vapeur;          Else
+    IF ( Energy == "Gaz")        Then  LineDef =  KPIs_Gaz;             Else
+    IF ( Energy == "Eau Osmose") Then  LineDef =  KPIs_Eau_Brute;       Else
+    IF ( Energy == "Eau Brute")  Then  LineDef =  KPIs_Eau_Osmose;      Else
+    IF ( Energy == "Poid_Liquid")Then  LineDef =  KPIs_Poid_Liquid;     Else
+    IF ( Energy == "Poid_Solid") Then  LineDef =  KPIs_Poid_Solid;      Else
+    IF ( Energy == "Eau")        Then  LineDef =  KPIs_Eau;             Else
+    IF ( Energy == "Delta_Tc")   Then  LineDef =  KPIs_Delta_Tc;
+
+    End End End End End End End End End
+
+    ReturnedVal = "";
+
+    If ( LineDef != "" ) Then
+
+        MaxReadFunction = StrToInt( Fetch_MOYEE(LineDef,1, "|")) +1;
+
+        //MessageBox(LineDef,"LineDef : "+ MaxReadFunction);
+
+        For i = 2 to MaxReadFunction do
+            Definition = Fetch_MOYEE(LineDef,i, "|");
+            ReadFunction = Fetch_MOYEE(Definition,1, ";");
+            //MessageBox("ReadFunction : " +ReadFunction,i+" Funct : "+Funct);
+            IF ( ReadFunction == Funct ) Then
+                ReturnedVal = Definition;
+                i = MaxReadFunction+2;
+            End
+
+        End
+
+
+    //Else
+        //MessageBox(Energy + " : Energy not defined","GET_KPI_def");
+    End
+
+    //MessageBox(ReturnedVal,"ReturnedVal");
+    Return ReturnedVal ;
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function void SET_Global_Definitions()
+
+    String FullFileName =  GetProjectPath() + "\Winlog\Files\AllCompteur\Calc_KPI_Funct_Config.csv";
+    Int FileHandle =0;
+    String Line = "";
+    String ReadEnergy = "";
+    String FindLineEnergy = "";
+    Int Nbr_Funct_In_Energy = 0;
+    Int Pos=0;
+
+    /*IF ( Energy == "Electrique") Then  LineDef =  KPIs_Electrique;      Else
+    IF ( Energy == "Vapeur")     Then  LineDef =  KPIs_Vapeur;          Else
+    IF ( Energy == "Gaz")        Then  LineDef =  KPIs_Gaz;             Else
+    IF ( Energy == "Eau Osmose") Then  LineDef =  KPIs_Eau_Brute;       Else
+    IF ( Energy == "Eau Brute")  Then  LineDef =  KPIs_Eau_Osmose;      Else
+    IF ( Energy == "Poid_Liquid")Then  LineDef =  KPIs_Poid_Liquid;     Else
+    IF ( Energy == "Poid_Solid") Then  LineDef =  KPIs_Poid_Solid;      Else
+    IF ( Energy == "Eau")        Then  LineDef =  KPIs_Eau;             Else
+    IF ( Energy == "Delta_Tc")   Then  LineDef =  KPIs_Delta_Tc;*/
+
+    FileHandle = FileOpen( FullFileName , "rt" ) ;
+
+    IF ( FileHandle != 0 ) Then
+
+        While ( FileEof(FileHandle) == 0)
+
+            Line = FileReadLn(FileHandle);
+
+            If ( Line != "" && Line != "*" && Fetch_MOYEE(Line,1, ";") != "*" ) Then
+                ReadEnergy = Fetch_MOYEE(Line,2, ";");
+
+                IF ( ReadEnergy == "Electrique") Then
+
+                    IF ( KPIs_Electrique == "" ) Then
+                        KPIs_Electrique = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Electrique, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Electrique = KPIs_Electrique+"|"+Line;
+                        Pos = StrPos(KPIs_Electrique,"|");
+                        KPIs_Electrique = StrDelete(KPIs_Electrique,1,Pos-1 );
+                        KPIs_Electrique = Nbr_Funct_In_Energy+KPIs_Electrique;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Vapeur")     Then
+
+                    IF ( KPIs_Vapeur == "" ) Then
+                        KPIs_Vapeur = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Vapeur, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Vapeur = KPIs_Vapeur+"|"+Line;
+                        Pos = StrPos(KPIs_Vapeur,"|");
+                        KPIs_Vapeur = StrDelete(KPIs_Vapeur,1,Pos-1 );
+                        KPIs_Vapeur = Nbr_Funct_In_Energy+KPIs_Vapeur;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Gaz")        Then
+
+                    IF ( KPIs_Gaz == "" ) Then
+                        KPIs_Gaz = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Gaz, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Gaz+"|"+Line;
+                        Pos = StrPos(KPIs_Gaz,"|");
+                        KPIs_Gaz = StrDelete(KPIs_Gaz,1,Pos-1 );
+                        KPIs_Gaz = Nbr_Funct_In_Energy+KPIs_Gaz;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Eau Brute") Then
+
+                    IF ( KPIs_Eau_Brute == "" ) Then
+                        KPIs_Eau_Brute = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Eau_Brute, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Eau_Brute+"|"+Line;
+                        Pos = StrPos(KPIs_Eau_Brute,"|");
+                        KPIs_Eau_Brute = StrDelete(KPIs_Eau_Brute,1,Pos-1 );
+                        KPIs_Eau_Brute = Nbr_Funct_In_Energy+KPIs_Eau_Brute;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Eau Osmose")  Then
+
+                    IF ( KPIs_Eau_Osmose == "" ) Then
+                        KPIs_Eau_Osmose = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Eau_Osmose, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Eau_Osmose+"|"+Line;
+                        Pos = StrPos(KPIs_Eau_Osmose,"|");
+                        KPIs_Eau_Osmose = StrDelete(KPIs_Eau_Osmose,1,Pos-1 );
+                        KPIs_Eau_Osmose = Nbr_Funct_In_Energy+KPIs_Eau_Osmose;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Poid_Liquid")Then
+
+                    IF ( KPIs_Poid_Liquid == "" ) Then
+                        KPIs_Poid_Liquid = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Poid_Liquid, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Poid_Liquid+"|"+Line;
+                        Pos = StrPos(KPIs_Poid_Liquid,"|");
+                        KPIs_Poid_Liquid = StrDelete(KPIs_Poid_Liquid,1,Pos-1 );
+                        KPIs_Poid_Liquid = Nbr_Funct_In_Energy+KPIs_Poid_Liquid;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Poid_Solid") Then
+
+                    IF ( KPIs_Poid_Solid == "" ) Then
+                        KPIs_Poid_Solid = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Poid_Solid, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Poid_Solid+"|"+Line;
+                        Pos = StrPos(KPIs_Poid_Solid,"|");
+                        KPIs_Poid_Solid = StrDelete(KPIs_Poid_Solid,1,Pos-1 );
+                        KPIs_Poid_Solid = Nbr_Funct_In_Energy+KPIs_Poid_Solid;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Eau")        Then
+
+                    IF ( KPIs_Eau == "" ) Then
+                        KPIs_Eau = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Eau, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Eau+"|"+Line;
+                        Pos = StrPos(KPIs_Eau,"|");
+                        KPIs_Eau = StrDelete(KPIs_Eau,1,Pos-1 );
+                        KPIs_Eau = Nbr_Funct_In_Energy+KPIs_Eau;
+                    End
+
+                Else
+                IF ( ReadEnergy == "Delta_Tc")   Then
+
+                    IF ( KPIs_Delta_Tc == "" ) Then
+                        KPIs_Delta_Tc = "1|"+Line;
+                    Else
+                        Nbr_Funct_In_Energy = StrToInt( Fetch_MOYEE(KPIs_Delta_Tc, 1, "|") );
+                        Nbr_Funct_In_Energy = Nbr_Funct_In_Energy+1;
+                        KPIs_Gaz = KPIs_Delta_Tc+"|"+Line;
+                        Pos = StrPos(KPIs_Delta_Tc,"|");
+                        KPIs_Delta_Tc = StrDelete(KPIs_Delta_Tc,1,Pos-1 );
+                        KPIs_Delta_Tc = Nbr_Funct_In_Energy+KPIs_Delta_Tc;
+                    End
+
+                End End End End End End End End End
+
+            End
+
+        End
+
+        FileClose( FileHandle );
+    End
+
+end
+///////////////////////////////////////////////////////////////////////////////
+function Void Generate_KPI_FILEs()
+
+    String KPI_File = GetProjectPath() + "\Winlog\Files\AllCompteur\KPIs.csv";
+    Int KPI_FileHandle =0;
+
+    String KPILine = "";
+    String KPI = "";
+    Bool Returned = False;
+
+    KPI_FileHandle = FileOpen(KPI_File,"rt");
+
+    If ( KPI_FileHandle != 0) Then
+
+        FileReadLn(KPI_FileHandle);
+        while ( FileEof(KPI_FileHandle) == 0 )
+         KPILine = FileReadLn(KPI_FileHandle);
+          KPI = Fetch_MOYEE(KPILine, 1, ";");
+            If ( KPILine != "" && KPILine != "*" && KPILine != "" && KPILine !=  "*" ) Then
+
+                Returned = Create_KPI_FILE( KPI , "" );
+
+            End
+
+
+        end
+
+    End
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function Bool Create_KPI_FILE( String KPI , String Energy )
+
+    //String File_FullPathName = "";
+    String Result_FullPathName = GetProjectPath() + "\Winlog\Files\AllCompteur\";
+    String Config_FullPathName = "C:\winlog\PowerShell\Display_DB_Queue\";
+
+    String Table_Name="AllCompteur";
+    String Filds_Name="KPI;Energie";
+    Bool Found_ReturnFile = False;
+    int Max_Checks = 10;
+    Int Checks ;
+    Int Config_FileHandle;
+    String QueryValues = "";
+    String QueryHeaders = "";
+
+    Config_FullPathName = Config_FullPathName + DateTimeNowPath() + ".txt";
+
+    If ( Energy == "" || Energy == "*" ) Then
+        Result_FullPathName = Result_FullPathName + KPI + ".csv";
+        QueryHeaders = "KPI";
+        QueryValues  = "%"+KPI+":%";
+    Else
+        Result_FullPathName = Result_FullPathName + KPI + "_" + Energy + ".csv";
+        QueryHeaders = "KPI;Energie";
+        QueryValues  = "%"+KPI+":%;"+Energy;
+    End
+
+    Config_FileHandle = FileOpen(Config_FullPathName,"wt") ;
+
+        FileWriteLn(Config_FileHandle,Result_FullPathName);
+        FileWriteLn(Config_FileHandle,Table_Name);
+        FileWriteLn(Config_FileHandle,QueryHeaders);
+        FileWriteLn(Config_FileHandle,QueryValues);
+        FileWriteLn(Config_FileHandle,"csv");
+
+    FileClose(Config_FileHandle);
+
+    FileCopy(Config_FullPathName,"C:\winlog\PowerShell\Back_Display_DB_Queue\Back.txt",False);
+    Checks =0;
+
+    While ( Found_ReturnFile == False )
+
+      IF ( FileExist( Result_FullPathName ) == True ) Then
+        Found_ReturnFile = True;
+
+      Else
+
+        If ( Checks >= Max_Checks ) Then
+            Found_ReturnFile = True;
+        End
+
+      End
+
+     Checks =Checks+1;
+     Sleep(500);
+
+    End
+
+
+    If ( FileExist( Result_FullPathName ) == True ) Then
+
+        If ( Checks >=  Max_Checks ) Then
+             FileDelete(Result_FullPathName);
+             Return False;
+        Else
+             Return True;
+        End
+
+    Else
+        FileDelete(Result_FullPathName);
+        Return False;
+    End
+
+end
+
+/////////////////////////////////////////////////////////////////////////////
+function string Fetch_MOYEE(string Ligne, int Col, string Seperator)
 string txt = Ligne;
 String CODE = "";
 int i;  int P;
@@ -487,7 +1230,7 @@ function void SEND_MAIL_GATEWAY( String ATTACH )
  If( MAIL_SETUP_FLAG == false )Then
         Event_Runtime_LOG( "Send MAIL : MAIL_SETUP_FLAG == " + MAIL_SETUP_FLAG );
     end
-	
+
     //CONGIF_MAIL = GET_MAIL_SETUP( SETUP_FILE );
          // SMTP
             SMTP    = COM_Fetch( CONGIF_MAIL , 1 , ";");

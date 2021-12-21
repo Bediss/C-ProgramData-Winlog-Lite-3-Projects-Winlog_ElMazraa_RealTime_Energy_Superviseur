@@ -1,7 +1,7 @@
 #Version: 0x030222
 #Access: 0
 #Pos: 750,260
-#Size: 500,300
+#Size: 499,299
 #BkColor: clBtnFace
 #Gates: 1
   #NUM: Template_Control,0

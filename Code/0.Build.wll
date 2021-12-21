@@ -663,7 +663,7 @@ function void Create_PS_ListOfFiles( String WorkDir, String Filter, String Outpu
 
     String PS_LOF_FullPathFileName = OutputFile;
 
-    String W_FullPathFileName = ENV_PATH + "\PowerShell\ListOfFiles.exe";
+    String W_FullPathFileName = "C:\winlog\PowerShell\ListOfFiles.txt";
     int W_FileHandle = FileOpen(W_FullPathFileName,"wt");
 
    // IF ( FileExist(PS_LOF_FullPathFileName) == True ) Then FileDelete( PS_LOF_FullPathFileName ); End
@@ -676,6 +676,7 @@ function void Create_PS_ListOfFiles( String WorkDir, String Filter, String Outpu
 
     FileClose(W_FileHandle);
 
+    MessageBox(W_FileHandle,"Create_PS_ListOfFiles");
 end
 ///////////////////////////////////////////////////////////////////////////////
 function void NEWCreation_T()

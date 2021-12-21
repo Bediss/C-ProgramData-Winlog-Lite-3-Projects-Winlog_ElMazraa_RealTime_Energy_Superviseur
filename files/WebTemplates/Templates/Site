@@ -251,53 +251,53 @@
   #Object: Button
     #ID: 0
     #Pos: 1,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ VMZ.                  
+    #Label: ¤ Usine_ElMazeraa.      
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 512
+     #Access: 0
      #OnClick: Template,1_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,242
-    #Size: 268,20
+    #Pos: 1,247
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Dick.                 
+    #Label: ¤ Production_ElMazraa.  
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 2
+     #Access: 8
      #OnClick: Template,2_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,263
-    #Size: 268,20
+    #Pos: 1,273
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ GIPA.                 
+    #Label: ¤ Abattoir.             
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 1
+     #Access: 0
      #OnClick: Template,3_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,284
-    #Size: 268,20
+    #Pos: 1,299
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ STEG.                 
+    #Label: ¤ Transforme.           
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 1
+     #Access: 0
      #OnClick: Template,4_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,305
-    #Size: 268,20
+    #Pos: 1,325
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ PAF.                  
+    #Label: ¤ Utilitaire_ElMazraa.  
     #Font: Courier New,12,0001
      #TabOrder: 0
      #Access: 1
@@ -305,54 +305,54 @@
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,326
-    #Size: 268,20
+    #Pos: 1,351
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Prod Coproduit.       
+    #Label: ¤ Post_Tranfo.          
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 4
+     #Access: 0
      #OnClick: Template,6_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,347
-    #Size: 268,20
+    #Pos: 1,377
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ COP-Facility.         
+    #Label: ¤ Chaufferie.           
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 4
+     #Access: 0
      #OnClick: Template,7_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,368
-    #Size: 268,20
+    #Pos: 1,403
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ ElMazeraa.            
+    #Label: ¤ Production_Froid.     
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
+     #Access: 0
      #OnClick: Template,8_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,389
-    #Size: 268,20
+    #Pos: 1,429
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Production ElMazraa.  
+    #Label: ¤ Production_Eau.       
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 8
+     #Access: 0
      #OnClick: Template,9_Unite
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,410
-    #Size: 268,20
+    #Pos: 1,455
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Utilitaire ElMazraa.  
+    #Label: ¤ Facilite_ElMazraa.    
     #Font: Courier New,12,0001
      #TabOrder: 0
      #Access: 1
@@ -360,15 +360,123 @@
    #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 1,431
-    #Size: 268,20
+    #Pos: 1,481
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ Facility ElMazraa.    
+    #Label: ¤ Admin_ElMazraa.       
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,11_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,507
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Magazin_ElMazraa.     
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,12_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,533
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Vestiaire_ElMazraa.   
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,13_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,559
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Atelier_ElMazraa.     
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,14_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,585
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Co-Produit.           
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,15_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,611
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Production_COP.       
     #Font: Courier New,12,0001
      #TabOrder: 0
      #Access: 1
-     #OnClick: Template,11_Unite
+     #OnClick: Template,16_Unite
    #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,637
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Aero.                 
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,17_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,663
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Oxydeur.              
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,18_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,689
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Usine_Plume.          
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,19_Unite
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1,715
+    #Size: 268,25
+    #Cursor: 0
+    #Label: ¤ Usine_Sang.           
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: Template,20_Unite
+   #EndObj
+
+
+
+
+
+
+
+
+
 
 
 

@@ -301,7 +301,7 @@ String View;
 
 
                 FileClose(FileHandle);
-                        MessageBox("END","");
+                        //MessageBox("END","");
                 SetNumGateValue("AdminTotalItems",0,NBR);
 
                    DESCRIPTION=Fetch_PBI_List(txt,4,";");

@@ -1,2 +1,12 @@
 CODE;NAME;ACCESS;SHORTNAME
-*;¤ All View.             ;32767;*
+0;¤ Temps Reel.           ;Min_60;Live
+1;¤ Lot.                  ;Heure_24;B
+2;¤ Journalier.           ;Heure_24;J
+3;¤ Hebdomadaire.         ;Jour_7;S
+4;¤ Mensuel.              ;Jour_30;M
+5;¤ Annuel.               ;Mois_12;A
+6;¤ Lot-1.                ;Heure_24;B-1
+7;¤ Journalier-1.         ;Heure_24;J-1
+8;¤ Hebdomadaire-1.       ;Jour_7;S-1
+9;¤ Mensuel-1.            ;Jour_30;M-1
+10;¤ Annuel-1.             ;Mois_12;A-1

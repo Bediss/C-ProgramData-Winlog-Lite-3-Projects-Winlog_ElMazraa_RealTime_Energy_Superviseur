@@ -251,12 +251,11 @@
   #Object: Button
     #ID: 0
     #Pos: 1081,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ All View.             
+    #Label: ¤ Tout PERIODICTE.      
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 9
-     #OnClick: Template,15_Froid_CF1_V47
+     #Access: 16384
    #EndObj
 

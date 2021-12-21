@@ -332,31 +332,36 @@ String LiveList="";
         Ligne =FileReadLn(ToClounFileHandle);
 
          NewCompteur=Fetch_Formule(Ligne,1,",");
+        // MessageBox(NewCompteur,NewCompteur);
          //IncNewCompteur=InCNewCOMPTEUR(CurrentCCompteur);
         IncNewCompteur=InCNewCOMPTEUR(NewCompteur);
-//MessageBox(NewCompteur,"");
+     //    MessageBox(IncNewCompteur,NewCompteur);
+//MessageBox(IncNewCompteur,NewCompteur);
        //Energie=GetStrGateValue("Compteur_Energy",i);
         Energie=Fetch_Formule(Ligne,3,",");
        LiveList=LiveIncidentList(Energie);
 
 
         if (Ligne != "" ) && ( NewCompteur != CurrentCCompteur) && ( NewCompteur!="" ) then
+     // MessageBox(LigneC,"LigneC");
 
 
              LigneC=SearchAndReplace_code(LigneC,CurrentCCompteur,NewCompteur,"$");
-
+             //MessageBox(LigneC,NewCompteur);
+            InCNCompteur=Fetch_Formule(LigneC,4,";");
             InCNCompteur=SearchAndReplace_code(InCNCompteur,CurrentCCompteur,NewCompteur,"$");
+    // MessageBox(InCNCompteur,"InCNCompteur");
 
             InCNCompteur=FR_Formule_Clone(InCNCompteur,IncNewCompteur+"$"+LiveList,1,"=");
 
-
+ // MessageBox(InCNCompteur,IncNewCompteur+"$"+LiveList);
             LigneC=FR_Formule_Clone(LigneC,InCNCompteur,4,";");
 
 
             CNewCompteur=Fetch_Formule(Ligne,2,",");
-
+   //MessageBox(CNewCompteur,"=2");
             LigneC=SearchAndReplace_code(LigneC,CurrentNCompteur,CNewCompteur,"$");
-
+ //MessageBox(LigneC,CurrentNCompteur);
              LigneC=FR_Formule_Clone(LigneC,AvantTexte+" "+TAG+" "+CNewCompteur,9,";");
 
                Objectif=Fetch_Formule(LigneC,6,";");

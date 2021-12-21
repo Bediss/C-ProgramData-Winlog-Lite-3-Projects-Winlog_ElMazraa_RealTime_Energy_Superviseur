@@ -100,9 +100,6 @@ function void Read_Tableau_Views()
         if ( TextRow != "") then
             if (Fetch(TextRow, 1)!="" ) then
 
-
-
-
                 SetStrGateValue("ViewNames",List,Fetch(TextRow,2));
                   //MessageBox(GetStrGateValue("ViewNames",List),"");
                 SetStrGateValue("ViewPeriodicity",List,Fetch(TextRow,4));

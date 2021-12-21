@@ -251,12 +251,12 @@
   #Object: Button
     #ID: 0
     #Pos: 811,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ All Energy.           
+    #Label: ¤ Tout Capteur.         
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 512
+     #Access: 0
      #OnClick: Template,1_1_3_1_View
    #EndObj
 

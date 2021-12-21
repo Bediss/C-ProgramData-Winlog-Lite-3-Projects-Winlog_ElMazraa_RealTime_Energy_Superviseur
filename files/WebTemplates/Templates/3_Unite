@@ -251,12 +251,12 @@
   #Object: Button
     #ID: 0
     #Pos: 271,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ All Unite.            
+    #Label: ¤ Tout POINT DE MESURE. 
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 1
+     #Access: 0
      #OnClick: Template,3_1_Tableau
    #EndObj
 

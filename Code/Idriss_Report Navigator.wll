@@ -24,6 +24,7 @@ FlagUses=True;
 Confirme_Save();
  SetNumGateValue("Show_Temp_Pointer",0,1073745920);
 PageOpen="Report_Creator";
+NumLayout=0;
   SetNumGateValue("E15min",1,0);
     Admin_View_CurrentLine=";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;";
     Current_Line_Object="";
@@ -189,6 +190,7 @@ End
 
 
 Function Void Lyaout_L1()
+
 String CodeL=GetStrGateValue("EmailView1",1);
 String NameL=GetStrGateValue("EmailView2",1);
 String Template=GetStrGateValue("EmailView3",1);
@@ -197,6 +199,7 @@ String TotalObject=GetStrGateValue("EmailView5",1);
 //MessageBox(Template,"Template");
 //MessageBox(TotalObject,"TotalObject");
 if CodeL !="" && NameL != "" then
+
 Name_Template_Layout=Template;
  TotalLayout=StrToInt(TotalObject);
    SetStrGateValue("AlarmeEventModifer",5,NameL);
@@ -835,8 +838,7 @@ String CodeTableaux;
             ListsFlag=GetStrGateValue("EmailView1",3);
 
               if AuteurTableau=="Developpeur" then
-      FlagDev=True;
-      //ShowPoPUPs("Popup_ML_CL");
+            FlagDev=True;
             Name_Template_Layout="L"+CodeTableaux;
             if FetchBU(ListsFlag,1,"_")=="1"then
         SetNumGateValue("Template_Control",0,13);
@@ -844,11 +846,12 @@ String CodeTableaux;
             SetNumGateValue("Template_Control",0,0);
             end
         if FetchBU(ListsFlag,2,"_")=="1"then
-        SetNumGateValue("Template_Control",1,14);
+            SetNumGateValue("Template_Control",1,14);
            else
             SetNumGateValue("Template_Control",1,0);
-            end
-      else
+        end
+
+        else
       FlagDev=False;
        SetNumGateValue("Template_Control",0,12);
        end
@@ -858,8 +861,9 @@ end
 
 
 Function Void Layout_Part_1()
-NBPartLayout=1;
-Open_ML_CL_Object();
+
+    NBPartLayout=1;
+    Open_ML_CL_Object();
 
 End
 Function Void Layout_Part_2()
@@ -884,7 +888,11 @@ function Void Open_ML_CL_Object()
 int i=0;
 String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
 PartObj=",,,";
+SetNumGateValue("EmailPageView",0,1);
+SetNumGateValue("PageView",1,1);
+SetNumGateValue("PageView",2,1);
 EVM_Max_Items=scanfile(PathFileCL);
+
 List_Display(1,2,PathFileCL,1);
         For i = 1 to 10 do
             SetStrGateValue("EmailView"+i,4,"");
@@ -916,23 +924,20 @@ End
 
 function Void Open_Object()
 
-String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+    String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
 
-EVM_Max_Items=scanfile(PathFileObject);
+    EVM_Max_Items=scanfile(PathFileObject);
 
-Object_Display(1,6,PathFileObject,1);
-
-
+    Object_Display(1,6,PathFileObject,1);
 
 End
 
 function void Layout_Object_Add()
+
 int  ReguliersTotalItems = EVM_Max_Items;
 int MaxPage = ReguliersTotalItems/MaxRow+1;
 String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
 //MessageBox(ReguliersTotalItems,MaxPage);
-
-
 int CurrentPage = GetNumGateValue("PageView",2);
 bool Continue;
 
@@ -967,6 +972,7 @@ bool Continue;
      Object_Display(CurrentPage,6,PathFileObject,1);
 
 end
+
 //////////////////////////////////////////////////////////////////////////////
 function void Layout_Object_First()
 String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
@@ -1017,6 +1023,7 @@ bool Continue;
 end
 end
 //////////////////////////////////////////////////////////////////////////////
+
 function void Layout_CL_Sub()
 
 String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
@@ -1061,9 +1068,6 @@ end
 function void Layout_ML_Add()
 
 String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
-
-
-
 int  ReguliersTotalItems = EVM_Max_Items;
 int MaxPage = ReguliersTotalItems/MaxRow+1;
 int CurrentPage = GetNumGateValue("EmailPageView",0);
@@ -1749,6 +1753,7 @@ end
 function void Report_Select_Object_1()
 String Nom;
 String Code;
+
     Nom = GetStrGateValue("EmailView1",6);
     IF ( Nom != "" ) Then
       Code=GetStrGateValue("EmailView1",7);
@@ -1945,6 +1950,7 @@ String Temp_View_Recycle_Code;
 
 
             TPageCloseByName("InfoPopup");
+            NumLayout=0;
    SetNumGateValue("Template_Control",0,0);
      SetNumGateValue("E15min",0,0);
      Tableaux_Commit_Report();
@@ -1973,10 +1979,11 @@ String Report_Chart;
        //MessageBox(Admin_View_CurrentLine,"");
         Code=GetNumGateValue("LastCodeAdd",1)+1;
         Report_Chart="R"+Code+"_"+FetchBU(Admin_View_CurrentLine,2,";");
-         Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Report_Chart,15,";");
+         Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Report_Chart,16,";");
     Admin_New_Ligne("Rappot Layout","R"+Code);
 
         Confirme_Save=True;
+        NumLayout=0;
      SetNumGateValue("Template_Control",0,0);
  SetNumGateValue("E15min",0,1);
 TPageCloseByName(Name_Template_Layout);
@@ -1997,7 +2004,7 @@ end
 
 Function Void LayoutRemplissage()
 
-    MessageBox(TotalLayout,NumLayout);
+    MessageBox(TotalLayout+" TotalLayout",NumLayout+" NumLayout");
    // if then
 
         if /*FetchBU(Admin_View_CurrentLine,24,";")!=""  && */ TotalLayout==NumLayout then
@@ -2007,7 +2014,7 @@ Function Void LayoutRemplissage()
         end
    // end
   SetNumGateValue("E15min",1,0);
-MessageBox(GetNumGateValue("Template_Control",0),GetNumGateValue("E15min",1));
+//MessageBox(GetNumGateValue("Template_Control",0),GetNumGateValue("E15min",1));
 
 End
 

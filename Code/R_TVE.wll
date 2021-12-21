@@ -135,8 +135,8 @@ function String FACTBOOK_Generator(String FactBook_Code , String FactBook_Name ,
         FileSetAttr(REPORT_PATH_DEFAULT + ReportMaster +"_Back.Pdf",0);
         FileSetAttr(FactBook_File,0);
 
-        MessageBox(DefaultReportPath,Print_Report + " " + i);
-        MessageBox(FactBook_File,"FactBook_File");
+        //MessageBox(DefaultReportPath,Print_Report + " " + i);
+        //MessageBox(FactBook_File,"FactBook_File");
 
         FileCopy(DefaultReportPath,FactBook_File,false);
         FileDelete(DefaultReportPath);
@@ -215,6 +215,8 @@ function Bool PRINT_SINGLE(string ReportLine , String EventAlarme_Name , string 
     String Report_Directory_Config;
     String ChartPATH;
     String DefaultReportPath;
+    String DefaultReportChartPath   = GetProjectPath() +  "\Template\DefaultReportChart";
+    String SourceChartPath          = GetProjectPath() +  "\Template\\Chart_Reports\";
 
     Bool Creationreport = False;
 
@@ -226,7 +228,7 @@ function Bool PRINT_SINGLE(string ReportLine , String EventAlarme_Name , string 
       Report_Name  = FETCH_REPORT_GENERATOR(ReportLine,2,",");
       ReportMaster = FETCH_REPORT_GENERATOR(ReportLine,13,",");
       ReportLayout = FETCH_REPORT_GENERATOR(ReportLine,14,","); //Layout_Chart_Report
-      Report_Chart = FETCH_REPORT_GENERATOR(ReportLine,15,",");
+      Report_Chart = SourceChartPath + FETCH_REPORT_GENERATOR(ReportLine,15,",");
     //// 2. Set Report Gates
       SetStrGateValue("ReportView",0,EventAlarme_Name);
       SetStrGateValue("ReportView",1,EmailName);
@@ -236,9 +238,11 @@ function Bool PRINT_SINGLE(string ReportLine , String EventAlarme_Name , string 
       SetStrGateValue("ReportView",5,Local_MAXCol);
       SetStrGateValue("ReportView",6,Report_Name);
       //SetStrGateValue("ReportView",9,Report_Chart);
-      GLOBAL_CHART_NAME = Report_Chart;
+      //GLOBAL_CHART_NAME = Report_Chart;
       SetStrGateValue("ReportView",10,CreationDate);
-
+    //// Copy Report Chart to default
+    FileCopy(Report_Chart,DefaultReportChartPath,False);
+        //
     //// 3. Copy Report Layout
       LayoutPath   = REPORT_PATH_LAYOUT_SOURCE + ReportLayout + ".RTF";
       Report_Directory_Config = REPORT_PATH_LAYOUT_DESTINATION + ReportMaster+"\"+ ReportMaster +".RTF";
@@ -250,9 +254,9 @@ function Bool PRINT_SINGLE(string ReportLine , String EventAlarme_Name , string 
 
       If (FileExist( DefaultReportPath ) == True) Then    FileDelete(DefaultReportPath);    End
 
-      ChartPATH = REPORT_PATH_CHART + Report_Chart;
-
-       IF ( FileExist( ChartPATH ) == True ) Then
+      //ChartPATH = REPORT_PATH_CHART + Report_Chart;
+      MessageBox(Report_Chart,FileExist( Report_Chart ));
+       IF ( FileExist( Report_Chart ) == True ) Then
         //REPORT_Runtime_LOG(" Report : (Single) Chart Found " + ChartPATH);
         //MessageBox(OutReportFile,ReportMaster);
         //ReportSetFullPathFileName(ReportMaster,OutReportFile);
@@ -261,7 +265,7 @@ function Bool PRINT_SINGLE(string ReportLine , String EventAlarme_Name , string 
          //MessageBox("Creationreport",Creationreport);
        Else
          Creationreport = False;
-         REPORT_Runtime_LOG(" Report Not generated : (Single) Chart not Found " + ChartPATH);
+         REPORT_Runtime_LOG(" Report Not generated : (Single) Chart not Found " + Report_Chart);
        End
 
        GLOBAL_CHART_NAME = "";

@@ -1,0 +1,405 @@
+#Version: 0x03021d
+#Access: 0
+#Pos: 0,150
+#Size: 1350,750
+#BkColor: clWhite
+#Gates: 17
+  #CMP: MZV000,11
+  #CMP: MZVB1A,11
+  #CMP: MZVB1A,2011
+  #CMP: MZVB1B,11
+  #CMP: MZVB1B,2011
+  #CMP: MZVB1C,11
+  #CMP: MZVB1C,2011
+  #CMP: MZV003,11
+  #CMP: MZV002,11
+  #CMP: MZV002,2011
+  #EVN: AA_MZVB1C,0
+  #EVN: AA_MZVB1B,0
+  #EVN: AA_MZVB1A,0
+  #EVN: AA_MZV003,0
+  #EVN: AA_MZV002,0
+  #EVN: AA_MZV000,0
+  #STR: Business_unit,0
+#PBkBmp: 0,220,1350,530,Winlog Synoptiqyue Vapeur cHAUFFERIE.jpg
+#Style: Standard
+#StayOnTop: 0
+#Object: Led
+  #ID: 0
+  #Pos: 890,300
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 10,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 656,300
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 11,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 422,301
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 12,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 180,303
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 13,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 983,591
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 14,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 459,580
+  #Size: 25,25
+  #Cursor: 0
+  #OnBmpRes: 131
+  #OffBmpRes: 132
+  #BmpBkC: 0,128,128
+  #On: 15,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 475,330
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 1
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 709,329
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 3
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 942,327
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 5
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 240,333
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 7
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1092,587
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 8
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 567,577
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 0
+  #Label: %5.1lf T
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 240,353
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 475,353
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 2
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 707,350
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 4
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 942,348
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 6
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 567,598
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1092,608
+  #Size: 150,17
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+  #Font: Gotham Medium,7,0001
+  #Gate: 9
+  #Label: %5.1lf %
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 850,315
+  #Size: 220,60
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+  #NewOnClick: StartF,SY_FC_17_MZVB1C_V47()
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 970,565
+  #Size: 255,60
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 1
+  #Access: 0
+  #NewOnClick: StartF,SY_FC_17_MZV002_V47()
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 615,310
+  #Size: 225,65
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 2
+  #Access: 0
+  #NewOnClick: StartF,SY_FC_17_MZVB1B_V47()
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 380,315
+  #Size: 225,65
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 3
+  #Access: 0
+  #NewOnClick: StartF,SY_FC_17_MZVB1A_V47()
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,0
+  #Size: 1350,70
+  #BkColor: 0,200,150
+  #Style: 1
+  #TabOrder: 4
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 218,3
+    #Size: 530,62
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Gotham Medium,22,0000
+    #Label: REAL TIME MONITORING SYSTEM : 
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 743,3
+    #Size: 550,62
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Gotham Medium,22,0000
+    #Gate: 16
+    #Label: %s
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 30,10
+    #Size: 170,50
+    #Cursor: 0
+    #PBmpFile: 0,LOGO BIZEYES BLANC.png
+    #TabOrder: 0
+    #CycleTime: 0,0
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,70
+  #Size: 1350,40
+  #BkColor: 204,255,232
+  #Style: 1
+  #TabOrder: 5
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 40,5
+    #Size: 100,30
+    #BkColor: 204,255,232
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Gotham Book,10,0000
+    #Label: Navigateur
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+    #NewOnClick: Template,Site
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,110
+  #Size: 1350,40
+  #BkColor: 226,226,226
+  #Style: 1
+  #TabOrder: 6
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 120,265
+  #Size: 30,30
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 7
+  #Access: 0
+  #NewOnClick: Template,11_Vapeur_#&#&B100_J_V47
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 40,115
+  #Size: 850,30
+  #BkColor: 226,226,226
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Gotham Book,9,0000
+  #Label: Synoptique Par Energie | Journalier | Vapeur | Consommation | 
+  #Align: 36
+  #Frame: 1
+  #Access: 0
+#EndObj

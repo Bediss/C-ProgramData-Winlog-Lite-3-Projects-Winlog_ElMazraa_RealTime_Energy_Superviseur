@@ -7,7 +7,7 @@ Global String Admin_View_CurrentLine_AUX;
 Function Void Create_New_Table()
 
 LenPrefix=0;
-Confirme_Save();
+//Confirme_Save();
 PageOpen="Tableaux";
 DBON=True;
 
@@ -496,16 +496,13 @@ Admin_View_CurrentLine=";;;;;;;;;;;;;;;;;";
       //Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,CodeNewAlarme,3);
       //Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,GetStrGateValue("AlarmeEventModifer",2),4);
       SetStrGateValue("AlarmeEventModifer",4,GetStrGateValue("AlarmeEventModifer",2));
-     // MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
-          // MessageBox(Admin_View_CurrentLine_AUX,"Admin_View_CurrentLine_AUX");
-  Admin_View_Temp_File=ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
-  // SetNumGateValue("Template_Control",0,2);
-    //DBFileQuerry(2);
+
     Admin_New_Ligne_request_TABLEAU(CodeNewAlarme);
   //  Bouton_Tableaux_Report_Navigator();
-        EVM_LIST_FILE = Admin_View_Temp_File;
+   /// Admin_View_Temp_File=
+        EVM_LIST_FILE = ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
     EVM_Max_Items = scanfileBouton(EVM_LIST_FILE);
-    Tableaux_Display(1);
+    Tableaux_Display_Report(1);
     SetNumGateValue("PageAllCommpteurView",0,1);
     SetNumGateValue("Template_Control",0,12);
 
@@ -582,6 +579,65 @@ FileClose(FileHandle);
 
 
 
+end
+
+
+
+function void Tableaux_Add_New()
+int  ReguliersTotalItems = EVM_Max_Items;
+int MaxPage = ReguliersTotalItems/MaxRow+1;
+int CurrentPage = GetNumGateValue("PageAllCommpteurView",0);
+bool Continue;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     if (CurrentPage >= MaxPage) then
+     CurrentPage = MaxPage;
+     else
+     CurrentPage = CurrentPage+1;
+     end
+     SetNumGateValue("PageAllCommpteurView",0,CurrentPage);
+     Tableaux_Display_Report(CurrentPage);
+
+     //////////////////////////////////////(CurrentPage-1)*10+Nbligneourant;
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Tableaux_Sub_New()
+int CurrentPage= GetNumGateValue("PageAllCommpteurView",0);
+bool Continue;
+
+
+     if (CurrentPage <= 1) then
+     CurrentPage = 1;
+     else
+     CurrentPage = CurrentPage -1;
+     end
+     SetNumGateValue("PageAllCommpteurView",0,CurrentPage);
+    Tableaux_Display_Report(CurrentPage );
+
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Tableaux_First_New()
+bool Continue;
+
+     SetNumGateValue("PageAllCommpteurView",0,1);
+    Tableaux_Display_Report(1);
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Tableaux_End_New()
+bool Continue;
+int ReguliersTotalItems = EVM_Max_Items;
+int MaxPage ;
+MaxRow = 10;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     SetNumGateValue("PageAllCommpteurView",0,MaxPage);
+     Tableaux_Display_Report(MaxPage);
 end
 
 

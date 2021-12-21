@@ -44,7 +44,7 @@ FUNCTION void Synoptique_Generator()
 
     IF ( FileExist(NEXT_T_LIST) == True ) Then FileDelete(NEXT_T_LIST);    End
 
-    Create_PS_ListOfFiles( WorkDir, Filter, OutFile_FullPath );
+    //Create_PS_ListOfFiles( WorkDir, Filter, OutFile_FullPath );
 
     //ShellExec("ListOfFiles.bat","open",ENV_PATH+"\PowerShell\",1,"","");
 
@@ -91,11 +91,6 @@ FUNCTION void Synoptique_Generator()
 
           If ( CurrFile != "" ) then
             Name=CurrFile;
-
-
-
-
-
             Part1=SG_Fetch(Name,1,"_");
             Part2=SG_Fetch(Name,2,"_");
             Part3=SG_Fetch(Name,3,"_");
@@ -165,7 +160,7 @@ function Void CreateSynoptiques_DESK( String Template , String SourceName , Stri
 
     int SRCFileHandle;
     int FileHandle;
-    String ClickSearch = "OnClick:";
+    String ClickSearch = "#NewOnClick:";
 
     String PATH_SEARCH = "  #Label: Path";
     String PATH_REPLACE = "";
@@ -221,11 +216,9 @@ function Void CreateSynoptiques_DESK( String Template , String SourceName , Stri
     SRCFullPathFileName = GetProjectPath()+"\TEMPLATES_GENERATED\Synotique\Source\HeaderDesk" ;
 
     FileCopy(SRCFullPathFileName,Template,False);
-
-    SRCFullPathFileName=GetProjectPath()+"\TEMPLATES_GENERATED\Synotique\Source\"+SourceName;
+    SRCFullPathFileName=GetProjectPath()+"\TEMPLATES_GENERATED\Synotique\Source\" + SourceName+".txt";
     SRCFileHandle = FileOpen(SRCFullPathFileName,"rt");
-
-    if (SRCFileHandle==0) then MessageBox(SRCFullPathFileName,"nooooo");  end
+    if (SRCFileHandle==0) then MessageBox(SRCFullPathFileName,"noo : "+ FileExist(SRCFullPathFileName));  end
 
     FullPathFileName = Template;
 
@@ -244,7 +237,7 @@ function Void CreateSynoptiques_DESK( String Template , String SourceName , Stri
         //P5 = StrPos(Ligne,"  #EVN:");
 
         IF( P4!=0 )then
-            Ligne = Synoptique_Get_List( MeasureViewLigne , Ligne );
+            //Ligne = Synoptique_Get_List( MeasureViewLigne , Ligne );
             //MessageBox(Ligne,View);
         end
 
@@ -253,13 +246,15 @@ function Void CreateSynoptiques_DESK( String Template , String SourceName , Stri
         Ligne=SG_F_AND_R(Ligne,PATH_SEARCH,PATH_LABEL + PATH_REPLACE);
 
 
+        //MessageBox(Ligne,StrPos( Ligne, ClickSearch ));
+
         IF ( StrPos( Ligne, ClickSearch ) != 0 && Ligne != CLOSECLICK) Then
             GATEPART = SG_Fetch(Ligne,1,":");
             TemplateCalled = SG_Fetch(Ligne,2,":");
 
             TemplateCalled = Create_CallFunction( TemplateCalled , View , PreviousView, "DESK" , NewName, PATH_REPLACE );
             Ligne = GATEPART + ":"+ TemplateCalled;
-            //MessageBox(Ligne,SourceName);
+            //MessageBox(Ligne,TemplateCalled);
         End
 
         FileWriteLn(FileHandle,Ligne);
@@ -350,9 +345,9 @@ function Void CreateSynoptiques_WEB( String Template , String SourceName , Strin
 
      FileCopy(SRCFullPathFileName,Template,False);
 
-    SRCFullPathFileName=GetProjectPath()+"\TEMPLATES_GENERATED\Synotique\Source\" + SourceName;
+    SRCFullPathFileName=GetProjectPath()+"\TEMPLATES_GENERATED\Synotique\Source\" + SourceName+".txt";
     SRCFileHandle = FileOpen(SRCFullPathFileName,"rt");
-    if (SRCFileHandle==0) then MessageBox(SRCFullPathFileName,"nooooo");  end
+    if (SRCFileHandle==0) then MessageBox(SRCFullPathFileName,"nooooo : "+ FileExist(SRCFullPathFileName));  end
 
     //FullPathFileName = "C:\ProgramData\Winlog Pro 3\Projects\Energy_Supervisor_DEMO_V46\TEMPLATES_GENERATED\Synotique\WebTemplates\TEmp;
     FullPathFileName = Template;
@@ -787,7 +782,7 @@ function String Create_CallFunction( String TemplateCalled , String View , Strin
     If (FunctionFound == False ) Then
      Synoptique_CreateFunction( Function_Header , NewTemplateName, SYNOPTIQUE_FILE_Code , PATH_REPLACE);
      ///Create Template 17 Liste
-     //MessageBox(TemplateCalled,"");
+     MessageBox(TemplateCalled,"");
      Create_T17_List( Synoptique_Name ,  NewTemplateName , PATH_REPLACE );
     End
 
@@ -955,7 +950,7 @@ function void Create_T17_List( String Synoptique_Name ,  String NEXT_T , String 
 
 end
 ///////////////////////////////////////////////////////////////////////////////
-function void Create_Template_17( )
+function void Create_Template_17()
 
     Int FileHandle = FileOpen(NEXT_T_LIST,"rt");
     String LIGNE;

@@ -1,5 +1,2 @@
 CODE;NAME;ACCESS
-*;¤ All Unite.            ;32767
-M270;¤ Administration.       ;1
-M280;¤ Magasin.              ;1
-M290;¤ Refectoire.           ;1
+*;¤ Tout POINT DE MESURE. ;32767

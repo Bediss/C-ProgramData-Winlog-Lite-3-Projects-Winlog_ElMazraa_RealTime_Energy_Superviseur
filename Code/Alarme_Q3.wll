@@ -337,7 +337,7 @@ function void Q3_Execution()
 
                     i = i+1;
                     ////
-                    //MessageBox(CurrFile,"i");
+                    //MessageBox(CurrFile,i);
                     Email_ToExecute(CurrFile,Q2_Code,Q2_Trigger);
                     ////
 
@@ -477,6 +477,8 @@ Function Bool SendEMail( string Email_TO, String Email_CC, string Email_Subject,
 
     AttacheExist = FileExist( Email_Attach );
 
+   //MessageBox(MAIL_SMTP_SERVER,MAIL_SMTP_PW);
+
     Ritorno = SendMail( Timeout,
 
                         MAIL_SMTP_SERVER,
@@ -497,7 +499,8 @@ Function Bool SendEMail( string Email_TO, String Email_CC, string Email_Subject,
       Else
        SendFlag = False;
        //Q3_Event_Runtime_LOG( "Send MAIL : KO  " +  Ritorno);
-       Q3_Event_Runtime_LOG(" SendMail : "+ SendFlag +" || Attache : " + Email_Attach);
+       Q3_Event_Runtime_LOG(" SendMail : "+ SendFlag+" " + Ritorno);
+       //MessageBox(Ritorno,"Ritorno");
       End
 
       Return SendFlag;

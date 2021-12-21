@@ -251,96 +251,12 @@
   #Object: Button
     #ID: 0
     #Pos: 271,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ All Unite.            
+    #Label: ¤ Tout POINT DE MESURE. 
     #Font: Courier New,12,0001
      #TabOrder: 0
      #Access: 1
      #OnClick: Template,10_1_Tableau
    #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,242
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Froid.                
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_2_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,263
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ ElMazraa Eclair.      
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_3_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,284
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Eau.                  
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_4_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,305
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Chaufferie.           
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_5_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,326
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Post Transfo.         
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_6_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,347
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ SalleOsmose.          
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_7_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,368
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Zonne Haute.          
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,10_8_Tableau
-   #EndObj
-
-
-
-
-
-
-
 

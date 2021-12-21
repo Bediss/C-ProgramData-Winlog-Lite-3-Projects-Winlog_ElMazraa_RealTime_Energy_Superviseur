@@ -251,48 +251,12 @@
   #Object: Button
     #ID: 0
     #Pos: 271,221
-    #Size: 268,20
+    #Size: 268,25
     #Cursor: 0
-    #Label: ¤ All Unite.            
+    #Label: ¤ Tout POINT DE MESURE. 
     #Font: Courier New,12,0001
      #TabOrder: 0
-     #Access: 1
+     #Access: 0
      #OnClick: Template,11_1_Tableau
    #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,242
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Administration.       
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,11_2_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,263
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Magasin.              
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,11_3_Tableau
-   #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 271,284
-    #Size: 268,20
-    #Cursor: 0
-    #Label: ¤ Refectoire.           
-    #Font: Courier New,12,0001
-     #TabOrder: 0
-     #Access: 1
-     #OnClick: Template,11_4_Tableau
-   #EndObj
-
-
-
 

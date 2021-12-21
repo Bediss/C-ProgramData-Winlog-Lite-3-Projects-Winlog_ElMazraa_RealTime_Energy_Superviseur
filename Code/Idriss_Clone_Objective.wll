@@ -37,8 +37,7 @@ int K;
 
    CCode=Fetch_Alarm_search(Admin_View_CurrentLine,1,";");
    Energy=Fetch_Alarm_search(Admin_View_CurrentLine,3,";");
-   if GetDigGateValue("QuerrySelect",0)==0 && GetDigGateValue("QuerrySelect",1) == 0 && GetDigGateValue("QuerrySelect",2)== 0 && GetDigGateValue("QuerrySelect",3)== 0 && GetDigGateValue("QuerrySelect",4)== 0 && GetDigGateValue("QuerrySelect",5)== 0 && GetDigGateValue("QuerrySelect",6)== 0 then
-            MessageBox("Pour Cloner il faut selectionner au moin un seul filtre ","Info");return; end
+
         int f;
           if CCode=="" then MessageBox("Selectionnez un Compteur pour cloner l'objective SVP","info"); return ; end
             FileCloned  = ENV_PATH+"\Data\Objective\"+Energy+"\"+CCode+"_Ob.txt";
@@ -145,7 +144,8 @@ int KOP;
 int Pos;
    Code=Fetch_Alarm_search(Admin_View_CurrentLine,1,";");
    Energy=Fetch_Alarm_search(Admin_View_CurrentLine,3,";");
-
+    if GetDigGateValue("QuerrySelect",0)==0 && GetDigGateValue("QuerrySelect",1) == 0 && GetDigGateValue("QuerrySelect",2)== 0 && GetDigGateValue("QuerrySelect",3)== 0 && GetDigGateValue("QuerrySelect",4)== 0 && GetDigGateValue("QuerrySelect",5)== 0 && GetDigGateValue("QuerrySelect",6)== 0 then
+            MessageBox("Pour Cloner il faut selectionner au moin un seul filtre ","Info");return; end
     if Code=="" THEN MessageBox("Selectionnez un Compteur pour cloner l'objective SVP","info");end
     ToClounFullPathFileName = ENV_PATH+"\Files\AllCompteur\TOCloneOBJList.txt";
     ToClounFileHandle=FileOpen(ToClounFullPathFileName,"wt");

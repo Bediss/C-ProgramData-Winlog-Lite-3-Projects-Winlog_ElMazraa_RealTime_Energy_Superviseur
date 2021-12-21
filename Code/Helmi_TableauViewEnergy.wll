@@ -348,7 +348,7 @@ function int AnalyseQuerryCompteur( string CompteurQuery, int FileHandle , Strin
 
     Int CompteurNbr =0;
 
-    //MessageBox(DATASOURCE,"");
+    //MessageBox(CompteurQuery , DATASOURCE );
     IF ( DATASOURCE == "FILE" ) Then
         CompteurNbr = File_Query( CompteurQuery , FileHandle , From , HeaderLigne_BU );
     Else
@@ -613,7 +613,7 @@ function int DB_Query( string CompteurQuery, int FileHandle , String From , Stri
     End
 
         //MessageBox(ConfigLineHeader,"ConfigLineHeader");
-       //MessageBox(ALLCOMPTEUR_HEARDER,"ALLCOMPTEUR_HEARDER");
+        //MessageBox(ConfigLine,"ALLCOMPTEUR_HEARDER");
 
     /// 1. Create DB config File
     ConfigDB_FileHandle = FileOpen(ConfigDB_FullFilePath,"wt");

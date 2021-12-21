@@ -238,8 +238,8 @@ end
 function Int INITIALSATION_STEP1()
 
     Int MAX_STEP1;
-    Int SiteLEVEL_MIN = 0;
-    Int SiteLEVEL_MAX = 2;
+    Int SiteLEVEL_MIN = 2;
+    Int SiteLEVEL_MAX = 4;
 
      MAX_STEP1 = Create_BU_File_ByLEVEL( SiteLEVEL_MIN , SiteLEVEL_MAX );
      Source_STEP1 = SiteList( MAX_STEP1 );
@@ -250,7 +250,7 @@ end
 function Int INITIALSATION_STEP2( String CODE, String NAME, String ACCESS)
 
     Int MAX_STEP2;
-    Int SiteLEVEL_MAX = 3;
+    Int SiteLEVEL_MAX = 6;
 
      MAX_STEP2 = Create_BU_File_ByPCODE( CODE , SiteLEVEL_MAX );
      Source_STEP2 = BUList( MAX_STEP2 );
@@ -578,10 +578,10 @@ function void Modif_Templates_5STEPs(String TemplateName, String ModifLigne , St
             FileReadLn(SourceFileHandle);
 
             IF (Do_ONCLICK == True) Then
-                FileWriteLn(WFileHandle,ACCESS + ACCESS_VALUE);//ACCESS
+                FileWriteLn(WFileHandle,ACCESS + StrToInt( ACCESS_VALUE ) );//ACCESS
                 FileWriteLn(WFileHandle,CLICK + Lien);//CLICK
             Else
-                FileWriteLn(WFileHandle,ACCESS + ACCESS_DEV);//ACCESS
+                FileWriteLn(WFileHandle,ACCESS + ACCESS_DEV );//ACCESS
             End
 
             FileWriteLn(WFileHandle,FileReadLn(SourceFileHandle));//end Object

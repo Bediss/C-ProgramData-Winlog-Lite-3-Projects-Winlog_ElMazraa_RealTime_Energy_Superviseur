@@ -526,6 +526,8 @@ Function Void Create_DrillLevel(string PF_PDV ,String Energy,String Parent,Strin
                                         K = ExecuteComplexeQuery(   Energy , Parent , C_Level ,
                                                             FetchBU(ReadLigne,16,";") , "*", "*" , LEVELFileHandle ,
                                                             "BU_S" , WriteLigne ) ;
+
+                                        MessageBox(FetchBU(ReadLigne,16,";"),K);
                                     End
 
                                     TOTALROW = TOTALROW+K;

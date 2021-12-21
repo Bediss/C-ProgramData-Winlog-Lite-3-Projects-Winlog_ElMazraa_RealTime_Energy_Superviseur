@@ -594,27 +594,13 @@
 #EndObj
 #Object: Button
   #ID: 0
-  #Pos: 10,452
-  #Size: 80,22
-  #Cursor: 0
-  #Label: Enregistrer
-  #Font: Segoe UI,10,0001
-  #FunctionKey: -1
-  #TabOrder: 15
-  #Access: 0
-  #Enabled: 154,6,3
-  #OnClick: StartF,Tableaux_Commit_Report()
-  #OnClick: Close
-#EndObj
-#Object: Button
-  #ID: 0
   #Pos: 187,457
   #Size: 90,27
   #Cursor: 0
   #Label: Annuler
   #Font: Segoe UI,12,0001
   #FunctionKey: -1
-  #TabOrder: 16
+  #TabOrder: 15
   #Access: 0
   #OnClick: Close
 #EndObj
@@ -679,7 +665,7 @@
   #Label: CheckBox
   #NeedApply: 0
   #OnMask: 169,0004,0004
-  #TabOrder: 17
+  #TabOrder: 16
   #Access: 0
 #EndObj
 #Object: Label
@@ -717,7 +703,7 @@
   #Label: CheckBox
   #NeedApply: 0
   #OnMask: 169,0002,0002
-  #TabOrder: 18
+  #TabOrder: 17
   #Access: 0
 #EndObj
 #Object: CheckBox
@@ -730,7 +716,7 @@
   #Label: CheckBox
   #NeedApply: 0
   #OnMask: 169,0001,0001
-  #TabOrder: 19
+  #TabOrder: 18
   #Access: 0
 #EndObj
 #Object: Edit
@@ -744,7 +730,7 @@
   #Gate: 113
   #NeedApply: 0
   #Style: 0
-  #TabOrder: 20
+  #TabOrder: 19
   #Access: 0
 #EndObj
 #Object: CheckBox
@@ -757,7 +743,7 @@
   #Label: CheckBox
   #NeedApply: 0
   #OnMask: 169,0008,0008
-  #TabOrder: 21
+  #TabOrder: 20
   #Access: 0
 #EndObj
 #Object: Label
@@ -783,7 +769,7 @@
   #Label: Distrubution
   #NeedApply: 0
   #OnMask: 170,0007,0004
-  #TabOrder: 22
+  #TabOrder: 21
   #Access: 0
   #Enabled: 169,5,8
 #EndObj
@@ -797,7 +783,7 @@
   #Label: Production
   #NeedApply: 0
   #OnMask: 170,0003,0002
-  #TabOrder: 23
+  #TabOrder: 22
   #Access: 0
   #Enabled: 169,5,8
 #EndObj
@@ -811,7 +797,7 @@
   #Label: Consommation
   #NeedApply: 0
   #OnMask: 170,0001,0001
-  #TabOrder: 24
+  #TabOrder: 23
   #Access: 0
   #Enabled: 169,5,8
 #EndObj

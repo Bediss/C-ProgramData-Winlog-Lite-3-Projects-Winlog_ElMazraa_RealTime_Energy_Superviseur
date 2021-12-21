@@ -1,0 +1,4 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G04;Ecart PD Gaz;Gaz;CG1;ElMazeraa Gaz;1;*;*;*;*;*;*;CG02-CG06;Site;*;*;VMZ;*;*;CG02~-~CG06~;VMZ Prod Gaz~-~VMZ Distrib Gaz~;;;0;Ecart Production/Distribution Gaz;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低GC;Production;Gaz;CG1;ElMazeraa Gaz;2;S200;M200;Z100;STEG;ElMazeraa;Production;F(CGB);Type de Site;*;*;*;*;*;F~(~CGB~)~;F~(~Utilitaire~)~;;;0;Production;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低GB;Utilitaire;Gaz;CG1;ElMazeraa Gaz;2;S200;M200;Z200;STEG;ElMazeraa;Utilitaire;F(CGB);Type de Site;*;*;*;*;*;F~(~CGB~)~;F~(~Utilitaire~)~;;;0;Utilitaire;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G1;ElMazeraa Gaz;Gaz;CG01;1;S200;M200;M200;STEG;ElMazeraa;ElMazeraa

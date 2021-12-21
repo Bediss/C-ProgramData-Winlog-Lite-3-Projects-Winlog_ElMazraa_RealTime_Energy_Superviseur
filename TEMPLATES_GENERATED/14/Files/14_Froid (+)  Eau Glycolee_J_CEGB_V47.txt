@@ -1,0 +1,2 @@
+F:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;§CEGB1;Froid;Froid (+)  Eau Glycolee;CEGB;Utilitaire;3;*;*;MA00;*;*;Froid;F(CEGB1);Usine;Froid;*;Froid;*;*;F~(~CEGB1~)~;F~(~Froid~)~;;;0;Froid;*;*
+P:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;§CEGB;Utilitaire;Froid (+)  Eau Glycolee;CEG1;2;*;*;Z200;*;*;Utilitaire

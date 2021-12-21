@@ -1,0 +1,8 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25A;C3_PLUMEUSE1 ;Eau Brute;CEB253;CB18_SANIT-ECEF ;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~;!~;;;;;2;C3_PLUMEUSE1 ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25B;C4_PLUMEUSE2 ;Eau Brute;CEB253;CB18_SANIT-ECEF ;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~;!~;;;;;2;C4_PLUMEUSE2 ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25C;C5_PLUMEUSE3 ;Eau Brute;CEB253;CB18_SANIT-ECEF ;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~;!~;;;;;2;C5_PLUMEUSE3 ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25D;C31_WC-froid ;Eau Brute;CEB253;CB18_SANIT-ECEF ;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C31_ Toilettes lavabos douche froid ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25E;C27_vestiaire;Eau Brute;CEB253;CB18_SANIT-ECEF ;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C27_ vestiaire Douches eau chaud ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25F;C66_A-echaudoir;Eau Brute;CEB253;CB18_SANIT-ECEF ;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C66_A-point -echaudoire1-Eau-chaude ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25G;C77_A-echaudoir               ;Eau Brute;CEB253;CB18_SANIT-ECEF ;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C77_A-point -echaudoire2-Eau-chaude               ;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB253;CB18_SANIT-ECEF ;Eau Brute;CEB25;4;*;M1V1;D200;*;Bassin1000;Dick

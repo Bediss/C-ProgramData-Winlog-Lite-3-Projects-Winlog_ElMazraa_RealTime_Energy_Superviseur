@@ -1,0 +1,7 @@
+F:#2000;m3-J#0;Inc-J#8;低AC06;VMZ Disrtrib AC;Air Comprime;CAC0;VMZ AC;1;*;V100;*;*;VMZ;*;Reel;Site;*;*;VMZ;!~*;!~*;;;;;2;VMZ Disrtribution Air Comprime;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC01;VMZ Conso AC;Air Comprime;CAC0;VMZ AC;1;*;*;V100;*;*;VMZ;CAC1;Site;*;CPT0;VMZ;*;*;CAC1~;ElMazeraa AC~;;;0;VMZ Consommation Air Comprime;VMZ Tonnage;*
+F:#2000;m3-J#0;Inc-J#8;低AC02;VMZ Prod AC;Air Comprime;CAC0;VMZ AC;1;V100;*;*;VMZ;*;*;CACB;Site;*;*;VMZ;*;*;CACB~;Utilitaire~;;;0;VMZ Production Air Comprimer;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC03;Ecart PC AC;Air Comprime;CAC0;VMZ AC;1;*;*;*;*;*;*;CAC02-CAC01;Site;*;*;VMZ;*;*;CAC02~-~CAC01~;VMZ Prod AC~-~VMZ Conso AC~;;;0;Ecart Production/Consommation Air Comprime;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC04;Ecart PD AC;Air Comprime;CAC0;VMZ AC;1;*;*;*;*;*;*;CAC02-CAC06;Site;*;*;VMZ;*;*;CAC02~-~CAC06~;VMZ Prod AC~-~VMZ Disrtrib AC~;;;0;Ecart Production/Distribution Air Comprime;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC05;Ecart DC AC;Air Comprime;CAC0;VMZ AC;1;*;*;*;*;*;*;CAC06-CAC01;Site;*;*;VMZ;*;*;CAC06~-~CAC01~;VMZ Disrtrib AC~-~VMZ Conso AC~;;;0;Ecart Distribution/Consommation Air Comprime;*;*
+P:#2000;m3-J#0;Inc-J#8;低AC0;VMZ AC;Air Comprime;*;0;*;*;*;*;*;*

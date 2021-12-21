@@ -1,0 +1,4 @@
+F:#2000;KWf-J#0;Inc-J#8;低EG1C7;Ressuage 3;Froid (+)  Eau Glycolee;CEG1C;SMF Ressuage3;5;*;M130;M131;*;SMF Ressuage3;Ressuage 3;Reel;Atelier;Froid;*;Froid;!~*;!~*;;;;;2;Ressuage 3;*;*
+F:#2000;KWf-J#0;Inc-J#8;低EG1C8;PetFood EG;Froid (+)  Eau Glycolee;CEG1C;SMF Ressuage3;5;*;M130;M240;*;SMF Ressuage3;PetFood;Reel;Atelier;Froid;CPT14;Froid;!~*;!~*;;;;;2;PetFood Eau Glycolee;PetFood T;*
+F:#2000;KWf-J#0;Inc-J#8;低EG1C81;Ch+PF,Ch+MP;Froid (+)  Eau Glycolee;CEG1C;SMF Ressuage3;5;*;M130;M240;*;SMF Ressuage3;PetFood;Reel;Atelier;Froid;*;Froid;!~*;!~*;;;;;2;Ch+PF,Ch+MP;*;*
+P:#2000;KWf-J#0;Inc-J#8;低EG1C;SMF Ressuage3;Froid (+)  Eau Glycolee;CEGB1;4;*;M130;*;*;SMF Ressuage3;*

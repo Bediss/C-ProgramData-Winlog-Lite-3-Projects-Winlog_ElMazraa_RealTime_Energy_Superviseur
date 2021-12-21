@@ -1,0 +1,3 @@
+F:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CV1;ElMazeraa Vap;Vapeur;CV01;VMZ Conso Vap;1;*;*;M200;*;*;ElMazeraa;F(CV1);Site;*;CPT1;ElMazeraa;*;*;F~(~CV1~)~;F~(~ElMazeraa Vap~)~;;;0;ElMazeraa Vapeur;ElMazraa T;*
+F:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CV2;Coproduit Vap;Vapeur;CV01;VMZ Conso Vap;1;*;*;C200;*;*;CoProduit;Reel;Site;*;CPT3;CoProduit;!~*;!~*;;;;;3;Coproduit Vapeur;CoProduit T;*
+P:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CV01;VMZ Conso Vap;Vapeur;CV0;1;*;*;V100;*;*;VMZ

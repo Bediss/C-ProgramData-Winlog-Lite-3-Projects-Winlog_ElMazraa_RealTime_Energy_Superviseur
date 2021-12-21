@@ -1,0 +1,59 @@
+#Version: 0x030222
+#Access: 0
+#Pos: 750,260
+#Size: 500,300
+#BkColor: clWhite
+#Gates: 39
+  #CMP: CPT3,4
+  #CMP: CPT3,12
+  #CMP: CC3,3
+  #CMP: CC3,1003
+  #CMP: CC3,36
+  #NUM: OE3,3
+  #CMP: CC3,11
+  #CMP: CC3,1011
+  #CMP: CC3,48
+  #NUM: OE3,11
+  #CMP: CC3,32
+  #CMP: CC3,1032
+  #CMP: CC3,44
+  #NUM: OE3,32
+  #CMP: CV2,3
+  #CMP: CV2,1003
+  #CMP: CV2,17
+  #NUM: OV2,3
+  #CMP: CV2,7
+  #CMP: CV2,1007
+  #CMP: CV2,21
+  #NUM: OV2,7
+  #CMP: CV2,11
+  #CMP: CV2,1011
+  #CMP: CV2,25
+  #NUM: OV2,11
+  #CMP: CE3,3
+  #CMP: CE3,1003
+  #CMP: CE3,15
+  #NUM: OH3,3
+  #CMP: CE3,7
+  #CMP: CE3,1007
+  #CMP: CE3,19
+  #NUM: OH3,7
+  #CMP: CE3,11
+  #CMP: CE3,1011
+  #CMP: CE3,23
+  #NUM: OH3,11
+  #NUM: Template_Control,0
+#PBkBmp: 0,0,500,300,Bilan.png
+#Style: FixedNoBorder
+#StayOnTop: 0
+#Object: Frame
+  #ID: 0
+  #Pos: 2,5
+  #Size: 495,290
+  #BkColor: clNone
+  #Style: 3
+  #TabOrder: 1
+  #Access: 0
+  #Enabled: 38,6,13
+  #NewOnDbClk: StartF,Layout_Part_1()
+#EndObj

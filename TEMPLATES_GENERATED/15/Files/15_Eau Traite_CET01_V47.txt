@@ -1,0 +1,4 @@
+F:#2000;m3-J#0;Inc-J#8;低ET011;Station1;Eau Traite;CET01;Salle Osmose;1;M1V2;*;M1V3;Bassin2000;*;Bassin3000;Reel;Site;Eau;*;VMZ;!~;!~;;;;;2;Station1;*;*
+F:#2000;m3-J#0;Inc-J#8;低ET012;Station2;Eau Traite;CET01;Salle Osmose;1;M1V2;*;M1V3;Bassin2000;*;Bassin3000;Reel;Site;Eau;*;VMZ;!~;!~;;;;;2;Station2;*;*
+F:#2000;m3-J#0;Inc-J#8;低ET013;Station3;Eau Traite;CET01;Salle Osmose;1;M1V2;*;M1V3;Bassin2000;*;Bassin3000;Reel;Site;Eau;*;VMZ;!~;!~;;;;;2;Station3;*;*
+P:#2000;m3-J#0;Inc-J#8;低ET01;Salle Osmose;Eau Traite;CET0;1;M1V2;*;M1V3;Bassin2000;*;Bassin3000

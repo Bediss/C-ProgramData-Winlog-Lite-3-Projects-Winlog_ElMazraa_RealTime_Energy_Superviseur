@@ -1,0 +1,957 @@
+#Version: 0x030217
+#Access: 0
+#Pos: 0,0
+#Size: 1000,450
+#BkColor: clWhite
+#Gates: 36
+  #CMP: CCB1,3
+  #CMP: CCB1,1003
+  #CMP: CCB1,36
+  #NUM: OEB1,3
+  #CMP: CCB1,11
+  #CMP: CCB1,1011
+  #CMP: CCB1,48
+  #NUM: OEB1,11
+  #CMP: CCB1,32
+  #CMP: CCB1,1032
+  #CMP: CCB1,44
+  #NUM: OEB1,32
+  #CMP: CF111,3
+  #CMP: CF111,1003
+  #CMP: CF111,17
+  #NUM: OF111,3
+  #CMP: CF111,7
+  #CMP: CF111,1007
+  #CMP: CF111,21
+  #NUM: OF111,7
+  #CMP: CF111,11
+  #CMP: CF111,1011
+  #CMP: CF111,25
+  #NUM: OF111,11
+  #CMP: CED,3
+  #CMP: CED,1003
+  #CMP: CED,15
+  #NUM: OHD,3
+  #CMP: CED,7
+  #CMP: CED,1007
+  #CMP: CED,19
+  #NUM: OHD,7
+  #CMP: CED,11
+  #CMP: CED,1011
+  #CMP: CED,23
+  #NUM: OHD,11
+#Style: Standard
+#StayOnTop: 0
+#Object: Bitmap
+  #ID: 0
+  #Pos: 0,0
+  #Size: 1000,450
+  #Cursor: 0
+  #PBmpFile: 0,10_3.png
+  #TabOrder: 0
+  #CycleTime: 0,0
+  #Access: 0
+  #Object: Frame
+    #ID: 0
+    #Pos: 30,190
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 0
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: KWh-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 0
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 1
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 2
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 3
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 110,160
+    #Size: 135,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Gotham Book,9,0000
+    #Label: Electrique
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 435,160
+    #Size: 135,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Gotham Book,9,0000
+    #Label: Froid
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 755,160
+    #Size: 135,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Gotham Book,9,0000
+    #Label: Eau
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 30,270
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 1
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: KWh/T-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 4
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 5
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 6
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 7
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 30,353
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 2
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: Inc-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,20
+      #Size: 280,30
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 8
+      #Label: %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 9
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 10
+      #Label: %5.0lf
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 11
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 353,190
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 3
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: KWf-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 12
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 13
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 14
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 15
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 353,270
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 4
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: KWf/T-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 16
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 17
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 18
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 19
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 353,353
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 5
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: Inc-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 20
+      #Label: %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 21
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 22
+      #Label: %5.0lf
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 23
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 676,190
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 6
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: m3-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 24
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 25
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 26
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 27
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 676,270
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 7
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: m3/T-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 28
+      #Label: %.*f
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 29
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 30
+      #Label: %.*f
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 31
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 676,353
+    #Size: 300,67
+    #BkColor: clNone
+    #Style: 1
+    #TabOrder: 8
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 12,8
+      #Size: 35,10
+      #BkColor: clBlack
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Medium,5,0000
+      #Label: Inc-A
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 10,18
+      #Size: 280,33
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: DS-Digital,20,0001
+      #Gate: 32
+      #Label: %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Gauge
+      #ID: 0
+      #Pos: 10,51
+      #Size: 280,4
+      #BkColor: clNone
+      #Cursor: 0
+      #Color: 22,159,99
+      #Font: Segoe UI,9,0000
+      #Gate: 33
+      #Range: 0,100
+      #Style: Standard
+      #BmpMinOffset: 0
+      #BmpMaxOffset: 0
+      #Segs: 1
+      #Spaces: 0
+      #Dir: 0
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 62,8
+      #Size: 40,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 34
+      #Label: %5.0lf
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 100,8
+      #Size: 42,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,7,0000
+      #Gate: 35
+      #Label: - %5.0lf
+      #Align: 38
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 47,8
+      #Size: 15,10
+      #BkColor: clNone
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,5,0000
+      #Label: J-1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+#EndObj

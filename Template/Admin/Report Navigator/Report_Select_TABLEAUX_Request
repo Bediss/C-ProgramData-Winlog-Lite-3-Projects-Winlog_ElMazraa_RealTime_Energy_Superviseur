@@ -1,0 +1,269 @@
+#Version: 0x030222
+#Name: Tableaux Selector
+#Access: 0
+#Pos: 220,275
+#Size: 259,329
+#BkColor: clWhite
+#Gates: 13
+  #STR: EmailView1,0
+  #STR: EmailView2,0
+  #STR: EmailView3,0
+  #STR: EmailView4,0
+  #STR: EmailView5,0
+  #STR: EmailView6,0
+  #STR: EmailView7,0
+  #STR: EmailView8,0
+  #STR: EmailView9,0
+  #STR: EmailView10,0
+  #NUM: PageAllCommpteurView,0
+  #STR: BU_Energy,0
+  #NUM: Template_Control,0
+#Style: Fixed
+#StayOnTop: 1
+#Object: Button
+  #ID: 0
+  #Pos: 45,295
+  #Size: 180,25
+  #Cursor: 0
+  #Label: Annuler
+  #Font: Segoe UI,9,0000
+  #FunctionKey: -1
+  #TabOrder: 0
+  #Access: 0
+  #OnClick: Close
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 175,260
+  #Size: 30,20
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clBlack
+  #Font: Gotham Book,12,0000
+  #Label: >>
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Tableaux_End()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 145,260
+  #Size: 30,20
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clBlack
+  #Font: Gotham Book,12,0000
+  #Label: >
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Tableaux_Add()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 115,260
+  #Size: 30,20
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clBlack
+  #Font: Gotham Book,12,0000
+  #Gate: 10
+  #Label: %.d
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+  #Enabled: 12,6,11
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 85,260
+  #Size: 30,20
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clBlack
+  #Font: Gotham Book,12,0000
+  #Label: <
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Tableaux_Sub()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 55,260
+  #Size: 30,20
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clBlack
+  #Font: Gotham Book,12,0000
+  #Label: <<
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Tableaux_First()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,235
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 9
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_10()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,210
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 8
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_9()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,185
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 7
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_8()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,160
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 6
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_7()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,135
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 5
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_6()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,110
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 4
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_5()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,85
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 3
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_4()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,60
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 2
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_3()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,10
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 0
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_1()
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 10,35
+  #Size: 240,25
+  #BkColor: clWhite
+  #Cursor: 104
+  #TxtColor: clBlack
+  #Font: Gotham Book,10,0000
+  #Gate: 1
+  #Label:   %s
+  #Align: 36
+  #Frame: 4
+  #Access: 0
+  #Enabled: 12,6,11
+  #NewOnClick: StartF,Report_Select_Tableaux_Navigator_2()
+#EndObj

@@ -1,0 +1,2 @@
+F:#2000;KWf-J#0;Inc-J#8;§CF111;Froid;Froid;CF11;Utilitaire;3;*;*;MA00;*;*;Froid;CAMB1+CEGB1;Usine;*;*;Froid;*;*;CAMB1~+~CEGB1~;Froid~+~Froid~;;;0;Froid;*;*
+P:#2000;KWf-J#0;Inc-J#8;§CF11;Utilitaire;Froid;CF1;2;*;*;Z200;*;*;Utilitaire

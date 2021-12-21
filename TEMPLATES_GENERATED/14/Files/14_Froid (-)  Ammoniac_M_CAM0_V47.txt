@@ -1,0 +1,2 @@
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CAM1;ElMazeraa Am;Froid (-)  Ammoniac;CAM0;VMZ Ammoniac;1;*;*;M200;*;*;ElMazeraa;F(CAM1);Site;Froid;CPT1;ElMazeraa;*;*;F~(~CAM1~)~;F~(~ElMazeraa Am~)~;;;0;ElMazeraa Ammoniac;ElMazraa T;*
+P:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CAM0;VMZ Ammoniac;Froid (-)  Ammoniac;*;0;*;*;*;*;*;*

@@ -1,0 +1,2 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CET131;CT41_ADM COP;Eau Traite;CET13;CT17_Coproduit;4;M1C0;M1V3;M152E;SalleOsmose;Bassin3000;COP-Osmose-ADM;Reel;Process;Eau;*;CoProduit;!~;!~;;;;;2;CT41_Osmose ADM coproduit;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CET13;CT17_Coproduit;Eau Traite;CETA;3;M1C0;M1V3;C200;SalleOsmose;Bassin3000;CoProduit

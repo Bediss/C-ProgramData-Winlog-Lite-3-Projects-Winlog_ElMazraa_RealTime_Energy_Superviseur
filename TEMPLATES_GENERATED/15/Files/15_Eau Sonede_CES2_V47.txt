@@ -1,0 +1,4 @@
+F:#2000;m3-J#0;Inc-J#8;低ES12;CS11_DICK-admin ;Eau Sonede;CES2;Dick Eau Sonede;2;M1S0;*;D200;SONEDE;*;Dick;Reel;Type de Site;Eau;*;Dick;!~;!~;;;;;3;CS11_DICK-administration;*;*
+F:#2000;m3-J#0;Inc-J#8;低ES13;CS12_DICK-usine ;Eau Sonede;CES2;Dick Eau Sonede;2;M1S0;*;D200;SONEDE;*;Dick;Reel;Type de Site;Eau;*;Dick;!~;!~;;;;;3;CS12_DICK-usine ;*;*
+F:#2000;m3-J#0;Inc-J#8;低ES17;CS2_DICK;Eau Sonede;CES2;Dick Eau Sonede;2;M1S0;*;D200;SONEDE;*;Dick;Reel;Type de Site;Eau;*;Dick;!~;!~;;;;;3;CS2_DICK;*;*
+P:#2000;m3-J#0;Inc-J#8;低ES2;Dick Eau Sonede;Eau Sonede;CES01;1;M1S0;*;D200;SONEDE;*;Dick

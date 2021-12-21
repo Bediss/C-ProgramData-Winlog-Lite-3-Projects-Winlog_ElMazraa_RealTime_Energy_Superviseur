@@ -1,0 +1,4 @@
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1A;SMF ElMazeraa;Electrique;CCB1;Froid Elec;4;S200;*;M110;STEG;*;SMF-ElMazeraa;F(CC1A)+CC1Q6+CC1Q10+CC1J3;Process;*;*;Froid;*;*;F~(~CC1A~)~+~CC1Q6~+~CC1Q10~+~CC1J3~;F~(~SMF ElMazeraa~)~+~MPF ancienne  ~+~SDM2 (RES+PETF)~+~SMF ElMazraaTR3~;;;0;SalleMachine Froid ElMazeraa;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1B;SMF Surgele;Electrique;CCB1;Froid Elec;4;S200;M1B0;M120;STEG;PosteTR6;SMF Surgele;CC1M2;Process;*;*;Froid;*;*;CC1M2~;SMF Surgele TR6~;;;0;SalleMachine Froid Surgele;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低CB5;SMF Ressuage3;Electrique;CCB1;Froid Elec;4;S200;M1A0;M130;STEG;PosteTR5;SMF Ressuage3;CC1C7;Process;*;*;Froid;*;*;CC1C7~;SMF Ress3 TR5~;;;0;SalleMachine Froid Ressuage3;*;*
+P:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低CB1;Froid Elec;Electrique;CCB;3;*;*;MA00;*;*;Froid

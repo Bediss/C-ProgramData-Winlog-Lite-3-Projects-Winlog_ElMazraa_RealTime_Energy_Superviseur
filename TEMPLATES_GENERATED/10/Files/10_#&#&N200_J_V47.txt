@@ -1,0 +1,2 @@
+m3-J-1#12;m3-J#0;m3-J#0;m3/T-J-1#16;m3/T-J#4;m3/T-J#4;Inc-J-1#20;Inc-J#8;Inc-J#8;#1000;#1004;#1008;§CG021;Cogen Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;*;N200;STEG;*;Cogeneration;Reel;Site;*;*;Cogeneration;!~*;!~*;;;;;3;Cogeneration Gaz;*;*
+m3-J-1#12;m3-J#0;m3-J#0;m3/T-J-1#16;m3/T- J#4;m3/T- J#4;Inc-J-1#20;Inc-J#8;Inc-J#8;#1000;#1004;#1008;§CE5;Cogen Eau;Eau;CE01;VMZ Conso Eau;1;*;*;N200;*;*;Cogeneration;CET034;Site;*;*;Cogeneration;*;*;CET034~;CT9_Cogeneration~;;;1;Cogeneration Eau;*;*

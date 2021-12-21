@@ -1,0 +1,4 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EBAA;Utilitaire;Eau Brute;CEB1;CB8_ElMazraa;2;*;M1V1;Z200;*;Bassin1000;Utilitaire;CEBAA1;Type de Site;Eau;*;*;*;*;CEBAA1~;Froid Eau Brute~;;;0;Utilitaire;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EBA;Production;Eau Brute;CEB1;CB8_ElMazraa;2;*;M1V1;Z100;*;Bassin1000;Production;F(CEBA);Type de Site;Eau;*;*;*;*;F~(~CEBA~)~;F~(~Production~)~;;;0;Production;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EBB;Facility EB;Eau Brute;CEB1;CB8_ElMazraa;2;*;M1V1;Z400;*;Bassin1000;Admin + Facility;F(CEBB);Type de Site;Eau;*;*;*;*;F~(~CEBB~)~;F~(~Facility EB~)~;;;1;Facility Eau Brute;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB1;CB8_ElMazraa;Eau Brute;CEB10;1;*;M1V1;M200;*;Bassin1000;ElMazeraa

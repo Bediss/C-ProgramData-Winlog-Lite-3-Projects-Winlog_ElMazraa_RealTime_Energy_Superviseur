@@ -1,0 +1,5 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF13;CF2_Jenene ;Eau Forage;CEF1C;G-Forage VMZ;7;M1J0;*;*;Jenene;*;*;Reel;Machine;Eau;*;Zone Haute;!~;!~;;;;;2;CF2_Jenene ;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF16;CF5_D80-B1000;Eau Forage;CEF1C;G-Forage VMZ;7;M1P0;*;M1V1;Sondage D80 ;*;Bassin1000;Reel;Machine;Eau;*;Zone Haute;!~;!~;;;;;2;CF5_D80 vers 1000 M3;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF17;CF6_Rayhane;Eau Forage;CEF1C;G-Forage VMZ;7;M1N0;*;M1V1;Rayhane;*;Bassin1000;Reel;Machine;Eau;*;Zone Haute;!~;!~;;;;;2;CF6_Rayhane;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF19;CF8_D80 ;Eau Forage;CEF1C;G-Forage VMZ;7;M1P0;*;M1V2;Sondage D80 ;*;Bassin2000;Reel;Machine;Eau;*;Zone Haute;!~;!~;;;;;2;CF8_D80 ;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1C;G-Forage VMZ;Eau Forage;*;0;*;*;*;*;*;*

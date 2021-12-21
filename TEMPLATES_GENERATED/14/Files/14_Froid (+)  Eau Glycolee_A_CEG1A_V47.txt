@@ -1,0 +1,3 @@
+F:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CEG1A6;SKID -16;Froid (+)  Eau Glycolee;CEG1A;SMF ElMazeraa;5;*;M110;M112;*;SMF-ElMazeraa;SKID -16;F(CEG1A6);Atelier;Froid;*;Froid;*;*;F~(~CEG1A6~)~;F~(~SKID -16~)~;;;0;SKID -16;*;*
+F:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CEG1A7;UCPC;Froid (+)  Eau Glycolee;CEG1A;SMF ElMazeraa;5;*;M110;M260;*;SMF-ElMazeraa;UCPC;F(CEG1A7);Atelier;Froid;CPT16;Froid;*;*;F~(~CEG1A7~)~;F~(~UCPC~)~;;;0;UCPC;UCPC T;*
+P:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CEG1A;SMF ElMazeraa;Froid (+)  Eau Glycolee;CEGB1;4;*;M110;*;*;SMF-ElMazeraa;*

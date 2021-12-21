@@ -1,0 +1,10 @@
+F:#2000;m3-J#0;Inc-J#8;低EBE;E-Collect B1000;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;*;*;*;*;CEF1B+ CEBI+3000;Site;Eau;*;VMZ;*;*;CEF1B~+~CEBI~+~#3000~;CF10_ElysseB1000~+~CB21_Filtre~+~#3000~;;;0;Entrer Collecteur B1000;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBF;S-B2000;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;M1C0;*;*;SalleOsmose;CEF1A;Site;Eau;*;VMZ;*;*;CEF1A~;CF9_ElysseB2000~;;;0;Sortie B2000 vers Osmose;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBG;Sortie B500;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;*;*;*;*;CEBJ - (CEB1+CEB6);Site;Eau;*;VMZ;*;*;CEBJ~-~(~CEB1~+~CEB6~)~;CB1_depanage~-~(~CB8_ElMazraa~+~CB9_RIA Dick~)~;;;0;Sortie B500;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBK;S-Collect B1000;Eau Brute;CEB5;VMZ Eau Brute;1;*;V100;*;*;VMZ;*;Reel;Site;Eau;*;VMZ;!~*;!~*;;;;;2;Sortie Collecteur B1000;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBH;Ecart PC EB;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;*;*;*;*;CEBE-CEB10;Site;Eau;*;VMZ;*;*;CEBE~-~CEB10~;E-Collect B1000~-~CB_GeneralB1000~;;;0;Ecart Production/Consommation Eau Brute;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBL;Ecart PD EB;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;*;*;*;*;CEBE-CEBK;Site;Eau;*;VMZ;*;*;CEBE~-~CEBK~;E-Collect B1000~-~S-Collect B1000~;;;0;Ecart Production/Distribution Eau Brute;*;*
+F:#2000;m3-J#0;Inc-J#8;低EBM;Ecart DC EB;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;*;*;*;*;CEBK-CEB10;Site;Eau;*;VMZ;*;*;CEBK~-~CEB10~;S-Collect B1000~-~CB_GeneralB1000~;;;0;Ecart Distribution/Consommation Eau Brute;*;*
+F:#2000;m3-J#0;Inc-J#8;低EB0;CBR_collect RIA;Eau Brute;CEB5;VMZ Eau Brute;1;*;*;V100;*;*;VMZ;Reel;Site;Eau;*;VMZ;!~*;D1:80:5001:1:4;;;;;2;CBR_collecteur RIA vers VMZ;*;*
+F:#2000;m3-J#0;Inc-J#8;低EB10;CB_GeneralB1000;Eau Brute;CEB5;VMZ Eau Brute;2;*;M1V1;M200;*;Bassin1000;ElMazeraa;CEB1+CEB2;Type de Site;Eau;CPT0;ElMazeraa;*;*;CEB1~+~CEB2~;CB8_ElMazraa~+~CB4_Dick EB~;;;0;CB_General Eau Brute B1000;VMZ Tonnage;*
+P:#2000;m3-J#0;Inc-J#8;低EB5;VMZ Eau Brute;Eau Brute;*;0;*;*;*;*;*;*

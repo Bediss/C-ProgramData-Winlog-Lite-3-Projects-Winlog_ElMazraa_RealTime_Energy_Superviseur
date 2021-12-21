@@ -1,0 +1,2 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB4;GIPA Eau Brute;Eau Brute;CEB0;CBR_collect RIA;1;*;M1V1;G200;*;Bassin1000;GIPA;Reel;Site;Eau;*;Gipa;!~;!~;;;;;2;GIPA Eau Brute;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB0;CBR_collect RIA;Eau Brute;CEB5;1;*;*;V100;*;*;VMZ

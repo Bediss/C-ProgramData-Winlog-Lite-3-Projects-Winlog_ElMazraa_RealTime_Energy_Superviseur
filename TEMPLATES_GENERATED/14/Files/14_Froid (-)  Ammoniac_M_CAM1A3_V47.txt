@@ -1,0 +1,3 @@
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CAM1A33;Extension IMEF1;Froid (-)  Ammoniac;CAM1A3;Extension IMEF;6;*;M113;M115;*;Extension IMEF;Extension IMEF1;F(CAM1A33);SubAtelier;Froid;*;Froid;*;*;F~(~CAM1A33~)~;F~(~Extension IMEF1~)~;;;0;Extension IMEF1;*;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CAM1A34;Extension IMEF2;Froid (-)  Ammoniac;CAM1A3;Extension IMEF;6;*;M113;M116;*;Extension IMEF;Extension IMEF2;F(CAM1A34);SubAtelier;Froid;*;Froid;*;*;F~(~CAM1A34~)~;F~(~Extension IMEF2~)~;;;0;Extension IMEF2;*;*
+P:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CAM1A3;Extension IMEF;Froid (-)  Ammoniac;CAM1A;5;*;M113;*;*;Extension IMEF;*

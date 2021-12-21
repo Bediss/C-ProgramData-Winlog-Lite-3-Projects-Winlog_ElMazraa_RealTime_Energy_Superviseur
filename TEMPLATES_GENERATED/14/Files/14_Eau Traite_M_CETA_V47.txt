@@ -1,0 +1,7 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET13;CT17_Coproduit;Eau Traite;CETA;Production;3;M1C0;M1V3;C200;SalleOsmose;Bassin3000;CoProduit;F(CET13);Usine;Eau;CPT3;CoProduit;;;F~(~CET13~)~;F~(~CT17_Coproduit~)~;;;1;CT17_Coproduit;CoProduit T;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETB1;CT11_Abattoir;Eau Traite;CETA;Production;4;M1C0;M1V3;M210;SalleOsmose;Bassin3000;Abattoir;F(CETB1);Process;Eau;*;Abattoir;;;F~(~CETB1~)~;F~(~CT11_Abattoir~)~;;;0;CT11_abattage+decoupe (Abattoir);*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETA2;CT12_Bain Marie;Eau Traite;CETA;Production;3;M1C0;M1V3;M220;SalleOsmose;Bassin3000;Charcuterie;F(CETA2);Usine;Eau;CPT12;Charcuterie;;;F~(~CETA2~)~;F~(~CT12_Bain Marie~)~;;;0;CT12_Charcuterie Bain Marie;Charcuterie T;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETA4;CT14_UCPC+CONS;Eau Traite;CETA;Production;3;M1C0;M1V3;*;SalleOsmose;Bassin3000;*;F(CETA4);Usine;Eau;*;ElMazeraa;;;F~(~CETA4~)~;F~(~CT14_UCPC+CONS~)~;;;0;CT14_UCPC + CONSERVE;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETA3;CT13_PetFood;Eau Traite;CETA;Production;3;M1C0;M1V3;*;SalleOsmose;Bassin3000;*;CET1V+CET1M;Usine;Eau;*;ElMazeraa;;;CET1V~+~CET1M~;CT30_B-marie-C~+~Condens res3_PF~;;;0;CT13_PetFood;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET1P;CT15_Chaudieres;Eau Traite;CETA;Production;6;M1C0;M1V3;MC00;SalleOsmose;Bassin3000;Chaufferie;F(CET1P);SubAtelier;Eau;*;Chaufferie;;;F~(~CET1P~)~;F~(~CT15_Chaudieres~)~;;;0;CT15_Chaudieres;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETA;Production;Eau Traite;CET1;2;M1C0;M1V3;Z100;SalleOsmose;Bassin3000;Production

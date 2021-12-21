@@ -1,0 +1,4 @@
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1K31;Pompe a Vide 1;Electrique;CC1K3;Abattoir TR4;7;S200;M190;M21A;STEG;PosteTR4;Pompe a Vide 1;Reel;Machine;*;*;Abattoir;!~*;!~*;;;;;2;Pompe a Vide 1;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1K32;Pompe a Vide 2;Electrique;CC1K3;Abattoir TR4;7;S200;M190;M21B;STEG;PosteTR4;Pompe a Vide 2;Reel;Machine;*;*;Abattoir;!~*;!~*;;;;;2;Pompe a Vide 2;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1K33;Pompe a Vide D;Electrique;CC1K3;Abattoir TR4;7;S200;M190;M217;STEG;PosteTR4;Decoupe;Reel;Machine;*;*;Abattoir;!~*;!~*;;;;;2;Pompe a Vide Decoupe;*;*
+P:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1K3;Abattoir TR4;Electrique;CC1K;5;S200;M190;M21K;STEG;PosteTR4;ECHAUDOIRE

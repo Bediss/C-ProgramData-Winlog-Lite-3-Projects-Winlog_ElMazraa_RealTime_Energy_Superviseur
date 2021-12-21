@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CET121;CT40_Refroid-A;Eau Traite;CETB2;Froid EauTraite;7;M1C0;M1V3;M21G;SalleOsmose;Bassin3000;Refroidisseur;Reel;Machine;Eau;*;Abattoir;!~;!~;;;;;2;CT40_Refroidisseurs abats;*;*
+F:#2000;m3-J#0;Inc-J#8;§CET1M;Condens res3_PF;Eau Traite;CETB2;Froid EauTraite;5;M1C0;M1V3;M1T0;SalleOsmose;Bassin3000;Condenseur;CET1M1+CET1M2;Atelier;Eau;*;Froid;;;CET1M1~+~CET1M2~;CT37_Condens Res3+Pf~+~CT38_Condens Res3+Pf~;;;0;Condenseur ressuage N3 Petfood;*;*
+P:#2000;m3-J#0;Inc-J#8;§CETB2;Froid EauTraite;Eau Traite;CETB;3;M1C0;M1V3;MA00;SalleOsmose;Bassin3000;Froid

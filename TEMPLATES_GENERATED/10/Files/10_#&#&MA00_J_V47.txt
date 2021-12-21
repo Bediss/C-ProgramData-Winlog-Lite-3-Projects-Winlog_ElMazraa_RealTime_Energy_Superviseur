@@ -1,0 +1,3 @@
+KWh-J-1#33;KWh-J#0;KWh-J#0;KWh/T-J-1#45;KWh/T-J#8;KWh/T-J#8;Inc-J-1#41;Inc-J#29;Inc-J#29;KWh/T-A-1#1000;KWh/T-A-1#1008;KWh/T-A-1#1029;§CCB1;Froid Elec;Electrique;CCB;Utilitaire;3;*;*;MA00;*;*;Froid;F(CCB1);Usine;*;*;Froid;*;*;F~(~CCB1~)~;F~(~Froid Elec~)~;;;0;Froid Electrique;*;*
+KWf-J-1#14;KWf-J#0;KWf-J#0;KWf / T J-1#18;KWf/T-J#4;KWf/T-J#4;Inc-J-1#22;Inc-J#8;Inc-J#8;#1000;#1004;#1008;§CF111;Froid;Froid;CF11;Utilitaire;3;*;*;MA00;*;*;Froid;CAMB1+CEGB1;Usine;*;*;Froid;*;*;CAMB1~+~CEGB1~;Froid~+~Froid~;;;0;Froid;*;*
+m3-J-1#12;m3-J#0;m3-J#0;m3/T-J-1#16;m3/T- J#4;m3/T- J#4;Inc-J-1#20;Inc-J#8;Inc-J#8;#1000;#1004;#1008;§CED;Froid Eau;Eau;CEB;Utilitaire;3;*;*;MA00;*;*;Froid;F(CED);Usine;*;*;Froid;*;*;F~(~CED~)~;F~(~Froid Eau~)~;;;0;Froid Eau;*;*

@@ -1,0 +1,2 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CETB111;CT24_lav-caisse;Eau Traite;CETB11;CT22_dec+lav-C;5;M1C0;M1V3;M217;SalleOsmose;Bassin3000;Decoupe;Reel;Atelier;Eau;*;Abattoir;!~;!~;;;;;2;CT24_lavage caisse;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CETB11;CT22_dec+lav-C;Eau Traite;CETB1;4;M1C0;M1V3;M217;SalleOsmose;Bassin3000;Decoupe

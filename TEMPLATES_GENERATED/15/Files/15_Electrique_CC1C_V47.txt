@@ -1,0 +1,2 @@
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;§CC1P1;forage;Electrique;CC1C;Eau TR1;7;S200;M160;MB01;STEG;PosteTR1;Forage;Reel;Machine;*;*;Eau;!~*;!~*;;;;;2;forage;*;*
+P:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;§CC1C;Eau TR1;Electrique;CC1H;6;S200;M160;MB07;STEG;PosteTR1;Eau TR1

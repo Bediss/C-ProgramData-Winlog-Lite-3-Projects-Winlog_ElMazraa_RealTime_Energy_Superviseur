@@ -1,0 +1,3 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB12A;CB47_A-Condens;Eau Brute;CEB14;CB13_ABATTAGE;7;*;M1V1;M22E;*;Bassin1000;A-Condenseur;Reel;Machine;Eau;*;Charcuterie;!~*;!~*;;;;;2;CB47_Appoint Condenseur;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB141;CB42_Echaudoire;Eau Brute;CEB14;CB13_ABATTAGE;7;*;M1V1;M213;*;Bassin1000;Abattage;Reel;Machine;Eau;*;Abattoir;!~*;!~*;;;;;2;CB42_Echaudoire;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB14;CB13_ABATTAGE;Eau Brute;CEBA1;4;*;M1V1;M213;*;Bassin1000;Abattage

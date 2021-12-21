@@ -1,0 +1,262 @@
+#Version: 0x030217
+#Access: 0
+#Pos: 0,150
+#Size: 1350,720
+#BkColor: 235,240,239
+#Gates: 19
+  #STR: Business_unit,0
+  #CMP: Compteur_1,List_12
+  #CMP: Compteur_1,List_11
+  #NUM: CompteurOb1,List_13
+  #CMP: Compteur_1,List_15
+  #CMP: Compteur_1,List_14
+  #NUM: CompteurOb1,List_16
+  #CMP: Compteur_1,List_18
+  #CMP: Compteur_1,List_17
+  #NUM: CompteurOb1,List_19
+  #CMP: Compteur_2,List_22
+  #CMP: Compteur_2,List_21
+  #NUM: CompteurOb2,List_23
+  #CMP: Compteur_2,List_25
+  #CMP: Compteur_2,List_24
+  #NUM: CompteurOb2,List_26
+  #CMP: Compteur_2,List_28
+  #CMP: Compteur_2,List_27
+  #NUM: CompteurOb2,List_29
+#Style: Standard
+#StayOnTop: 0
+#Object: Frame
+  #ID: 0
+  #Pos: 0,0
+  #Size: 1350,70
+  #BkColor: 0,200,150
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 378,3
+    #Size: 555,62
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Gotham Medium,22,0000
+    #Label: ENERGY MANAGEMENT SYSTEM  :
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 933,3
+    #Size: 240,62
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Gotham Medium,22,0000
+    #Gate: 0
+    #Label: %s
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 40,10
+    #Size: 200,50
+    #Cursor: 0
+    #PBmpFile: 0,LOGO BIZEYES BLANC.png
+    #TabOrder: 0
+    #CycleTime: 0,0
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,70
+  #Size: 1350,40
+  #BkColor: 204,255,232
+  #Style: 1
+  #TabOrder: 1
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 20,5
+    #Size: 160,30
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Gotham Book,14,0000
+    #Label: Navigateur
+    #Align: 37
+    #Frame: 1
+    #Access: 0
+    #NewOnClick: Template,Site
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,110
+  #Size: 1350,40
+  #BkColor: 226,226,226
+  #Style: 1
+  #TabOrder: 2
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 0,150
+  #Size: 1350,3
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 3
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1081,153
+  #Size: 268,60
+  #BkColor: 235,240,239
+  #Style: 1
+  #TabOrder: 4
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBlack
+    #Font: Gotham Medium,11,0000
+    #Label:  (5)View
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 5,30
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBlack
+    #Font: Gotham Medium,11,0000
+    #Label:  Sélectionnez ci-dessous :
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 811,153
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 5
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (4)Energy
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 541,153
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 6
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (3)Tableau
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 5,105
+    #Size: 242,25
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Courier New,12,0001
+    #Label: %s
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 271,153
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 7
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (2)Unite
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1,153
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 8
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (1)Site
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,221
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ All View.             
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 512
+     #OnClick: Template,15_Air Comprime_CAC01_V47
+   #EndObj
+

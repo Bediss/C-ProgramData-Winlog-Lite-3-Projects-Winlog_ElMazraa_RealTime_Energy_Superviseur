@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CEBC;Facility Dick;Eau Brute;CEB2;CB4_Dick EB;2;*;M1V1;Z400;*;Bassin1000;Admin + Facility;CEB25M+CEB25D+CEB25E;Type de Site;Eau;*;*;*;*;CEB25M~+~CEB25D~+~CEB25E~;C53_AdminWC COP~+~C31_WC-froid ~+~C27_vestiaire~;;;1;Admin + Facility Dick;*;*
+F:#2000;m3-J#0;Inc-J#8;§CEBD;Prod EB Dick;Eau Brute;CEB2;CB4_Dick EB;2;*;M1V1;Z100;*;Bassin1000;Production;CEB25;Type de Site;Eau;*;*;*;*;CEB25~;CB4-1_Collecteur~;;;0;Production Eau Brute Dick;*;*
+P:#2000;m3-J#0;Inc-J#8;§CEB2;CB4_Dick EB;Eau Brute;CEB10;1;*;M1V1;D200;*;Bassin1000;Dick

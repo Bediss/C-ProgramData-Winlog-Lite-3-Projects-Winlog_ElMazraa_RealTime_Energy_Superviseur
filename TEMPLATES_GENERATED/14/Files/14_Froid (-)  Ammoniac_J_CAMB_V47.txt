@@ -1,0 +1,2 @@
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAMB1;Froid;Froid (-)  Ammoniac;CAMB;Utilitaire;3;*;*;*;*;*;*;F(CAMB1);Usine;Froid;*;Froid;*;*;F~(~CAMB1~)~;F~(~Froid~)~;;;0;Froid;*;*
+P:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAMB;Utilitaire;Froid (-)  Ammoniac;CAM1;2;*;*;Z200;*;*;Utilitaire

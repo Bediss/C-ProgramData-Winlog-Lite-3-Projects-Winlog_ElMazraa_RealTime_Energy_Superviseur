@@ -1,0 +1,5 @@
+F:#2000;m3-J#0;Inc-J#8;低AC1F3;compresseur air1;Air Comprime;CAC1F;ChaufSurgele;7;M250;M141;*;Surgele;compressuer air1;*;Reel;Machine;*;*;Surgele;!~*;!~*;;;;;2;compresseur a air 1;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC1F6;compresseur air2;Air Comprime;CAC1F;ChaufSurgele;7;M250;M142;*;Surgele;compressuer air2;*;Reel;Machine;*;*;Surgele;!~*;!~*;;;;;2;compresseur a air 2;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC1F31;Equipement4;Air Comprime;CAC1F;ChaufSurgele;4;M250;M145;*;Surgele;Equipement4;*;Reel;Process;*;*;Surgele;!~*;!~*;;;;;2;Equipement4;*;*
+F:#2000;m3-J#0;Inc-J#8;低AC1F61;Equipement5;Air Comprime;CAC1F;ChaufSurgele;4;M250;M146;*;Surgele;Equipement5;*;Reel;Process;*;*;Surgele;!~*;!~*;;;;;2;Equipement5;*;*
+P:#2000;m3-J#0;Inc-J#8;低AC1F;ChaufSurgele;Air Comprime;CACB;3;M250;M140;*;Surgele;ChaufferieSurgel;*

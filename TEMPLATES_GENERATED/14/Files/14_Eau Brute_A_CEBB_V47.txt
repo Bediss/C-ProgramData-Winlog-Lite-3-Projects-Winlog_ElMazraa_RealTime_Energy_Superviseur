@@ -1,0 +1,3 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB1D;Refectoire EB;Eau Brute;CEBB;Facility EB;3;*;M1V1;M290;*;Bassin1000;Refectoire;F(CEB1D);Usine;Eau;*;Refectoires;*;*;F~(~CEB1D~)~;F~(~Refectoire EB~)~;;;0;Refectoire Eau Brute;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB3;Dick Eau Brute;Eau Brute;CEBB;Facility EB;3;*;M1V1;D200;*;Bassin1000;Dick;F(CEB3);Usine;Eau;*;Dick;*;*;F~(~CEB3~)~;F~(~Dick Eau Brute~)~;;;0;Dick Eau Brute;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEBB;Facility EB;Eau Brute;CEB1;2;*;M1V1;Z400;*;Bassin1000;Admin + Facility

@@ -1,0 +1,2 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC11D;ventilo res 1+2;Electrique;CC1D;Abattoir TR1;7;S200;M160;M21G;STEG;PosteTR1;Refroidisseur;Reel;Machine;*;*;Abattoir;!~*;!~*;;;;;2;ventilo ressuag 1 et 2;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1D;Abattoir TR1;Electrique;CC1H;6;S200;M160;M21I;STEG;PosteTR1;Hangar-A

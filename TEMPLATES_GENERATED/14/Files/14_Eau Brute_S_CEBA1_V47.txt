@@ -1,0 +1,3 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CEB14;CB13_ABATTAGE;Eau Brute;CEBA1;Abattoir EB;4;*;M1V1;M213;*;Bassin1000;Abattage;CEB127;Process;Eau;*;Abattoir;*;*;CEB127~;CB48_hydro-Net~;;;0;CB13_ABATTAGE;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CEB15;Decoupe EB;Eau Brute;CEBA1;Abattoir EB;4;*;M1V1;M217;*;Bassin1000;Decoupe;Reel;Process;Eau;*;Abattoir;!~*;!~*;;;;;2;Decoupe Eau Brute;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CEBA1;Abattoir EB;Eau Brute;CEBA;3;*;M1V1;M210;*;Bassin1000;Abattoir

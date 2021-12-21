@@ -1,0 +1,12 @@
+CODE;NAME;ACCESS
+V100;VMZ;512
+D200;Dick;2
+G200;GIPA;1
+S200;STEG;1
+V110;PAF;1
+C210;Prod Coproduit;4
+C220;COP-Facility;4
+M200;ElMazeraa;9
+Z100;Production ElMazraa;8
+Z200;Utilitaire ElMazraa;1
+Z300;Facility ElMazraa;1

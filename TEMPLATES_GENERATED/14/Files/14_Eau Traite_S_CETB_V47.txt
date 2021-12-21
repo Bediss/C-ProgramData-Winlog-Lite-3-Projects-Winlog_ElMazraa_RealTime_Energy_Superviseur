@@ -1,0 +1,2 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CETB2;Froid EauTraite;Eau Traite;CETB;Utilitaire;3;M1C0;M1V3;MA00;SalleOsmose;Bassin3000;Froid;CET1M+CET036;Usine;Eau;*;Froid;;;CET1M~+~CET036~;Condens res3_PF~+~CT7_Condenseur~;;;0;Froid EauTraite;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CETB;Utilitaire;Eau Traite;CET1;2;M1C0;M1V3;Z200;SalleOsmose;Bassin3000;Utilitaire

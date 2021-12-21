@@ -1,0 +1,3 @@
+F:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CAM1B3;SKID-40_Surgele;Froid (-)  Ammoniac;CAM1C;SMF Surgele;5;*;M120;M111;*;SMF Surgele;SKID -40;Reel;Atelier;Froid;*;Froid;!~*;!~*;;;;;2;SKID-40_Surgele;*;*
+F:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CAM1B31;Surgelateur GEA;Froid (-)  Ammoniac;CAM1C;SMF Surgele;7;*;M120;M111;*;SMF Surgele;SKID -40;Reel;Machine;Froid;*;Froid;!~*;!~*;;;;;2;Surgelateurs Alco GEA Ch-;*;*
+P:KWf-A#3;KWf-M-1#16;KWf-A#3;Inc-A#11;#1003;§CAM1C;SMF Surgele;Froid (-)  Ammoniac;CAMB1;4;*;M120;*;*;SMF Surgele;*

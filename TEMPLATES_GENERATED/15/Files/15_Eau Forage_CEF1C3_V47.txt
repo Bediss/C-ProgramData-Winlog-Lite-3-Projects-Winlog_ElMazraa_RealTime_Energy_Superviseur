@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CEF1A;CF9_ElysseB2000;Eau Forage;CEF1C3;CF3_Forage Haut;7;*;*;M1V2;*;*;Bassin2000;CEF1C3+CEF1C1+CEF1C4+CEF19;Machine;Eau;*;Zone Haute;;;CEF1C3~+~CEF1C1~+~CEF1C4~+~CEF19~;CF3_Forage Haut~+~CF1_NF-B2000~+~CF4_Forage Bas~+~CF8_D80 ~;;;0;CF9_Elysse vers B2000;*;*
+F:#2000;m3-J#0;Inc-J#8;§CEF1B;CF10_ElysseB1000;Eau Forage;CEF1C3;CF3_Forage Haut;7;*;*;M1V1;*;*;Bassin1000;CEF1C2+CEF16+CEF17;Machine;Eau;*;Zone Haute;;;CEF1C2~+~CEF16~+~CEF17~;CF7_NF-B1000~+~CF5_D80-B1000~+~CF6_Rayhane~;;;0;CF10_Elysse vers B1000;*;*
+P:#2000;m3-J#0;Inc-J#8;§CEF1C3;CF3_Forage Haut;Eau Forage;CEF1A;4;M1K0;*;M1V2;Sondage Haut;*;Bassin2000

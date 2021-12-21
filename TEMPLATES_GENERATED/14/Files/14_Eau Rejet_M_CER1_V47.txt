@@ -1,0 +1,2 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CER2;SalleOsmose;Eau Rejet;CER1;ElMazeraa ER;3;M1C0;*;*;SalleOsmose;*;*;F(CER2);Usine;Eau;*;SalleOsmose;;;F~(~CER2~)~;F~(~SalleOsmose~)~;;;0;SalleOsmose;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CER1;ElMazeraa ER;Eau Rejet;CER0;1;M1C0;*;M200;SalleOsmose;*;ElMazeraa

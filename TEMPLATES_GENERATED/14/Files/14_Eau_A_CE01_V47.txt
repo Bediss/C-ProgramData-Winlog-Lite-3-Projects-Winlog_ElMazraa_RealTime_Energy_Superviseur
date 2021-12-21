@@ -1,0 +1,7 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E1;ElMazeraa Eau;Eau;CE01;VMZ Conso Eau;1;*;*;M200;*;*;ElMazeraa;F(CE1);Site;*;CPT1;ElMazeraa;*;*;F~(~CE1~)~;F~(~ElMazeraa Eau~)~;;;0;ElMazeraa Eau;ElMazraa T;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E2;Dick Eau;Eau;CE01;VMZ Conso Eau;1;*;*;D200;*;*;Dick;CEB2+CES2+CET3;Site;*;CPT2;Dick;*;*;CEB2~+~CES2~+~CET3~;CB4_Dick EB~+~Dick Eau Sonede~+~Dick Eau Traite~;;;0;Dick Eau;Dick Tonnage;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E3;CoProduit Eau;Eau;CE01;VMZ Conso Eau;1;*;*;C200;*;*;CoProduit;CET13+CEB15+CES1F;Site;*;CPT3;CoProduit;*;*;CET13~+~CEB15~+~CES1F~;CT17_Coproduit~+~Decoupe EB~+~CS8_Coproduit~;;;1;CoProduit Eau;CoProduit T;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E4;GIPA Eau;Eau;CE01;VMZ Conso Eau;1;*;*;G200;*;*;GIPA;CEB4+CET2;Site;*;*;GIPA;*;*;CEB4~+~CET2~;GIPA Eau Brute~+~GIPA Eau Traite~;;;0;GIPA Eau;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E5;Cogen Eau;Eau;CE01;VMZ Conso Eau;1;*;*;N200;*;*;Cogeneration;CET034;Site;*;*;Cogeneration;*;*;CET034~;CT9_Cogeneration~;;;1;Cogeneration Eau;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E6;PAF Eau;Eau;CE01;VMZ Conso Eau;1;*;*;V110;*;*;PAF;CET035;Site;*;*;PAF;*;*;CET035~;CT10_PAF~;;;0;PAF Eau;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低E01;VMZ Conso Eau;Eau;CE0;1;*;*;V100;*;*;VMZ

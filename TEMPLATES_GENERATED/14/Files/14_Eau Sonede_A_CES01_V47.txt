@@ -1,0 +1,3 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CES1;CS1_SONEDE;Eau Sonede;CES01;VMZ Conso ES;1;M1S0;*;M200;SONEDE;*;ElMazeraa;F(CES1);Site;Eau;CPT1;ElMazeraa;;;F~(~CES1~)~;F~(~CS1_SONEDE~)~;;;1;CS1_SONEDE ELMAZRAA;ElMazraa T;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CES2;Dick Eau Sonede;Eau Sonede;CES01;VMZ Conso ES;1;M1S0;*;D200;SONEDE;*;Dick;F(CES2);Site;Eau;CPT2;Dick;;;F~(~CES2~)~;F~(~Dick Eau Sonede~)~;;;1;Dick Eau Sonede;Dick Tonnage;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CES01;VMZ Conso ES;Eau Sonede;CES0;1;*;*;V100;*;*;VMZ

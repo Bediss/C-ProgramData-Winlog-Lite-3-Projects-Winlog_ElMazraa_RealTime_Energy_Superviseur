@@ -1,0 +1,3 @@
+F:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CVA;Production;Vapeur;CV1;ElMazeraa Vap;2;*;*;Z100;*;*;Production;F(CVA);Type de Site;*;*;*;*;*;F~(~CVA~)~;F~(~Production~)~;;;0;Production;*;*
+F:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CVB;Utilitaire;Vapeur;CV1;ElMazeraa Vap;2;*;*;Z200;*;*;Utilitaire;F(CVB);Type de Site;*;*;*;*;*;F~(~CVB~)~;F~(~Utilitaire~)~;;;0;Utilitaire;*;*
+P:Kg/h-J#0;Temperature#12;Kg/h-J#0;Inc-J#8;#1000;§CV1;ElMazeraa Vap;Vapeur;CV01;1;*;*;M200;*;*;ElMazeraa

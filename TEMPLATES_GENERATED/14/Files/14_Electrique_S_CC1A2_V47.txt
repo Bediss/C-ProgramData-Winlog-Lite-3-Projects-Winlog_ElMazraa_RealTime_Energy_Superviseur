@@ -1,0 +1,3 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1AA;Extension IMEF1;Electrique;CC1A2;IMEF;6;S200;M160;M115;STEG;PosteTR1;Extension IMEF1;CC1P11;SubAtelier;*;*;Froid;*;*;CC1P11~;EXT IMEF1 TR1~;;;0;Extension IMEF1;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1AB;Extension IMEF2;Electrique;CC1A2;IMEF;6;S200;M180;M116;STEG;PosteTR3;Extension IMEF2;CC1J1;SubAtelier;*;*;Froid;*;*;CC1J1~;EXT IMEF2 TR3~;;;0;Extension IMEF2;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1A2;IMEF;Electrique;CC1A;5;S200;*;MA01;STEG;*;IMEF

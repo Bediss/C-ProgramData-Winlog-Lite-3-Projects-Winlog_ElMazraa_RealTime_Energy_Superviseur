@@ -1,0 +1,491 @@
+#Version: 0x030213
+#Access: 0
+#Pos: 0,150
+#Size: 1350,720
+#BkColor: 0,28,0
+#Version: 0x030212
+#Access: 0
+#Pos: 0,150
+#Size: 1350,530
+#BkColor: clBtnFace
+#Gates:20
+  #STR: Business_unit,0
+  #EVN: AA_CET1,0
+  #EVN: AA_CES1,0
+  #EVN: AA_CEB1,0
+  #EVN: AA_CETA4,0
+  #EVN: AA_CET1F,0
+  #EVN: AA_CES16,0
+  #EVN: AA_CES19,0
+  #EVN: AA_CEB12,0
+  #EVN: AA_CE3,0
+  #CMP: CET1,0
+  #CMP: CES1,0
+  #CMP: CEB1,0
+  #CMP: CEB12,0
+  #CMP: CES19,0
+  #CMP: CES16,0
+  #CMP: CET1F,0
+  #CMP: CETA4,0
+  #CMP: CEA8, 0
+  #EVN: AA_CEA8,0
+#PBkBmp: 0,145,1350,530,Synoptique_Eau_ConserveV5.jpg
+#Object: Led
+  #ID: 0
+  #Pos: 25,160
+  #Size: 50,50
+  #Cursor: 0
+  #OffPBmpFile: zoom(-)2.png
+  #OnPBmpFile: zoom(-)2.png
+  #BmpBkC: 0,128,128
+  #Flashing: 0
+  #Access: 0
+  #NewOnClick: Template,11_Eau_#&#&M200_J_V47
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 232,269
+  #Size: 30,30
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 1,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 712,198
+  #Size: 26,26
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 2,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 1103,211
+  #Size: 31,31
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 3,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 218,360
+  #Size: 39,39
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 4,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 444,523
+  #Size: 47,47
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 5,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 703,492
+  #Size: 40,40
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 6,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 748,269
+  #Size: 38,38
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 7,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 1093,292
+  #Size: 32,32
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 8,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 1141,173
+  #Size: 36,38
+  #Cursor: 0
+  #OffBmpRes: 52
+  #OnBmpRes: 51
+  #BmpBkC: 0,128,128
+  #On: 19,6,1
+  #Flashing: 0
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 228,267
+  #Size: 38,33
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+  #NewOnClick: Template,17_CET1_V47
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 270,267
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 10
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 663,192
+  #Size: 33,38
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 1
+  #Access: 0
+  #NewOnClick: Template,17_CES1_V47
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 750,197
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 11
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1148,207
+  #Size: 43,38
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 2
+  #Access: 0
+  #NewOnClick: Template,17_CEB1_V47
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 980,212
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 12
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1205,152
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 18
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 1135,297
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 13
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 795,272
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 14
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 745,517
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 15
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 340,517
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 16
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 260,347
+  #Size: 120,27
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: 0,88,94
+ #Font: DS-Digital,16,0001
+  #Gate: 17
+  #Label: %5.0lf
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1088,287
+  #Size: 43,38
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 3
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 688,267
+  #Size: 48,43
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 4
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 993,242
+  #Size: 258,38
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 5
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 698,487
+  #Size: 48,53
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 6
+  #Access: 0
+  #NewOnClick: Template,17_CES16_V47
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 443,522
+  #Size: 48,48
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 7
+  #Access: 0
+  #NewOnClick: Template,17_CET1F_V47
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 213,357
+  #Size: 48,43
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 8
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 108,307
+  #Size: 298,33
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 9
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 608,222
+  #Size: 268,33
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 10
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1098,207
+  #Size: 43,38
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 11
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 708,192
+  #Size: 33,33
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 12
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 738,267
+  #Size: 58,43
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 13
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 270,155
+  #Size: 810,22
+  #BkColor: clWhite
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: DS-Digital,14,0001
+  #Label:
+  #Align: 32
+  #Frame: 1
+  #Access: 0
+#EndObj
+
+
+#Object: Frame
+  #ID: 0
+  #Pos: 0,0
+  #Size: 1350,100
+  #BkColor: clWhite
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 45,14
+    #Size: 141,41
+    #Cursor: 0
+    #PBmpFile: 0,logo_typo.jpg
+    #TabOrder: 0
+    #CycleTime: 0,0
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 1145,0
+    #Size: 124,68
+    #Cursor: 0
+    #PBmpFile: 0,logo.png
+    #TabOrder: 1
+    #CycleTime: 0,0
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 252,14
+    #Size: 460,41
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Calibri,22,0001
+    #Label: ENERGY MANAGEMENT SYSTEM  :
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 712,14
+    #Size: 385,41
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWindowText
+    #Font: Calibri,24,0101
+    #Gate: 0
+    #Label: %s
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 33,70
+    #Size: 220,15
+    #Cursor: 0
+    #PBmpFile: 0,Navigateur.png
+    #TabOrder: 2
+    #CycleTime: 0,0
+    #Access: 0
+    #NewOnClick: Template,Site
+  #EndObj
+#EndObj

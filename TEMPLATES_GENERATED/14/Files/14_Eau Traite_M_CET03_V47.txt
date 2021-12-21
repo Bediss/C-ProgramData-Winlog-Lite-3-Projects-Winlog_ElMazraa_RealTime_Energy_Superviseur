@@ -1,0 +1,9 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET1;CT4_Collect ET;Eau Traite;CET03;E-Collect ET;1;M1C0;M1V3;M200;SalleOsmose;Bassin3000;ElMazeraa;F(CET1);Site;Eau;CPT1;ElMazeraa;;;F~(~CET1~)~;F~(~CT4_Collect ET~)~;;;0;CT4_Collecteur eau traitee ElMazraa;ElMazraa T;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ETA5;CT8_Surgele;Eau Traite;CET03;E-Collect ET;3;M1C0;M1V3;M250;SalleOsmose;Bassin3000;Surgele;F(CETA5);Usine;Eau;CPT15;Surgele;;;F~(~CETA5~)~;F~(~CT8_Surgele~)~;;;0;CT8_Surgele;Surgele T;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET036;CT7_Condenseur;Eau Traite;CET03;E-Collect ET;5;M1C0;M1V3;M1T0;SalleOsmose;Bassin3000;Condenseur;Reel;Atelier;Eau;*;Froid;!~;!~;;;;;2;CT7_Condenseur;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET032;CT40_Ligne Jus vers GIPA;Eau Traite;CET03;E-Collect ET;3;M1C0;M1V3;G200;SalleOsmose;Bassin3000;GIPA;Reel;Usine;Eau;*;GIPA;!~;!~;;;;;2;CT40_Ligne Jus vers GIPA;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET033;CT5_GIPA III;Eau Traite;CET03;E-Collect ET;3;M1C0;M1V3;G200;SalleOsmose;Bassin3000;GIPA;Reel;Usine;Eau;*;GIPA;!~;!~;;;;;2;CT5_GIPA III;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET034;CT9_Cogeneration;Eau Traite;CET03;E-Collect ET;2;M1C0;M1V3;N200;SalleOsmose;Bassin3000;Cogeneration;Reel;Type de Site;Eau;*;Cogeneration;!~;!~;;;;;3;CT9_Cogeneration;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET035;CT10_PAF;Eau Traite;CET03;E-Collect ET;2;M1C0;M1V3;V110;SalleOsmose;Bassin3000;PAF;Reel;Type de Site;Eau;*;PAF;!~;!~;;;;;2;CT10_PAF;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET039;CT6_Abattage-D;Eau Traite;CET03;E-Collect ET;4;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Process;Eau;*;Dick;!~;!~;;;;;2;CT6_Abattage Dick;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET03;E-Collect ET;Eau Traite;CET0;1;M1V3;*;*;Bassin3000;*;*

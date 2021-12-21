@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CEB1;CB8_ElMazraa;Eau Brute;CEB10;CB_GeneralB1000;1;*;M1V1;M200;*;Bassin1000;ElMazeraa;F(CEB1);Site;Eau;CPT1;ElMazeraa;*;*;F~(~CEB1~)~;F~(~CB8_ElMazraa~)~;;;0;CB8_ElMazraa;ElMazraa T;*
+F:#2000;m3-J#0;Inc-J#8;§CEB2;CB4_Dick EB;Eau Brute;CEB10;CB_GeneralB1000;1;*;M1V1;D200;*;Bassin1000;Dick;Reel;Site;Eau;CPT2;Dick;!~*;D1:80:5002:1:4;;;;;2;CB4_Dick Eau Brute;Dick Tonnage;*
+P:#2000;m3-J#0;Inc-J#8;§CEB10;CB_GeneralB1000;Eau Brute;CEB5;2;*;M1V1;M200;*;Bassin1000;ElMazeraa

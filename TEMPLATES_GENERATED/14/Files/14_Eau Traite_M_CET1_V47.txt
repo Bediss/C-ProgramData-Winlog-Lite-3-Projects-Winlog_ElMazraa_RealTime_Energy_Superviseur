@@ -1,0 +1,3 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CETA;Production;Eau Traite;CET1;CT4_Collect ET;2;M1C0;M1V3;Z100;SalleOsmose;Bassin3000;Production;F(CETA);Type de Site;Eau;*;*;;;F~(~CETA~)~;F~(~Production~)~;;;0;Production;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CETB;Utilitaire;Eau Traite;CET1;CT4_Collect ET;2;M1C0;M1V3;Z200;SalleOsmose;Bassin3000;Utilitaire;F(CETB);Type de Site;Eau;*;*;;;F~(~CETB~)~;F~(~Utilitaire~)~;;;0;Utilitaire;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CET1;CT4_Collect ET;Eau Traite;CET03;1;M1C0;M1V3;M200;SalleOsmose;Bassin3000;ElMazeraa

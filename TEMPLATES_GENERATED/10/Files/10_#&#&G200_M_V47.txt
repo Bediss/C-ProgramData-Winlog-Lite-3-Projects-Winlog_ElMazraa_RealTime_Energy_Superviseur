@@ -1,0 +1,2 @@
+m3-M-1#14;m3-M#2;m3-M#2;m3/T-M-1#18;m3/T-M#6;m3/T-M#6;Inc-M-1#22;Inc-M#10;Inc-M#10;#1002;#1006;#1010;§CG3;GIPA Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;G200;G200;STEG;GIPA;GIPA;Reel;Site;*;*;GIPA;!~*;!~*;;;;;2;GIPA Gaz;*;*
+m3-M-1#14;m3-M#2;m3-M#2;m3/T-M-1#18;m3/T-M#6;m3/T-M#6;Inc-M-1#22;Inc-M#10;Inc-M#10;#1002;#1006;#1010;§CE4;GIPA Eau;Eau;CE01;VMZ Conso Eau;1;*;*;G200;*;*;GIPA;CEB4+CET2;Site;*;*;GIPA;*;*;CEB4~+~CET2~;GIPA Eau Brute~+~GIPA Eau Traite~;;;0;GIPA Eau;*;*

@@ -1,0 +1,7 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB11;CB10_PETFOOD;Eau Brute;CEBA;Production;3;*;M1V1;M240;*;Bassin1000;PetFood;Reel;Usine;Eau;CPT14;PetFood;!~*;D1:80:5003:1:4;;;;;2;CB10_PETFOOD;PetFood T;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB16;Surgele;Eau Brute;CEBA;Production;3;*;M1V1;M250;*;Bassin1000;Surgele;CEB125+CEB124;Usine;Eau;CPT15;Surgele;*;*;CEB125~+~CEB124~;CB37_RNetSurg2~+~CB36_RNetSurg1~;;;0;Surgele;Surgele T;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB12;CB11_CHARCUT;Eau Brute;CEBA;Production;3;*;M1V1;*;*;Bassin1000;*;F(CEB12);Usine;Eau;CPT12;Charcuterie;*;*;F~(~CEB12~)~;F~(~CB11_CHARCUT~)~;;;0;CB11_CHARCUTERIE ;Charcuterie T;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB13;CB12_UCPC ;Eau Brute;CEBA;Production;3;*;M1V1;M260;*;Bassin1000;UCPC;CEB131;Usine;Eau;CPT16;UCPC;*;*;CEB131~;CB39_WC UCPC~;;;0;CB12_UCPC ;UCPC T;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EBA1;Abattoir EB;Eau Brute;CEBA;Production;3;*;M1V1;M210;*;Bassin1000;Abattoir;F(CEBA1);Usine;Eau;CPT11;Abattoir;*;*;F~(~CEBA1~)~;F~(~Abattoir EB~)~;;;0;Abattoir Eau Brute;Abattoir T;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB1A;CB16_Coproduit;Eau Brute;CEBA;Production;3;*;M1V1;C200;*;Bassin1000;CoProduit;F(CEB1A);Usine;Eau;*;CoProduit;*;*;F~(~CEB1A~)~;F~(~CB16_Coproduit~)~;;;1;CB16_Coproduit;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EBA;Production;Eau Brute;CEB1;2;*;M1V1;Z100;*;Bassin1000;Production

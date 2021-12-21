@@ -1,0 +1,3 @@
+F:m3-S#1;m3-S-1#14;m3-S#1;Inc-S#9;#1001;§CAC1G;ChaufElMazraaAC;Air Comprime;CACB;Utilitaire;3;*;M150;*;*;ElMazeraa Chauf;*;F(CAC1G);Usine;*;*;Chaufferie;*;*;F~(~CAC1G~)~;F~(~ChaufElMazraaAC~)~;;;0;ChaufferieElMazeraa Air Comprime;*;*
+F:m3-S#1;m3-S-1#14;m3-S#1;Inc-S#9;#1001;§CAC1F;ChaufSurgele;Air Comprime;CACB;Utilitaire;3;M250;M140;*;Surgele;ChaufferieSurgel;*;F(CAC1F);Usine;*;*;Surgele;*;*;F~(~CAC1F~)~;F~(~ChaufSurgele~)~;;;0;Chaufferie Surgele;*;*
+P:m3-S#1;m3-S-1#14;m3-S#1;Inc-S#9;#1001;§CACB;Utilitaire;Air Comprime;CAC1;2;*;*;Z200;*;*;Utilitaire

@@ -1,0 +1,7 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25H;C1_Lav-cage1+2;Eau Brute;CEB251;CB16_PROCES;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~*;!~*;;;;;2;C1_Laveuse-cage1 et 2;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25I;C32_Electo-AN;Eau Brute;CEB251;CB16_PROCES;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~*;!~*;;;;;2;C32_Electo-anesthesi;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25J;C2_plumaison;Eau Brute;CEB251;CB16_PROCES;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~*;!~*;;;;;2;C2_ plumaison Finisseuse+plumeuse4;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25K;C6_ECHAUDOIR1 ;Eau Brute;CEB251;CB16_PROCES;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~;!~;;;;;2;C6_ECHAUDOIR1 ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25L;C7_ECHAUDOIR2 ;Eau Brute;CEB251;CB16_PROCES;7;*;M1V1;D200;*;Bassin1000;Dick;Reel;Machine;Eau;*;Dick;!~;!~;;;;;2;C7_ECHAUDOIR2 ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB25M;C53_AdminWC COP;Eau Brute;CEB251;CB16_PROCES;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C53_Administation toilettes Co-Produit;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EB251;CB16_PROCES;Eau Brute;CEB25;4;*;M1V1;D200;*;Bassin1000;Dick

@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CG022;STEG Gaz;Gaz;CG02;VMZ Prod Gaz;1;S200;*;*;STEG;*;*;Reel;Site;*;*;STEG;!~*;!~*;;;;;2;STEG Gaz;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CG02;VMZ Prod Gaz;Gaz;CG0;1;V100;*;*;VMZ;*;*

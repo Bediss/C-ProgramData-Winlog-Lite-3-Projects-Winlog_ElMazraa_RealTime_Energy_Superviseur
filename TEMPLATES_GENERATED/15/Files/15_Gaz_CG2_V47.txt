@@ -1,0 +1,2 @@
+F:#2000;m3-J#0;Inc-J#8;§CG05;Ecart DC Gaz;Gaz;CG2;Dick Gaz;1;*;*;*;*;*;*;CG06-CG01;Site;*;*;VMZ;*;*;CG06~-~CG01~;VMZ Distrib Gaz~-~VMZ Conso Gaz~;;;0;Ecart Distribution/Consommation Gaz;*;*
+P:#2000;m3-J#0;Inc-J#8;§CG2;Dick Gaz;Gaz;CG01;1;S200;D200;D200;STEG;Dick;Dick

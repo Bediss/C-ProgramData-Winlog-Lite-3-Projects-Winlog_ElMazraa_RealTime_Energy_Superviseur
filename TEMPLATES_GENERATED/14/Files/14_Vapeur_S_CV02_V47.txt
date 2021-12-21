@@ -1,0 +1,2 @@
+F:Kg/h-S#1;Kg/h-S-1#15;Kg/h-S#1;Inc-S#9;#1001;§CV021;Cogen Vapeur;Vapeur;CV02;VMZ Prod Vap;2;N200;*;*;Cogeneration;*;*;Reel;Type de Site;*;*;Cogeneration;!~*;!~*;;;;;3;Cogeneration Vapeur;*;*
+P:Kg/h-S#1;Kg/h-S-1#15;Kg/h-S#1;Inc-S#9;#1001;§CV02;VMZ Prod Vap;Vapeur;CV0;1;V100;*;*;VMZ;*;*

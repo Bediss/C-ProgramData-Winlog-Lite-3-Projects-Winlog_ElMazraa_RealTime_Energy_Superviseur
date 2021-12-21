@@ -1,0 +1,3 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CGC1;UCPC Gaz;Gaz;CGC;Production;3;S200;M260;*;STEG;UCPC;*;Reel;Usine;*;CPT16;UCPC;!~*;!~*;;;;;2;UCPC Gaz;UCPC T;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CGC2;Surgele Gaz;Gaz;CGC;Production;3;S200;M250;*;STEG;Surgele;*;Reel;Usine;*;CPT15;Surgele;!~*;!~*;;;;;2;Surgele Gaz;Surgele T;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CGC;Production;Gaz;CG1;2;S200;M200;Z100;STEG;ElMazeraa;Production

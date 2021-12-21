@@ -1,0 +1,2 @@
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A331;IMEF1_Ch 4 -12;Froid (-)  Ammoniac;CAM1A33;Extension IMEF1;7;*;M113;M115;*;Extension IMEF;Extension IMEF1;Reel;Machine;Froid;*;Froid;!~*;!~*;;;;;2;IMEF1_Ch 4 -12;*;*
+P:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A33;Extension IMEF1;Froid (-)  Ammoniac;CAM1A3;6;*;M113;M115;*;Extension IMEF;Extension IMEF1

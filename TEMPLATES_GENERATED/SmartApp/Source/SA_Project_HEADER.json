@@ -1,0 +1,15 @@
+{
+  "buildVersion": "0x030216",
+  "config": {
+    "title": "Energy Management System",
+    "view": "list",
+    "network": {
+      "updateFrequency": 0,
+      "errorsFilter": 0,
+      "reconnection": 0,
+      "reconnectionDelay": 0
+    }
+  },
+  "data": {
+    "id": "root",
+	

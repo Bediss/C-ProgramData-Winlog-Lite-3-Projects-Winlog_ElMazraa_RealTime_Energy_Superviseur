@@ -1,0 +1,4 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1M31;compresseur air1;Electrique;CC1M3;Chauf-SurgelTR6;7;S200;M1B0;M141;STEG;PosteTR6;compressuer air1;Reel;Machine;*;*;Chaufferie;!~*;!~*;;;;;2;compresseur a air 1;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1M32;compresseur air2;Electrique;CC1M3;Chauf-SurgelTR6;7;S200;M1B0;M142;STEG;PosteTR6;compressuer air2;Reel;Machine;*;*;Chaufferie;!~*;!~*;;;;;2;compresseur a air 2;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1M33;sondage bas;Electrique;CC1M3;Chauf-SurgelTR6;6;S200;M1B0;M147;STEG;PosteTR6;sondage bas;Reel;SubAtelier;*;*;Chaufferie;!~*;!~*;;;;;2;sondage bas;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1M3;Chauf-SurgelTR6;Electrique;CC1M;5;S200;M1B0;M140;STEG;PosteTR6;ChaufferieSurgel

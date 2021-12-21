@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CET321;C26_Cond1+2;Eau Traite;CET32;CT7_CondenseurDick;4;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;F(CET321);Process;Eau;*;Dick;;;F~(~CET321~)~;F~(~C26_Cond1+2~)~;;;0;C26_Condenseur1+Condenseur2;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CET32;CT7_CondenseurDick;Eau Traite;CET3;3;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick

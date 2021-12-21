@@ -1,0 +1,4 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EA;Production;Eau;CE1;ElMazeraa Eau;2;*;*;Z100;*;*;Production;F(CEA);Type de Site;*;*;*;*;*;F~(~CEA~)~;F~(~Production~)~;;;0;Production;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EB;Utilitaire;Eau;CE1;ElMazeraa Eau;2;*;*;Z200;*;*;Utilitaire;CETB;Type de Site;*;*;*;*;*;CETB~;Utilitaire~;;;0;Utilitaire;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EC;Facility Eau;Eau;CE1;ElMazeraa Eau;2;*;*;Z400;*;*;Admin + Facility;F(CEC);Type de Site;*;*;*;*;*;F~(~CEC~)~;F~(~Facility Eau~)~;;;1;Facility Eau;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低E1;ElMazeraa Eau;Eau;CE01;1;*;*;M200;*;*;ElMazeraa

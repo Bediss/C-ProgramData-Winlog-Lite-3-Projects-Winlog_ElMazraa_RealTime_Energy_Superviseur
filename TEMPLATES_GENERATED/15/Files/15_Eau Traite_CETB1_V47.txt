@@ -1,0 +1,5 @@
+F:#2000;m3-J#0;Inc-J#8;低ETB11;CT22_dec+lav-C;Eau Traite;CETB1;CT11_Abattoir;4;M1C0;M1V3;M217;SalleOsmose;Bassin3000;Decoupe;CETB111;Process;Eau;*;Abattoir;;;CETB111~;CT24_lav-caisse~;;;0;CT22_ElMazraa decoupe+lavage caisse;*;*
+F:#2000;m3-J#0;Inc-J#8;低ETB12;CT18_eau-Glacee;Eau Traite;CETB1;CT11_Abattoir;3;M1C0;M1V3;M21F;SalleOsmose;Bassin3000;Abattage-Eclair;CETB2;Usine;Eau;*;Abattoir;;;CETB2~;Froid EauTraite~;;;0;CT18_Station eau Glacee;*;*
+F:#2000;m3-J#0;Inc-J#8;低ET16;CT20_abattage;Eau Traite;CETB1;CT11_Abattoir;4;M1C0;M1V3;M213;SalleOsmose;Bassin3000;Abattage;CET1H+CET1H1+CET17+CET171;Process;Eau;*;Abattoir;;;CET1H~+~CET1H1~+~CET17~+~CET171~;CT32_QAI-VIFS~+~CT46_ABATTAGE-H~+~CT21_ABATTAGE-E~+~CT43_M-gesier~;;;0;CT20_abattage;*;*
+F:#2000;m3-J#0;Inc-J#8;低ETA11;Decoupe ET;Eau Traite;CETB1;CT11_Abattoir;4;M1C0;M1V3;M217;SalleOsmose;Bassin3000;Decoupe;CETB11;Process;Eau;*;Abattoir;;;CETB11~;CT22_dec+lav-C~;;;0;Decoupe Eau Traite;*;*
+P:#2000;m3-J#0;Inc-J#8;低ETB1;CT11_Abattoir;Eau Traite;CETA;4;M1C0;M1V3;M210;SalleOsmose;Bassin3000;Abattoir

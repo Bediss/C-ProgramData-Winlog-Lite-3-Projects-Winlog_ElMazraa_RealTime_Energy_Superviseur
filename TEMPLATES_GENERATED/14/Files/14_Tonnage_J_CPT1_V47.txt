@@ -1,0 +1,7 @@
+F:低PT11;Abattoir T;Tonnage;CPT1;ElMazeraa T;3;*;*;M210;*;*;Abattoir;Reel;Usine;*;*;Abattoir;!~;!~;;;;;2;Abattoir Tonnage;*;*
+F:低PT12;Charcuterie T;Tonnage;CPT1;ElMazeraa T;3;*;*;M220;*;*;Charcuterie;Reel;Usine;*;*;Charcuterie;!~;!~;;;;;2;Charcuterie Tonnage;*;*
+F:低PT13;Conserve T;Tonnage;CPT1;ElMazeraa T;3;*;*;M230;*;*;Conserve;Reel;Usine;*;*;Conserve;!~;!~;;;;;2;Conserve Tonnage;*;*
+F:低PT14;PetFood T;Tonnage;CPT1;ElMazeraa T;3;*;*;M240;*;*;PetFood;Reel;Usine;*;*;PetFood;!~;!~;;;;;2;PetFood Tonnage;*;*
+F:低PT15;Surgele T;Tonnage;CPT1;ElMazeraa T;3;*;*;M250;*;*;Surgele;Reel;Usine;*;*;Surgele;!~;!~;;;;;2;Surgele Tonnage;*;*
+F:低PT16;UCPC T;Tonnage;CPT1;ElMazeraa T;3;*;*;M260;*;*;UCPC;Reel;Usine;*;*;UCPC;!~;!~;;;;;2;UCPC Tonnage;*;*
+P:低PT1;ElMazeraa T;Tonnage;CPT0;1;*;*;M200;*;*;ElMazeraa

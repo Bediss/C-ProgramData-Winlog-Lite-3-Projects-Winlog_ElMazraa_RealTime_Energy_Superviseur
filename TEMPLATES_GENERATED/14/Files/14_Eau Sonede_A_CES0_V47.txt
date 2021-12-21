@@ -1,0 +1,7 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES06;VMZ Distrib ES;Eau Sonede;CES0;VMZ Eau Sonede;1;*;V100;*;*;VMZ;*;Reel;Site;Eau;*;VMZ;!~;!~;;;;;2;VMZ  Distribution Eau Sonede;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES01;VMZ Conso ES;Eau Sonede;CES0;VMZ Eau Sonede;1;*;*;V100;*;*;VMZ;F(CES01);Site;Eau;CPT0;VMZ;;;F~(~CES01~)~;F~(~VMZ Conso ES~)~;;;0;VMZ Consommation Eau Sonede;VMZ Tonnage;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES02;VMZ Prod ES;Eau Sonede;CES0;VMZ Eau Sonede;1;V100;*;*;VMZ;*;*;CES021;Site;Eau;*;VMZ;;;CES021~;SONEDE~;;;0;VMZ Production Eau Sonede;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES03;Ecart PC ES;Eau Sonede;CES0;VMZ Eau Sonede;1;*;*;*;*;*;*;CES02-CES01;Site;Eau;*;VMZ;;;CES02~-~CES01~;VMZ Prod ES~-~VMZ Conso ES~;;;0;Ecart Production/Consommation Eau Sonede;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES04;Ecart PD ES;Eau Sonede;CES0;VMZ Eau Sonede;1;*;*;*;*;*;*;CES02-CES06;Site;Eau;*;VMZ;;;CES02~-~CES06~;VMZ Prod ES~-~VMZ Distrib ES~;;;0;Ecart Production/Distribution Eau Sonede;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES05;Ecart DC ES;Eau Sonede;CES0;VMZ Eau Sonede;1;*;*;*;*;*;*;CES06-CES01;Site;Eau;*;VMZ;;;CES06~-~CES01~;VMZ Distrib ES~-~VMZ Conso ES~;;;0;Ecart Distribution/Consommation Eau Sonede;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ES0;VMZ Eau Sonede;Eau Sonede;*;0;*;*;*;*;*;*

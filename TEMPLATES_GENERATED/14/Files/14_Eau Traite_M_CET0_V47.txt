@@ -1,0 +1,10 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET01;Salle Osmose;Eau Traite;CET0;VMZ Eau Traite;1;M1V2;*;M1V3;Bassin2000;*;Bassin3000;F(CET01);Site;Eau;*;VMZ;;;F~(~CET01~)~;F~(~Salle Osmose~)~;;;0;Salle Osmose;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET02;Sortie B3000 ;Eau Traite;CET0;VMZ Eau Traite;1;M1C0;*;*;SalleOsmose;*;*;CET01-CER14;Site;Eau;*;VMZ;;;CET01~-~CER14~;Salle Osmose~-~CR4 EauSaumatre~;;;0;Sortie B3000 ;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET03;E-Collect ET;Eau Traite;CET0;VMZ Eau Traite;1;M1V3;*;*;Bassin3000;*;*;F(CET03);Site;Eau;*;VMZ;;;F~(~CET03~)~;F~(~E-Collect ET~)~;;;0;entrer Collecteur Eau Traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET04;S-Collect ET;Eau Traite;CET0;VMZ Eau Traite;1;*;V100;*;*;VMZ;*;Reel;Site;Eau;*;VMZ;!~;!~;;;;;2;Sortie Collecteur Eau traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET05;Ecart PC ET;Eau Traite;CET0;VMZ Eau Traite;1;*;*;*;*;*;*;CET02-CET03;Site;Eau;*;VMZ;;;CET02~-~CET03~;Sortie B3000 ~-~E-Collect ET~;;;0;Ecart Production/Consommation Eau Traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET06;Ecart PD ET;Eau Traite;CET0;VMZ Eau Traite;1;*;*;*;*;*;*;CET02-CET04;Site;Eau;*;VMZ;;;CET02~-~CET04~;Sortie B3000 ~-~S-Collect ET~;;;0;Ecart Production/Distribution Eau Traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET07;Ecart DC ET;Eau Traite;CET0;VMZ Eau Traite;1;*;*;*;*;*;*;CET04-CET03;Site;Eau;*;VMZ;;;CET04~-~CET03~;S-Collect ET~-~E-Collect ET~;;;0;Ecart Distribution/Consommation Eau Traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET2;GIPA Eau Traite;Eau Traite;CET0;VMZ Eau Traite;2;M1C0;M1V3;G200;SalleOsmose;Bassin3000;GIPA;Reel;Type de Site;Eau;*;GIPA;!~;!~;;;;;2;GIPA Eau Traite;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET3;Dick Eau Traite;Eau Traite;CET0;VMZ Eau Traite;1;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Site;Eau;CPT2;Dick;!~;!~;;;;;2;Dick Eau Traite;Dick Tonnage;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET0;VMZ Eau Traite;Eau Traite;*;0;*;*;*;*;*;*

@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB25;CB4-1_Collecteur;Eau Brute;CEBD;Prod EB Dick;3;*;M1V1;D200;*;Bassin1000;Dick;F(CEB25);Usine;Eau;*;Dick;*;*;F~(~CEB25~)~;F~(~CB4-1_Collecteur~)~;;;0;CB4-1_ Collecteur Brute  Dick;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEBD;Prod EB Dick;Eau Brute;CEB2;2;*;M1V1;Z100;*;Bassin1000;Production

@@ -1,0 +1,2 @@
+KWh-J-1#33;KWh-J#0;KWh-J#0;KWh/T-J-1#45;KWh/T-J#8;KWh/T-J#8;Inc-J-1#41;Inc-J#29;Inc-J#29;KWh/T-A-1#1000;KWh/T-A-1#1008;KWh/T-A-1#1029;§CC1B;SMF Surgele;Electrique;CCB1;Froid Elec;4;S200;M1B0;M120;STEG;PosteTR6;SMF Surgele;CC1M2;Process;*;*;Froid;*;*;CC1M2~;SMF Surgele TR6~;;;0;SalleMachine Froid Surgele;*;*
+KWf-J-1#14;KWf-J#0;KWf-J#0;KWf / T J-1#18;KWf/T-J#4;KWf/T-J#4;Inc-J-1#22;Inc-J#8;Inc-J#8;#1000;#1004;#1008;§CF1112;SMF Ressuage3;Froid;CF111;Froid;4;*;*;M120;*;*;SMF Surgele;CEG1C;Process;*;*;Froid;*;*;CEG1C~;SMF Ressuage3~;;;0;SalleMachine Froid Ressuage3;*;*

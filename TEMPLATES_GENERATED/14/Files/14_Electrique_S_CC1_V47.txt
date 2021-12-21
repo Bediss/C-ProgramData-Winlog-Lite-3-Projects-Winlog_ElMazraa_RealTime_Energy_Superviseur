@@ -1,0 +1,4 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低CA;Production;Electrique;CC1;ElMazeraa Elec;2;*;MELEC;Z100;*;Post Transfo;Production;F(CCA);Type de Site;*;*;*;*;*;F~(~CCA~)~;F~(~Production~)~;;;0;Production;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低CB;Utilitaire;Electrique;CC1;ElMazeraa Elec;2;*;*;Z200;*;*;Utilitaire;F(CCB);Type de Site;*;*;*;*;*;F~(~CCB~)~;F~(~Utilitaire~)~;;;0;;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低CC;Facility Elec;Electrique;CC1;ElMazeraa Elec;2;S200;M170;Z300;STEG;PosteTR2;Facility;CC1I4;Type de Site;*;*;*;*;*;CC1I4~;facility TR2~;;;0;Facility Electrique;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1;ElMazeraa Elec;Electrique;CCE;1;*;MELEC;M200;*;Post Transfo;ElMazeraa

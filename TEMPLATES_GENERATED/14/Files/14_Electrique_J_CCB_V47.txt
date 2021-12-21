@@ -1,0 +1,5 @@
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;低CB1;Froid Elec;Electrique;CCB;Utilitaire;3;*;*;MA00;*;*;Froid;F(CCB1);Usine;*;*;Froid;*;*;F~(~CCB1~)~;F~(~Froid Elec~)~;;;0;Froid Electrique;*;*
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;低CB4;Chaufferie Elec;Electrique;CCB;Utilitaire;3;S200;*;MC00;STEG;*;Chaufferie;CC1F+CC1I3;Usine;*;*;Chaufferie;*;*;CC1F~+~CC1I3~;ChaufferieSurgele~+~Chaufferie TR2~;;;0;Chaufferie Electrique;*;*
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;低CB2;Eau Electrique;Electrique;CCB;Utilitaire;3;S200;*;MB00;STEG;*;Eau;CC1P1+CC1N7+CC1N1+CC1U;Usine;*;*;Eau;*;*;CC1P1~+~CC1N7~+~CC1N1~+~CC1U~;forage~+~SP TR2x6~+~StationOsmose1~+~Eau TR4~;;;0;Eau Electrique;*;*
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;低CB3;Post Transfo;Electrique;CCB;Utilitaire;3;S200;M200;*;STEG;ElMazeraa;*;F(CCB3);Usine;*;*;Post Transfo;*;*;F~(~CCB3~)~;F~(~Post Transfo~)~;;;0;Post Transformateur;*;*
+P:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;低CB;Utilitaire;Electrique;CC1;2;*;*;Z200;*;*;Utilitaire

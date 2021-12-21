@@ -1,0 +1,1 @@
+KWh-J-1#33;KWh-J#0;KWh-J#0;KWh/T-J-1#45;KWh/T-J#8;KWh/T-J#8;Inc-J-1#41;Inc-J#29;Inc-J#29;KWh/T-A-1#1000;KWh/T-A-1#1008;KWh/T-A-1#1029;§CC117;Abattage Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M213;STEG;Post Transfo;Abattage;CC1I21;Process;*;*;Abattoir;*;*;CC1I21~;Abattage TR2~;;;0;Abattage Electrique;*;*

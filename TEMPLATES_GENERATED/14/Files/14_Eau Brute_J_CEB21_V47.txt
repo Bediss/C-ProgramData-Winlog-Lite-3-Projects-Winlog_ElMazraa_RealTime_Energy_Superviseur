@@ -1,0 +1,3 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB143;CB51_WC-Dec;Eau Brute;CEB21;CB15_G-WC;5;*;M1V1;M217;*;Bassin1000;Decoupe;Reel;Atelier;Eau;*;Abattoir;!~*;!~*;;;;;2;CB51_GENERAL-TOILETTE-Decoupe+Charcuterie+UCPC ;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB211;CB19_WC-char;Eau Brute;CEB21;CB15_G-WC;5;*;M1V1;D200;*;Bassin1000;Dick;Reel;Atelier;Eau;*;Dick;!~*;!~*;;;;;2;CB19_GENERAL-TOILETTE-Decoupe+Charcuterie+UCPC ;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB21;CB15_G-WC;Eau Brute;CEB3;4;*;M1V1;D200;*;Bassin1000;Dick

@@ -1,0 +1,2 @@
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A51;Tunnels:T,Ch;Froid (-)  Ammoniac;CAM1A5;SK-40_ElMazeraa;6;*;M110;M111;*;SMF-ElMazeraa;SKID -40;Reel;SubAtelier;Froid;*;Froid;!~*;!~*;;;;;2;Tunnels : T1,2,3,Ch03;*;*
+P:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A5;SK-40_ElMazeraa;Froid (-)  Ammoniac;CAM1A;5;*;M110;M111;*;SMF-ElMazeraa;SKID -40

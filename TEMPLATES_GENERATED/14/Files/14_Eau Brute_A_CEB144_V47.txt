@@ -1,0 +1,2 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB145;CB46_Station R-D;Eau Brute;CEB144;CB45_Station P;4;*;M1V1;D200;*;Bassin1000;Dick;Reel;Process;Eau;*;Dick;!~*;!~*;;;;;2;CB46_Station relais dick;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEB144;CB45_Station P;Eau Brute;CEB127;6;*;M1V1;M246;*;Bassin1000;Station Primere

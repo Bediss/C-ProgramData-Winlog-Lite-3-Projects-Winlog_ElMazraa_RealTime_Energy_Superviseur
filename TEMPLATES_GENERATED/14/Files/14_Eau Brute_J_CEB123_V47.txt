@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB142;CB18_WC Abat;Eau Brute;CEB123;CB17_LAVAGE-HP ;5;*;M1V1;M213;*;Bassin1000;Abattage;Reel;Atelier;Eau;*;Abattoir;!~*;!~*;;;;;2;CB18_ Toilette Abattage ;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEB123;CB17_LAVAGE-HP ;Eau Brute;CEB12;4;*;M1V1;M213;*;Bassin1000;Abattage

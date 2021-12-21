@@ -1,0 +1,4 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1P111;C skid+evapTR1;Electrique;CC1P11;EXT IMEF1 TR1;7;S200;M160;MA02B;STEG;PosteTR1;C skid+evap/tr1;Reel;Machine;*;*;Froid;!~*;!~*;;;;;2;compteur skid + evap sur tr1;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1P112;compresseur1_1;Electrique;CC1P11;EXT IMEF1 TR1;7;S200;M160;MA02C;STEG;PosteTR1;compresseur1_1;Reel;Machine;*;*;Froid;!~*;!~*;;;;;2;compresseur1_1;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1P113;compresseur2_1;Electrique;CC1P11;EXT IMEF1 TR1;7;S200;M160;MA02D;STEG;PosteTR1;compresseur2_1;Reel;Machine;*;*;Froid;!~*;!~*;;;;;2;compresseur2_1;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;低C1P11;EXT IMEF1 TR1;Electrique;CC1E;6;S200;M160;MA02A;STEG;PosteTR1;EXT IMEF1 TR1

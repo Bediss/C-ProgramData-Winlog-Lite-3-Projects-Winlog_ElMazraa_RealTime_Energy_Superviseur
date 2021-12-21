@@ -1,0 +1,5 @@
+F:#2000;m3-J#0;Inc-J#8;低G1;ElMazeraa Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;M200;M200;STEG;ElMazeraa;ElMazeraa;F(CG1);Site;*;CPT1;ElMazeraa;*;*;F~(~CG1~)~;F~(~ElMazeraa Gaz~)~;;;0;ElMazeraa Gaz;ElMazraa T;*
+F:#2000;m3-J#0;Inc-J#8;低G021;Cogen Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;*;N200;STEG;*;Cogeneration;Reel;Site;*;*;Cogeneration;!~*;!~*;;;;;3;Cogeneration Gaz;*;*
+F:#2000;m3-J#0;Inc-J#8;低G2;Dick Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;D200;D200;STEG;Dick;Dick;Reel;Site;*;CPT2;Dick;!~*;!~*;;;;;2;Dick Gaz;Dick Tonnage;*
+F:#2000;m3-J#0;Inc-J#8;低G3;GIPA Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;G200;G200;STEG;GIPA;GIPA;Reel;Site;*;*;GIPA;!~*;!~*;;;;;2;GIPA Gaz;*;*
+P:#2000;m3-J#0;Inc-J#8;低G01;VMZ Conso Gaz;Gaz;CG0;1;*;*;V100;*;*;VMZ

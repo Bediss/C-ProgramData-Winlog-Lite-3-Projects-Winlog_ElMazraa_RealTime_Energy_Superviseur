@@ -1,0 +1,5 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ET1B;CT25_cutter-1;Eau Traite;CETA2;CT12_Bain Marie;7;M1C0;M1V3;M22B;SalleOsmose;Bassin3000;cutteru N1;Reel;Machine;Eau;*;Charcuterie;!~;!~;;;;;2;CT25_CHARCUTERIE cutter1;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ET1C;CT26_cutter-2;Eau Traite;CETA2;CT12_Bain Marie;7;M1C0;M1V3;M22C;SalleOsmose;Bassin3000;cutteur N2;Reel;Machine;Eau;*;Charcuterie;!~;!~;;;;;2;CT26_CHARCUTERIE cutter2;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ET1D;CT27_cutter500;Eau Traite;CETA2;CT12_Bain Marie;7;M1C0;M1V3;M224;SalleOsmose;Bassin3000;Cutter 500 ;Reel;Machine;Eau;*;Charcuterie;!~;!~;;;;;2;CT27_CHARCUTERIE cutter500;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ET1R;CT44_CHAR-A-point;Eau Traite;CETA2;CT12_Bain Marie;7;M1C0;M1V3;M22E;SalleOsmose;Bassin3000;A-Condenseur;Reel;Machine;Eau;*;Charcuterie;!~;!~;;;;;2;CT44_CHARCUTERIE A point;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ETA2;CT12_Bain Marie;Eau Traite;CETA;3;M1C0;M1V3;M220;SalleOsmose;Bassin3000;Charcuterie

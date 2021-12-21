@@ -1,0 +1,6 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB121;CB40_Admin;Eau Brute;CEB12;CB11_CHARCUT;4;*;M1V1;M270;*;Bassin1000;Administration;Reel;Process;Eau;*;Charcuterie;!~*;!~*;;;;;2;CB40_Administration ;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB125;CB37_RNetSurg2;Eau Brute;CEB12;CB11_CHARCUT;7;*;M1V1;M25O;*;Bassin1000;Net-Surgele 2;Reel;Machine;Eau;*;Surgele;!~*;!~*;;;;;2;CB37_R Nettoyage Surgele 2;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB124;CB36_RNetSurg1;Eau Brute;CEB12;CB11_CHARCUT;7;*;M1V1;M25P;*;Bassin1000;Net-Surgele 1;Reel;Machine;Eau;*;Surgele;!~*;!~*;;;;;2;CB36_R Nettoyage Surgele 1;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB123;CB17_LAVAGE-HP ;Eau Brute;CEB12;CB11_CHARCUT;4;*;M1V1;M213;*;Bassin1000;Abattage;CEB142;Process;Eau;*;Abattoir;*;*;CEB142~;CB18_WC Abat~;;;0;CB17_LAVAGE-HP ;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB127;CB48_hydro-Net;Eau Brute;CEB12;CB11_CHARCUT;4;*;M1V1;M21H;*;Bassin1000;Hydro nettoyeur;F(CEB127);Process;Eau;*;Abattoir;*;*;F~(~CEB127~)~;F~(~CB48_hydro-Net~)~;;;0;CB48_hydro nettoyeur;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低EB12;CB11_CHARCUT;Eau Brute;CEBA;3;*;M1V1;*;*;Bassin1000;*

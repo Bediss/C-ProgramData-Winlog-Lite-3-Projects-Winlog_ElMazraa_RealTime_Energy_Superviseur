@@ -1,0 +1,2 @@
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAMB;Utilitaire;Froid (-)  Ammoniac;CAM1;ElMazeraa Am;2;*;*;Z200;*;*;Utilitaire;F(CAMB);Type de Site;Froid;*;*;*;*;F~(~CAMB~)~;F~(~Utilitaire~)~;;;0;Utilitaire;*;*
+P:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1;ElMazeraa Am;Froid (-)  Ammoniac;CAM0;1;*;*;M200;*;*;ElMazeraa

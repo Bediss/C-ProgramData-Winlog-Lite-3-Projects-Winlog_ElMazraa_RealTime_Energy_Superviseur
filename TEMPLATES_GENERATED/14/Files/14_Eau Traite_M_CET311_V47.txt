@@ -1,0 +1,7 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET3111;Machin-Dick-Pro;Eau Traite;CET311;CT13_DICK-PRO;6;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;F(CET3111);SubAtelier;Eau;*;Dick;;;F~(~CET3111~)~;F~(~Machin-Dick-Pro~)~;;;0;Machines DickProcess;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET31A;C25_QuaiVif;Eau Traite;CET311;CT13_DICK-PRO;5;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C25_QuaiVif;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET31G;C17_Lav-croch;Eau Traite;CET311;CT13_DICK-PRO;5;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C17_Lavage crochet ressuage+Douchage final HP;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET31F;C15_E-ehangeur;Eau Traite;CET311;CT13_DICK-PRO;5;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C15_Entree ehangeur a plaques;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET31E;C40_Lavagecaisses;Eau Traite;CET311;CT13_DICK-PRO;5;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C40_Lavage caisses;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET31B;C9_Evisceration;Eau Traite;CET311;CT13_DICK-PRO;5;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick;Reel;Atelier;Eau;*;Dick;!~;!~;;;;;2;C9_Evisceration;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低ET311;CT13_DICK-PRO;Eau Traite;CET31;4;M1C0;M1V3;D200;SalleOsmose;Bassin3000;Dick

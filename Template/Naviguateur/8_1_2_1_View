@@ -1,0 +1,213 @@
+#Version: 0x03021b
+#Access: 0
+#Pos: 0,150
+#Size: 1350,530
+#BkColor: 235,240,239
+#Gates: 0
+#Style: FixedNoBorder
+#StayOnTop: 0
+#Object: Frame
+  #ID: 0
+  #Pos: 0,0
+  #Size: 1350,3
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1081,3
+  #Size: 268,60
+  #BkColor: 235,240,239
+  #Style: 1
+  #TabOrder: 1
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBlack
+    #Font: Gotham Medium,11,0000
+    #Label:  (5)View
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 5,30
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBlack
+    #Font: Gotham Medium,11,0000
+    #Label:  Sélectionnez ci-dessous :
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 811,3
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 2
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (4)Energy
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 541,3
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 3
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (3)Tableau
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 5,105
+    #Size: 242,25
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clWhite
+    #Font: Courier New,12,0001
+    #Label: %s
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 271,3
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 4
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (2)Unite
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Frame
+  #ID: 0
+  #Pos: 1,3
+  #Size: 268,30
+  #BkColor: 111,115,114
+  #Style: 1
+  #TabOrder: 5
+  #Access: 0
+  #Object: Label
+    #ID: 0
+    #Pos: 5,5
+    #Size: 242,20
+    #BkColor: clNone
+    #Cursor: 0
+    #TxtColor: clBtnFace
+    #Font: Gotham Medium,11,0000
+    #Label:  (1)Site
+    #Align: 36
+    #Frame: 1
+    #Access: 0
+  #EndObj
+#EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,81
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ Temps Réel.           
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: StartF,NAV_FC_11_Electrique_35383538M200_Live_V47()
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,102
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ Journalier.           
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: StartF,NAV_FC_11_Electrique_35383538M200_J_V47()
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,123
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ Hebdomadaire.         
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: StartF,NAV_FC_11_Electrique_35383538M200_S_V47()
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,144
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ Mensuel.              
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: StartF,NAV_FC_11_Electrique_35383538M200_M_V47()
+   #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 1081,165
+    #Size: 268,20
+    #Cursor: 0
+    #Label: ¤ Annuel.               
+    #Font: Courier New,12,0001
+     #TabOrder: 0
+     #Access: 0
+     #OnClick: StartF,NAV_FC_11_Electrique_35383538M200_A_V47()
+   #EndObj
+
+
+
+
+

@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEBAA11;Condenseur;Eau Brute;CEBAA1;Froid Eau Brute;4;*;M1V1;M1T0;*;Bassin1000;Condenseur;CEB126;Process;Eau;*;Froid;*;*;CEB126~;CB47_A-Condens~;;;0;Condenseur;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CEBAA1;Froid Eau Brute;Eau Brute;CEBAA;3;*;M1V1;MA00;*;Bassin1000;Froid

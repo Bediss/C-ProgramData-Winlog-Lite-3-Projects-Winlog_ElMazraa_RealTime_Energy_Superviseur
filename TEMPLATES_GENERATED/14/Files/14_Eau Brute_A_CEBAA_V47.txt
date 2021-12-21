@@ -1,0 +1,2 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEBAA1;Froid Eau Brute;Eau Brute;CEBAA;Utilitaire;3;*;M1V1;MA00;*;Bassin1000;Froid;CEBAA11;Usine;Eau;*;Froid;*;*;CEBAA11~;Condenseur~;;;0;Froid Eau Brute;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEBAA;Utilitaire;Eau Brute;CEB1;2;*;M1V1;Z200;*;Bassin1000;Utilitaire

@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CEB1D1;CB14_Vest+Refect;Eau Brute;CEB1D;Refectoire EB;4;*;M1V1;M290;*;Bassin1000;Refectoire;Reel;Process;Eau;*;Refectoires;!~*;!~*;;;;;2;CB14_Vestiaire-et-Refectoire ;*;*
+F:#2000;m3-J#0;Inc-J#8;§CEB1D2;CB15_G-WC;Eau Brute;CEB1D;Refectoire EB;4;*;M1V1;M217;*;Bassin1000;Decoupe;Reel;Process;Eau;*;Refectoires;!~*;!~*;;;;;2;CB15_GENERAL-TOILETTE-Decoupe+Charcuterie+UCPC;*;*
+P:#2000;m3-J#0;Inc-J#8;§CEB1D;Refectoire EB;Eau Brute;CEBB;3;*;M1V1;M290;*;Bassin1000;Refectoire

@@ -1,0 +1,1 @@
+47;Energy_Supervisor_V47;28012020121529;;;;DEV;C:\ProgramData\Winlog Pro 3\Projects\Energy_Supervisor_V47

@@ -1,0 +1,7 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES19;CS4_ UCPC ;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;M260;SONEDE;*;UCPC;F(CES19);Usine;Eau;*;UCPC;;;F~(~CES19~)~;F~(~CS4_ UCPC ~)~;;;1;CS4_ UCPC ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES1A;CS5_CHARCUTERIE ;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;M200;SONEDE;*;ElMazeraa;Reel;Usine;Eau;CPT12;ElMazeraa;!~;!~;;;;;3;CS5_CHARCUTERIE ;Charcuterie T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES1B;CS6_refectoire ;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;M290;SONEDE;*;Refectoire;Reel;Usine;Eau;*;Refectoires;!~;!~;;;;;3;CS6_refectoire ;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES1E;CS9_pet food;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;M240;SONEDE;*;PetFood;Reel;Usine;Eau;CPT14;PetFood;!~;!~;;;;;3;CS9_pet food;PetFood T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES1F;CS8_Coproduit;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;C200;SONEDE;*;CoProduit;Reel;Usine;Eau;*;CoProduit;!~;!~;;;;;4;CS8_Coproduit;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES14;CS13_DICKelvage ;Eau Sonede;CES1;CS1_SONEDE;3;M1S0;*;D200;SONEDE;*;Dick;Reel;Usine;Eau;*;Dick;!~;!~;;;;;3;CS13_DICKelvage ;*;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低ES1;CS1_SONEDE;Eau Sonede;CES01;1;M1S0;*;M200;SONEDE;*;ElMazeraa

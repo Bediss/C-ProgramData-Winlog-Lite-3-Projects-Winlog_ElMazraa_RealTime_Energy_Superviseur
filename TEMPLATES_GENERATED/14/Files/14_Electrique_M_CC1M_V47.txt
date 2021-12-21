@@ -1,0 +1,4 @@
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1M1;Surgele TR6;Electrique;CC1M;PosteTR6;5;S200;M1B0;M25G;STEG;PosteTR6;Surgele TR6;F(CC1M1);Atelier;*;*;Surgele;*;*;F~(~CC1M1~)~;F~(~Surgele TR6~)~;;;0;Surgele TR6;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1M2;SMF Surgele TR6;Electrique;CC1M;PosteTR6;5;S200;M1B0;MA09E;STEG;PosteTR6;SMF Surgele TR6;F(CC1M2);Atelier;*;*;Froid;*;*;F~(~CC1M2~)~;F~(~SMF Surgele TR6~)~;;;0;SalleMachine Froid Surgele TR6;*;*
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1M3;Chauf-SurgelTR6;Electrique;CC1M;PosteTR6;5;S200;M1B0;M140;STEG;PosteTR6;ChaufferieSurgel;F(CC1M3);Atelier;*;*;Chaufferie;*;*;F~(~CC1M3~)~;F~(~Chauf-SurgelTR6~)~;;;0;ChaufferieSurgele TR6;*;*
+P:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;低C1M;PosteTR6;Electrique;CCB3;4;S200;MELEC;*;STEG;Post Transfo;*

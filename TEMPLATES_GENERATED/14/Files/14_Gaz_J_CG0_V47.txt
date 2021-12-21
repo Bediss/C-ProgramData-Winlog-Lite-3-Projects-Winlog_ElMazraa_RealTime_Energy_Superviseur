@@ -1,0 +1,5 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G06;VMZ Distrib Gaz;Gaz;CG0;VMZ Gaz;1;*;V100;*;*;VMZ;*;Reel;Site;*;*;VMZ;!~*;!~*;;;;;2;VMZ Distribution Gaz;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G01;VMZ Conso Gaz;Gaz;CG0;VMZ Gaz;1;*;*;V100;*;*;VMZ;F(CG01);Site;*;CPT0;VMZ;*;*;F~(~CG01~)~;F~(~VMZ Conso Gaz~)~;;;0;VMZ Consommation Gaz;VMZ Tonnage;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G02;VMZ Prod Gaz;Gaz;CG0;VMZ Gaz;1;V100;*;*;VMZ;*;*;CG022;Site;*;*;VMZ;*;*;CG022~;STEG Gaz~;;;0;VMZ Production Gaz;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G03;Ecart PC Gaz;Gaz;CG0;VMZ Gaz;1;*;*;*;*;*;*;CG02-CG01;Site;*;*;VMZ;*;*;CG02~-~CG01~;VMZ Prod Gaz~-~VMZ Conso Gaz~;;;0;Ecart Production/Consommation Gaz;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低G0;VMZ Gaz;Gaz;*;0;*;*;*;*;*;*

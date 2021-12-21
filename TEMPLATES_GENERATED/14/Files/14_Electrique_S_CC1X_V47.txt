@@ -1,0 +1,2 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1Q6;MPF ancienne  ;Electrique;CC1X;Froid TR2;5;S200;M170;MA03A;STEG;PosteTR2;MPF  ancienne  ;Reel;Atelier;*;*;Froid;!~*;!~*;;;;;2;MPF ancienne  ;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1X;Froid TR2;Electrique;CC1I;6;S200;M170;MA03;STEG;PosteTR2;Froid TR2

@@ -1,0 +1,3 @@
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;§CC1U1;SP Nouveau TR4;Electrique;CC1U;Eau TR4;6;S200;M190;MB04;STEG;PosteTR4;SP Nouveau TR4;Reel;SubAtelier;*;*;Eau;!~*;!~*;;;;;2;SP Nouveau TR4;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;§CC1U2;StationOsmose2;Electrique;CC1U;Eau TR4;6;S200;M190;MB05;STEG;PosteTR4;StationOsmose2;Reel;SubAtelier;*;*;Eau;!~*;!~*;;;;;2;Station Osmose2;*;*
+P:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;§CC1U;Eau TR4;Electrique;CC1K;5;S200;M190;MB09;STEG;PosteTR4;Eau TR4

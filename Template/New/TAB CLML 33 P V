@@ -1,0 +1,1420 @@
+#Version: 0x030222
+#Access: 0
+#Pos: 0,0
+#Size: 250,900
+#BkColor: clWhite
+#Gates: 320
+  #CMP: CompteurCode_1,Label_1
+  #CMP: CompteurCode_2,Label_1
+  #CMP: CompteurCode_3,Label_1
+  #CMP: CompteurCode_4,Label_1
+  #CMP: CompteurCode_5,Label_1
+  #CMP: CompteurCode_6,Label_1
+  #CMP: CompteurCode_7,Label_1
+  #CMP: CompteurCode_8,Label_1
+  #CMP: CompteurCode_9,Label_1
+  #CMP: CompteurCode_10,Label_1
+  #CMP: CompteurCode_11,Label_1
+  #CMP: CompteurCode_12,Label_1
+  #CMP: CompteurCode_13,Label_1
+  #CMP: CompteurCode_14,Label_1
+  #CMP: CompteurCode_15,Label_1
+  #CMP: CompteurCode_16,Label_1
+  #CMP: CompteurCode_17,Label_1
+  #CMP: CompteurCode_18,Label_1
+  #CMP: CompteurCode_19,Label_1
+  #CMP: CompteurCode_20,Label_1
+  #CMP: CompteurCode_21,Label_1
+  #CMP: CompteurCode_22,Label_1
+  #CMP: CompteurCode_23,Label_1
+  #CMP: CompteurCode_24,Label_1
+  #CMP: CompteurCode_25,Label_1
+  #CMP: CompteurCode_26,Label_1
+  #CMP: CompteurCode_27,Label_1
+  #CMP: CompteurCode_28,Label_1
+  #CMP: CompteurCode_29,Label_1
+  #CMP: CompteurCode_30,Label_1
+  #CMP: CompteurCode_31,Label_1
+  #CMP: CompteurCode_32,Label_1
+  #CMP: CompteurCode_33,Label_1
+  #CMP: CompteurCode_34,Label_1
+  #CMP: CompteurCode_35,Label_1
+  #CMP: CompteurCode_36,Label_1
+  #CMP: CompteurCode_37,Label_1
+  #CMP: CompteurCode_38,Label_1
+  #CMP: CompteurCode_39,Label_1
+  #CMP: CompteurCode_40,Label_1
+  #CMP: CompteurCode_1,Label_2
+  #CMP: CompteurCode_2,Label_2
+  #CMP: CompteurCode_3,Label_2
+  #CMP: CompteurCode_4,Label_2
+  #CMP: CompteurCode_5,Label_2
+  #CMP: CompteurCode_6,Label_2
+  #CMP: CompteurCode_7,Label_2
+  #CMP: CompteurCode_8,Label_2
+  #CMP: CompteurCode_9,Label_2
+  #CMP: CompteurCode_10,Label_2
+  #CMP: CompteurCode_11,Label_2
+  #CMP: CompteurCode_12,Label_2
+  #CMP: CompteurCode_13,Label_2
+  #CMP: CompteurCode_14,Label_2
+  #CMP: CompteurCode_15,Label_2
+  #CMP: CompteurCode_16,Label_2
+  #CMP: CompteurCode_17,Label_2
+  #CMP: CompteurCode_18,Label_2
+  #CMP: CompteurCode_19,Label_2
+  #CMP: CompteurCode_20,Label_2
+  #CMP: CompteurCode_21,Label_2
+  #CMP: CompteurCode_22,Label_2
+  #CMP: CompteurCode_23,Label_2
+  #CMP: CompteurCode_24,Label_2
+  #CMP: CompteurCode_25,Label_2
+  #CMP: CompteurCode_26,Label_2
+  #CMP: CompteurCode_27,Label_2
+  #CMP: CompteurCode_28,Label_2
+  #CMP: CompteurCode_29,Label_2
+  #CMP: CompteurCode_30,Label_2
+  #CMP: CompteurCode_31,Label_2
+  #CMP: CompteurCode_32,Label_2
+  #CMP: CompteurCode_33,Label_2
+  #CMP: CompteurCode_34,Label_2
+  #CMP: CompteurCode_35,Label_2
+  #CMP: CompteurCode_36,Label_2
+  #CMP: CompteurCode_37,Label_2
+  #CMP: CompteurCode_38,Label_2
+  #CMP: CompteurCode_39,Label_2
+  #CMP: CompteurCode_40,Label_2
+  #CMP: CompteurCode_1,Label_3
+  #CMP: CompteurCode_2,Label_3
+  #CMP: CompteurCode_3,Label_3
+  #CMP: CompteurCode_4,Label_3
+  #CMP: CompteurCode_5,Label_3
+  #CMP: CompteurCode_6,Label_3
+  #CMP: CompteurCode_7,Label_3
+  #CMP: CompteurCode_8,Label_3
+  #CMP: CompteurCode_9,Label_3
+  #CMP: CompteurCode_10,Label_3
+  #CMP: CompteurCode_11,Label_3
+  #CMP: CompteurCode_12,Label_3
+  #CMP: CompteurCode_13,Label_3
+  #CMP: CompteurCode_14,Label_3
+  #CMP: CompteurCode_15,Label_3
+  #CMP: CompteurCode_16,Label_3
+  #CMP: CompteurCode_17,Label_3
+  #CMP: CompteurCode_18,Label_3
+  #CMP: CompteurCode_19,Label_3
+  #CMP: CompteurCode_20,Label_3
+  #CMP: CompteurCode_21,Label_3
+  #CMP: CompteurCode_22,Label_3
+  #CMP: CompteurCode_23,Label_3
+  #CMP: CompteurCode_24,Label_3
+  #CMP: CompteurCode_25,Label_3
+  #CMP: CompteurCode_26,Label_3
+  #CMP: CompteurCode_27,Label_3
+  #CMP: CompteurCode_28,Label_3
+  #CMP: CompteurCode_29,Label_3
+  #CMP: CompteurCode_30,Label_3
+  #CMP: CompteurCode_31,Label_3
+  #CMP: CompteurCode_32,Label_3
+  #CMP: CompteurCode_33,Label_3
+  #CMP: CompteurCode_34,Label_3
+  #CMP: CompteurCode_35,Label_3
+  #CMP: CompteurCode_36,Label_3
+  #CMP: CompteurCode_37,Label_3
+  #CMP: CompteurCode_38,Label_3
+  #CMP: CompteurCode_39,Label_3
+  #CMP: CompteurCode_40,Label_3
+  #CMP: CompteurCode_1,Label_4
+  #CMP: CompteurCode_2,Label_4
+  #CMP: CompteurCode_3,Label_4
+  #CMP: CompteurCode_4,Label_4
+  #CMP: CompteurCode_5,Label_4
+  #CMP: CompteurCode_6,Label_4
+  #CMP: CompteurCode_7,Label_4
+  #CMP: CompteurCode_8,Label_4
+  #CMP: CompteurCode_9,Label_4
+  #CMP: CompteurCode_10,Label_4
+  #CMP: CompteurCode_11,Label_4
+  #CMP: CompteurCode_12,Label_4
+  #CMP: CompteurCode_13,Label_4
+  #CMP: CompteurCode_14,Label_4
+  #CMP: CompteurCode_15,Label_4
+  #CMP: CompteurCode_16,Label_4
+  #CMP: CompteurCode_17,Label_4
+  #CMP: CompteurCode_18,Label_4
+  #CMP: CompteurCode_19,Label_4
+  #CMP: CompteurCode_20,Label_4
+  #CMP: CompteurCode_21,Label_4
+  #CMP: CompteurCode_22,Label_4
+  #CMP: CompteurCode_23,Label_4
+  #CMP: CompteurCode_24,Label_4
+  #CMP: CompteurCode_25,Label_4
+  #CMP: CompteurCode_26,Label_4
+  #CMP: CompteurCode_27,Label_4
+  #CMP: CompteurCode_28,Label_4
+  #CMP: CompteurCode_29,Label_4
+  #CMP: CompteurCode_30,Label_4
+  #CMP: CompteurCode_31,Label_4
+  #CMP: CompteurCode_32,Label_4
+  #CMP: CompteurCode_33,Label_4
+  #CMP: CompteurCode_34,Label_4
+  #CMP: CompteurCode_35,Label_4
+  #CMP: CompteurCode_36,Label_4
+  #CMP: CompteurCode_37,Label_4
+  #CMP: CompteurCode_38,Label_4
+  #CMP: CompteurCode_39,Label_4
+  #CMP: CompteurCode_40,Label_4
+  #CMP: CompteurCode_1,Label_5
+  #CMP: CompteurCode_2,Label_5
+  #CMP: CompteurCode_3,Label_5
+  #CMP: CompteurCode_4,Label_5
+  #CMP: CompteurCode_5,Label_5
+  #CMP: CompteurCode_6,Label_5
+  #CMP: CompteurCode_7,Label_5
+  #CMP: CompteurCode_8,Label_5
+  #CMP: CompteurCode_9,Label_5
+  #CMP: CompteurCode_10,Label_5
+  #CMP: CompteurCode_11,Label_5
+  #CMP: CompteurCode_12,Label_5
+  #CMP: CompteurCode_13,Label_5
+  #CMP: CompteurCode_14,Label_5
+  #CMP: CompteurCode_15,Label_5
+  #CMP: CompteurCode_16,Label_5
+  #CMP: CompteurCode_17,Label_5
+  #CMP: CompteurCode_18,Label_5
+  #CMP: CompteurCode_19,Label_5
+  #CMP: CompteurCode_20,Label_5
+  #CMP: CompteurCode_21,Label_5
+  #CMP: CompteurCode_22,Label_5
+  #CMP: CompteurCode_23,Label_5
+  #CMP: CompteurCode_24,Label_5
+  #CMP: CompteurCode_25,Label_5
+  #CMP: CompteurCode_26,Label_5
+  #CMP: CompteurCode_27,Label_5
+  #CMP: CompteurCode_28,Label_5
+  #CMP: CompteurCode_29,Label_5
+  #CMP: CompteurCode_30,Label_5
+  #CMP: CompteurCode_31,Label_5
+  #CMP: CompteurCode_32,Label_5
+  #CMP: CompteurCode_33,Label_5
+  #CMP: CompteurCode_34,Label_5
+  #CMP: CompteurCode_35,Label_5
+  #CMP: CompteurCode_36,Label_5
+  #CMP: CompteurCode_37,Label_5
+  #CMP: CompteurCode_38,Label_5
+  #CMP: CompteurCode_39,Label_5
+  #CMP: CompteurCode_40,Label_5
+  #CMP: CompteurCode_1,Label_6
+  #CMP: CompteurCode_2,Label_6
+  #CMP: CompteurCode_3,Label_6
+  #CMP: CompteurCode_4,Label_6
+  #CMP: CompteurCode_5,Label_6
+  #CMP: CompteurCode_6,Label_6
+  #CMP: CompteurCode_7,Label_6
+  #CMP: CompteurCode_8,Label_6
+  #CMP: CompteurCode_9,Label_6
+  #CMP: CompteurCode_10,Label_6
+  #CMP: CompteurCode_11,Label_6
+  #CMP: CompteurCode_12,Label_6
+  #CMP: CompteurCode_13,Label_6
+  #CMP: CompteurCode_14,Label_6
+  #CMP: CompteurCode_15,Label_6
+  #CMP: CompteurCode_16,Label_6
+  #CMP: CompteurCode_17,Label_6
+  #CMP: CompteurCode_18,Label_6
+  #CMP: CompteurCode_19,Label_6
+  #CMP: CompteurCode_20,Label_6
+  #CMP: CompteurCode_21,Label_6
+  #CMP: CompteurCode_22,Label_6
+  #CMP: CompteurCode_23,Label_6
+  #CMP: CompteurCode_24,Label_6
+  #CMP: CompteurCode_25,Label_6
+  #CMP: CompteurCode_26,Label_6
+  #CMP: CompteurCode_27,Label_6
+  #CMP: CompteurCode_28,Label_6
+  #CMP: CompteurCode_29,Label_6
+  #CMP: CompteurCode_30,Label_6
+  #CMP: CompteurCode_31,Label_6
+  #CMP: CompteurCode_32,Label_6
+  #CMP: CompteurCode_33,Label_6
+  #CMP: CompteurCode_34,Label_6
+  #CMP: CompteurCode_35,Label_6
+  #CMP: CompteurCode_36,Label_6
+  #CMP: CompteurCode_37,Label_6
+  #CMP: CompteurCode_38,Label_6
+  #CMP: CompteurCode_39,Label_6
+  #CMP: CompteurCode_40,Label_6
+  #CMP: CompteurCode_1,Label_7
+  #CMP: CompteurCode_2,Label_7
+  #CMP: CompteurCode_3,Label_7
+  #CMP: CompteurCode_4,Label_7
+  #CMP: CompteurCode_5,Label_7
+  #CMP: CompteurCode_6,Label_7
+  #CMP: CompteurCode_7,Label_7
+  #CMP: CompteurCode_8,Label_7
+  #CMP: CompteurCode_9,Label_7
+  #CMP: CompteurCode_10,Label_7
+  #CMP: CompteurCode_11,Label_7
+  #CMP: CompteurCode_12,Label_7
+  #CMP: CompteurCode_13,Label_7
+  #CMP: CompteurCode_14,Label_7
+  #CMP: CompteurCode_15,Label_7
+  #CMP: CompteurCode_16,Label_7
+  #CMP: CompteurCode_17,Label_7
+  #CMP: CompteurCode_18,Label_7
+  #CMP: CompteurCode_19,Label_7
+  #CMP: CompteurCode_20,Label_7
+  #CMP: CompteurCode_21,Label_7
+  #CMP: CompteurCode_22,Label_7
+  #CMP: CompteurCode_23,Label_7
+  #CMP: CompteurCode_24,Label_7
+  #CMP: CompteurCode_25,Label_7
+  #CMP: CompteurCode_26,Label_7
+  #CMP: CompteurCode_27,Label_7
+  #CMP: CompteurCode_28,Label_7
+  #CMP: CompteurCode_29,Label_7
+  #CMP: CompteurCode_30,Label_7
+  #CMP: CompteurCode_31,Label_7
+  #CMP: CompteurCode_32,Label_7
+  #CMP: CompteurCode_33,Label_7
+  #CMP: CompteurCode_34,Label_7
+  #CMP: CompteurCode_35,Label_7
+  #CMP: CompteurCode_36,Label_7
+  #CMP: CompteurCode_37,Label_7
+  #CMP: CompteurCode_38,Label_7
+  #CMP: CompteurCode_39,Label_7
+  #CMP: CompteurCode_40,Label_7
+  #CMP: CompteurCode_1,Label_8
+  #CMP: CompteurCode_2,Label_8
+  #CMP: CompteurCode_3,Label_8
+  #CMP: CompteurCode_4,Label_8
+  #CMP: CompteurCode_5,Label_8
+  #CMP: CompteurCode_6,Label_8
+  #CMP: CompteurCode_7,Label_8
+  #CMP: CompteurCode_8,Label_8
+  #CMP: CompteurCode_9,Label_8
+  #CMP: CompteurCode_10,Label_8
+  #CMP: CompteurCode_11,Label_8
+  #CMP: CompteurCode_12,Label_8
+  #CMP: CompteurCode_13,Label_8
+  #CMP: CompteurCode_14,Label_8
+  #CMP: CompteurCode_15,Label_8
+  #CMP: CompteurCode_16,Label_8
+  #CMP: CompteurCode_17,Label_8
+  #CMP: CompteurCode_18,Label_8
+  #CMP: CompteurCode_19,Label_8
+  #CMP: CompteurCode_20,Label_8
+  #CMP: CompteurCode_21,Label_8
+  #CMP: CompteurCode_22,Label_8
+  #CMP: CompteurCode_23,Label_8
+  #CMP: CompteurCode_24,Label_8
+  #CMP: CompteurCode_25,Label_8
+  #CMP: CompteurCode_26,Label_8
+  #CMP: CompteurCode_27,Label_8
+  #CMP: CompteurCode_28,Label_8
+  #CMP: CompteurCode_29,Label_8
+  #CMP: CompteurCode_30,Label_8
+  #CMP: CompteurCode_31,Label_8
+  #CMP: CompteurCode_32,Label_8
+  #CMP: CompteurCode_33,Label_8
+  #CMP: CompteurCode_34,Label_8
+  #CMP: CompteurCode_35,Label_8
+  #CMP: CompteurCode_36,Label_8
+  #CMP: CompteurCode_37,Label_8
+  #CMP: CompteurCode_38,Label_8
+  #CMP: CompteurCode_39,Label_8
+  #CMP: CompteurCode_40,Label_8
+#Style: Standard
+#StayOnTop: 0
+#Object: Frame
+  #ID: 0
+  #Pos: 0,30
+  #Size: 250,840
+  #BkColor: clWhite
+  #Style: 1
+  #TabOrder: 0
+  #Access: 0
+  #Object: Frame
+    #ID: 0
+    #Pos: 187,4
+    #Size: 70,22
+    #BkColor: clWhite
+    #Style: 1
+    #TabOrder: 0
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 1,1
+      #Size: 68,20
+      #BkColor: 79,129,189
+      #Cursor: 0
+      #TxtColor: clWhite
+      #Font: Gotham Book,10,0001
+      #Label: Label 1
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 2,26
+    #Size: 185,810
+    #BkColor: clWhite
+    #Style: 1
+    #TabOrder: 1
+    #Access: 0
+    #Object: Label
+      #ID: 0
+      #Pos: 1,5
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 1
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,25
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 2
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,45
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 3
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,65
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 4
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,85
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 5
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,105
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 6
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,125
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 7
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,145
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 8
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,165
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 9
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,185
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 10
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,205
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 11
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,225
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 12
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,245
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 13
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,265
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 14
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,285
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 15
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,305
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 16
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,325
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 17
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,345
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 18
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,365
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 19
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,385
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 20
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,405
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 21
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,425
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 22
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,445
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 23
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,465
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 24
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,485
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 25
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,505
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 26
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,525
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 27
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,545
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 28
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,565
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 29
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,585
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 30
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,605
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 31
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,625
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 32
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,645
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 33
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,665
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 34
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,685
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 35
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,705
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 36
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,725
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 37
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,745
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 38
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,765
+      #Size: 183,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 39
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 0
+      #Pos: 1,785
+      #Size: 183,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: Compteur Name 40
+      #Align: 36
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+  #Object: Frame
+    #ID: 0
+    #Pos: 187,26
+    #Size: 70,810
+    #BkColor: clWhite
+    #Style: 1
+    #TabOrder: 2
+    #Access: 0
+    #Object: Label
+      #ID: 11
+      #Pos: 1,5
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Gate: 0
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 21
+      #Pos: 1,25
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 31
+      #Pos: 1,45
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Gate: 0
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 41
+      #Pos: 1,65
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 51
+      #Pos: 1,85
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Gate: 0
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 61
+      #Pos: 1,105
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 71
+      #Pos: 1,125
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 81
+      #Pos: 1,145
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 91
+      #Pos: 1,165
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 101
+      #Pos: 1,185
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 111
+      #Pos: 1,205
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 121
+      #Pos: 1,225
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 131
+      #Pos: 1,245
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 141
+      #Pos: 1,265
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 151
+      #Pos: 1,285
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 161
+      #Pos: 1,305
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 171
+      #Pos: 1,325
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 181
+      #Pos: 1,345
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 191
+      #Pos: 1,365
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 201
+      #Pos: 1,385
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 211
+      #Pos: 1,405
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 221
+      #Pos: 1,425
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 231
+      #Pos: 1,445
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 241
+      #Pos: 1,465
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 251
+      #Pos: 1,485
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 261
+      #Pos: 1,505
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 271
+      #Pos: 1,525
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 281
+      #Pos: 1,545
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 291
+      #Pos: 1,565
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 301
+      #Pos: 1,585
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 311
+      #Pos: 1,605
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 321
+      #Pos: 1,625
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 331
+      #Pos: 1,645
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 341
+      #Pos: 1,665
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 351
+      #Pos: 1,685
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 361
+      #Pos: 1,705
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 371
+      #Pos: 1,725
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 381
+      #Pos: 1,745
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 391
+      #Pos: 1,765
+      #Size: 68,20
+      #BkColor: 220,230,241
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+    #Object: Label
+      #ID: 401
+      #Pos: 1,785
+      #Size: 68,20
+      #BkColor: clWhite
+      #Cursor: 0
+      #TxtColor: clBlack
+      #Font: Gotham Book,9,0000
+      #Label: %.*f
+      #Align: 37
+      #Frame: 1
+      #Access: 0
+    #EndObj
+  #EndObj
+#EndObj

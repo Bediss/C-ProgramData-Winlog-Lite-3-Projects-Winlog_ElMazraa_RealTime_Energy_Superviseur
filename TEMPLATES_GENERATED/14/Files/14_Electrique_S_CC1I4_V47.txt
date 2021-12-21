@@ -1,0 +1,3 @@
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1I41;Admin Elec;Electrique;CC1I4;facility TR2;6;S200;M170;Z300;STEG;PosteTR2;Facility;Reel;SubAtelier;*;*;Administration;!~*;!~*;;;;;2;Administration Electrique;*;*
+F:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1I42;Magasin Elec;Electrique;CC1I4;facility TR2;6;S200;M170;Z300;STEG;PosteTR2;Facility;Reel;SubAtelier;*;*;Magasin;!~*;!~*;;;;;2;Magasin Electrique;*;*
+P:KWh-S#1;KWh-S-1#34;KWh-S#1;Inc-S#30;KWh/T-A-1#1001;§CC1I4;facility TR2;Electrique;CC1I;5;S200;M170;Z300;STEG;PosteTR2;Facility

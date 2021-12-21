@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CET1H1;CT46_ABATTAGE-H;Eau Traite;CET1H;CT32_QAI-VIFS;7;M1C0;M1V3;M213;SalleOsmose;Bassin3000;Abattage;Reel;Machine;Eau;*;Abattoir;!~;!~;;;;;2;CT46_ELMEZRAA ABATTAGE HANGER D'ATTENTE;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CET1H;CT32_QAI-VIFS;Eau Traite;CET16;6;M1C0;M1V3;M213;SalleOsmose;Bassin3000;Abattage

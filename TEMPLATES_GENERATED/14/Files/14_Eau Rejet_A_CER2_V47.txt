@@ -1,0 +1,5 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ER11;station1 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station1 OI;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ER12;station2 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station2 OI;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ER13;station3 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station3 OI;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ER14;CR4 EauSaumatre;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;CR4 Eau Saumatre vers station3;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ER2;SalleOsmose;Eau Rejet;CER1;3;M1C0;*;*;SalleOsmose;*;*

@@ -1,0 +1,2 @@
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CEG1A71;Autoclave,Ch+;Froid (+)  Eau Glycolee;CEG1A7;UCPC;6;*;M110;M260;*;SMF-ElMazeraa;UCPC;Reel;SubAtelier;Froid;*;Froid;!~*;!~*;;;;;2;Autoclave,Ch+;*;*
+P:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;§CEG1A7;UCPC;Froid (+)  Eau Glycolee;CEG1A;5;*;M110;M260;*;SMF-ElMazeraa;UCPC

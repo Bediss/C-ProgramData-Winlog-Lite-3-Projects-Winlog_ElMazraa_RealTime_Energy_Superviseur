@@ -1,0 +1,7 @@
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F121;Abattoir Froid;Froid;CF12;Production;3;*;*;M210;*;*;Abattoir;Reel;Usine;*;CPT11;Abattoir;!~*;!~*;;;;;2;Abattoir Froid;Abattoir T;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F122;Charcuterie F;Froid;CF12;Production;3;*;*;M220;*;*;Charcuterie;Reel;Usine;*;CPT12;Charcuterie;!~*;!~*;;;;;2;Charcuterie Froid;Charcuterie T;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F123;Conserve Froid;Froid;CF12;Production;3;*;*;M230;*;*;Conserve;Reel;Usine;*;CPT13;Conserve;!~*;!~*;;;;;2;Conserve Froid;Conserve T;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F124;PetFood Froid;Froid;CF12;Production;3;*;*;M240;*;*;PetFood;Reel;Usine;*;CPT14;PetFood;!~*;!~*;;;;;2;PetFood Froid;PetFood T;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F125;Surgele Froid;Froid;CF12;Production;3;*;*;M250;*;*;Surgele;Reel;Usine;*;CPT15;Surgele;!~*;!~*;;;;;2;Surgele Froid;Surgele T;*
+F:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F126;UCPC Froid;Froid;CF12;Production;3;*;*;M260;*;*;UCPC;Reel;Usine;*;CPT16;UCPC;!~*;!~*;;;;;2;UCPC Froid;UCPC T;*
+P:KWf-M#2;KWf-S-1#15;KWf-M#2;Inc-M#10;#1002;低F12;Production;Froid;CF1;2;*;*;Z100;*;*;Production

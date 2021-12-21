@@ -1,0 +1,2 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CET1O;CT39_C-Surgele;Eau Traite;CETA6;CT36_A-Condenseur;7;M1C0;M1V3;M1T2;SalleOsmose;Bassin3000;Condenseur S;Reel;Machine;Eau;*;Surgele;!~;!~;;;;;2;CT39_Condenseur Surgele;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;§CETA6;CT36_A-Condenseur;Eau Traite;CETA5;4;M1C0;M1V3;M25J;SalleOsmose;Bassin3000;A-Condenseur

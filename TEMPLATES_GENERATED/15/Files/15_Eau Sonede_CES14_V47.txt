@@ -1,0 +1,2 @@
+F:#2000;m3-J#0;Inc-J#8;§CES1C;CS7_admin;Eau Sonede;CES14;CS13_DICKelvage ;4;M1S0;*;M270;SONEDE;*;Administration;Reel;Process;Eau;*;Administration;!~;!~;;;;;3;CS7_admin-elmezraa;*;*
+P:#2000;m3-J#0;Inc-J#8;§CES14;CS13_DICKelvage ;Eau Sonede;CES1;3;M1S0;*;D200;SONEDE;*;Dick

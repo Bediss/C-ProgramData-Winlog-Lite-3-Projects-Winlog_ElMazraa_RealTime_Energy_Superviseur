@@ -1,0 +1,2 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEBI;CB21_Filtre;Eau Brute;CEBF;S-B2000;1;*;M1C0;M1V1;*;SalleOsmose;Bassin1000;Reel;Site;Eau;*;VMZ;!~*;!~*;;;;;2;CB21_Filtre a sable;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;§CEBF;S-B2000;Eau Brute;CEB5;1;*;*;M1C0;*;*;SalleOsmose

@@ -1,0 +1,4 @@
+KWh-A-1#36;KWh-A#3;KWh-A#3;KWh/T-A-1#48;KWh/T-A#11;KWh/T-A#11;Inc-A-1#44;Inc-A#32;Inc-A#32;KWh/T-A-1#1003;KWh/T-A-1#1011;KWh/T-A-1#1032;低C2;Dick Elect;Electrique;CCE;VMZ Conso Elec;1;S200;*;D200;STEG;*;Dick;CC1V;Site;*;CPT2;Dick;*;*;CC1V~;Dick TR5~;;;0;Dick Electrique;Dick Tonnage;*
+m3-A-1#15;m3-A#3;m3-A#3;m3/T-A-1#19;m3/T-A#7;m3/T-A#7;Inc-A-1#23;Inc-A#11;Inc-A#11;#1003;#1007;#1011;低G2;Dick Gaz;Gaz;CG01;VMZ Conso Gaz;1;S200;D200;D200;STEG;Dick;Dick;Reel;Site;*;CPT2;Dick;!~*;!~*;;;;;2;Dick Gaz;Dick Tonnage;*
+m3-A-1#15;m3-A#3;m3-A#3;m3/T-A-1#19;m3/T-A#7;m3/T-A#7;Inc-A-1#23;Inc-A#11;Inc-A#11;#1003;#1007;#1011;低E2;Dick Eau;Eau;CE01;VMZ Conso Eau;1;*;*;D200;*;*;Dick;CEB2+CES2+CET3;Site;*;CPT2;Dick;*;*;CEB2~+~CES2~+~CET3~;CB4_Dick EB~+~Dick Eau Sonede~+~Dick Eau Traite~;;;0;Dick Eau;Dick Tonnage;*
+TONNE-A#4;TONNE-A-1#8;Inc-A#12;Inc-A-1#16;低PT2;Dick Tonnage;Tonnage;CPT0;VMZ Tonnage;1;*;*;D200;*;*;Dick;Reel;Site;*;*;Dick;!~;!~;;;;;3;Dick Tonnage;*;*

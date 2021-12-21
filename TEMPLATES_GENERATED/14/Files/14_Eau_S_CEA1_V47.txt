@@ -1,0 +1,3 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CEA11;Abattage Eau;Eau;CEA1;Abattoir Eau;5;*;*;M213;*;*;Abattage;CEB14+CES16+CET16;Atelier;*;*;Abattoir;Zenner:D;D2:80:5010:1:1;CEB14~+~CES16~+~CET16~;CB13_ABATTAGE~+~CS15_conserve ~+~CT20_abattage~;;;1;Abattage Eau;*;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;§CEA12;Decoupe Eau;Eau;CEA1;Abattoir Eau;5;*;*;M217;*;*;Decoupe;CEB15+CETA11;Atelier;*;*;Abattoir;*;*;CEB15~+~CETA11~;Decoupe EB~+~Decoupe ET~;;;1;Decoupe Eau;*;*
+-1

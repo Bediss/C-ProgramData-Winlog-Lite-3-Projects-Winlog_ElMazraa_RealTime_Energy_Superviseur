@@ -1,0 +1,5 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1C1;CF1_NF-B2000;Eau Forage;CEF1A;CF9_ElysseB2000;4;M1O0;*;M1V2;Nouveau Forage;*;Bassin2000;Reel;Process;Eau;*;Zone Haute;!~;!~;;;;;2;CF1_Nouveau Forage vers B2000;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1C2;CF7_NF-B1000;Eau Forage;CEF1A;CF9_ElysseB2000;4;M1O0;*;M1V1;Nouveau Forage;*;Bassin1000;Reel;Process;Eau;*;Zone Haute;!~;!~;;;;;2;CF7_Nouveau Forage vers B1000;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1C3;CF3_Forage Haut;Eau Forage;CEF1A;CF9_ElysseB2000;4;M1K0;*;M1V2;Sondage Haut;*;Bassin2000;Reel;Process;Eau;*;Zone Haute;!~;!~;;;;;2;CF3_Forage Haut;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1C4;CF4_Forage Bas;Eau Forage;CEF1A;CF9_ElysseB2000;4;M1L0;*;M1V2;Sondage Bas;*;Bassin2000;Reel;Process;Eau;*;Zone Haute;!~;!~;;;;;2;CF4_Forage Bas;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EF1A;CF9_ElysseB2000;Eau Forage;CEF1C3;7;*;*;M1V2;*;*;Bassin2000

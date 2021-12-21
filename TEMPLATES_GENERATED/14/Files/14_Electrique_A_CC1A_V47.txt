@@ -1,0 +1,4 @@
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C1A1;York;Electrique;CC1A;SMF ElMazeraa;5;S200;*;M11D;STEG;*;York;CC1P12+CC1Q5;Atelier;*;*;Froid;*;*;CC1P12~+~CC1Q5~;York TR1~+~EXT MPF 18+19B~;;;0;York;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C1A2;IMEF;Electrique;CC1A;SMF ElMazeraa;5;S200;*;MA01;STEG;*;IMEF;F(CC1A2);Atelier;*;*;Froid;*;*;F~(~CC1A2~)~;F~(~IMEF~)~;;;0;IMEF;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C1A3;Matal;Electrique;CC1A;SMF ElMazeraa;5;S200;M180;M11C;STEG;PosteTR3;Matal;CC1J2;Atelier;*;*;Froid;*;*;CC1J2~;Matal TR3~;;;0;Matal;*;*
+P:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C1A;SMF ElMazeraa;Electrique;CCB1;4;S200;*;M110;STEG;*;SMF-ElMazeraa

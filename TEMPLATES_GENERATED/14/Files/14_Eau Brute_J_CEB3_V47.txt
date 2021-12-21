@@ -1,0 +1,5 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB21;CB15_G-WC;Eau Brute;CEB3;Dick Eau Brute;4;*;M1V1;D200;*;Bassin1000;Dick;F(CEB21);Process;Eau;*;Dick;*;*;F~(~CEB21~)~;F~(~CB15_G-WC~)~;;;0;CB15_GENERAL-TOILETTE-Decoupe+Charcuterie+UCPC ;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB22;CB20_LAV-CAMION ;Eau Brute;CEB3;Dick Eau Brute;4;*;M1V1;D200;*;Bassin1000;Dick;Reel;Process;Eau;*;Dick;!~*;!~*;;;;;2;CB20_LAVAGE-CAMION ;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB23;CB21_VEST-COP;Eau Brute;CEB3;Dick Eau Brute;4;*;M1V1;D200;*;Bassin1000;Dick;Reel;Process;Eau;*;Dick;!~*;!~*;;;;;2;CB21_VESTIAIRE-CO-PRODUIT ;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB24;CB44_IRRIGA-COP;Eau Brute;CEB3;Dick Eau Brute;4;*;M1V1;D200;*;Bassin1000;Dick;Reel;Process;Eau;*;Dick;!~*;!~*;;;;;2;CB44_IRRIGATION-CO-PRODUIT ;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低EB3;Dick Eau Brute;Eau Brute;CEBB;3;*;M1V1;D200;*;Bassin1000;Dick

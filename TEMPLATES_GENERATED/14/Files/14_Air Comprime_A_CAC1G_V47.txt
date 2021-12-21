@@ -1,0 +1,7 @@
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1GA;GA 30;Air Comprime;CAC1G;ChaufElMazraaAC;4;*;M150;*;*;ElMazeraa Chauf;*;Reel;Process;*;*;Chaufferie;!~*;!~*;;;;;2;GA 30;*;*
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1GB;GA 50;Air Comprime;CAC1G;ChaufElMazraaAC;4;*;M150;*;*;ElMazeraa Chauf;*;Reel;Process;*;*;Chaufferie;!~*;!~*;;;;;2;GA 50;*;*
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1GC;CompresKaeser;Air Comprime;CAC1G;ChaufElMazraaAC;7;*;M150;*;*;ElMazeraa Chauf;*;Reel;Machine;*;*;Chaufferie;!~*;!~*;;;;;2;Compresseur Kaeser;*;*
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1FA1;Equipement1;Air Comprime;CAC1G;ChaufElMazraaAC;4;*;M150;*;*;ElMazeraa Chauf;*;Reel;Process;*;*;Chaufferie;!~*;!~*;;;;;2;Equipement1;*;*
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1FB1;Equipement2;Air Comprime;CAC1G;ChaufElMazraaAC;4;*;M150;*;*;ElMazeraa Chauf;*;Reel;Process;*;*;Chaufferie;!~*;!~*;;;;;2;Equipement2;*;*
+F:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1FC1;Equipement3;Air Comprime;CAC1G;ChaufElMazraaAC;4;*;M150;*;*;ElMazeraa Chauf;*;Reel;Process;*;*;Chaufferie;!~*;!~*;;;;;2;Equipement3;*;*
+P:m3-A#3;m3-A-1#16;m3-A#3;Inc-A#11;#1003;低AC1G;ChaufElMazraaAC;Air Comprime;CACB;3;*;M150;*;*;ElMazeraa Chauf;*

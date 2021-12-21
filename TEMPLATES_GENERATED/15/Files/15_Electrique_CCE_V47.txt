@@ -1,0 +1,4 @@
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C1;ElMazeraa Elec;Electrique;CCE;VMZ Conso Elec;1;*;MELEC;M200;*;Post Transfo;ElMazeraa;F(CC1);Site;*;CPT1;ElMazeraa;*;*;F~(~CC1~)~;F~(~ElMazeraa Elec~)~;;;0;ElMazeraa Electrique;ElMazraa T;*
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C2;Dick Elect;Electrique;CCE;VMZ Conso Elec;1;S200;*;D200;STEG;*;Dick;CC1V;Site;*;CPT2;Dick;*;*;CC1V~;Dick TR5~;;;0;Dick Electrique;Dick Tonnage;*
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C3;CoProduit Elec;Electrique;CCE;VMZ Conso Elec;1;S200;*;C200;STEG;*;CoProduit;CC1K1+CC1F5;Site;*;CPT3;CoProduit;*;*;CC1K1~+~CC1F5~;Coproduit TR4~+~COP-eclairage~;;;1;CoProduit Electrique;CoProduit T;*
+P:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低CE;VMZ Conso Elec;Electrique;CC0;1;*;*;V100;*;*;VMZ

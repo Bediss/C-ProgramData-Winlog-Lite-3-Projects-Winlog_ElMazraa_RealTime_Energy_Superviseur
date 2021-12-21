@@ -1,0 +1,2 @@
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;§CC1N7;SP TR2x6;Electrique;CC1Y;Eau TR2;7;S200;M170;MB02;STEG;PosteTR2;SP TR2  x 6;Reel;Machine;*;*;Eau;!~*;!~*;;;;;2;Station Primaire TR2  x 6;*;*
+P:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;§CC1Y;Eau TR2;Electrique;CC1I;6;S200;M170;MB08;STEG;PosteTR2;Eau TR2

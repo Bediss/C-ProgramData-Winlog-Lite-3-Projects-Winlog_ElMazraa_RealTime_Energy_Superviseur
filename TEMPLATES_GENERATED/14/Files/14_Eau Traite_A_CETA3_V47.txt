@@ -1,0 +1,4 @@
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ET1V;CT30_B-marie-C;Eau Traite;CETA3;CT13_PetFood;7;M1C0;M1V3;M247;SalleOsmose;Bassin3000;Bain Marie C;Reel;Machine;Eau;CPT14;PetFood;!~;!~;;;;;2;CT30_Bain marie de cuissant;PetFood T;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ET1M1;CT37_Condens Res3+Pf;Eau Traite;CETA3;CT13_PetFood;7;M1C0;M1V3;M1T0;SalleOsmose;Bassin3000;Condenseur;Reel;Machine;Eau;*;Condenseur ressuage N3_Petfood;!~;!~;;;;;2;CT37_Condenseur N1 Ressuage3+Petfood;*;*
+F:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ET1M2;CT38_Condens Res3+Pf;Eau Traite;CETA3;CT13_PetFood;7;M1C0;M1V3;M1T0;SalleOsmose;Bassin3000;Condenseur;Reel;Machine;Eau;*;Condenseur ressuage N3_Petfood;!~;!~;;;;;2;CT38_Condenseur N2 Ressuage3+Petfood;*;*
+P:m3-A#3;m3-A-1#15;m3-A#3;Inc-A#11;#1003;低ETA3;CT13_PetFood;Eau Traite;CETA;3;M1C0;M1V3;*;SalleOsmose;Bassin3000;*

@@ -1,0 +1,2 @@
+F:#2000;m3-J#0;Inc-J#8;§CEB131;CB39_WC UCPC;Eau Brute;CEB13;CB12_UCPC ;4;*;M1V1;M264;*;Bassin1000;vestier UCPC;Reel;Process;Eau;*;UCPC;!~*;!~*;;;;;2;CB39_Toilette UCPC;*;*
+P:#2000;m3-J#0;Inc-J#8;§CEB13;CB12_UCPC ;Eau Brute;CEBA;3;*;M1V1;M260;*;Bassin1000;UCPC

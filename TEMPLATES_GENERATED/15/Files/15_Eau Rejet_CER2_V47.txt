@@ -1,0 +1,5 @@
+F:#2000;m3-J#0;Inc-J#8;低ER11;station1 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station1 OI;*;*
+F:#2000;m3-J#0;Inc-J#8;低ER12;station2 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station2 OI;*;*
+F:#2000;m3-J#0;Inc-J#8;低ER13;station3 OI;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;station3 OI;*;*
+F:#2000;m3-J#0;Inc-J#8;低ER14;CR4 EauSaumatre;Eau Rejet;CER2;SalleOsmose;4;M1C0;*;*;SalleOsmose;*;*;Reel;Process;Eau;*;SalleOsmose;!~;!~;;;;;2;CR4 Eau Saumatre vers station3;*;*
+P:#2000;m3-J#0;Inc-J#8;低ER2;SalleOsmose;Eau Rejet;CER1;3;M1C0;*;*;SalleOsmose;*;*

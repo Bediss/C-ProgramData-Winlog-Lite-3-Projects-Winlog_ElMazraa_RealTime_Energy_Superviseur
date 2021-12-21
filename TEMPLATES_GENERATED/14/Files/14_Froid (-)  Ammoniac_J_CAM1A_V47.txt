@@ -1,0 +1,3 @@
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A5;SK-40_ElMazeraa;Froid (-)  Ammoniac;CAM1A;SMF ElMazeraa;5;*;M110;M111;*;SMF-ElMazeraa;SKID -40;CAM1A51;Atelier;Froid;*;Froid;*;*;CAM1A51~;Tunnels:T,Ch~;;;0;SKID -40_ElMazeraa;*;*
+F:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A3;Extension IMEF;Froid (-)  Ammoniac;CAM1A;SMF ElMazeraa;5;*;M113;*;*;Extension IMEF;*;F(CAM1A3);Atelier;Froid;*;Froid;*;*;F~(~CAM1A3~)~;F~(~Extension IMEF~)~;;;0;Extension IMEF;*;*
+P:KWf-J#0;KWf-J-1#14;KWf-J#0;Inc-J#8;#1000;§CAM1A;SMF ElMazeraa;Froid (-)  Ammoniac;CAMB1;4;*;M110;*;*;SMF-ElMazeraa;*

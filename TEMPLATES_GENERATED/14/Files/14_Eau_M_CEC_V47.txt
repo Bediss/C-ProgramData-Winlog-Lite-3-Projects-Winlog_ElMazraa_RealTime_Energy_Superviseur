@@ -1,0 +1,4 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EC1;Admin Eau;Eau;CEC;Facility Eau;3;*;*;M270;*;*;Administration;CEB121+CES1C;Usine;*;*;Administration;*;*;CEB121~+~CES1C~;CB40_Admin~+~CS7_admin~;;;0;Administration Eau;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EC2;Refectoire Eau;Eau;CEC;Facility Eau;3;*;*;M290;*;*;Refectoire;CEB1D1+CES1B;Usine;*;*;Refectoires;*;*;CEB1D1~+~CES1B~;CB14_Vest+Refect~+~CS6_refectoire ~;;;0;Refectoire Eau;*;*
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EC3;Magasin Eau;Eau;CEC;Facility Eau;3;*;*;M280;*;*;Magasin;CEB15+CES1A;Usine;*;*;Magasin;*;*;CEB15~+~CES1A~;Decoupe EB~+~CS5_CHARCUTERIE ~;;;0;Magasin Eau;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;低EC;Facility Eau;Eau;CE1;2;*;*;Z400;*;*;Admin + Facility

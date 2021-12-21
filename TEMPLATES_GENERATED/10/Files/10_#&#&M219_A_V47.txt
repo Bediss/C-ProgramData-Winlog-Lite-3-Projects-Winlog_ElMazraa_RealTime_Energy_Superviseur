@@ -1,0 +1,1 @@
+KWh-A-1#36;KWh-A#3;KWh-A#3;KWh/T-A-1#48;KWh/T-A#11;KWh/T-A#11;Inc-A-1#44;Inc-A#32;Inc-A#32;KWh/T-A-1#1003;KWh/T-A-1#1011;KWh/T-A-1#1032;§CC112;Plumage Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M219;STEG;Post Transfo;Plumage;CC1I25;Process;*;*;Abattoir;*;*;CC1I25~;Plumeuse~;;;0;Plumage Electrique;*;*

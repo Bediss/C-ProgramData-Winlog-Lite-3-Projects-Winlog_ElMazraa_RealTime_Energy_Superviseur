@@ -1,0 +1,4 @@
+F:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;低F04;Ecart PD Froid;Froid;CF1;ElMazeraa Froid;1;*;*;*;*;*;*;CF02-CF06;Site;*;*;VMZ;*;*;CF02~-~CF06~;VMZ Prod F~-~VMZ Distrib F~;;;0;Ecart Production/Distribution Froid;*;*
+F:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;低F12;Production;Froid;CF1;ElMazeraa Froid;2;*;*;Z100;*;*;Production;F(CF12);Type de Site;*;*;*;*;*;F~(~CF12~)~;F~(~Production~)~;;;0;Production;*;*
+F:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;低F11;Utilitaire;Froid;CF1;ElMazeraa Froid;2;*;*;Z200;*;*;Utilitaire;F(CF11);Type de Site;*;*;*;*;*;F~(~CF11~)~;F~(~Utilitaire~)~;;;0;Utilitaire;*;*
+P:KWf-J#0;Temperature#12;KWf-J#0;Inc-J#8;#1000;低F1;ElMazeraa Froid;Froid;CF01;1;*;*;M200;*;*;ElMazeraa

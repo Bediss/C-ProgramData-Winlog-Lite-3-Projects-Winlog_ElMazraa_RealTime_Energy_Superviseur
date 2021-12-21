@@ -1,0 +1,2356 @@
+///////////////// 4/8/2020_14:28:59
+Function void SY_FC_11_Eau_35383538M200_Live()
+    ShowPage("11_Eau_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_Live_V47()
+    ShowPage("11_Eau_#&#&M1T01_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1M2_V47()
+    ShowPage("17_CET1M2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1M1_V47()
+    ShowPage("17_CET1M1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_J()
+    ShowPage("11_Eau_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_J_V47()
+    ShowPage("11_Eau_#&#&M1T01_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_S()
+    ShowPage("11_Eau_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_S_V47()
+    ShowPage("11_Eau_#&#&M1T01_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_M()
+    ShowPage("11_Eau_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_M_V47()
+    ShowPage("11_Eau_#&#&M1T01_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_A()
+    ShowPage("11_Eau_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_A_V47()
+    ShowPage("11_Eau_#&#&M1T01_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB126_V47()
+    ShowPage("17_CEB126_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Condenseur.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_Live_V47()
+    ShowPage("11_Eau_#&#&M1T0_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Condenseur.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB127_V47()
+    ShowPage("17_CEB127_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Condenseur.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_Live()
+    ShowPage("11_Eau_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_Live_V47()
+    ShowPage("11_Eau_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_Live()
+    ShowPage("11_Eau_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_Live()
+    ShowPage("11_Eau_#&#&M270_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M280_Live()
+    ShowPage("11_Eau_#&#&M280_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_Live()
+    ShowPage("11_Eau_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_Live()
+    ShowPage("11_Eau_#&#&M1T01_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538C200_Live()
+    ShowPage("11_Eau_#&#&C200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_Live()
+    ShowPage("11_Eau_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_Live()
+    ShowPage("11_Eau_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_Live()
+    ShowPage("11_Eau_#&#&M290_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_Live()
+    ShowPage("11_Eau_#&#&M240_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_Live()
+    ShowPage("11_Eau_#&#&M1T0_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_Live()
+    ShowPage("11_Eau_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_J()
+    ShowPage("11_Eau_#&#&M260_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_J_V47()
+    ShowPage("11_Eau_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_J()
+    ShowPage("11_Eau_#&#&M250_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_J()
+    ShowPage("11_Eau_#&#&M270_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M280_J()
+    ShowPage("11_Eau_#&#&M280_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_J()
+    ShowPage("11_Eau_#&#&M230_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_J()
+    ShowPage("11_Eau_#&#&M1T01_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538C200_J()
+    ShowPage("11_Eau_#&#&C200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_J()
+    ShowPage("11_Eau_#&#&M220_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_J()
+    ShowPage("11_Eau_#&#&M210_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_J()
+    ShowPage("11_Eau_#&#&M290_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_J()
+    ShowPage("11_Eau_#&#&M240_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_J()
+    ShowPage("11_Eau_#&#&M1T0_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_J()
+    ShowPage("11_Eau_#&#&MC00_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_S()
+    ShowPage("11_Eau_#&#&M260_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_S_V47()
+    ShowPage("11_Eau_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_S()
+    ShowPage("11_Eau_#&#&M250_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_S()
+    ShowPage("11_Eau_#&#&M270_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M280_S()
+    ShowPage("11_Eau_#&#&M280_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_S()
+    ShowPage("11_Eau_#&#&M230_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_S()
+    ShowPage("11_Eau_#&#&M1T01_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538C200_S()
+    ShowPage("11_Eau_#&#&C200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_S()
+    ShowPage("11_Eau_#&#&M220_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_S()
+    ShowPage("11_Eau_#&#&M210_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_S()
+    ShowPage("11_Eau_#&#&M290_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_S()
+    ShowPage("11_Eau_#&#&M240_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_S()
+    ShowPage("11_Eau_#&#&M1T0_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_S()
+    ShowPage("11_Eau_#&#&MC00_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_M()
+    ShowPage("11_Eau_#&#&M260_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_M_V47()
+    ShowPage("11_Eau_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_M()
+    ShowPage("11_Eau_#&#&M250_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_M()
+    ShowPage("11_Eau_#&#&M270_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M280_M()
+    ShowPage("11_Eau_#&#&M280_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_M()
+    ShowPage("11_Eau_#&#&M230_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_M()
+    ShowPage("11_Eau_#&#&M1T01_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538C200_M()
+    ShowPage("11_Eau_#&#&C200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_M()
+    ShowPage("11_Eau_#&#&M220_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_M()
+    ShowPage("11_Eau_#&#&M210_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_M()
+    ShowPage("11_Eau_#&#&M290_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_M()
+    ShowPage("11_Eau_#&#&M240_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_M()
+    ShowPage("11_Eau_#&#&M1T0_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_M()
+    ShowPage("11_Eau_#&#&MC00_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_A()
+    ShowPage("11_Eau_#&#&M260_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M200_A_V47()
+    ShowPage("11_Eau_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_A()
+    ShowPage("11_Eau_#&#&M250_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_A()
+    ShowPage("11_Eau_#&#&M270_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M280_A()
+    ShowPage("11_Eau_#&#&M280_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_A()
+    ShowPage("11_Eau_#&#&M230_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T01_A()
+    ShowPage("11_Eau_#&#&M1T01_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538C200_A()
+    ShowPage("11_Eau_#&#&C200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_A()
+    ShowPage("11_Eau_#&#&M220_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_A()
+    ShowPage("11_Eau_#&#&M210_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_A()
+    ShowPage("11_Eau_#&#&M290_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_A()
+    ShowPage("11_Eau_#&#&M240_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M1T0_A()
+    ShowPage("11_Eau_#&#&M1T0_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_A()
+    ShowPage("11_Eau_#&#&MC00_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Eau | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETB111()
+    ShowPage("17_CETB111_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M210_Live_V47()
+    ShowPage("11_Eau_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB143()
+    ShowPage("17_CEB143_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB142()
+    ShowPage("17_CEB142_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1H1()
+    ShowPage("17_CET1H1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET121()
+    ShowPage("17_CET121_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1C_V47()
+    ShowPage("17_CET1C_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M220_Live_V47()
+    ShowPage("11_Eau_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1B_V47()
+    ShowPage("17_CET1B_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB12A_V47()
+    ShowPage("17_CEB12A_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1_V47()
+    ShowPage("17_CET1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M230_Live_V47()
+    ShowPage("11_Eau_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES1_V47()
+    ShowPage("17_CES1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB1_V47()
+    ShowPage("17_CEB1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES16_V47()
+    ShowPage("17_CES16_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1F_V47()
+    ShowPage("17_CET1F_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEA2_V47()
+    ShowPage("17_CEA2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M240_Live_V47()
+    ShowPage("11_Eau_#&#&M240_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB145_V47()
+    ShowPage("17_CEB145_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES1E_V47()
+    ShowPage("17_CES1E_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB12_V47()
+    ShowPage("17_CEB12_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB11_V47()
+    ShowPage("17_CEB11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB144_V47()
+    ShowPage("17_CEB144_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB2A1_V47()
+    ShowPage("17_CEB2A1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1V_V47()
+    ShowPage("17_CET1V_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA3_V47()
+    ShowPage("17_CETA3_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES19_V47()
+    ShowPage("17_CES19_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M250_Live_V47()
+    ShowPage("11_Eau_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB125_V47()
+    ShowPage("17_CEB125_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB124_V47()
+    ShowPage("17_CEB124_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES11_V47()
+    ShowPage("17_CES11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1O_V47()
+    ShowPage("17_CET1O_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA52_V47()
+    ShowPage("17_CETA52_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA51_V47()
+    ShowPage("17_CETA51_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB131_V47()
+    ShowPage("17_CEB131_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M260_Live_V47()
+    ShowPage("11_Eau_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1I_V47()
+    ShowPage("17_CET1I_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES15_V47()
+    ShowPage("17_CES15_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES1C_V47_V47()
+    ShowPage("17_CES1C_V47_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Administration.       ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M270_Live_V47()
+    ShowPage("11_Eau_#&#&M270_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Administration.       ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES1B_V47()
+    ShowPage("17_CES1B_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538M290_Live_V47()
+    ShowPage("11_Eau_#&#&M290_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1J_V47_V47()
+    ShowPage("17_CET1J_V47_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MC00_Live_V47()
+    ShowPage("11_Eau_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1K_V47_V47()
+    ShowPage("17_CET1K_V47_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Eau | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_Live()
+    ShowPage("11_Electrique_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_Live_V47()
+    ShowPage("11_Electrique_#&#&C200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K11_V47()
+    ShowPage("17_CC1K11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K12_V47()
+    ShowPage("17_CC1K12_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K13_V47()
+    ShowPage("17_CC1K13_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K14_V47()
+    ShowPage("17_CC1K14_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1F5_V47()
+    ShowPage("17_CC1F5_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_J()
+    ShowPage("11_Electrique_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_J_V47()
+    ShowPage("11_Electrique_#&#&C200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_S()
+    ShowPage("11_Electrique_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_S_V47()
+    ShowPage("11_Electrique_#&#&C200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_M()
+    ShowPage("11_Electrique_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_M_V47()
+    ShowPage("11_Electrique_#&#&C200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_A()
+    ShowPage("11_Electrique_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_A_V47()
+    ShowPage("11_Electrique_#&#&C200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1V1()
+    ShowPage("17_CC1V1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Dick.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_Live_V47()
+    ShowPage("11_Electrique_#&#&D200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Dick.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1V2()
+    ShowPage("17_CC1V2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Dick.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_Live()
+    ShowPage("11_Electrique_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_Live_V47()
+    ShowPage("11_Electrique_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_Live()
+    ShowPage("11_Electrique_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_Live()
+    ShowPage("11_Electrique_#&#&Z300_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_Live()
+    ShowPage("11_Electrique_#&#&MB00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_Live()
+    ShowPage("11_Electrique_#&#&MA00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_Live()
+    ShowPage("11_Electrique_#&#&M240_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_Live()
+    ShowPage("11_Electrique_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_Live()
+    ShowPage("11_Electrique_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_Live()
+    ShowPage("11_Electrique_#&#&D200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_Live()
+    ShowPage("11_Electrique_#&#&C200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_Live()
+    ShowPage("11_Electrique_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_Live()
+    ShowPage("11_Electrique_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_J()
+    ShowPage("11_Electrique_#&#&M250_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_J_V47()
+    ShowPage("11_Electrique_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_J()
+    ShowPage("11_Electrique_#&#&MC00_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_J()
+    ShowPage("11_Electrique_#&#&Z300_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_J()
+    ShowPage("11_Electrique_#&#&MB00_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_J()
+    ShowPage("11_Electrique_#&#&MA00_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_J()
+    ShowPage("11_Electrique_#&#&M240_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_J()
+    ShowPage("11_Electrique_#&#&M230_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_J()
+    ShowPage("11_Electrique_#&#&M220_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_J()
+    ShowPage("11_Electrique_#&#&D200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_J()
+    ShowPage("11_Electrique_#&#&C200_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_J()
+    ShowPage("11_Electrique_#&#&M210_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_J()
+    ShowPage("11_Electrique_#&#&M260_J_V47");
+    CreatePATH("Synoptique Par Energie | Journalier | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_S()
+    ShowPage("11_Electrique_#&#&M250_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_S_V47()
+    ShowPage("11_Electrique_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_S()
+    ShowPage("11_Electrique_#&#&MC00_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_S()
+    ShowPage("11_Electrique_#&#&Z300_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_S()
+    ShowPage("11_Electrique_#&#&MB00_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_S()
+    ShowPage("11_Electrique_#&#&MA00_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_S()
+    ShowPage("11_Electrique_#&#&M240_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_S()
+    ShowPage("11_Electrique_#&#&M230_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_S()
+    ShowPage("11_Electrique_#&#&M220_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_S()
+    ShowPage("11_Electrique_#&#&D200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_S()
+    ShowPage("11_Electrique_#&#&C200_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_S()
+    ShowPage("11_Electrique_#&#&M210_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_S()
+    ShowPage("11_Electrique_#&#&M260_S_V47");
+    CreatePATH("Synoptique Par Energie | Hebdomadaire | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_M()
+    ShowPage("11_Electrique_#&#&M250_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_M_V47()
+    ShowPage("11_Electrique_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_M()
+    ShowPage("11_Electrique_#&#&MC00_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_M()
+    ShowPage("11_Electrique_#&#&Z300_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_M()
+    ShowPage("11_Electrique_#&#&MB00_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_M()
+    ShowPage("11_Electrique_#&#&MA00_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_M()
+    ShowPage("11_Electrique_#&#&M240_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_M()
+    ShowPage("11_Electrique_#&#&M230_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_M()
+    ShowPage("11_Electrique_#&#&M220_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_M()
+    ShowPage("11_Electrique_#&#&D200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_M()
+    ShowPage("11_Electrique_#&#&C200_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_M()
+    ShowPage("11_Electrique_#&#&M210_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_M()
+    ShowPage("11_Electrique_#&#&M260_M_V47");
+    CreatePATH("Synoptique Par Energie | Mensuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_A()
+    ShowPage("11_Electrique_#&#&M250_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M200_A_V47()
+    ShowPage("11_Electrique_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_A()
+    ShowPage("11_Electrique_#&#&MC00_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_A()
+    ShowPage("11_Electrique_#&#&Z300_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_A()
+    ShowPage("11_Electrique_#&#&MB00_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_A()
+    ShowPage("11_Electrique_#&#&MA00_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_A()
+    ShowPage("11_Electrique_#&#&M240_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_A()
+    ShowPage("11_Electrique_#&#&M230_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_A()
+    ShowPage("11_Electrique_#&#&M220_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538D200_A()
+    ShowPage("11_Electrique_#&#&D200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538C200_A()
+    ShowPage("11_Electrique_#&#&C200_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_A()
+    ShowPage("11_Electrique_#&#&M210_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_A()
+    ShowPage("11_Electrique_#&#&M260_A_V47");
+    CreatePATH("Synoptique Par Energie | Annuel | Electrique | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC11D_V47()
+    ShowPage("17_CC11D_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M210_Live_V47()
+    ShowPage("11_Electrique_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K31_V47()
+    ShowPage("17_CC1K31_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K32_V47()
+    ShowPage("17_CC1K32_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K33_V47()
+    ShowPage("17_CC1K33_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O4_V47()
+    ShowPage("17_CC1O4_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O5_V47()
+    ShowPage("17_CC1O5_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I22_V47()
+    ShowPage("17_CC1I22_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I26_V47()
+    ShowPage("17_CC1I26_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I24_V47()
+    ShowPage("17_CC1I24_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I21_V47()
+    ShowPage("17_CC1I21_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I25_V47()
+    ShowPage("17_CC1I25_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I23_V47()
+    ShowPage("17_CC1I23_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1C6_V47()
+    ShowPage("17_CC1C6_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I15_V47()
+    ShowPage("17_CC1I15_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M220_Live_V47()
+    ShowPage("11_Electrique_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I14_V47()
+    ShowPage("17_CC1I14_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I13_V47()
+    ShowPage("17_CC1I13_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I11_V47()
+    ShowPage("17_CC1I11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I12_V47()
+    ShowPage("17_CC1I12_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1T2_V47()
+    ShowPage("17_CC1T2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O1_V47()
+    ShowPage("17_CC1O1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O6_V47()
+    ShowPage("17_CC1O6_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O7_V47()
+    ShowPage("17_CC1O7_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1T1_V47()
+    ShowPage("17_CC1T1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC161_V47()
+    ShowPage("17_CC161_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M230_Live_V47()
+    ShowPage("11_Electrique_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K22_V47()
+    ShowPage("17_CC1K22_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M240_Live_V47()
+    ShowPage("11_Electrique_#&#&M240_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K21_V47()
+    ShowPage("17_CC1K21_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K23_V47()
+    ShowPage("17_CC1K23_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ PetFood.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC15E_V47()
+    ShowPage("17_CC15E_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M250_Live_V47()
+    ShowPage("11_Electrique_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M118_V47()
+    ShowPage("17_CC1M118_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M116_V47()
+    ShowPage("17_CC1M116_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M115_V47()
+    ShowPage("17_CC1M115_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M114_V47()
+    ShowPage("17_CC1M114_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M111_V47()
+    ShowPage("17_CC1M111_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M112_V47()
+    ShowPage("17_CC1M112_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M113_V47()
+    ShowPage("17_CC1M113_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1Q2_V47()
+    ShowPage("17_CC1Q2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M117_V47()
+    ShowPage("17_CC1M117_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC15B_V47()
+    ShowPage("17_CC15B_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC15A_V47()
+    ShowPage("17_CC15A_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC15D_V47()
+    ShowPage("17_CC15D_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC15C_V47()
+    ShowPage("17_CC15C_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC156_V47()
+    ShowPage("17_CC156_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC162_V47()
+    ShowPage("17_CC162_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538M260_Live_V47()
+    ShowPage("11_Electrique_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M21_V47()
+    ShowPage("17_CC1M21_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MA00_Live_V47()
+    ShowPage("11_Electrique_#&#&MA00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M22_V47()
+    ShowPage("17_CC1M22_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M23_V47()
+    ShowPage("17_CC1M23_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M24_V47()
+    ShowPage("17_CC1M24_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1C4_V47()
+    ShowPage("17_CC1C4_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1C5_V47()
+    ShowPage("17_CC1C5_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P124_V47()
+    ShowPage("17_CC1P124_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P125_V47()
+    ShowPage("17_CC1P125_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P121_V47()
+    ShowPage("17_CC1P121_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P122_V47()
+    ShowPage("17_CC1P122_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P123_V47()
+    ShowPage("17_CC1P123_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P127_V47()
+    ShowPage("17_CC1P127_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O2_V47()
+    ShowPage("17_CC1O2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J21_V47()
+    ShowPage("17_CC1J21_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J22_V47()
+    ShowPage("17_CC1J22_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J32_V47()
+    ShowPage("17_CC1J32_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J31_V47()
+    ShowPage("17_CC1J31_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CCJ33_V47()
+    ShowPage("17_CCJ33_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1Q6_V47()
+    ShowPage("17_CC1Q6_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1Q5_V47()
+    ShowPage("17_CC1Q5_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1Q10_V47()
+    ShowPage("17_CC1Q10_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P126_V47()
+    ShowPage("17_CC1P126_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P111_V47()
+    ShowPage("17_CC1P111_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P112_V47()
+    ShowPage("17_CC1P112_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P113_V47()
+    ShowPage("17_CC1P113_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J11_V47()
+    ShowPage("17_CC1J11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J12_V47()
+    ShowPage("17_CC1J12_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1U2_V47()
+    ShowPage("17_CC1U2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MB00_Live_V47()
+    ShowPage("11_Electrique_#&#&MB00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1U1_V47()
+    ShowPage("17_CC1U1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1P1_V47()
+    ShowPage("17_CC1P1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1N7_V47()
+    ShowPage("17_CC1N7_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1N4_V47()
+    ShowPage("17_CC1N4_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1N1_V47()
+    ShowPage("17_CC1N1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Eau.                  ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I32_V47()
+    ShowPage("17_CC1I32_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538MC00_Live_V47()
+    ShowPage("11_Electrique_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I31_V47()
+    ShowPage("17_CC1I31_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I34_V47()
+    ShowPage("17_CC1I34_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O9_V47()
+    ShowPage("17_CC1O9_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M31_V47()
+    ShowPage("17_CC1M31_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M32_V47()
+    ShowPage("17_CC1M32_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1M33_V47()
+    ShowPage("17_CC1M33_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1_V47()
+    ShowPage("17_CV1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_Live_V47()
+    ShowPage("11_Vapeur_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC11S_V47()
+    ShowPage("17_CC11S_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1OA_V47()
+    ShowPage("17_CV1OA_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O9_V47()
+    ShowPage("17_CV1O9_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV11_V47()
+    ShowPage("17_CV11_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O2_V47()
+    ShowPage("17_CV1O2_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O1_V47()
+    ShowPage("17_CV1O1_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O3_V47()
+    ShowPage("17_CV1O3_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV12_V47()
+    ShowPage("17_CV12_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O7_V47()
+    ShowPage("17_CV1O7_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV15_V47()
+    ShowPage("17_CV15_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV16_V47()
+    ShowPage("17_CV16_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV13_V47()
+    ShowPage("17_CV13_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV14_V47()
+    ShowPage("17_CV14_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O4_V47()
+    ShowPage("17_CV1O4_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O6_V47()
+    ShowPage("17_CV1O6_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O5_V47()
+    ShowPage("17_CV1O5_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O_V47()
+    ShowPage("17_CV1O_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Vapeur | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O8_V47_V47()
+    ShowPage("17_CC1O8_V47_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Electrique_35383538Z300_Live_V47()
+    ShowPage("11_Electrique_#&#&Z300_Live_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O3_V47()
+    ShowPage("17_CC1O3_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I42_V47()
+    ShowPage("17_CC1I42_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I41_V47()
+    ShowPage("17_CC1I41_V47");
+    CreatePATH("Synoptique Par Energie | Temps Réel | Electrique | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_Live()
+    ShowPage("12_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_Live_V47()
+    ShowPage("12_#&#&C200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET131_V47()
+    ShowPage("17_CET131_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_J()
+    ShowPage("12_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_J_V47()
+    ShowPage("12_#&#&C200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_S()
+    ShowPage("12_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_S_V47()
+    ShowPage("12_#&#&C200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_M()
+    ShowPage("12_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_M_V47()
+    ShowPage("12_#&#&C200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_A()
+    ShowPage("12_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_A_V47()
+    ShowPage("12_#&#&C200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB4_V47()
+    ShowPage("17_CEB4_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ GIPA.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_Live_V47()
+    ShowPage("12_#&#&G200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ GIPA.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET2_V47()
+    ShowPage("17_CET2_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ GIPA.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET033_V47()
+    ShowPage("17_CET033_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ GIPA.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET032_V47()
+    ShowPage("17_CET032_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ GIPA.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MB00_Live()
+    ShowPage("12_#&#&MB00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_Live_V47()
+    ShowPage("12_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_Live()
+    ShowPage("12_#&#&MA00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_Live()
+    ShowPage("12_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_Live()
+    ShowPage("12_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_Live()
+    ShowPage("12_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_Live()
+    ShowPage("12_#&#&G200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_Live()
+    ShowPage("12_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_Live()
+    ShowPage("12_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M240_Live()
+    ShowPage("12_#&#&M240_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_Live()
+    ShowPage("12_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_Live()
+    ShowPage("12_#&#&Z300_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_Live()
+    ShowPage("12_#&#&C200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_Live()
+    ShowPage("11_Vapeur_#&#&M200_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MB00_J()
+    ShowPage("12_#&#&MB00_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_J_V47()
+    ShowPage("12_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_J()
+    ShowPage("12_#&#&MA00_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_J()
+    ShowPage("12_#&#&MC00_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_J()
+    ShowPage("12_#&#&M250_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_J()
+    ShowPage("12_#&#&M220_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_J()
+    ShowPage("12_#&#&G200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_J()
+    ShowPage("12_#&#&M260_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_J()
+    ShowPage("12_#&#&M210_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M240_J()
+    ShowPage("12_#&#&M240_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_J()
+    ShowPage("12_#&#&M230_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_J()
+    ShowPage("12_#&#&Z300_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_J()
+    ShowPage("12_#&#&C200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_J()
+    ShowPage("11_Vapeur_#&#&M200_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MB00_S()
+    ShowPage("12_#&#&MB00_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_S_V47()
+    ShowPage("12_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_S()
+    ShowPage("12_#&#&MA00_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_S()
+    ShowPage("12_#&#&MC00_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_S()
+    ShowPage("12_#&#&M250_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_S()
+    ShowPage("12_#&#&M220_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_S()
+    ShowPage("12_#&#&G200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_S()
+    ShowPage("12_#&#&M260_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_S()
+    ShowPage("12_#&#&M210_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M240_S()
+    ShowPage("12_#&#&M240_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_S()
+    ShowPage("12_#&#&M230_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_S()
+    ShowPage("12_#&#&Z300_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_S()
+    ShowPage("12_#&#&C200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_S()
+    ShowPage("11_Vapeur_#&#&M200_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MB00_M()
+    ShowPage("12_#&#&MB00_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_M_V47()
+    ShowPage("12_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_M()
+    ShowPage("12_#&#&MA00_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_M()
+    ShowPage("12_#&#&MC00_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_M()
+    ShowPage("12_#&#&M250_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_M()
+    ShowPage("12_#&#&M220_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_M()
+    ShowPage("12_#&#&G200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_M()
+    ShowPage("12_#&#&M260_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_M()
+    ShowPage("12_#&#&M210_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M240_M()
+    ShowPage("12_#&#&M240_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_M()
+    ShowPage("12_#&#&M230_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_M()
+    ShowPage("12_#&#&Z300_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_M()
+    ShowPage("12_#&#&C200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_M()
+    ShowPage("11_Vapeur_#&#&M200_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MB00_A()
+    ShowPage("12_#&#&MB00_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M200_A_V47()
+    ShowPage("12_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_A()
+    ShowPage("12_#&#&MA00_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_A()
+    ShowPage("12_#&#&MC00_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_A()
+    ShowPage("12_#&#&M250_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_A()
+    ShowPage("12_#&#&M220_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538G200_A()
+    ShowPage("12_#&#&G200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_A()
+    ShowPage("12_#&#&M260_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_A()
+    ShowPage("12_#&#&M210_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M240_A()
+    ShowPage("12_#&#&M240_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_A()
+    ShowPage("12_#&#&M230_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_A()
+    ShowPage("12_#&#&Z300_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538C200_A()
+    ShowPage("12_#&#&C200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Vapeur_35383538M200_A()
+    ShowPage("11_Vapeur_#&#&M200_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ ElMazeraa.            ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC11D()
+    ShowPage("17_CC11D_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M210_Live_V47()
+    ShowPage("12_#&#&M210_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K31()
+    ShowPage("17_CC1K31_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K32()
+    ShowPage("17_CC1K32_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1K33()
+    ShowPage("17_CC1K33_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O4()
+    ShowPage("17_CC1O4_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O5()
+    ShowPage("17_CC1O5_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I22()
+    ShowPage("17_CC1I22_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I26()
+    ShowPage("17_CC1I26_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I24()
+    ShowPage("17_CC1I24_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I21()
+    ShowPage("17_CC1I21_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I25()
+    ShowPage("17_CC1I25_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1I23()
+    ShowPage("17_CC1I23_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1C6()
+    ShowPage("17_CC1C6_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Abattoir.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV1O()
+    ShowPage("17_CV1O_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M220_Live_V47()
+    ShowPage("12_#&#&M220_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CES1A_V47()
+    ShowPage("17_CES1A_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB14_V47()
+    ShowPage("17_CEB14_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET14_V47()
+    ShowPage("17_CET14_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1R_V47()
+    ShowPage("17_CET1R_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Charcuterie.          ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA4_V47()
+    ShowPage("17_CETA4_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M230_Live_V47()
+    ShowPage("12_#&#&M230_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB142_V47()
+    ShowPage("17_CEB142_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Conserve.             ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CGC1_V47()
+    ShowPage("17_CGC1_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M250_Live_V47()
+    ShowPage("12_#&#&M250_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA5_V47()
+    ShowPage("17_CETA5_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CETA6_V47()
+    ShowPage("17_CETA6_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Surgele.              ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB13_V47()
+    ShowPage("17_CEB13_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538M260_Live_V47()
+    ShowPage("12_#&#&M260_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ UCPC.                 ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1A_V47()
+    ShowPage("17_CC1A_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_Live_V47()
+    ShowPage("12_#&#&MA00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1A1_V47()
+    ShowPage("17_CC1A1_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1A3_V47()
+    ShowPage("17_CC1A3_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1J33_V47()
+    ShowPage("17_CC1J33_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1A2_V47()
+    ShowPage("17_CC1A2_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1B_V47()
+    ShowPage("17_CC1B_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1C7_V47()
+    ShowPage("17_CC1C7_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEBJ_V47()
+    ShowPage("17_CEBJ_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET314_V47()
+    ShowPage("17_CET314_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MA00_Live()
+    ShowPage("11_Eau_#&#&MA00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MA00_J()
+    ShowPage("11_Eau_#&#&MA00_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_J_V47()
+    ShowPage("12_#&#&MA00_J_V47");
+    CreatePATH("Synoptique Par Unite | Journalier |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MA00_S()
+    ShowPage("11_Eau_#&#&MA00_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_S_V47()
+    ShowPage("12_#&#&MA00_S_V47");
+    CreatePATH("Synoptique Par Unite | Hebdomadaire |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MA00_M()
+    ShowPage("11_Eau_#&#&MA00_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_M_V47()
+    ShowPage("12_#&#&MA00_M_V47");
+    CreatePATH("Synoptique Par Unite | Mensuel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_11_Eau_35383538MA00_A()
+    ShowPage("11_Eau_#&#&MA00_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MA00_A_V47()
+    ShowPage("12_#&#&MA00_A_V47");
+    CreatePATH("Synoptique Par Unite | Annuel |  | Consommation | ¤ Froid.                ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1K_V47()
+    ShowPage("17_CET1K_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538MC00_Live_V47()
+    ShowPage("12_#&#&MC00_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CET1J_V47()
+    ShowPage("17_CET1J_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CV021_V47()
+    ShowPage("17_CV021_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1F_V47()
+    ShowPage("17_CC1F_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Chaufferie.           ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CC1O8_V47()
+    ShowPage("17_CC1O8_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_12_35383538Z300_Live_V47()
+    ShowPage("12_#&#&Z300_Live_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////
+Function void SY_FC_17_CEB1D1_V47()
+    ShowPage("17_CEB1D1_V47");
+    CreatePATH("Synoptique Par Unite | Temps Réel |  | Consommation | ¤ Facility ElMazraa.    ");
+End
+/////////////////////////////////////////////////////////////////////

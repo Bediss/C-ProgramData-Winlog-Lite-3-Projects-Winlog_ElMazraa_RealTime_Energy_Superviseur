@@ -1,0 +1,2 @@
+F:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;§CC1F;ChaufferieSurgele;Electrique;CCB4;Chaufferie Elec;4;S200;M1B0;M140;STEG;PosteTR6;ChaufferieSurgel;CC1M3;Process;*;*;Chaufferie;*;*;CC1M3~;Chauf-SurgelTR6~;;;0;Chaufferie Surgele;*;*
+P:KWh-M#2;KWh-M-1#35;KWh-M#2;Inc-M#31;KWh/T-A-1#1002;§CCB4;Chaufferie Elec;Electrique;CCB;3;S200;*;MC00;STEG;*;Chaufferie

@@ -1,0 +1,6 @@
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA2;PetFood Eau;Eau;CEA;Production;3;*;*;M240;*;*;PetFood;CEB127+CET1V+CES1E;Usine;*;CPT14;PetFood;*;*;CEB127~+~CET1V~+~CES1E~;CB48_hydro-Net~+~CT30_B-marie-C~+~CS9_pet food~;;;0;PetFood Eau;PetFood T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA3;Charcuterie Eau;Eau;CEA;Production;3;*;*;M220;*;*;Charcuterie;CEB12A+CETA2;Usine;*;CPT12;Charcuterie;*;*;CEB12A~+~CETA2~;CB47_A-Condens~+~CT12_Bain Marie~;;;0;Charcuterie Eau;Charcuterie T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA4;UCPC Eau;Eau;CEA;Production;3;*;*;M260;*;*;UCPC;CEB13+CES15+CET1I;Usine;*;CPT16;UCPC;*;*;CEB13~+~CES15~+~CET1I~;CB12_UCPC ~+~CS14_UCPC ~+~CT33_UCPC_Comble~;;;0;UCPC Eau;UCPC T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA5;Surgele Eau;Eau;CEA;Production;3;*;*;M250;*;*;Surgele;CEB16+CES11+CETA5;Usine;*;CPT15;Surgele;*;*;CEB16~+~CES11~+~CETA5~;Surgele~+~CS10_surgelee ~+~CT8_Surgele~;;;0;Surgele Eau;Surgele T;*
+F:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA8;Conserve Eau;Eau;CEA;Production;3;*;*;M230;*;*;Conserve;CEB14+CES16+CET1F;Usine;*;CPT13;Conserve;*;*;CEB14~+~CES16~+~CET1F~;CB13_ABATTAGE~+~CS15_conserve ~+~CT29_AUTOCLAVE~;;;0;Conserve Eau;Conserve T;*
+P:m3-S#1;m3-S-1#13;m3-S#1;Inc-S#9;#1001;低EA;Production;Eau;CE1;2;*;*;Z100;*;*;Production

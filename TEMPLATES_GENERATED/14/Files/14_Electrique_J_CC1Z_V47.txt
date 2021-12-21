@@ -1,0 +1,2 @@
+F:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;§CC1F5;COP-eclairage;Electrique;CC1Z;Coproduit TR2;7;S200;M170;M152;STEG;PosteTR2;COP-eclairage;Reel;Machine;*;*;CoProduit;!~*;!~*;;;;;2;eclairage coproduit;*;*
+P:KWh-J#0;KWh-J-1#33;KWh-J#0;Inc-J#29;KWh/T-A-1#1000;§CC1Z;Coproduit TR2;Electrique;CC1I;6;S200;M170;M152A;STEG;PosteTR2;CoProduit TR2

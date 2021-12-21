@@ -1,0 +1,70 @@
+#Version: 0x030222
+#Access: 0
+#Pos: 750,260
+#Size: 500,300
+#BkColor: clBtnShadow
+#Gates: 38
+  #NUM: EmailPageView,0
+  #NUM: PageView,1
+  #NUM: PageView,2
+  #STR: EmailView1,2
+  #STR: EmailView1,4
+  #STR: EmailView1,6
+  #STR: EmailView2,2
+  #STR: EmailView2,4
+  #STR: EmailView2,6
+  #STR: EmailView3,2
+  #STR: EmailView3,4
+  #STR: EmailView3,6
+  #STR: EmailView4,2
+  #STR: EmailView4,4
+  #STR: EmailView4,6
+  #STR: EmailView5,2
+  #STR: EmailView5,4
+  #STR: EmailView5,6
+  #STR: EmailView6,2
+  #STR: EmailView6,4
+  #STR: EmailView6,6
+  #STR: EmailView7,2
+  #STR: EmailView7,4
+  #STR: EmailView7,6
+  #STR: EmailView8,2
+  #STR: EmailView8,4
+  #STR: EmailView8,6
+  #STR: EmailView9,2
+  #STR: EmailView9,4
+  #STR: EmailView9,6
+  #STR: EmailView10,2
+  #STR: EmailView10,4
+  #STR: EmailView10,6
+  #STR: AlarmeEventModifer,13
+  #STR: AlarmeEventModifer,7
+  #STR: AlarmeEventModifer,8
+  #STR: AlarmeEventModifer,9
+  #NUM: E15min,1
+#Style: FixedNoBorder
+#StayOnTop: 1
+#Object: Button
+  #ID: 0
+  #Pos: 65,120
+  #Size: 125,35
+  #Cursor: 0
+  #Label: Compteur List
+  #Font: Segoe UI,11,0001
+  #FunctionKey: -1
+  #TabOrder: 0
+  #Access: 0
+  #OnClick: StartF,Open_CL()
+#EndObj
+#Object: Button
+  #ID: 0
+  #Pos: 300,125
+  #Size: 125,35
+  #Cursor: 0
+  #Label: Measure List
+  #Font: Segoe UI,11,0001
+  #FunctionKey: -1
+  #TabOrder: 0
+  #Access: 0
+  #OnClick: StartF,Open_ML()
+#EndObj

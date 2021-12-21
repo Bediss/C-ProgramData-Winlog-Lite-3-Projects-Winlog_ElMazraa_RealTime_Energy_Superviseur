@@ -1,0 +1,5 @@
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C112;Plumage Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M219;STEG;Post Transfo;Plumage;CC1I25;Process;*;*;Abattoir;*;*;CC1I25~;Plumeuse~;;;0;Plumage Electrique;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C114;Ressuage Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M215;STEG;Post Transfo;Ressuage;CC11D+CC1C6+CC1O4;Process;*;*;Abattoir;*;*;CC11D~+~CC1C6~+~CC1O4~;ventilo res 1+2~+~ventilo ress3 ~+~Chaine Ressuage~;;;0;Ressuage Electrique;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C117;Abattage Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M213;STEG;Post Transfo;Abattage;CC1I21;Process;*;*;Abattoir;*;*;CC1I21~;Abattage TR2~;;;0;Abattage Electrique;*;*
+F:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C118;DECOUPE Elec;Electrique;CC11;Abattoir Elec;4;S200;MELEC;M217;STEG;Post Transfo;Decoupe;CC1I23+CC1K33;Process;*;*;Abattoir;*;*;CC1I23~+~CC1K33~;Decoupe~+~Pompe a Vide D~;;;0;DECOUPE Electrique;*;*
+P:KWh-A#3;KWh-A-1#36;KWh-A#3;Inc-A#32;KWh/T-A-1#1003;低C11;Abattoir Elec;Electrique;CCA;3;*;MELEC;M210;*;Post Transfo;Abattoir

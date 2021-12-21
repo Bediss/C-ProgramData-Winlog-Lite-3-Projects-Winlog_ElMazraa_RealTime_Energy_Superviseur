@@ -1,0 +1,4 @@
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C1K21;cutteur PetFood;Electrique;CC1K2;PetFood TR4;7;S200;M190;M24A;STEG;PosteTR4;cutteur PetFood;Reel;Machine;*;*;PetFood;!~*;!~*;;;;;2;cutteur PetFood;*;*
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C1K22;PetFood Calcule;Electrique;CC1K2;PetFood TR4;6;S200;M190;M24B;STEG;PosteTR4;PetFood Calcule;Reel;SubAtelier;*;*;PetFood;!~*;!~*;;;;;2;PetFood Calcule;*;*
+F:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C1K23;Ventio evap;Electrique;CC1K2;PetFood TR4;7;S200;M190;M24C;STEG;PosteTR4;Ventio evap;Reel;Machine;*;*;PetFood;!~*;!~*;;;;;2;Ventio evap;*;*
+P:KWh/T-A-1#2000;KWh-J#0;Inc-J#29;低C1K2;PetFood TR4;Electrique;CC1K;5;S200;M190;M242;STEG;PosteTR4;PetFood TR4

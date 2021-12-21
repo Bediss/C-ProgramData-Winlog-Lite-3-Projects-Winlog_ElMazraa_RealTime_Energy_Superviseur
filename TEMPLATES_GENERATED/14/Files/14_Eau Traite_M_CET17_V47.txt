@@ -1,0 +1,2 @@
+F:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CET171;CT43_M-gesier;Eau Traite;CET17;CT21_ABATTAGE-E;7;M1C0;M1V3;M213;SalleOsmose;Bassin3000;Abattage;Reel;Machine;Eau;*;Abattoir;!~;!~;;;;;2;CT43_machine gesier;*;*
+P:m3-M#2;m3-M-1#14;m3-M#2;Inc-M#10;#1002;§CET17;CT21_ABATTAGE-E;Eau Traite;CET16;5;M1C0;M1V3;M213;SalleOsmose;Bassin3000;Abattage

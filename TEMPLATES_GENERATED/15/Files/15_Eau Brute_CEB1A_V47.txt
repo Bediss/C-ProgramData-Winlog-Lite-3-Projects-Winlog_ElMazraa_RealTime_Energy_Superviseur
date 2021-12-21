@@ -1,0 +1,3 @@
+F:#2000;m3-J#0;Inc-J#8;§CEB32;CB50_Admin COP;Eau Brute;CEB1A;CB16_Coproduit;4;*;M1V1;M152C;*;Bassin1000;Administration coproduit;Reel;Process;Eau;*;CoProduit;!~*;!~*;;;;;3;CB50_Admin Cooproduit;*;*
+F:#2000;m3-J#0;Inc-J#8;§CEB31;CB49_Lav-Hp COP;Eau Brute;CEB1A;CB16_Coproduit;4;*;M1V1;M152D;*;Bassin1000;COP-Lavage;Reel;Process;Eau;*;CoProduit;!~*;!~*;;;;;2;CB49_Lavage Hp Cooproduit;*;*
+P:#2000;m3-J#0;Inc-J#8;§CEB1A;CB16_Coproduit;Eau Brute;CEBA;3;*;M1V1;C200;*;Bassin1000;CoProduit

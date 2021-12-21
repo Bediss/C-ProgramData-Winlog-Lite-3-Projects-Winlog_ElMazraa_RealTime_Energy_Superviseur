@@ -1,0 +1,7 @@
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E06;VMZ Distrib Eau;Eau;CE0;VMZ Eau;1;*;V100;*;*;VMZ;*;Reel;Site;*;*;VMZ;!~*;!~*;;;;;2;VMZ Distribution Eau;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E01;VMZ Conso Eau;Eau;CE0;VMZ Eau;1;*;*;V100;*;*;VMZ;F(CE01);Site;*;CPT0;VMZ;*;*;F~(~CE01~)~;F~(~VMZ Conso Eau~)~;;;0;VMZ Consommation Eau;VMZ Tonnage;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E02;VMZ Prod Eau;Eau;CE0;VMZ Eau;1;V100;*;*;VMZ;*;*;Reel;Site;*;*;VMZ;!~*;!~*;;;;;2;VMZ Production Eau;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E03;Ecart PC Eau;Eau;CE0;VMZ Eau;1;*;*;*;*;*;*;CE02-CE01;Site;*;*;VMZ;*;*;CE02~-~CE01~;VMZ Prod Eau~-~VMZ Conso Eau~;;;0;Ecart Production/Consommation Eau;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E04;Ecart PD Eau;Eau;CE0;VMZ Eau;1;*;*;*;*;*;*;CE02-CE06;Site;*;*;VMZ;*;*;CE02~-~CE06~;VMZ Prod Eau~-~VMZ Distrib Eau~;;;0;Ecart Production/Distribution Eau;*;*
+F:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E05;Ecart DC Eau;Eau;CE0;VMZ Eau;1;*;*;*;*;*;*;CE06-CE01;Site;*;*;VMZ;*;*;CE06~-~CE01~;VMZ Distrib Eau~-~VMZ Conso Eau~;;;0;Ecart Distribution/Consommation Eau;*;*
+P:m3-J#0;m3-J-1#12;m3-J#0;Inc-J#8;#1000;低E0;VMZ Eau;Eau;*;0;*;*;*;*;*;*

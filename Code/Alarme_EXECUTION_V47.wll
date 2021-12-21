@@ -1,0 +1,59 @@
+
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////// Listen ALARME HEADER ///////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+function String Q1_Check( String  Q1_CurrFile , String Q1_FileName)
+
+    int FileHandle ;
+    String Line;
+    String Objectif_Prefix = "O";
+    String Obj_Config;
+    String Obj_Gate;
+    String Obj_List;
+    String Q1_Code; String Q1_Name; String Q1_objectif;
+    //String Q1_Operateur;
+    String Q2_Code = "";
+    String Q1_Condition;
+    String Q2_Condition = "";
+    String Q1_Line;
+
+
+    FileHandle = FileOpen(Q1_CurrFile,"rt");
+
+    If (FileHandle == 0 ) Then  Return "";  End
+
+    FileReadLn(FileHandle); // Header Line
+    While ( FileEof( FileHandle ) == 0 )
+        Q1_Line = FileReadLn(FileHandle);
+
+        IF ( Q1_Line != "" ) Then
+            //// Decompose line
+            Q1_Code         = FETCH_Q1_Execution(Q1_Line,1,";");
+            Q1_Name         = FETCH_Q1_Execution(Q1_Line,9,";");
+            Q1_objectif     = FETCH_Q1_Execution(Q1_Line,6,";");
+            //Q1_Operateur    = FETCH_Q1_Execution(Q1_Line,5,";");
+            //// Check
+
+            IF ( Q1_Code != "" ) Then
+                ///////////////////////////////////////////////////////////////
+                If ( FETCH_Q1_Execution(Q1_objectif,1,":") == Objectif_Prefix ) Then
+                  Obj_Config = FETCH_Q1_Execution(Q1_objectif,2,":");
+                  Obj_Gate   = FETCH_Q1_Execution( Obj_Config,1,"$");
+                  Obj_List   = FETCH_Q1_Execution( Obj_Config,2,"$");
+
+                  IF ( NumGateExists(Obj_Gate, StrToInt( Obj_List ) ) == True ) Then
+                    Q1_objectif = GetNumGateValue( Obj_Gate , StrToInt(Obj_List));
+                  Else
+                    Q1_objectif = 0;
+                  End // If NumGateExists
+
+                End // If == Objectif_Prefix
+                ///////////////////////////////////////////////////////////////
+
+           End //// If Q1_Code !=
+       End // If Q1_Line !=
+    End // While
+
+    FileClose( FileHandle );
+    Return Q2_Code + ";" + Q2_Condition ;
+    End // Function

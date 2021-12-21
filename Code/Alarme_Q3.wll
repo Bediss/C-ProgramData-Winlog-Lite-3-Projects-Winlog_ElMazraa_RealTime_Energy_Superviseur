@@ -1,0 +1,712 @@
+///////////////////////////////////////////////////////////////////////////////
+////            Alarmes Queues Execution Q1 And Q3
+///////////////////////////////////////////////////////////////////////////////
+Global Bool   MAIL_SETUP_FLAG = False;
+Global String MAIL_SMTP_SERVER;
+Global String MAIL_USER;
+Global String MAIL_SMTP_PW;
+Global String MAIL_ADDRESS_FROM;
+Global String MAIL_IMAP_SERVER;
+Global String MAIL_IMPA_PW;
+Global String MAIL_TEST_ADDRESS;
+///////////////////////////////////////////////////////////////////////////////
+////            Execution Queue Q1
+///////////////////////////////////////////////////////////////////////////////
+Function void Q1_Execution()
+
+    #Startup
+    int Handle ;
+    String CurrPath;
+    String Q1_ExtentionOfFile = "*.csv";
+    String CurrFileName;
+    String CurrFile;    String BackFile;
+    String Q2_Line;
+    Int i = 0;
+    String DATEIN = GetDateString("/",true) + " " + GetTimeString(":") ;
+    Sleep(30000);
+
+
+       While(BOOT_OK == False)
+       Sleep(1000);
+       End
+
+    CurrPath = ALARME_Q1_PATH + Q1_ExtentionOfFile;
+
+    Q1_Event_Runtime_LOG(" Q1_Execution : Run");
+    While (1)
+
+            While(CNX_STATUS == False)
+                Q1_Event_Runtime_LOG(" Q1 CNX_STATUS : " + CNX_STATUS);
+                Sleep(5000);
+            End
+
+      Handle   = FileFindFirstEx(CurrPath);
+      //MessageBox(CurrPath,Handle);
+      If ( Handle != 0 ) Then
+
+        //// one file in directory
+        CurrFileName = FileNameFoundEx(Handle);
+        CurrFile = ALARME_Q1_PATH + CurrFileName;
+        BackFile = ALARME_Q1_BACK_PATH + CurrFileName;
+        i = i+1;
+        //MessageBox(CurrFileName,i);
+        ////
+        /***************** Q1_Check(); *****************/
+        Q2_Line = Q1_Check(CurrFile,CurrFileName);
+        //MessageBox(Q2_Line,"Q2_Line");
+        Save_in_Q2( CurrFileName , Q2_Line );
+        ////
+        //MessageBox(CurrFileName,i);
+        FileCopy(CurrFile,BackFile,False);
+        FileDelete(CurrFile);
+        //MessageBox(CurrFile,i);
+        //// more then one file in directory
+            While (FileFindNextEx(Handle) == True )
+
+                CurrFileName = FileNameFoundEx(Handle);
+                CurrFile = ALARME_Q1_PATH + CurrFileName;
+                BackFile = ALARME_Q1_BACK_PATH + CurrFileName;
+                i = i+1;
+                //MessageBox(CurrFileName,i);
+                ////
+                /***************** Q1_Check(); *****************/
+                Q2_Line = Q1_Check(CurrFile,CurrFileName);
+                Save_in_Q2( CurrFileName , Q2_Line );
+                ////
+
+                //// copy file in Back Dir and Delete
+                 FileCopy(CurrFile,BackFile,False);
+                 FileDelete(CurrFile);
+                /////////////////////////////////////
+
+            End
+
+            //MessageBox("Date in : " + DATEIN,"Date Out : " + GetDateString("/",true) + " " + GetTimeString(":"));
+
+      End // If ( Handle != 0
+      //MessageBox(CurrPath,Handle);
+      Sleep(10000);
+
+    End // While (1)
+
+
+
+End
+///////////////////////////////////////////////////////////////////////////////
+function void Save_in_Q2( String Q1FileName , String Q2Line )
+
+    String Q2FileName;
+    String Q3FileName;
+    Int    Q2FileHandle;
+    String Q2Code;
+    String Q2Condition;
+
+
+    IF ( Q2Line == ";" ) then Return;    End
+    Q1FileName = FETCH_Q1_Execution(Q1FileName,1,".");
+    Q2FileName = FETCH_Q1_Execution(Q1FileName,2,"_");
+    Q3FileName = ALARME_Q3_PATH + "Q3_" + Q2FileName + ".txt";
+    Q2FileName = ALARME_Q2_PATH + "Q2_" + Q2FileName + ".txt";
+
+
+    Q2Code      = FETCH_Q1_Execution(Q2Line,1,";");
+    Q2Condition = FETCH_Q1_Execution(Q2Line,2,";");
+
+    IF ( StrSubString( Q2Code , StrLen(Q2Code) , 1) == "," ) Then
+        Q2Code = StrDelete(Q2Code, StrLen(Q2Code) , 1 );
+    End
+
+    IF ( StrSubString( Q2Condition , StrLen(Q2Condition) , 1) == "," ) Then
+        Q2Condition = StrDelete(Q2Condition, StrLen(Q2Condition) , 1 );
+    End
+
+    Q2FileHandle = FileOpen(Q2FileName,"wt");
+     FileWriteLn(Q2FileHandle,Q2Code);
+     FileWriteLn(Q2FileHandle,Q2Condition);
+    FileClose(Q2FileHandle);
+
+    //MessageBox(Q3FileName,"Q3FileName");
+    FileCopy(Q2FileName,Q3FileName,False);
+
+end
+///////////////////////////////////////////////////////////////////////////////
+/*function String Q1_Check( String  Q1_CurrFile , String Q1_FileName)
+
+    int FileHandle ;
+    String Line;
+    String Objectif_Prefix = "O";
+    String Obj_Config;
+    String Obj_Gate;
+    String Obj_List;
+    String Q1_Code; String Q1_Name; String Q1_objectif;
+    //String Q1_Operateur;
+    String Q2_Code;
+    String Q1_Condition;
+    String Q2_Condition;
+    String Q1_Line;
+
+
+    FileHandle = FileOpen(Q1_CurrFile,"rt");
+
+    If (FileHandle == 0 ) Then  Return "";  End
+
+    FileReadLn(FileHandle); // Header Line
+    While ( FileEof( FileHandle ) == 0 )
+        Q1_Line = FileReadLn(FileHandle);
+
+        IF ( Q1_Line != "" ) Then
+            //// Decompose line
+            Q1_Code         = FETCH_Q1_Execution(Q1_Line,1,";");
+            Q1_Name         = FETCH_Q1_Execution(Q1_Line,9,";");
+            Q1_objectif     = FETCH_Q1_Execution(Q1_Line,6,";");
+            //Q1_Operateur    = FETCH_Q1_Execution(Q1_Line,5,";");
+            //// Check
+
+            IF ( Q1_Code != "" ) Then
+                ///////////////////////////////////////////////////////////////
+                If ( FETCH_Q1_Execution(Q1_objectif,1,":") == Objectif_Prefix ) Then
+                  Obj_Config = FETCH_Q1_Execution(Q1_objectif,2,":");
+                  Obj_Gate   = FETCH_Q1_Execution( Obj_Config,1,"$");
+                  Obj_List   = FETCH_Q1_Execution( Obj_Config,2,"$");
+
+                  IF ( NumGateExists(Obj_Gate, StrToInt( Obj_List ) ) == True ) Then
+                    Q1_objectif = GetNumGateValue( Obj_Gate , StrToInt(Obj_List));
+                  Else
+                    Q1_objectif = 0;
+                  End // If NumGateExists
+
+                End // If == Objectif_Prefix
+                ///////////////////////////////////////////////////////////////
+
+             If ( Q1_Code == "AX1") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX2") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX3") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX4") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX5") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX6") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX7") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX8") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX9") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+             If ( Q1_Code == "AX10") then
+                Q1_Condition = AX( Q1_objectif );
+                If ( Q1_Condition != "" ) Then
+                  Q2_Code = Q1_Code + "," + Q2_Code;
+                  Q2_Condition = Q1_Condition +","+ Q2_Condition;
+                End
+             End
+
+
+            End // If Q1_Code != ""
+
+       End // If Q1_Line != ""
+
+    End // While
+
+    FileClose( FileHandle );
+
+
+end*/
+///////////////////////////////////////////////////////////////////////////////
+////            Execution Queue Q3
+///////////////////////////////////////////////////////////////////////////////
+function void Q3_Execution()
+
+    #Startup
+    int Handle ;
+    String CurrPath;
+    String Q3_ExtentionOfFile = "*.csv";
+    String CurrFileName;
+    String CurrFile;    String BackFile;
+    String Q2_Code;     String Q2_Trigger;      String Q2_Line;
+    Int i = 0;
+    String DATEIN = GetDateString("/",true) + " " + GetTimeString(":") ;
+    Sleep(60000);
+
+        While(BOOT_OK == False)
+            Sleep(1000);
+        End
+
+    CurrPath = ALARME_Q3_PATH + Q3_ExtentionOfFile;
+
+    Q3_Event_Runtime_LOG(" Q3_Execution : Run");
+
+    While (1)
+
+
+        While(CNX_STATUS == False)
+            Q3_Event_Runtime_LOG(" Q3 CNX_STATUS : " + CNX_STATUS);
+            Sleep(5000);
+        End
+
+
+
+     Handle   = FileFindFirstEx(CurrPath);
+      If ( Handle != 0 ) Then
+
+        //// one file in directory
+        CurrFileName = FileNameFoundEx(Handle);
+        CurrFile = ALARME_Q3_PATH + CurrFileName;
+        BackFile = ALARME_Q3_BACK_PATH + CurrFileName;
+
+        Q2_Line = GetComplementInfo( CurrFileName , "Q3" , "txt" );
+        Q2_Code = FETCH_Q3_Execution(Q2_Line,1,";");
+        Q2_Trigger = FETCH_Q3_Execution(Q2_Line,2,";");
+        i = i+1;
+        ////
+        //MessageBox(CurrFile,"i");
+        Email_ToExecute(CurrFile,Q2_Code,Q2_Trigger);
+        ////
+
+        FileCopy(CurrFile,BackFile,False);
+        FileDelete(CurrFile);
+
+        //// more then one file in directory
+            While (FileFindNextEx(Handle) == True )
+
+                CurrFileName = FileNameFoundEx(Handle);
+                CurrFile = ALARME_Q3_PATH + CurrFileName;
+                BackFile = ALARME_Q3_BACK_PATH + CurrFileName;
+
+                Q2_Line = GetComplementInfo( CurrFileName , "Q3" , "txt" );
+                  IF ( Q2_Line != "-1") Then
+                    Q2_Code = FETCH_Q3_Execution(Q2_Line,1,";");
+                    Q2_Trigger = FETCH_Q3_Execution(Q2_Line,2,";");
+
+                    i = i+1;
+                    ////
+                    //MessageBox(CurrFile,"i");
+                    Email_ToExecute(CurrFile,Q2_Code,Q2_Trigger);
+                    ////
+
+                    //// copy file in Back Dir and Delete
+                    FileCopy(CurrFile,BackFile,False);
+                    FileDelete(CurrFile);
+                    /////////////////////////////////////
+                  //Else
+
+                  End
+               Sleep(30000); // Sleep 0.5 min = 30 sec
+            End
+
+      End
+    Sleep(15000);
+    End
+    //MessageBox("Date in : " + DATEIN,"Date Out : " + GetDateString("/",true) + " " + GetTimeString(":"));
+end
+///////////////////////////////////////////////////////////////////////////////
+ Function Void Email_ToExecute( String Q3_CurrFile , String Q2_Code , String Q2_Trigger )
+
+    Int FileHandle;
+
+    String EventName;       String EventTag;        String EventTrigger;
+    String EventCode;       String EmailName;
+    String EmailTO;         String EmailCC;         String EmailSubject;
+    String EmailBody;       String EmailAttach;     String AttacheType;
+    String Q3Line;          String EmailDataAttache;
+    String Trigger;
+    String Attache;
+    Bool SendMail = False;
+    //Bool AttacheFlag  = False;
+    //String Q2_Code;     String Q2_Trigger;      String Q2_Line;
+
+    //Q3_Event_Runtime_LOG(" Email_ToExecute : " + Q3_CurrFile);
+
+    FileHandle = FileOpen( Q3_CurrFile ,"rt");
+
+      IF ( FileHandle != 0) Then
+      //MessageBox(Q3_CurrFile,FileHandle);
+      FileReadLn(FileHandle); // Header
+        While( FileEof(FileHandle)==0 )
+          Q3Line = FileReadLn(FileHandle);
+          If (Q3Line != "") Then
+            ///// Get Data From Line /////////
+            EventCode         = FETCH_Q3_Execution(Q3Line,1,";");
+            EventName         = FETCH_Q3_Execution(Q3Line,2,";");
+            EventTag          = FETCH_Q3_Execution(Q3Line,3,";");
+            EventTrigger      = FETCH_Q3_Execution(Q3Line,4,";");
+            EmailName         = FETCH_Q3_Execution(Q3Line,6,";");
+            EmailSubject      = FETCH_Q3_Execution(Q3Line,9,";");
+            EmailBody         = FETCH_Q3_Execution(Q3Line,10,";");
+            EmailTO           = FETCH_Q3_Execution(Q3Line,13,";");
+            EmailCC           = FETCH_Q3_Execution(Q3Line,14,";");
+            EmailAttach       = FETCH_Q3_Execution(Q3Line,11,";");
+            EmailDataAttache  = FETCH_Q3_Execution(Q3Line,15,";");
+
+            //////////////////////////////////
+            ////// Get Event trigger condition
+              IF (EventTrigger == "") Then
+                IF (Q2_Code != "" && Q2_Code != "-1") Then
+                 Trigger = GetCondition( Q2_Code , Q2_Trigger , EventCode);
+                End
+              End
+            //////////////////////////////////
+            ///// Conctract Body /////////////
+            EmailBody = EmailName                                       +Eol()+
+                        EventName                                       +Eol()+
+                        EventTag + "  " + Trigger+ Eol()                +Eol()+
+                        EmailBody                                       +Eol()+
+                        GetDateString("/",true) +"_"+ GetTimeString(":")+Eol()+
+                        Eol() +"Cordialement";
+            //////////////////////////////////
+            ///// Create Attache /////////////
+            Attache = Email_Attache( EmailAttach , EmailDataAttache , EventName , EmailName);
+
+            //////////////////////////////////
+            ///// Send Mail //////////////////
+
+            SendMail = SendEMail( EmailTO, EmailCC, EmailSubject, EmailBody, Attache);
+
+            //////////////////////////////////
+
+          End
+        End
+      End
+    FileClose( FileHandle );
+
+ End
+///////////////////////////////////////////////////////////////////////////////
+function String Email_Attache( String Attache_LINE , String Attache_Data , String EventAlarme_Name , string EmailName)
+
+
+    String Single_Report_Attache    = "R";
+    String PBI_Report_Attache       = "PBI";
+    String FactBook_Report_Attache  = "FB";
+
+    String Attache_Type;    String Attache_Code;    String Attache_Name;
+    Int Attache_Number;
+    String FinalAttache ="";
+
+    //// 1. Decompose mail attache
+    Attache_Type    = FETCH_REPORT_GENERATOR(Attache_LINE,1,":");
+    Attache_Code    = FETCH_REPORT_GENERATOR(Attache_LINE,2,":");
+    Attache_Name    = FETCH_REPORT_GENERATOR(Attache_LINE,3,":");
+    Attache_Number  = StrToInt( FETCH_REPORT_GENERATOR(Attache_LINE,4,":") );
+    //// 2. select FactBook or Single Report
+     If ( Attache_Type == Single_Report_Attache ) Then
+        //// 2.1 Single Report
+         FinalAttache = SingleReport_Generator( Attache_Data , EventAlarme_Name , EmailName );
+     Else
+        If ( Attache_Type == FactBook_Report_Attache ) Then
+        //// 2.1 FactBook Report
+         FinalAttache = FACTBOOK_Generator( Attache_Code , Attache_Name , Attache_Data , EventAlarme_Name , EmailName , Attache_Number );
+        Else
+            If ( Attache_Type == PBI_Report_Attache ) Then
+            //// 2.3 Power BI
+            //FinalAttache = PBI_TableauViewEnergy( ATTACHEMENT_CODE );
+            Else
+            // Type Not Found
+             Q3_Event_Runtime_LOG(" Report Not generated : Type Not Defined " );
+             FinalAttache = "";
+            End
+        End
+     End
+
+     Return FinalAttache;
+end
+///////////////////////////////////////////////////////////////////////////////
+Function Bool SendEMail( string Email_TO, String Email_CC, string Email_Subject, string Email_Body, string Email_Attach )
+
+   string Ritorno;
+   Bool SendFlag = False;
+   Bool AttacheExist = False;
+   Int Timeout = 10000;  //// 10s en ms = 10000
+   //String SETUP_FILE = "C:\Winlog\Settings\MAIL_SETUP.txt" ;
+
+    AttacheExist = FileExist( Email_Attach );
+
+    Ritorno = SendMail( Timeout,
+
+                        MAIL_SMTP_SERVER,
+                        MAIL_USER,
+                        MAIL_SMTP_PW,
+                        MAIL_ADDRESS_FROM,
+
+                        Email_TO,               // Mail To
+                        Email_CC,               // Mail CC
+                        Email_Subject,          // Mail Subject
+                        Email_Body,             // Mail Body
+                        AttacheExist,           // Mail Attachement flag
+                        Email_Attach);          // Mail Attachement
+
+      IF (Ritorno == "") then
+       SendFlag = True;
+       //Q3_Event_Runtime_LOG( "Send MAIL : OK" );
+      Else
+       SendFlag = False;
+       //Q3_Event_Runtime_LOG( "Send MAIL : KO  " +  Ritorno);
+       Q3_Event_Runtime_LOG(" SendMail : "+ SendFlag +" || Attache : " + Email_Attach);
+      End
+
+      Return SendFlag;
+end
+///////////////////////////////////////////////////////////////////////////////
+function Void GET_MAIL_SETUP()
+
+    String  ConfigFile = POWERSHELL_PATH_CONFIG + "CONFIG_UNCRYPT_SETUPMAIL.txt";
+    Int     CheckFile = 0;
+    Int     MaxCheckFile = 60;
+    Int     FileHandle;
+    Bool    Exist_Check = False;
+
+    // 1. Convert file with Powershell
+
+    FileHandle = FileOpen( ConfigFile , "wt" );
+        FileWriteLn(FileHandle, MAIL_SETUP_CRYTED_FILE );
+        FileWriteLn(FileHandle, MAIL_SETUP_UNCRYTED_FILE );
+    FileClose(FileHandle);
+
+     CheckFile = ShellExec("GET_AUTH_PARAMETER.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
+
+        //MessageBox(POWERSHELL_PATH_EXECUTION + "GET_AUTH_PARAMETER.exe << " + FileExist(POWERSHELL_PATH_EXECUTION + "GET_AUTH_PARAMETER.exe") ,CheckFile);
+    // 2. Wait Creation
+     Exist_Check = False;
+     CheckFile=0;
+    While ( Exist_Check == False )
+
+        IF ( (FileExist( MAIL_SETUP_UNCRYTED_FILE ) == False) && CheckFile < MaxCheckFile ) Then
+            Exist_Check = False;
+         Else
+            Exist_Check = True;
+         End
+
+        Sleep(1000);
+
+    End
+
+    IF ( FileExist( MAIL_SETUP_UNCRYTED_FILE ) == False ) Then
+        Q3_Event_Runtime_LOG( "Error : Email setup File not Found" );
+        MAIL_SETUP_FLAG = False;
+        Return ;
+    Else
+        MAIL_SETUP_FLAG = True;
+    End
+
+    // 3. Read Config File
+
+    //MessageBox(MAIL_SETUP_UNCRYTED_FILE,"MAIL_SETUP_UNCRYTED_FILE");
+       FileHandle = FileOpen( MAIL_SETUP_UNCRYTED_FILE , "rt" );
+
+       FileReadLn(FileHandle); // Congif LINE
+       FileReadLn(FileHandle); // PATH file
+
+       MAIL_SMTP_SERVER = FileReadLn(FileHandle); // SMTP
+       MAIL_USER        = FileReadLn(FileHandle); // User
+       MAIL_SMTP_PW     = FileReadLn(FileHandle); // PW_SMTP
+       MAIL_ADDRESS_FROM= FileReadLn(FileHandle); // MAIL
+       MAIL_IMAP_SERVER = FileReadLn(FileHandle); // IMAP
+       MAIL_IMPA_PW     = FileReadLn(FileHandle); // PW_IMAP
+       MAIL_TEST_ADDRESS= FileReadLn(FileHandle); // @ Mail de test
+
+       //MessageBox(MAIL_SMTP_SERVER,"MAIL_SMTP_SERVER");
+       //MessageBox(MAIL_USER,"MAIL_USER");
+       //MessageBox(MAIL_SMTP_PW,"MAIL_SMTP_PW");
+      // MessageBox(MAIL_ADDRESS_FROM,"MAIL_ADDRESS_FROM");
+
+     FileClose(FileHandle);
+
+     FileDelete(MAIL_SETUP_UNCRYTED_FILE);
+
+end
+///////////////////////////////////////////////////////////////////////////////
+function String GetComplementInfo( String Q3FileName , String TXTFilePrefix , String Extension )
+
+    String CSVFile = Q3FileName;
+    String CSVFileName;
+    String CSVFilePrefix;
+    String CsvTxtFileDateTime;
+    String TXTFileName;
+    Int FileHandle;
+    String CodeLine;    String TriggerLine;
+    String FileType;
+
+    Bool Exist = False;
+
+    CSVFileName        = FETCH_Q3_Execution(CSVFile,1,".");
+    CSVFilePrefix      = FETCH_Q3_Execution(CSVFileName,1,"_");
+    CsvTxtFileDateTime = FETCH_Q3_Execution(CSVFileName,2,"_");
+
+    TXTFileName  = TXTFilePrefix +"_"+ CsvTxtFileDateTime +"."+ Extension;
+
+    FileType = StrSubString(CSVFilePrefix,1,1);
+    If ( FileType == "E") Then  // File Q3 Regulier
+        Return "";
+    Else
+
+      TXTFileName =  ALARME_Q3_PATH + TXTFileName ;
+      IF (FileExist( TXTFileName ) == True) Then
+       ////////////////////////////////////////
+        FileHandle = FileOpen(TXTFileName,"rt");
+          If ( FileHandle != 0) Then
+             CodeLine = FileReadLn(FileHandle);
+          TriggerLine = FileReadLn(FileHandle);
+          End
+        FileClose(FileHandle);
+
+        FileDelete(TXTFileName);
+         CodeLine = CodeLine +";"+ TriggerLine;
+        ////////////////////////////////////////
+       Else
+       Q3_Event_Runtime_LOG(" GetComplementInfo : Q2 File trigger not found >> " + TXTFileName);
+       Return "-1";
+      End
+
+    End
+
+
+    Return CodeLine;
+end
+///////////////////////////////////////////////////////////////////////////////
+function String GetCondition( String CodeLine , String ConditionLine , String CodeSearched)
+
+    Int FildNumber;
+    Int Pos;    Int P;
+    String TempCodeLine;
+    String TempCode;
+    String Condition;
+    Bool Exist = False;
+
+    TempCodeLine = CodeLine;
+    FildNumber = 0;
+    Condition  = "";
+    While( Exist == False )
+
+        P = StrPos(TempCodeLine,",");
+        TempCode     = StrSubString(TempCodeLine,1,P-1);
+        TempCodeLine = StrDelete(TempCodeLine,1,P);
+        FildNumber   = FildNumber+1;
+
+        If (TempCode == CodeSearched) Then
+          Exist = True;
+          Condition  = FETCH_Q3_Execution(ConditionLine,FildNumber,",");
+        End
+
+        If ( StrLen( TempCodeLine ) == 0 && Exist == False ) Then
+          Exist = True;
+          Condition = "";
+        End
+
+    End
+
+    Return Condition;
+end
+///////////////////////////////////////////////////////////////////////////////
+function string FETCH_Q3_Execution(String Ligne,int Numero,string sep)
+int P;
+string V;
+String TXT = Ligne;
+int i =1;
+    While ( i < (Numero) )
+     P = StrPos(TXT,sep);
+     V = StrSubString(TXT,1,P-1);
+     TXT = StrDelete(TXT,1,P);
+     i=i+1;
+    end
+
+     P = StrPos(TXT,sep);
+     V = StrSubString(TXT,1,P-1);
+
+     return V;
+end
+///////////////////////////////////////////////////////////////////////////////
+function string FETCH_Q1_Execution(String Ligne,int Numero,string sep)
+int P;
+string V;
+String TXT = Ligne;
+int i =1;
+    While ( i < (Numero) )
+     P = StrPos(TXT,sep);
+     V = StrSubString(TXT,1,P-1);
+     TXT = StrDelete(TXT,1,P);
+     i=i+1;
+    end
+
+     P = StrPos(TXT,sep);
+     V = StrSubString(TXT,1,P-1);
+
+     return V;
+end
+///////////////////////////////////////////////////////////////////////////////
+function void Q1_Event_Runtime_LOG( String NAME)
+
+    String FILENAME = GetProjectPath() + "\Winlog\EVENT_RUNTIME_LOG.txt";
+    Int FileHANDLE;
+    String WRITE_LINE = "";
+    FileHANDLE = FileOpen(FILENAME,"at");
+    WRITE_LINE = GetDateString("/",False) +"_"+ GetTimeString(":") +" : " + NAME;
+      FileWriteLn(FileHANDLE,WRITE_LINE);
+    FileClose(FileHANDLE);
+end
+///////////////////////////////////////////////////////////////////////////////
+function void Q3_Event_Runtime_LOG( String NAME)
+
+    String FILENAME = GetProjectPath() + "\Winlog\EVENT_RUNTIME_LOG.txt";
+    Int FileHANDLE;
+    String WRITE_LINE = "";
+    FileHANDLE = FileOpen(FILENAME,"at");
+    WRITE_LINE = GetDateString("/",False) +"_"+ GetTimeString(":") +" : " + NAME;
+      FileWriteLn(FileHANDLE,WRITE_LINE);
+    FileClose(FileHANDLE);
+end

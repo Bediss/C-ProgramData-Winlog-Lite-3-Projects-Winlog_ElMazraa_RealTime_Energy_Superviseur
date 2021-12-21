@@ -1,0 +1,143 @@
+///////////////////////////////////////////////////////////////////////////////
+function void UpdateInFileWithPS( String Path_Out,String NameFile ,String TargetList,String NewList,int NFIELDS1,int NFIELDR1,int NFIELDS2,int NFIELDR2 )
+     String FullPathFileName = Path_Out+"Update_Config.txt";
+    Int FileHandle = FileOpen(FullPathFileName,"wt");
+    int RFileHandle ;
+    String Header;
+    String FileTemp=Path_Out+"Temp_"+NameFile;
+    String Original=ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile;
+
+             //    if FileExist(FileTemp)==True then
+            FileDelete(FileTemp);
+
+
+    // MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile+"_____"+Path_Out+"TempE_"+NameFile,"info");
+     FileCopy(Original,FileTemp,False);
+
+    RFileHandle = FileOpen(FileTemp,"rt");
+          if ( RFileHandle == 0 ) then MessageBox(FileTemp," File Note found");return ; end
+
+    If ( FileExist( FileHandle ) == True ) Then FileDelete(FullPathFileName);  End
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Create Config File For Powershell Search
+     if (FileHandle == 0) then MessageBox("BU File not Found","Error");   return; end
+     Header=FileReadLn(RFileHandle);
+
+        FileClose(RFileHandle);
+
+   FileWriteLn(FileHandle,"Temp_"+NameFile);
+   FileWriteLn(FileHandle,TargetList);
+
+    FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDS1,";"));
+     FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDR1,";"));
+
+    FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDS2,";"));
+     FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDR2,";"));
+     FileWriteLn(FileHandle,NewList);
+
+    FileClose(FileHandle);
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Execute Powershell Search
+    ///////////////////////////////////////////////////////////////////////////
+
+      FileClose(RFileHandle);
+      //  MessageBox("0","");
+      ShellExec("CSVUPDATE2F.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
+
+     Sleep(500);
+        While (FileExist( FullPathFileName ) == True )
+         Sleep(500);
+        End
+
+        //MessageBox("1","");
+        // FileDelete(ENV_PATH + "\Files\DATAMODELFiles\EMail\Back_"+NameFile);
+        // MessageBox("2","");
+        // FileRename(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile,ENV_PATH + "\Files\DATAMODELFiles\EMail\Back_"+NameFile);
+         //MessageBox("3","");
+            if FileExist(Original) then
+            FileDelete(Original);
+        end
+
+      // MessageBox(FileTemp,"");
+      //MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile,"2");
+      FileCopy(FileTemp,ENV_PATH + "\Files\DATAMODELFiles\EMail\PS_"+NameFile,False);
+      // MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\PS_"+NameFile,"");
+      FileRename(ENV_PATH + "\Files\DATAMODELFiles\EMail\PS_"+NameFile,Original);
+
+
+
+
+end
+
+
+function void UpdateInFileWithOnePS( String Path_Out,String NameFile ,String TargetList,String NewList,int NFIELDS1,int NFIELDR1 )
+
+    String FullPathFileName = "C:\Winlog\Powershell\Update_Config.txt";
+    Int FileHandle = FileOpen(FullPathFileName,"wt");
+    int RFileHandle ;
+
+
+    String Header;
+    //String FileResultat=Path_Out+"Resultat_"+NameFile;
+   // String FileTemp=Path_Out+"Temp_"+NameFile;
+    String Original=ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile;
+
+
+
+     //MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile+"_____"+Path_Out+"TempE_"+NameFile,"info");
+    // FileCopy(Original,FileTemp,False);
+     //MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile+"_____"+Path_Out+"TempE_"+NameFile,"info");
+    RFileHandle = FileOpen(Original,"rt");
+          if ( RFileHandle == 0 ) then MessageBox(Original," File Note found");return ; end
+
+    //If ( FileExist( RFileHandle ) == True ) Then FileDelete(FullPathFileName);  End
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Create Config File For Powershell Search///////
+    //////////////////////////////////////////////
+     if (RFileHandle == 0) then MessageBox("BU File not Found","Error");   return; end
+     Header=FileReadLn(RFileHandle);
+
+        FileClose(RFileHandle);
+
+    FileWriteLn(FileHandle,NameFile);
+    FileWriteLn(FileHandle,TargetList);
+    FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDS1,";"));
+    FileWriteLn(FileHandle,NewList);
+    FileWriteLn(FileHandle,Fetch_BU(Header,NFIELDR1,";"));
+    FileWriteLn(FileHandle,Path_Out);
+    FileClose(FileHandle);
+       // MessageBox("NewList","NewList");
+    ///////////////////////////////////////////////////////////////////////////
+    // Execute Powershell Search
+    ///////////////////////////////////////////////////////////////////////////
+
+      //FileClose(RFileHandle);
+         //MessageBox("0","");
+
+      ShellExec("CSVUPDATE1F.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
+
+    // Sleep(500);
+        While (FileExist( FullPathFileName ) == True )
+         Sleep(500);
+        End
+
+/*
+
+
+     MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile,"2");
+      FileCopy(FileResultat,ENV_PATH + "\Files\DATAMODELFiles\EMail\"+NameFile,False);
+     MessageBox(ENV_PATH + "\Files\DATAMODELFiles\EMail\PS_"+NameFile,"");
+    //  FileRename(ENV_PATH + "\Files\DATAMODELFiles\EMail\PS_"+NameFile,Original);
+*/
+
+
+end
+///////////////////////////////////////////////////////////////////////////////
+/*
+Function void test()
+UpdateInFileWithOnePS( "C:\Winlog\PowerShell\" ,"Email.csv","FB:FB5:dsdsd:0","bedissidriss@gmail.com,Bdddddd",7,11);
+MessageBox("Fin modification","info");
+End*/

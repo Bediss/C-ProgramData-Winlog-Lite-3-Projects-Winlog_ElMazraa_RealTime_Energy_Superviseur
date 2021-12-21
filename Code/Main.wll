@@ -1,0 +1,47 @@
+
+
+function void Main()
+#Startup
+int X;
+    Initialisation();
+    Event_Runtime_LOG( " Main : End INITAILISATION ");
+    X = ShellExec("WAKEUP_WINLOG.exe" , "open" , POWERSHELL_PATH_EXECUTION ,1,"","");
+
+    ShowPage("index");
+end
+
+function void CallLogout()
+Confirme_Save();
+    Logout();
+
+    SetStrGateValue("UserName",0,"");
+    SetNumGateValue("LOGIN_SUP_ADMIN",0,0);
+
+    TPageCloseByName("Menu");
+    ShowPage("index");
+    ShowPath("");
+    ShowPoPUPs("");
+
+end
+function void CallLogin()
+
+    string UserName ;
+    int UserGroupe;
+
+    SetNumGateValue("Show_Temp_Pointer",0,0);
+
+    TemplatePassword();
+
+    UserName = GetUserName();
+    UserGroupe = GetUserGroups();
+
+    If ( UserName == "" ) Then  Return ;  End
+
+    SetStrGateValue("UserName",0,GetUserName());
+    TPageOpen("Menu");
+    SetStrGateValue("TemplatePath",0,"");
+    ShowPath("Path_Superviseur");
+    ShowPage("Site");
+    return;
+
+end

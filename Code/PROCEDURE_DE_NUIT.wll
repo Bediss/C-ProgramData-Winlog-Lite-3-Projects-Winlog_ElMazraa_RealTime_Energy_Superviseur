@@ -1,0 +1,116 @@
+
+///// NOt used 2-9-2020
+
+function void PROCEDURE_DE_NUIT()
+//#Startup
+
+int Frequence = GetNumGateValue("ReportingListenF",0);
+    int live = GetDigGateValue("LiveReporting",0);
+    int STARTTIME_S = DateTimeToSeconds(GetDayOfMonth(),GetMonth(),GetYear(),GetHour(),GetMinute(),GetSecond());
+    int CURRENTTIME_S;
+    INT StartUPDATE;
+    int EndUPDATE;
+    int CURRENTTIME;
+    bool Go = false;
+    Frequence =30;
+
+ Sleep(60000);
+
+GET_SystemEvents();
+
+    while (WindowIsOpen())
+
+     ListenHistory();
+     Sleep(30000);
+     UpdateInPeriode("DAILY");
+
+      Sleep(900000);
+    end
+end
+///////////////////////////////////////////////////////////////////////////////
+//*****************************************************************************
+
+// Get all historical records of numeric gate "CMP_VALUE",1
+
+// from 6-7-2017 12:00:00 till to 6-7-2017 23:59:59
+
+//*****************************************************************************
+function void DB()
+
+    String FileName  ;
+    Int DBFileHandle ;
+    String Starttime = GetTimeString(":");
+ //////////////////////////////////////////////////////////////////
+  FileName = "C:\Users\BIZEYES-DEV\Desktop\DB_CHC1E,16.csv" ;
+  DBFileHandle = FileOpen(FileName,"wt");
+  ReadHistoricalFile( "CHC1E", 16 , 1 , 8 , 2020 , DBFileHandle );
+  FileClose(DBFileHandle);
+
+  FileName = "C:\Users\BIZEYES-DEV\Desktop\DB_CHC1E,0.csv" ;
+  DBFileHandle = FileOpen(FileName,"wt");
+  ReadHistoricalFile( "CHC1E", 0 , 1 , 8 , 2020 , DBFileHandle );
+  FileClose(DBFileHandle);
+
+    MessageBox("Starttime : " + Starttime ,GetTimeString(":"));
+
+end
+///////////////////////////////////////////////////////////////////////////////
+Function void ReadHistoricalFile( String GateName, Int GateID, Int StartDAY , Int StartMonth , Int StartYear , Int DBFileHandle )
+
+   int Handle ;
+
+   Handle =  HistDbOpenCmp( GateName, GateID , StartDAY , StartMonth , StartYear , 0 , 0, 0);
+
+   if Handle == 0 then return ; end
+
+   ShowRecord(Handle, GateName, GateID, DBFileHandle );
+
+   bool EndLoop = false;
+
+   while(EndLoop==false)
+
+       if (HistDbGetNextRecord(Handle)== false) then
+
+           EndLoop = true;
+
+       else
+               ShowRecord(Handle, GateName, GateID, DBFileHandle );
+
+       end
+
+   end
+
+   HistDbClose(Handle);
+
+end
+
+
+
+//*****************************************************************************
+
+// Show the pointed record.
+
+//*****************************************************************************
+Function void ShowRecord(int Handle , String GateName , Int GateID , Int DBFileHandle)
+
+   string Row = "";
+
+   Row = Row + HistDbGetDayOfMonth(Handle) + "/";
+
+   Row = Row + HistDbGetMonth(Handle) + "/";
+
+   Row = Row + HistDbGetYear(Handle) + ";";
+
+   Row = Row + HistDbGetHour(Handle) + ":";
+
+   Row = Row + HistDbGetMinute(Handle) + ":";
+
+   Row = Row + HistDbGetSecond(Handle) + ";";
+
+   Row = Row + GateName + ";" + GateID + ";" ;
+
+   Row = Row + HistDbGetCmpValue(Handle);
+
+   FileWriteLn(DBFileHandle,Row) ;
+end
+

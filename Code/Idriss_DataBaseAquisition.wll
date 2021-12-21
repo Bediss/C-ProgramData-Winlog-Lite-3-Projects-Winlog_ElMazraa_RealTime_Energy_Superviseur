@@ -1,0 +1,591 @@
+Global int NBFildTable=0;
+Global String Path_File_DB="";
+Global String NameTableDB="";
+Global bool ExistDelete=False;
+Global String HeaderFile="";
+
+/////////////////////////////////////
+Function void Init_DB_Tables()
+    int FileHandle;
+    int FileDeleteHand;
+    String ResultFile;
+    int Size=0;
+    int WFileHandle;
+    int i;
+    HeaderFile="";
+    ExistDelete=False;
+    Admin_View_CurrentLine="";
+    ResultFile=Path_File_DB+"count_"+NameTableDB+".txt";
+ //   MessageBox(Path_File_DB+NameTableDB+"_Header.csv","HeaderFile");
+   /* FileHandle=FileOpen(Admin_View_Original_File,"rt");
+    HeaderFile=FileReadLn(FileHandle);
+
+
+    //Size=FileSize(FileHandle);
+
+    FileClose(FileHandle);*/
+// MessageBox(Path_File_DB+NameTableDB+"_Header.csv","Size");
+      FileHandle=FileOpen(Path_File_DB+NameTableDB+"_Header.csv","rt");
+
+                HeaderFile=FileReadLn(FileHandle);
+                FileClose(FileHandle);
+
+    Size=GetNumGateValue("AdminTotalItems",0);
+  // MessageBox(Size,"Size");
+       //MessageBox(Admin_View_Original_File,"Size");
+    IF ( Size ==  0 ) then
+      SetNumGateValue("LastCodeAdd",0,0);
+              //MessageBox(Admin_View_Original_File,"Admin_View_Original_File");
+                WFileHandle=FileOpen(Admin_View_Original_File,"wt");
+                FileWriteLn(WFileHandle,HeaderFile);
+                FileClose(WFileHandle);
+
+        End
+
+    FileDeleteHand=FileOpen(Path_File_DB+"deleteFile_.csv","wt");
+    FileWriteLn(FileDeleteHand,HeaderFile+";DBAction");
+    FileClose(FileDeleteHand);
+    NBFildTable=Occurence_operateur(HeaderFile,";")+1;
+
+    for i=1 to NBFildTable+1 do
+         Admin_View_CurrentLine=Admin_View_CurrentLine+";";
+    end
+    FileDelete(ResultFile);
+
+    //return HeaderFile;
+ //MessageBox(Admin_View_CurrentLine,NBFildTable);
+    //FileCopy(Admin_View_Original_File,Admin_View_Temp_File,False);
+
+End
+
+///////////////
+Function Void DBFileQuerry(int TypeQuerry)
+
+
+
+String ModifExist;
+int i=NBFildTable+1;
+int FileHandleDel;
+
+//MessageBox(NBFildTable,i+" =ADD");
+    FileHandleDel=FileOpen(Path_File_DB+"deleteFile_.csv","at");
+
+    //MessageBox(Admin_View_CurrentLine,"");
+        ModifExist=Fetch_Admin(Admin_View_CurrentLine,i,";");
+       //MessageBox(Admin_View_CurrentLine,i+"__NBFildTable___"+ModifExist);
+
+        if TypeQuerry=="1" && ModifExist=="2" then
+        //   MessageBox(Admin_View_CurrentLine,i+" =Ava");
+            Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,ModifExist,i);
+
+          //  MessageBox(Admin_View_CurrentLine,i+" =Apa");
+             //  Admin_View_CurrentLine=Admin_View_CurrentLine+";"+ModifExist;
+        else if TypeQuerry=="3" then
+            ExistDelete=True;
+            Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,TypeQuerry,i);
+                   // MessageBox(Admin_View_CurrentLine,i+"__NBFildTable___"+ModifExist);
+             FileWriteLn(FileHandleDel,Admin_View_CurrentLine);
+             end
+        else
+            Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,TypeQuerry,i);
+                  // MessageBox(Admin_View_CurrentLine,i+"__NBFildTable___"+ModifExist);
+            end
+
+            FileClose(FileHandleDel);
+
+End
+
+
+Function Void CommitDBTable(String PosDates)
+
+    String Path_Config;
+    String Date=DateTimeNowPath();
+    String Path_Display=Path_File_DB+NameTableDB+"_DB.csv";
+    String Path_Delete="C:\Winlog\PowerShell\Temp_DB\deleteFile_"+Date+".csv";
+    String Temp_All_Report=ENV_PATH+"\Files\DATAMODELFiles\Rapport\All_Reporting.csv";
+
+    int FileHandle;
+   if  SAVECOMMIT == False then Admin_View_Display(1,  PageOpen );
+    SAVECOMMIT=True;  return ; end
+    DBON=True;
+
+    DirectoryCreate("C:\Winlog\PowerShell\Update_DB_Queue");
+    DirectoryCreate("C:\Winlog\PowerShell\Back_Update_DB_Queue");
+
+    SetStrGateValue("AlarmeEventModifer",17,"Chargement du Base de Donnée en Cours. Attendez SVP!");
+            ShowPoPUPs("InfoPopup");
+    FileCopy(Admin_View_Temp_File,Path_File_DB+NameTableDB+"_"+Date+".csv",False);
+
+    if FileExist(Path_Display) then
+        FileDelete(Path_Display);
+    end
+
+    if ExistDelete == True then
+        FileCopy(Path_File_DB+"deleteFile_.csv",Path_Delete,False);
+    end
+
+//MessageBox("BFD","");
+    Path_Config="C:\Winlog\PowerShell\Update_DB_Queue\Config_Update_DB_"+Date+".txt";
+    FileHandle=FileOpen(Path_Config,"wt");
+
+    /*if PageOpen=="Report" then
+
+        FileWriteLn(FileHandle,Path_File_DB+";"+NameTableDB+";"+NameTableDB+"_"+Date+".csv;"+PosDates+";Display");
+        FileClose(FileHandle);
+        FileCopy(Path_Config,"C:\Winlog\PowerShell\Back_Update_DB_Queue\Config_Update_DB_"+Date+".txt",False);
+
+        //MessageBox(Path_Display,"Path_Display");
+        While (FileExist(Path_Display)==False)
+                Sleep(500);
+
+        End
+        FileCopy(Path_Display,Temp_All_Report,False);
+
+         //FileCopy(Path_Display,Admin_View_Original_File,False);
+         //MessageBox(Temp_All_Report,"Temp_All_Report");
+            //DisplayDBTable("Auteur","Administrateur");
+            //CountDBTable("AdminTotalItems",0);
+      else*/
+       FileDelete(Path_Display);
+            FileWriteLn(FileHandle,Path_File_DB+";"+NameTableDB+";"+NameTableDB+"_"+Date+".csv;"+PosDates+";Display");
+            FileClose(FileHandle);
+             FileCopy(Path_Config,"C:\Winlog\PowerShell\Back_Update_DB_Queue\Config_Update_DB_"+Date+".txt",False);
+            While (FileExist(Path_Display)==False)
+                Sleep(500);
+             End
+
+
+            FileCopy(Path_Display,Admin_View_Original_File,False);
+       // end
+       //MessageBox(Path_Display,"Path_Display");
+ //Init_DB_Tables();
+
+      //
+       //FileCopy(Admin_View_Original_File,Admin_View_Temp_File,False);
+
+
+   SetNumGateValue("EmailPageView",0,1);
+   Admin_View_Display(1,  PageOpen );
+
+   FileDelete(Path_Display);
+ SetStrGateValue("AlarmeEventModifer",17,"Enregistrement avec Succés!");
+        ShowPoPUPs("");
+             DBON=False;
+
+End
+
+
+/////////////////////////////////////////////////
+Function void DisplayDBTable(String NameColumn, String ValueColumn)
+String Path_Query;
+String ResultFile="";
+int FileHandle;
+
+    ResultFile=Path_File_DB+"count_"+NameTableDB+".txt";
+    Path_Query="C:\Winlog\PowerShell\Display_DB_Queue\Config_Display_DB_"+DateTimeNowPath()+".txt";
+    //MessageBox(NameTableDB,"NameTableDB");
+    DirectoryCreate("C:\Winlog\PowerShell\Display_DB_Queue");
+    DirectoryCreate("C:\Winlog\PowerShell\Back_Display_DB_Queue");
+    FileHandle=FileOpen(Path_Query,"wt");
+    FileWriteLn(FileHandle,Admin_View_Original_File);
+    FileWriteLn(FileHandle,NameTableDB);
+    FileWriteLn(FileHandle,NameColumn);
+    FileWriteLn(FileHandle,ValueColumn);
+    FileWriteLn(FileHandle,"csv");
+    FileClose(FileHandle);
+    FileCopy(Path_Query,"C:\Winlog\PowerShell\Back_Display_DB_Queue\Config_Display_DB_"+DateTimeNowPath()+".txt",False);
+    //MessageBox("aaa","");
+    SetStrGateValue("AlarmeEventModifer",17,"Chargement du Base de Donnée en Cours. Attendez SVP!");
+
+    ShowPoPUPs("InfoPopup");
+    While (FileExist( ResultFile ) == False )
+         Sleep(200);
+    End
+
+      ShowPoPUPs("");
+
+End
+///////////////////////////////////////////////////////////////////////////////
+/*
+/////////////////////////////////////////////////
+Function void DisplayDBTableList(String NameColumn, String ValueColumn)
+String Path_Query;
+String ResultFile="";
+int FileHandle;
+
+    ResultFile=Path_File_DB+"count_"+NameTableDB+".txt";
+    Path_Query="C:\Winlog\PowerShell\Display_DB_Queue\Config_Display_DB_"+DateTimeNowPath()+".txt";
+    //MessageBox(NameTableDB,"NameTableDB");
+    FileDelete(Admin_View_Original_File);
+    FileHandle=FileOpen(Path_Query,"wt");
+
+    FileWriteLn(FileHandle,Admin_View_Original_File);
+    FileWriteLn(FileHandle,NameTableDB);
+    FileWriteLn(FileHandle,NameColumn);
+    FileWriteLn(FileHandle,ValueColumn);
+    FileClose(FileHandle);
+
+    SetStrGateValue("AlarmeEventModifer",17,"Chargement du Base de Donnée en Cours. Attendez SVP!");
+     ShowPoPUPs("InfoPopup");
+    While (FileExist( Admin_View_Original_File ) == False )
+         Sleep(200);
+    End
+
+     //ShowPoPUPs("");
+
+End*/
+///////////
+function int CountDBTable(String Gate,int List)
+     int TotalItem = 0;
+
+     String FullPathNameCount=Path_File_DB+"count_"+NameTableDB+".txt";
+        //FileSetAttr(FullPathNameCount,0);
+     int FileHandle=FileOpen(FullPathNameCount,"rt");
+     string TextRow;
+    //MessageBox(FullPathNameCount,"FullPathNameCount");
+      if (FileHandle==0) then
+      MessageBox("Fichier "+FullPathNameCount+" n'existe Pas","Erreur");  Return 0;
+    end
+    //MessageBox(FullPathNameCount,FileHandle);
+     TextRow = FileReadLn(FileHandle);
+
+        TotalItem=StrToInt(TextRow);
+
+
+    FileClose(FileHandle);
+   //MessageBox("TotalItem = " +TotalItem,"");
+    SetNumGateValue(Gate,List,TotalItem);
+    FileSetAttr(FullPathNameCount,0);
+    FileDelete(FullPathNameCount);
+  /*  DBON = True;
+
+
+        DBON = False;*/
+    return TotalItem;
+end
+//////////////////////////////////////////////////
+Function Void Init_DB_PS( String BootMode)
+
+    //////////  Declare Variables
+    String  BootFile      = GetProjectPath() + "\Winlog\Settings\REBOOT_MODE.txt";
+    String  DBInitialFile = GetProjectPath() + "\DBInit.txt";
+    //String  BootMode;
+    Int SendmailFrequence = 60; // Min par heure
+    Int SendmailCount = 0;
+    Int FirstBootFileHandle;
+    String BOOTSTRAP_FLAG   = "BOOTSTRAP";
+    String ACTIONBOOT_FLAG  = "METABOOT";
+    String METABOOT_FLAG    = "ACTIONBOOT";
+
+
+    ////////// Read Start boot mode
+      SetStrGateValue("AlarmeEventModifer",0,"Mode de demarrage :");
+      SetStrGateValue("AlarmeEventModifer",5,BootMode);
+
+      //IF ( FileExist( BootFile ) == True) Then
+
+        //FirstBootFileHandle = FileOpen(BootFile,"rt");
+        //BootMode = FileReadLn(FirstBootFileHandle);
+        //FileClose(FirstBootFileHandle);
+        //BOOT_OK = True;
+      //  MessageBox("DBInitial","1");
+        ShellExec("DBInitial.exe","open",PSG_POWERSHELL_PATH,1,"","");
+      //  MessageBox(" Call ReadDBInitial 1 ",BootMode);
+        ReadDBInitial( BootMode );
+       // MessageBox(" Call ReadDBInitial 2 ",BOOT_OK);
+
+      //Else
+       // BOOT_OK = False;
+        //SetStrGateValue("AlarmeEventModifer",5,"Le fichier du mode de demarrage n'est pas present SVP le verifier");
+
+      //End
+
+    //////////
+
+                SendmailCount = 0;
+                While ( BOOT_OK == False )
+
+                    SendmailCount = SendmailCount +1;
+
+                    If ( SendmailCount >= SendmailFrequence ) Then
+                    // Send Urgent EMail To Bizeyes Admin
+
+                    End
+
+                    Sleep(1000); // sleep 10sec
+                   // MessageBox("DBInitial",SendmailCount);
+                    ShellExec("DBInitial.exe","open",PSG_POWERSHELL_PATH,1,"","");
+                    //MessageBox(DBInitialFile,FileExist(DBInitialFile));
+                    ReadDBInitial( BootMode );
+
+                End
+        //End
+    //////////
+        //FirstBootFileHandle = FileOpen(BootFile,"wt");
+        //FileWriteLn(FirstBootFileHandle,METABOOT_FLAG);
+        //FileClose(FirstBootFileHandle);
+END
+///////////////////////////////////////////////////////////////////////////////
+function Void ReadDBInitial( String StartBootMode )
+
+    String  DBInitialFile = GetProjectPath() + "\DBInit.txt";
+    String  BootLine = "";
+    String  LINE = "";
+    Int BootFileHandle;
+    Int MaxWaitFile ;
+    Int NbrWaitFile;
+    Bool WaitFile = False;
+
+         WaitFile = False;
+         NbrWaitFile = 0;
+         BOOT_OK = True;
+
+         IF ( StartBootMode == SYSTEMBOOT) Then
+            MaxWaitFile = 60;
+         Else
+            IF ( StartBootMode == METABOOT || StartBootMode == BOOTSTRAP) Then
+                MaxWaitFile = 300;
+            End
+         End
+
+         SetStrGateValue("AlarmeEventModifer",1,"Test de connection :");
+         SetStrGateValue("AlarmeEventModifer",6,"Verification patientez SVP");
+
+         While ( WaitFile == False )
+
+           IF ( FileExist( DBInitialFile ) == True ) Then
+            WaitFile = True;
+           Else
+
+              IF ( NbrWaitFile >=  MaxWaitFile ) Then
+               WaitFile = True;
+              Else
+               WaitFile = False;
+              End // NbrWaitFile
+
+           End // File Exist
+
+
+          NbrWaitFile = NbrWaitFile+1;
+          Sleep(1000);
+
+         End // While
+
+
+         //MessageBox(NbrWaitFile +"/"+MaxWaitFile,FileExist( DBInitialFile ));
+
+         IF ( FileExist( DBInitialFile ) == True ) Then
+
+            BootFileHandle = FileOpen(DBInitialFile,"rt");
+
+             BootLine = FileReadLn( BootFileHandle );
+
+             IF ( BootLine != StartBootMode ) Then
+               SetStrGateValue("AlarmeEventModifer",6,"Mode de demarrage n'est pas compatible ,SVP contact BIZEYES admin");
+               BOOT_OK = False;
+             Else // BootLine == StartBootMode
+
+        /////1.///////////////////////////////////
+
+               BootLine = FileReadLn( BootFileHandle );
+                If ( BootLine == "N" ) Then
+                    SetStrGateValue("AlarmeEventModifer",6,"Systeme ne peut pas connecter au base de données ,SVP contact BIZEYES admin");
+                    BOOT_OK = False;
+                    CNX_STATUS = False;
+                Else //  BootLine != "N"
+                 If ( BootLine == "Y" ) Then
+            /////2.///////////////////////////////////
+                    BootLine = "";
+                    While ( FileEof(BootFileHandle) == 0 )
+                        LINE = FileReadLn( BootFileHandle );
+                         If ( LINE != "") Then
+                          BootLine =  FileReadLn( BootFileHandle ) + Eol() + BootLine ;
+                          BOOT_OK = False;
+                         End
+                    End
+                /////3.///////////////////////////////////
+                    IF ( BootLine == "" ) Then
+                        SetStrGateValue("AlarmeEventModifer",6,"Tous les services DB fonctionnent en bons états");
+                        CNX_STATUS  =True;
+                    Else
+                        SetStrGateValue("AlarmeEventModifer",6,"il y a un problème au niveau des services DB" + Eol() + BootLine);
+                        CNX_STATUS  =False;
+                    End //BootLine == ""
+                /////3.///////////////////////////////////
+
+            /////2.///////////////////////////////////
+
+                 End //  BootLine == "Y"
+
+                End //  BootLine == "N"
+
+             End // BootLine != StartBootMode
+
+            FileClose(BootFileHandle);
+
+        /////1.///////////////////////////////////
+
+         Else // DBInitialFile == Exist
+            SetStrGateValue("AlarmeEventModifer",6,"Connection au Base de Donnée prend trop de temps,SVP contact BIZEYES admin");
+            BOOT_OK = False;
+         End  // DBInitialFile != Exist
+
+         FileDelete(DBInitialFile);
+end
+///////////////////////////////////////////////////////////////////////////////
+function String ReadSystemStatus()
+
+    String StatusFile = GetProjectPath() + "\SYSTEM_STATUS.txt";
+    Int StatusFileHandle;
+    String Line = "";
+    String ReturnedValue = "";
+
+
+
+    IF ( FileExist(StatusFile) == True ) Then
+
+        StatusFileHandle = FileOpen(StatusFile,"rt");
+
+        Line = FileReadLn( StatusFileHandle );
+
+        IF  ( Line == "DB" ) Then
+            Line = FileReadLn( StatusFileHandle );
+            If ( Line == "1" ) Then
+                CNX_STATUS  =True;
+            Else
+                CNX_STATUS  =False;
+                ReturnedValue = "Connection failed" + Eol();
+            End
+        End
+
+        Line = "";
+
+        While( FileEof(StatusFileHandle) == 0)
+          Line = FileReadLn( StatusFileHandle );
+          If ( Line != "" ) Then
+           Line =  FileReadLn( StatusFileHandle ) + Eol() + Line ;
+          End
+        End
+        FileClose(StatusFileHandle);
+
+
+        IF ( Line != "" ) Then
+
+            ReturnedValue = ReturnedValue + Line;
+            CNX_STATUS  =False;
+
+        End
+
+        FileDelete(StatusFile);
+
+    End
+
+    //MessageBox("CNX_STATUS",CNX_STATUS);
+   Return ReturnedValue;
+end
+///////////////////////////////////////////////////////////////////////////////
+function void SEND_MAIL_SystemServiceError( String Errors )
+
+    String SETTING_MAIL_FILE = GetProjectPath() + "\Winlog\Settings\COMs\URGENT_MailingList.txt";
+    Int CONFIG_FILEHANDLE;
+    String SMTP;    String PW;    String Subject;    String MAILTo;
+    String USER;    String From;    String Body;    String MAILCC;
+    String SETUP_FILE = "C:\Winlog\Settings\MAIL_SETUP.txt" ;
+    String CONGIF_MAIL;
+    String Ritorno;
+    Bool SEND_OK;
+    String TO_LINE;
+    String BIZEYES_URGENT_MAIL = "engineering@bizeyes.net";
+
+    Subject = "Alerte de surveillance des services systeme : Échec de  l'un ou plusieurs services.";
+
+    Body  = "       Cher administrateur:" + Eol()+
+           "     Notre moniteur système a détecté qu'un ou plusieurs services ne fonctionnent plus à la plateforme BIZEYES."+ Eol()+Eol()+
+           "****************************************************************************************************************" + Eol()+
+           Errors + Eol()+
+           "****************************************************************************************************************" + Eol()+
+           /*"     Vous devez vous assurer que votre reseaux ."+ Eol()+
+           "     Vous devez également vous assurer qu'aucun des câbles de communication entre les capteurs et les passerelles n'est rompu."+ Eol()+
+           "     Veuillez trouver un rapport détaillé du journal des erreurs de communication joint à cet e-mail."+ Eol()+
+           "     Veuillez contacter vos installateurs dès que possible si vous ne pouvez pas résoudre ces problèmes de communication."+ Eol()+ Eol()+*/
+           "     AGIR MAINTENANT !"+ Eol()+
+           "     Sincèrement votre,"+ Eol()+
+           "     L'équipe d'ingénierie de Bizeyes";
+
+ If( MAIL_SETUP_FLAG == false )Then
+        Event_Runtime_LOG( "Send MAIL : MAIL_SETUP_FLAG == " + MAIL_SETUP_FLAG );
+    end
+
+    //CONGIF_MAIL = GET_MAIL_SETUP( SETUP_FILE );
+         // SMTP
+            SMTP    = COM_Fetch( CONGIF_MAIL , 1 , ";");
+         // USER
+            USER    = COM_Fetch( CONGIF_MAIL , 2 , ";");
+         // PW
+            PW      = COM_Fetch( CONGIF_MAIL , 3 , ";");
+         // @from
+            From    = COM_Fetch( CONGIF_MAIL , 4 , ";");
+    //////////////////////////////////////////////////////////////
+      CONFIG_FILEHANDLE = FileOpen(SETTING_MAIL_FILE,"rt");
+
+      MAILTo = "";
+
+      IF (CONFIG_FILEHANDLE == 0) Then
+        Event_Runtime_LOG( "Urgent SEND_MAIL_GATEWAY : KO -> TO LIST NOT FOUND" );
+        //Return ;
+      Else
+
+        While ( FileEof(CONFIG_FILEHANDLE) == 0)
+            TO_LINE = FileReadLn(CONFIG_FILEHANDLE);
+            IF (TO_LINE != "" ) Then
+                MAILTo = TO_LINE+","+MAILTo;
+            End
+        End
+        FileClose(CONFIG_FILEHANDLE);
+
+      End
+
+        MAILTo = BIZEYES_URGENT_MAIL+","+MAILTo;
+
+       Ritorno = SendMail(100000,
+                          SMTP,
+                          USER,
+                          PW,
+                          From,
+                          MAILTo,     //MailTo
+                          MAILCC,     //CC
+                          Subject,    //Subject
+                          Body,       //BODY
+                          False,"");  //ATTACHEMENT
+
+      if (Ritorno == "") then
+       SEND_OK = True;
+       Event_Runtime_LOG( "Urgent SEND_MAIL_SystemServiceError : OK" );
+      else
+       SEND_OK = False;
+       Event_Runtime_LOG( "Urgent SEND_MAIL_SystemServiceError : KO -> " +  Ritorno);
+      end
+end
+
+Function void Copy_Truncate_DB(String FileImprt,String Table)
+String    Path_Config="C:\Winlog\PowerShell\Update_with_copy\config_update_with_copy.txt";
+int FileHandle;
+
+    FileHandle=FileOpen(Path_Config,"wt");
+  FileWriteLn(FileHandle,FileImprt);
+  FileWriteLn(FileHandle,Table);
+
+      FileClose(FileHandle);
+
+      DirectoryCreate("C:\Winlog\PowerShell\Back_Update_with_copy");
+       //Messagebox("1","");
+      FileCopy(Path_Config,"C:\Winlog\PowerShell\Back_Update_with_copy\config_update_with_copy.txt",False);
+
+        ShellExec("UpdateWithCopy.exe","open",PSG_POWERSHELL_PATH,1,"","");
+
+        While (FileExist( Path_Config ) == True )
+         Sleep(500);
+        End
+
+End
+

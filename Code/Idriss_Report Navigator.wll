@@ -1,0 +1,2048 @@
+Global String Name_Template_Layout="";
+Global String Current_Line_Object="";
+Global int NBPartLayout=0;
+Global int TotalLayout=0;
+Global String AuteurTableau="";
+Global String ListsFlag="";
+Global bool FlagDev;
+Global String PartObj;
+Global String Report_RTF_File;
+Global Bool FirstPart;
+Global int NumLayout=0;
+Global Bool Generator=False;
+
+Function void Bouton_Report_Creator()
+int i;
+int j;
+int FileHandle;
+String Code;
+if Generator==True Then MessageBox("Attendez SVP !Fonctionalité de Generateur Rapport deja Utiliser","Attention"); return; end
+Generator=False;
+if FlagUses == True Then MessageBox("Attendez SVP ! Plusieur Fonctionalité deja Utiliser","Attention"); return; end
+FlagUses=True;
+
+Confirme_Save();
+ SetNumGateValue("Show_Temp_Pointer",0,1073745920);
+PageOpen="Report_Creator";
+  SetNumGateValue("E15min",1,0);
+    Admin_View_CurrentLine=";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;";
+    Current_Line_Object="";
+    PartObj=",,,";
+    Admin_View_Temp_File=ENV_PATH+"\Files\DATAMODELFiles\Rapport\Temp_RequestRapport.csv";
+
+    Admin_View_Original_File=ENV_PATH+"\Files\DATAMODELFiles\Rapport\RequestRapport.csv";
+    Code=LastCodeID(ENV_PATH+"\Files\DATAMODELFiles\Rapport\Reporting.csv",1,";","R");
+    //if FileExist(Admin_View_Original_File)==False then
+
+           FileHandle=FileOpen(Admin_View_Original_File,"wt");
+                FileWriteLn(FileHandle,"Report_Code;Report_Name;Report_TableauCode;Report_TableauName;Report_EnergyCode;Report_EnergyName;Report_ViewCode;Report_ViewName;Report_PostC_Code;Report_PostC_Name;Report_CompteurCode;Report_CompteurName;Report_API_Name;Report_RTF_File;Report_MasterLayout;Report_Chart;Report_CL;Report_ML;Report_Type;UNIQUE_Code;Report_Description;Auteur;Life Cycle;OBJECT;Content_Report_Master");
+           FileClose(FileHandle);
+  // end
+        Initfile(Admin_View_Original_File,Admin_View_Temp_File);
+
+
+    TotalLayout=0;
+    NBPartLayout=0;
+    SetStrGateValue("AlarmeEventModifer",0,"");
+   SetStrGateValue("AlarmeEventModifer",1,"");
+     SetNumGateValue("Template_Control",0,0);
+      SetNumGateValue("Template_Control",1,0);
+    for i = 1 to 10 do
+         for j = 1 to 10 do
+        SetStrGateValue("EmailView"+i,j,"");
+        SetStrGateValue("AlarmeEventModifer",j,"");
+          end
+    end
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",5);
+  Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",6);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",7);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",8);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",9);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",10);
+       Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",11);
+        Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",12);
+               Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",16);
+        Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",17);
+             Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",18);
+        Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"PDF",19);
+                   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"*",20);
+        Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"PDF",21);
+        Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"Administrateur",22);
+         Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"ReportRequest",23);
+
+     EVM_LIST_FILE = ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
+    EVM_Max_Items = scanfileBouton(EVM_LIST_FILE);
+    Tableaux_Display_Report(1);
+    SetNumGateValue("PageAllCommpteurView",0,1);
+
+    ShowPage("Creator_Report");
+    FlagUses=False;
+END
+
+    Function void Popup_Name_Report_Request()
+        if Generator==True Then MessageBox("Attendez SVP !Fonctionalité de Generateur Rapport deja Utiliser","Attention"); return; end
+        Generator=False;
+        SetStrGateValue("AlarmeEventModifer",19,GetStrGateValue("AlarmeEventModifer",0));
+        ShowPoPUPs("Name_Report_Request");
+    End
+
+    Function void Popup_Description_Report_Request()
+    if Generator==True Then MessageBox("Attendez SVP !Fonctionalité de Generateur Rapport deja Utiliser","Attention"); return; end
+    Generator=False;
+        SetStrGateValue("AlarmeEventModifer",19,GetStrGateValue("AlarmeEventModifer",1));
+        ShowPoPUPs("Description_Report_Request");
+    End
+
+Function void OK_Set_Name_Report_Request()
+
+String Name = GetStrGateValue("AlarmeEventModifer",19);
+if Name=="" then MessageBox("",""); return ; end
+Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,Name,2);
+SetStrGateValue("AlarmeEventModifer",0,Name);
+SetStrGateValue("AlarmeEventModifer",19,"");
+SetNumGateValue("Template_Control",0,11);
+
+End
+Function void OK_Set_Description_Report_Request()
+
+String Description = GetStrGateValue("AlarmeEventModifer",19);
+Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,Description,21);
+SetStrGateValue("AlarmeEventModifer",1,Description);
+SetStrGateValue("AlarmeEventModifer",19,"");
+SetNumGateValue("Template_Control",0,11);
+
+End
+
+
+Function Void Paysage_Select()
+
+String Type;
+String LayoutFullPathFileName;
+String Ligne;
+int LayoutFileHandle;
+int i=0;
+
+    LayoutFullPathFileName=ENV_PATH+"\Files\DATAMODELFiles\Rapport\MasterLayout.csv";
+    LayoutFileHandle=FileOpen(LayoutFullPathFileName,"rt");
+    FileReadLn(LayoutFileHandle);
+   While (FileEOF(LayoutFileHandle) == 0 )
+
+        Ligne = FileReadLn(LayoutFileHandle);
+
+      //  i=i+1;
+
+        if ( Ligne != "") then
+        Type=Fetch_Report(Ligne,3,";");
+            if Type=="L" then
+            i=i+1;
+               Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"Paysage",14);
+                SetStrGateValue("EmailView1",i,Fetch_Report(Ligne,1,";"));
+                SetStrGateValue("EmailView2",i,Fetch_Report(Ligne,2,";"));
+                SetStrGateValue("EmailView3",i,Fetch_Report(Ligne,7,";"));
+                SetStrGateValue("EmailView4",i,Fetch_Report(Ligne,8,";"));
+                SetStrGateValue("EmailView5",i,Fetch_Report(Ligne,6,";"));
+             //MessageBox(GetStrGateValue("EmailView3",i),"EmailView3,"+i);
+            end
+        end
+         end
+    FileClose(LayoutFileHandle);
+    ShowPoPUPs("Master_Layout_Paysage");
+
+End
+
+
+Function Void Portrait_Select()
+String Type;
+String LayoutFullPathFileName;
+String Ligne;
+int LayoutFileHandle;
+int i=0;
+
+    LayoutFullPathFileName=ENV_PATH+"\Files\DATAMODELFiles\Rapport\MasterLayout.csv";
+    LayoutFileHandle=FileOpen(LayoutFullPathFileName,"rt");
+    FileReadLn(LayoutFileHandle);
+   While (FileEOF(LayoutFileHandle) == 0 )
+
+        Ligne = FileReadLn(LayoutFileHandle);
+
+        //i=i+1;
+
+        if ( Ligne != "") then
+        Type=Fetch_Report(Ligne,3,";");
+            if Type=="P" then
+            i=i+1;
+                 Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,"Paysage",14);
+                SetStrGateValue("EmailView1",i,Fetch_Report(Ligne,1,";"));
+                SetStrGateValue("EmailView2",i,Fetch_Report(Ligne,2,";"));
+                SetStrGateValue("EmailView3",i,Fetch_Report(Ligne,7,";"));
+                SetStrGateValue("EmailView4",i,Fetch_Report(Ligne,8,";"));
+                SetStrGateValue("EmailView5",i,Fetch_Report(Ligne,6,";"));
+
+             // MessageBox(GetStrGateValue("EmailView3",i),"EmailView3,"+i);
+            end
+        end
+         end
+    FileClose(LayoutFileHandle);
+
+    ShowPoPUPs("Master_Layout_Portrait");
+End
+
+
+Function Void Lyaout_L1()
+String CodeL=GetStrGateValue("EmailView1",1);
+String NameL=GetStrGateValue("EmailView2",1);
+String Template=GetStrGateValue("EmailView3",1);
+String MasterReport=GetStrGateValue("EmailView4",1);
+String TotalObject=GetStrGateValue("EmailView5",1);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+     FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+         SetNumGateValue("Template_Control",0,13);
+end
+
+End
+Function Void Lyaout_L2()
+String CodeL=GetStrGateValue("EmailView1",2);
+String NameL=GetStrGateValue("EmailView2",2);
+String Template=GetStrGateValue("EmailView3",2);
+String MasterReport=GetStrGateValue("EmailView4",2);
+String TotalObject=GetStrGateValue("EmailView5",2);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+//ShowPoPUPs("");
+end
+End
+
+Function Void Lyaout_L3()
+String CodeL=GetStrGateValue("EmailView1",3);
+String NameL=GetStrGateValue("EmailView2",3);
+String Template=GetStrGateValue("EmailView3",3);
+String MasterReport=GetStrGateValue("EmailView4",3);
+String TotalObject=GetStrGateValue("EmailView5",3);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+//ShowPoPUPs("");
+end
+End
+
+Function Void Lyaout_L4()
+String CodeL=GetStrGateValue("EmailView1",4);
+String NameL=GetStrGateValue("EmailView2",4);
+String Template=GetStrGateValue("EmailView3",4);
+String MasterReport=GetStrGateValue("EmailView4",4);
+String TotalObject=GetStrGateValue("EmailView5",4);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+//ShowPoPUPs("");
+end
+End
+
+Function Void Lyaout_L5()
+String CodeL=GetStrGateValue("EmailView1",5);
+String NameL=GetStrGateValue("EmailView2",5);
+String Template=GetStrGateValue("EmailView3",5);
+String MasterReport=GetStrGateValue("EmailView4",5);
+String TotalObject=GetStrGateValue("EmailView5",5);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+
+Function Void Lyaout_L6()
+String CodeL=GetStrGateValue("EmailView1",6);
+String NameL=GetStrGateValue("EmailView2",6);
+String Template=GetStrGateValue("EmailView3",6);
+String MasterReport=GetStrGateValue("EmailView4",6);
+String TotalObject=GetStrGateValue("EmailView5",6);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+Function Void Lyaout_L7()
+String CodeL=GetStrGateValue("EmailView1",7);
+String NameL=GetStrGateValue("EmailView2",7);
+String Template=GetStrGateValue("EmailView3",7);
+String MasterReport=GetStrGateValue("EmailView4",7);
+String TotalObject=GetStrGateValue("EmailView5",7);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+Function Void Lyaout_L8()
+String CodeL=GetStrGateValue("EmailView1",8);
+String NameL=GetStrGateValue("EmailView2",8);
+String Template=GetStrGateValue("EmailView3",8);
+String MasterReport=GetStrGateValue("EmailView4",8);
+String TotalObject=GetStrGateValue("EmailView5",8);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+
+Function Void Lyaout_L9()
+String CodeL=GetStrGateValue("EmailView1",9);
+String NameL=GetStrGateValue("EmailView2",9);
+String Template=GetStrGateValue("EmailView3",9);
+String MasterReport=GetStrGateValue("EmailView4",9);
+String TotalObject=GetStrGateValue("EmailView5",9);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+End
+End
+
+Function Void Lyaout_L10()
+String CodeL=GetStrGateValue("EmailView1",10);
+String NameL=GetStrGateValue("EmailView2",10);
+String Template=GetStrGateValue("EmailView3",10);
+String MasterReport=GetStrGateValue("EmailView4",10);
+String TotalObject=GetStrGateValue("EmailView5",10);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+
+Function Void Lyaout_L11()
+String CodeL=GetStrGateValue("EmailView1",11);
+String NameL=GetStrGateValue("EmailView2",11);
+String Template=GetStrGateValue("EmailView3",11);
+String MasterReport=GetStrGateValue("EmailView4",11);
+String TotalObject=GetStrGateValue("EmailView5",11);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+   SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+ShowPoPUPs(Name_Template_Layout);
+ SetNumGateValue("Template_Control",0,13);
+
+end
+End
+Function Void Lyaout_L12()
+String CodeL=GetStrGateValue("EmailView1",12);
+String NameL=GetStrGateValue("EmailView2",12);
+String Template=GetStrGateValue("EmailView3",12);
+String MasterReport=GetStrGateValue("EmailView4",12);
+String TotalObject=GetStrGateValue("EmailView5",12);
+//MessageBox(Template,"Template");
+//MessageBox(TotalObject,"TotalObject");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+        SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+        ShowPoPUPs(Name_Template_Layout);
+         SetNumGateValue("Template_Control",0,13);
+    end
+End
+
+Function Void Lyaout_L13()
+String CodeL=GetStrGateValue("EmailView1",13);
+String NameL=GetStrGateValue("EmailView2",13);
+String Template=GetStrGateValue("EmailView3",13);
+String MasterReport=GetStrGateValue("EmailView4",13);
+String TotalObject=GetStrGateValue("EmailView5",13);
+//MessageBox(Template,"Template");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+        SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+        ShowPoPUPs(Name_Template_Layout);
+         SetNumGateValue("Template_Control",0,13);
+    end
+End
+
+Function Void Lyaout_L14()
+String CodeL=GetStrGateValue("EmailView1",14);
+String NameL=GetStrGateValue("EmailView2",14);
+String Template=GetStrGateValue("EmailView3",14);
+String MasterReport=GetStrGateValue("EmailView4",14);
+String TotalObject=GetStrGateValue("EmailView5",14);
+//MessageBox(Template,"Template");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+        SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+        ShowPoPUPs(Name_Template_Layout);
+         SetNumGateValue("Template_Control",0,13);
+
+    end
+End
+
+Function Void Lyaout_L15()
+
+String CodeL=GetStrGateValue("EmailView1",15);
+String NameL=GetStrGateValue("EmailView2",15);
+String Template=GetStrGateValue("EmailView3",15);
+String MasterReport=GetStrGateValue("EmailView4",15);
+String TotalObject=GetStrGateValue("EmailView5",15);
+//MessageBox(Template,"Template");
+if CodeL !="" && NameL != "" then
+Name_Template_Layout=Template;
+ TotalLayout=StrToInt(TotalObject);
+        SetStrGateValue("AlarmeEventModifer",5,NameL);
+    Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeL,15);
+     Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,MasterReport,13);
+      FirstPart=False;
+        ShowPoPUPs(Name_Template_Layout);
+         SetNumGateValue("Template_Control",0,13);
+    end
+End
+
+
+//////Tableaux////////
+////////////////////////////////////////
+function void Bouton_Tableaux_Report_Navigator()
+        Admin_View_Temp_File_AUX=Admin_View_Temp_File;
+
+        Admin_View_Original_File_AUX=Admin_View_Original_File;
+        Admin_View_Recycle_Code_AUX=Admin_View_Recycle_Code;
+        Admin_View_CurrentLine_AUX=Admin_View_CurrentLine;
+
+    // Display
+    String Template=GetStrGateValue("AlarmeEventModifer",0);
+   // EVM_LIST_FILE = ENV_PATH+"\Files\Display_Templates\Tableaux.csv";
+   Admin_View_Temp_File=ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
+        Admin_View_Original_File=ENV_PATH+"\Files\Display_Templates\Tableaux.csv";
+        Admin_View_Recycle_Code=ENV_PATH+"\Files\Display_Templates\Recycler_Tableaux_Code.txt";
+
+        Path_File_DB=ENV_PATH+"\Files\Display_Templates\";
+        NameTableDB="Tableaux";
+
+       DisplayDBTable("*","*");
+
+       //Init_DB_Tables();
+
+        Initfile(Admin_View_Original_File,Admin_View_Temp_File);
+
+
+       // Highest_Code_Initialisation(Admin_View_Temp_File,Admin_View_Recycle_Code);
+
+    EVM_LIST_FILE = ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
+    EVM_Max_Items = scanfileBouton(EVM_LIST_FILE);
+    Tableaux_Display_Report(1);
+    SetNumGateValue("PageAllCommpteurView",0,1);
+     Admin_View_Temp_File=Admin_View_Temp_File_AUX;
+        Admin_View_Original_File=Admin_View_Original_File_AUX;
+        Admin_View_Recycle_Code=Admin_View_Recycle_Code_AUX;
+        Admin_View_CurrentLine   =  Admin_View_CurrentLine_AUX;
+
+    ////MessageBox(Name_Template_Layout,"Name_Template_Layout");
+     //ShowPoPUPs(Name_Template_Layout);
+   // TPageOpen(Template);
+   // ShowPoPUPs( "Report_Select_TABLEAUX" );
+
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Report_Select_Tableaux_Navigator_1()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView1",0);
+    //MessageBox(NomTableaux,"NomTableaux "+NomTableaux);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView1",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+      SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+      AuteurTableau=GetStrGateValue("EmailView1",2);
+      ListsFlag=GetStrGateValue("EmailView1",3);
+      //MessageBox(AuteurTableau,"AuteurTableau "+ListsFlag);
+      if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+       if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+         //messagebox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+   //   TPageOpen("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_2()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView2",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView2",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+            SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView2",2);
+      ListsFlag=GetStrGateValue("EmailView2",3);
+      if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+               if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        else
+            SetNumGateValue("Template_Control",0,0);
+            end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+           else
+            SetNumGateValue("Template_Control",1,0);
+            end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+    //  TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_3()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView3",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView3",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+          SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView3",2);
+      ListsFlag=GetStrGateValue("EmailView3",3);
+      //MessageBox(AuteurTableau,"AuteurTableau "+ListsFlag);
+         if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+    //  TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_4()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView4",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView4",1);
+
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+           SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView4",2);
+      ListsFlag=GetStrGateValue("EmailView4",3);
+      //MessageBox(AuteurTableau,"AuteurTableau "+ListsFlag);
+            if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+            SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+  //    TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_5()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView5",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView5",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+          SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView5",2);
+      ListsFlag=GetStrGateValue("EmailView5",3);
+      //MessageBox(AuteurTableau,"AuteurTableau "+ListsFlag);
+           if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+            SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+    //  TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_6()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView6",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView6",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+           SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView6",2);
+                 //MessageBox(AuteurTableau,"AuteurTableau "+ListsFlag);
+      ListsFlag=GetStrGateValue("EmailView6",3);
+          if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+      //TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_7()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView7",0);
+    //MessageBox(NomTableaux,"NomTableaux "+NomTableaux);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView7",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+            SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView7",2);
+      ListsFlag=GetStrGateValue("EmailView7",3);
+        //MessageBox(AuteurTableau,"NomTableaux "+ListsFlag);
+             if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+      //TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_8()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView8",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView8",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+           SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView8",2);
+      ListsFlag=GetStrGateValue("EmailView8",3);
+          //MessageBox(AuteurTableau,"NomTableaux "+ListsFlag);
+             if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+            //TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_9()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView9",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView9",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+             SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView9",2);
+      ListsFlag=GetStrGateValue("EmailView9",3);
+               if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            //ShowPoPUPs(Name_Template_Layout);
+          if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+        end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+
+    End
+end
+function void Report_Select_Tableaux_Navigator_10()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView10",0);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView10",1);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,3);
+      Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+           SetStrGateValue("AlarmeEventModifer",4,NomTableaux);
+                 AuteurTableau=GetStrGateValue("EmailView1",2);
+            ListsFlag=GetStrGateValue("EmailView1",3);
+
+              if AuteurTableau=="Developpeur" then
+      FlagDev=True;
+      //ShowPoPUPs("Popup_ML_CL");
+            Name_Template_Layout="L"+CodeTableaux;
+            if FetchBU(ListsFlag,1,"_")=="1"then
+        SetNumGateValue("Template_Control",0,13);
+        else
+            SetNumGateValue("Template_Control",0,0);
+            end
+        if FetchBU(ListsFlag,2,"_")=="1"then
+        SetNumGateValue("Template_Control",1,14);
+           else
+            SetNumGateValue("Template_Control",1,0);
+            end
+      else
+      FlagDev=False;
+       SetNumGateValue("Template_Control",0,12);
+       end
+    End
+end
+
+
+
+Function Void Layout_Part_1()
+NBPartLayout=1;
+Open_ML_CL_Object();
+
+End
+Function Void Layout_Part_2()
+NBPartLayout=2;
+Open_ML_CL_Object();
+
+End
+
+Function Void Layout_Part_3()
+NBPartLayout=3;
+Open_ML_CL_Object();
+
+End
+
+Function Void Layout_Part_4()
+NBPartLayout=4;
+Open_ML_CL_Object();
+End
+
+
+function Void Open_ML_CL_Object()
+int i=0;
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+PartObj=",,,";
+EVM_Max_Items=scanfile(PathFileCL);
+List_Display(1,2,PathFileCL,1);
+        For i = 1 to 10 do
+            SetStrGateValue("EmailView"+i,4,"");
+              SetStrGateValue("EmailView"+i,6,"");
+        End
+ if FirstPart==False then
+        FirstPart=True;
+    Current_Line_Object=TotalLayout;
+    FirstPart=True;
+    for i =1 to TotalLayout do
+        Current_Line_Object=Current_Line_Object+":";
+    end
+ end
+    //
+
+
+  SetNumGateValue("E15min",1,1);
+ShowPoPUPsNoClose("Popup_CL_ML_Object");
+
+End
+function Void Open_ML_Object()
+
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+//MessageBox("a","");
+EVM_Max_Items=scanfile(PathFileML);
+//MessageBox("b","");
+List_Display(1,4,PathFileML,1);
+End
+
+function Void Open_Object()
+
+String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+
+EVM_Max_Items=scanfile(PathFileObject);
+
+Object_Display(1,6,PathFileObject,1);
+
+
+
+End
+
+function void Layout_Object_Add()
+int  ReguliersTotalItems = EVM_Max_Items;
+int MaxPage = ReguliersTotalItems/MaxRow+1;
+String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+//MessageBox(ReguliersTotalItems,MaxPage);
+
+
+int CurrentPage = GetNumGateValue("PageView",2);
+bool Continue;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     if (CurrentPage >= MaxPage) then
+     CurrentPage = MaxPage;
+     else
+     CurrentPage = CurrentPage+1;
+     end
+     SetNumGateValue("PageView",2,CurrentPage);
+     Object_Display(CurrentPage,6,PathFileObject,1);
+
+     //////////////////////////////////////(CurrentPage-1)*10+Nbligneourant;
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_Object_Sub()
+int CurrentPage= GetNumGateValue("PageView",2);
+String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+bool Continue;
+
+
+     if (CurrentPage <= 1) then
+     CurrentPage = 1;
+     else
+     CurrentPage = CurrentPage -1;
+     end
+     SetNumGateValue("PageView",2,CurrentPage);
+
+     Object_Display(CurrentPage,6,PathFileObject,1);
+
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_Object_First()
+String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+bool Continue;
+
+     SetNumGateValue("PageView",2,1);
+    Object_Display(1,6,PathFileObject,1);
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_Object_End()
+String PathFileObject=ENV_PATH + "\Files\DATAMODELFiles\Rapport\MasterObject.csv";
+bool Continue;
+int ReguliersTotalItems = EVM_Max_Items;
+int MaxPage ;
+MaxRow = 10;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     SetNumGateValue("PageView",2,MaxPage);
+   Object_Display(MaxPage,6,PathFileObject,1);
+end
+
+
+
+function void Layout_CL_Add()
+
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+int  ReguliersTotalItems = EVM_Max_Items;
+int MaxPage = ReguliersTotalItems/MaxRow+1;
+int CurrentPage = GetNumGateValue("EmailPageView",0);
+bool Continue;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     if (CurrentPage >= MaxPage) then
+     CurrentPage = MaxPage;
+     else
+     CurrentPage = CurrentPage+1;
+
+     SetNumGateValue("PageView",1,CurrentPage);
+     List_Display(CurrentPage,2,PathFileCL,1);
+
+     //////////////////////////////////////(CurrentPage-1)*10+Nbligneourant;
+end
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_CL_Sub()
+
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+int CurrentPage= GetNumGateValue("PageView",0);
+
+
+
+     if (CurrentPage <= 1) then
+     CurrentPage = 1;
+     else
+     CurrentPage = CurrentPage -1;
+     end
+     SetNumGateValue("PageView",0,CurrentPage);
+    List_Display(CurrentPage,2,PathFileCL,1);
+
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_CL_First()
+
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+
+
+     SetNumGateValue("PageView",1,1);
+
+     List_Display(1,2,PathFileCL,1);
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_CL_End()
+
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+int ReguliersTotalItems = EVM_Max_Items;
+int MaxPage ;
+MaxRow = 10;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+     SetNumGateValue("PageView",1,MaxPage);
+       List_Display(MaxPage,2,PathFileCL,1);
+end
+
+
+function void Layout_ML_Add()
+
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+
+
+
+int  ReguliersTotalItems = EVM_Max_Items;
+int MaxPage = ReguliersTotalItems/MaxRow+1;
+int CurrentPage = GetNumGateValue("EmailPageView",0);
+bool Continue;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     if (CurrentPage >= MaxPage) then
+     CurrentPage = MaxPage;
+     else
+     CurrentPage = CurrentPage+1;
+     end
+     SetNumGateValue("EmailPageView",0,CurrentPage);
+
+
+List_Display(CurrentPage,4,PathFileML,1);
+
+     //////////////////////////////////////(CurrentPage-1)*10+Nbligneourant;
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_ML_Sub()
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+int CurrentPage= GetNumGateValue("EmailPageView",0);
+bool Continue;
+
+
+     if (CurrentPage <= 1) then
+     CurrentPage = 1;
+     else
+     CurrentPage = CurrentPage -1;
+     end
+     SetNumGateValue("EmailPageView",0,CurrentPage);
+    Tableaux_Display(CurrentPage );
+    List_Display(CurrentPage,4,PathFileML,1);
+
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_ML_First()
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+bool Continue;
+
+     SetNumGateValue("EmailPageView",0,1);
+    Tableaux_Display(1);
+    List_Display(1,4,PathFileML,1);
+end
+//////////////////////////////////////////////////////////////////////////////
+function void Layout_ML_End()
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+bool Continue;
+int ReguliersTotalItems = EVM_Max_Items;
+int MaxPage ;
+MaxRow = 10;
+
+    MaxPage =  ReguliersTotalItems/MaxRow;
+
+    If (Mod(ReguliersTotalItems,MaxRow) != 0 ) Then MaxPage =  MaxPage +1; end
+
+     SetNumGateValue("EmailPageView",0,MaxPage);
+     Tableaux_Display(MaxPage);
+     List_Display(MaxPage,4,PathFileML,1);
+
+end
+////
+Function String LigneObjectMaster()
+
+    String LayoutFullPathFileName=ENV_PATH+"\Files\DATAMODELFiles\Rapport\MasterLayout.csv";
+    int LayoutFileHandle=FileOpen(LayoutFullPathFileName,"rt");
+    String Ligne;
+     String RLigne;
+    String Code;
+
+        FileReadLn(LayoutFileHandle);
+
+        While (FileEOF(LayoutFileHandle) == 0 )
+
+        Ligne = FileReadLn(LayoutFileHandle);
+            Code = Fetch_Report(Ligne,1,";");
+                if Code==Fetch_Report(Admin_View_CurrentLine,15,";") then
+                    RLigne=Ligne;
+                 else
+                    RLigne="";/*MessageBox(Ligne,"Ligne");*/
+                  end
+       end
+    return RLigne;
+
+End
+///////
+function void Object_Display(Int Page,Int List,String PathFile,int Pos)
+
+    int FileHandle; int j=0;
+    string TextRow; string txt;
+    int ReadRowPos=0;
+    int Row_Start;
+    int Row_End;
+    bool RowHeader = false;
+    String EVM;
+    MaxRow = 10;
+    Int StartDisplay;
+    int i;
+    String TABLEAUXLIST;
+    String LigneMasterLayout;
+    String TypeObject;
+    LigneMasterLayout=LigneObjectMaster();
+        For i = 1 to 10 do
+            SetStrGateValue("EmailView"+i,List,"");
+
+              SetStrGateValue("EmailView"+i,List+1,"");
+        End
+  // MessageBox("List="+List,"List+1="+ List+1);
+
+    FileHandle=FileOpen(PathFile,"rt");
+    if (FileHandle==0) then   MessageBox(PathFile+" file is missing","Error");  Return; end
+
+     Row_Start = (Page - 1)*MaxRow+1;
+     Row_End =  Page*MaxRow;
+
+
+    StartDisplay = Row_Start -1;
+    For i = 1 to StartDisplay do
+     FileReadLn(FileHandle);
+    End
+
+    j = 0;
+
+    TextRow = FileReadLn(FileHandle);//header
+    For i = Row_Start to Row_End do
+
+        TextRow = FileReadLn(FileHandle);
+       TypeObject=FetchBU(FetchBU(LigneMasterLayout,NBPartLayout,";"),2,":");
+        // MessageBox(FetchBU(LigneMasterLayout,3,";"),FetchBU(TextRow,9,";"));
+        // MessageBox(AuteurTableau,"AuteurTableau");
+       // MessageBox(TypeObject,FetchBU(TextRow,10,";"));
+
+        //if AuteurTableau=="Administrateur" && TypeObject==FetchBU(TextRow,10,";") && FetchBU(LigneMasterLayout,3,";")==FetchBU(TextRow,9,";") then
+              j = j+1;
+                EVM = "EmailView"+j;
+                TABLEAUXLIST = FetchBU(TextRow,Pos,";");
+                SetStrGateValue(EVM,List+1,TABLEAUXLIST);
+                TABLEAUXLIST = FetchBU(TextRow,Pos+1,";");
+                SetStrGateValue(EVM,List,TABLEAUXLIST);
+      //  end
+     end //for display
+
+     FileClose(FileHandle);
+
+     if ( j== 0 ) then
+        MessageBox("Il n'y a plus de pages disponibles " + PathFile,"Information");
+        CleanEmptyRows(j+1,"EmailView");
+      else
+        CleanEmptyRows(j+1,"EmailView");
+     end
+
+end
+///////////////////////////////////////////////////////////////////////////////
+function void List_Display(Int Page,Int List,String PathFile,int Pos)
+
+    int FileHandle; int j=0;
+    string TextRow; string txt;
+    int ReadRowPos=0;
+    int Row_Start;
+    int Row_End;
+    bool RowHeader = false;
+    String EVM;
+    MaxRow = 10;
+    Int StartDisplay;
+    int i;
+    String TABLEAUXLIST;
+        For i = 1 to 10 do
+            SetStrGateValue("EmailView"+i,List,"");
+            //MessageBox("List="+List,"List+1="+ List+1);
+              SetStrGateValue("EmailView"+i,List+1,"");
+        End
+
+
+    FileHandle=FileOpen(PathFile,"rt");
+    if (FileHandle==0) then   MessageBox(PathFile+" file is missing","Error");  Return; end
+
+     Row_Start = (Page - 1)*MaxRow+1;
+     Row_End =  Page*MaxRow;
+
+
+    StartDisplay = Row_Start -1;
+    For i = 1 to StartDisplay do
+     FileReadLn(FileHandle);
+    End
+
+    j = 0;
+
+    TextRow = FileReadLn(FileHandle);//header
+    For i = Row_Start to Row_End do
+
+        TextRow = FileReadLn(FileHandle);
+
+              j = j+1;
+                EVM = "EmailView"+j;
+                    // For Display
+                        //MessageBox(TextRow,EVM);
+                TABLEAUXLIST = FetchBU(TextRow,Pos,";");
+
+                SetStrGateValue(EVM,List+1,TABLEAUXLIST);
+                TABLEAUXLIST = FetchBU(TextRow,Pos+1,";");
+
+                SetStrGateValue(EVM,List,TABLEAUXLIST);
+
+     end //for display
+
+     FileClose(FileHandle);
+
+     if ( j== 0 ) then
+
+        MessageBox("Il n'y a plus de pages disponibles","Information");
+        CleanEmptyRows(j+1,"EmailView");
+      else
+        CleanEmptyRows(j+1,"EmailView");
+     end
+
+end
+function String FR_Report_Char(String Ligne,string Replace , Int NumFild,string char)
+
+string txt = Ligne;
+String NewLigne ="";
+String CODE = "";
+int i;  int P = 0;
+
+
+
+      for i =1  to NumFild-1 do
+        P = StrPos(txt,char);
+        CODE=StrSubString(txt,1,P);
+        NewLigne = NewLigne + CODE ;
+        txt=StrDelete(txt,1,P);
+      end
+
+        P = StrPos(txt,char);
+        CODE=StrSubString(txt,1,P-1);
+        txt=StrDelete(txt,1,P-1);
+
+
+       P = StrPos(CODE,"_");
+
+        Return NewLigne + Replace + txt;
+
+end
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+function void Report_Select_CL_1()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView1",2);
+
+    IF ( Nom != "" ) Then
+     // Code=GetStrGateValue("EmailView1",1);
+      //Current_Line_Object=FR_Report_Char(Current_Line_Object,Nom,3,",");
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+       SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+
+                //MessageBox(FlagDev,"FlagDev");
+                    if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+                   SetNumGateValue("Template_Control",0,15);
+              else
+
+              //MessageBox(Current_Line_Object,"Current_Line_Object");
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+                Open_ML_Object();
+
+         end
+    End
+end
+function void Report_Select_CL_2()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView2",2);
+
+
+    IF ( Nom != "" ) Then
+      //CodeTableaux=GetStrGateValue("EmailView2",1);
+      //Current_Line_Object=FR_Report_Char(Current_Line_Object,Nom,3,",");
+    //  Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,NomTableaux,4);
+  SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                      if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              //MessageBox(Current_Line_Object,"Current_Line_Object");
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+                Open_ML_Object();
+         end
+
+    End
+end
+function void Report_Select_CL_3()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView3",2);
+    IF ( Nom != "" ) Then
+      //CodeTableaux=GetStrGateValue("EmailView3",1);
+      //Current_Line_Object=FR_Report_Char(Current_Line_Object,Nom,3,",");
+         SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                    if FlagDev==True then
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              //MessageBox(Current_Line_Object,"Current_Line_Object");
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+                Open_ML_Object();
+
+         end
+    End
+end
+function void Report_Select_CL_4()
+String NomTableaux;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView4",2);
+    IF ( Nom != "" ) Then
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                     if FlagDev==True then
+                        Open_ML_Object();
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              //MessageBox(Current_Line_Object,"Current_Line_Object");
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+                Open_ML_Object();
+         end
+    End
+end
+function void Report_Select_CL_5()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView5",2);
+    IF ( Nom != "" ) Then
+      //CodeTableaux=GetStrGateValue("EmailView5",1);
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                     if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+              Open_ML_Object();
+         end
+
+    End
+end
+function void Report_Select_CL_6()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView6",2);
+    IF ( Nom != "" ) Then
+      //CodeTableaux=GetStrGateValue("EmailView6",1);
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                  if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+              Open_ML_Object();
+         end
+    End
+end
+function void Report_Select_CL_7()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView7",2);
+    IF ( Nom != "" ) Then
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                     if FlagDev==True then
+                        Open_ML_Object();
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+              Open_ML_Object();
+         end
+
+    End
+end
+function void Report_Select_CL_8()
+String Nom;
+String CodeTableaux;
+
+    Nom = GetStrGateValue("EmailView8",2);
+     IF ( Nom != "" ) Then
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                        if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+              Open_ML_Object();
+         end
+
+    End
+end
+function void Report_Select_CL_9()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView9",2);
+    IF ( Nom != "" ) Then
+ SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                      if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+               Open_ML_Object();
+         end
+    End
+end
+function void Report_Select_CL_10()
+String Nom;
+
+    Nom = GetStrGateValue("EmailView10",2);
+    IF ( Nom != "" ) Then
+  SetStrGateValue("AlarmeEventModifer",7,Nom);
+                SetNumGateValue("E15min",1,2);
+                      if FlagDev==True then
+
+                Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,16,";");
+SetNumGateValue("Template_Control",0,15);
+              else
+              PartObj=FR_Report_Char(PartObj,Nom,3,",");
+                Open_ML_Object();
+         end
+
+    End
+end
+
+///////////////////////////////////////////////////////////////////////////////
+
+/*
+Function void Popup_Name_Report_Creator()
+
+SetStrGateValue("AlarmeEventModifer",5,"");
+SetStrGateValue("AlarmeEventModifer",19,"");
+ShowPoPUPsNoClose("POPUP_Insert_Report_Name");
+
+End
+
+Function void OK_Set_Name_Report_Creator()
+
+String Name = GetStrGateValue("AlarmeEventModifer",19);
+Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,Name,2);
+SetStrGateValue("AlarmeEventModifer",1,Name);
+SetStrGateValue("AlarmeEventModifer",19,"");
+
+End*/
+//////////////////////////////////////////////////////////////////////////////
+function void Report_Select_ML_1()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView1",4);
+    IF ( Nom != "" ) Then
+     // Code=GetStrGateValue("EmailView1",1);
+
+        SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+
+         //Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+              //MessageBox(Current_Line_Object,"Current_Line_Object");
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+    End
+end
+function void Report_Select_ML_2()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView2",4);
+    IF ( Nom != "" ) Then
+             SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+         //Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+    End
+end
+function void Report_Select_ML_3()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView3",4);
+    IF ( Nom != "" ) Then
+              SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+         //Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+    End
+end
+function void Report_Select_ML_4()
+String NomTableaux;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView4",4);
+    IF ( Nom != "" ) Then
+              SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+         //Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+    End
+end
+function void Report_Select_ML_5()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView5",4);
+    IF ( Nom != "" ) Then
+             SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+        //Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+    End
+end
+function void Report_Select_ML_6()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView6",4);
+    IF ( Nom != "" ) Then
+            SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+    if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+    End
+end
+function void Report_Select_ML_7()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView7",4);
+    IF ( Nom != "" ) Then
+           SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+     if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+
+    End
+end
+function void Report_Select_ML_8()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView8",4);
+    IF ( Nom != "" ) Then
+            SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+    if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+            //TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+function void Report_Select_ML_9()
+String Nom;
+String CodeTableaux;
+    Nom = GetStrGateValue("EmailView9",4);
+    IF ( Nom != "" ) Then
+           SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+        if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+
+         end
+
+    End
+end
+function void Report_Select_ML_10()
+String Nom;
+
+    Nom = GetStrGateValue("EmailView10",4);
+    IF ( Nom != "" ) Then
+              SetStrGateValue("AlarmeEventModifer",8,Nom);
+         SetNumGateValue("E15min",1,3);
+         Open_Object();
+         if FlagDev==True then
+Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Nom,15,";");
+ SetNumGateValue("Template_Control",0,15);
+SetNumGateValue("Template_Control",1,0);
+              else
+               PartObj=FR_Report_Char(PartObj,Nom,4,",");
+              Open_Object();
+
+         end
+
+
+    End
+end
+
+///////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+function void Report_Select_Object_1()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView1",6);
+    IF ( Nom != "" ) Then
+      Code=GetStrGateValue("EmailView1",7);
+      PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+   // Current_Line_Object=Current_Line_Object+":"+PartObj;
+     // MessageBox(Current_Line_Object,"Current_Line_Object");
+        NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_2()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView2",6);
+    IF ( Nom != "" ) Then
+     Code=GetStrGateValue("EmailView2",7);
+           PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+            NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_3()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView3",6);
+    IF ( Nom != "" ) Then
+      Code=GetStrGateValue("EmailView3",7);
+      PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_4()
+String NomTableaux;
+String Code;
+    Nom = GetStrGateValue("EmailView4",6);
+    IF ( Nom != "" ) Then
+     Code=GetStrGateValue("EmailView4",7);
+
+           PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_5()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView5",6);
+    IF ( Nom != "" ) Then
+     Code=GetStrGateValue("EmailView5",7);
+            PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_6()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView6",6);
+    IF ( Nom != "" ) Then
+  Code=GetStrGateValue("EmailView6",7);
+            PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_7()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView7",6);
+    IF ( Nom != "" ) Then
+     Code=GetStrGateValue("EmailView7",7);
+           PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_8()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView8",6);
+    IF ( Nom != "" ) Then
+  Code=GetStrGateValue("EmailView8",7);
+            PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+    End
+end
+function void Report_Select_Object_9()
+String Nom;
+String Code;
+    Nom = GetStrGateValue("EmailView9",6);
+    IF ( Nom != "" ) Then
+      Code=GetStrGateValue("EmailView9",7);
+           PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+      //Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,NomTableaux,4);
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+                 NumLayout=NumLayout+1;
+LayoutRemplissage();
+end
+end
+
+
+function void Report_Select_Object_10()
+
+String Nom;
+String Code;
+
+    Nom = GetStrGateValue("EmailView10",6);
+    IF ( Nom != "" ) Then
+        Code=GetStrGateValue("EmailView10",7);
+             PartObj=FR_Report_Char(PartObj,Nom,2,",");
+      PartObj=FR_Report_Char(PartObj,Code,1,",");
+
+        SetStrGateValue("AlarmeEventModifer",9,Nom);
+                 Current_Line_Object=FR_Report_Char(Current_Line_Object,PartObj,NBPartLayout+1,":");
+NumLayout=NumLayout+1;
+LayoutRemplissage();
+     // TPageCloseByName("Report_Select_TABLEAUX");
+    End
+end
+
+
+function Void Commit_report_Creator()
+Confirme_Save=False;
+String Path_End= ENV_PATH+"\Files\DATAMODELFiles\Rapport\EndReportGenerator.txt";
+String BackFullPathFileName=ENV_PATH+"\Files\DATAMODELFiles\Rapport\BackRequestRapport.csv";
+bool Continue;
+int FileHand;
+String RFullPathFileName;
+String Temp_View_Recycle_Code;
+
+
+        SetNumGateValue("User_Privilege",0,2);
+
+           Continue = QuestionBox("  Voulez-vous enregistrer les nouvelles Modification ?","Attention:");
+          if (Continue == False) then return ; end
+
+          SetStrGateValue("AlarmeEventModifer",17,"En train de sauvegarder les modifications. Merci pour votre patience ...");
+          ShowPoPUPs("InfoPopup");
+
+
+
+          if (FileExist(BackFullPathFileName)) then
+                FileDelete(BackFullPathFileName);
+          end
+
+          Filecopy(Admin_View_Original_File,BackFullPathFileName,False);
+          Filecopy(Admin_View_Temp_File,Admin_View_Original_File,False);
+           FileDelete(Admin_View_Temp_File);
+
+
+            TPageCloseByName("InfoPopup");
+   SetNumGateValue("Template_Control",0,0);
+     SetNumGateValue("E15min",0,0);
+     Tableaux_Commit_Report();
+     Copy_Truncate_DB(ENV_PATH+"\Files\Display_Templates\Tableaux.csv","Tableaux");
+//CommitDBTable("");
+    ShellExec("ReportGenerator.exe","open","C:\Winlog\PowerShell",1,"","");
+    Generator=True;
+       While (FileExist( Path_End ) == False )
+         Sleep(500);
+        End
+        Generator=False;
+        FileDelete(Path_End);
+
+end
+Function Void Add_New_report_Creator()
+int i;
+int j;
+int Code;
+String Report_Chart;
+//String CodeNewAlarme ;
+// MessageBox(Admin_View_CurrentLine,"");
+// DBFileQuerry(2);
+
+        //Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine, GetStrGateValue("AlarmeEventModifer",5),2);
+       //Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine, GetStrGateValue("AlarmeEventModifer",6),13);
+       //MessageBox(Admin_View_CurrentLine,"");
+        Code=GetNumGateValue("LastCodeAdd",1)+1;
+        Report_Chart="R"+Code+"_"+FetchBU(Admin_View_CurrentLine,2,";");
+         Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Report_Chart,15,";");
+    Admin_New_Ligne("Rappot Layout","R"+Code);
+
+        Confirme_Save=True;
+     SetNumGateValue("Template_Control",0,0);
+ SetNumGateValue("E15min",0,1);
+TPageCloseByName(Name_Template_Layout);
+ShowPoPUPs("");
+ Admin_View_CurrentLine=";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;";
+    Current_Line_Object="";
+    PartObj=",,,";
+    TotalLayout=0;
+    NBPartLayout=0;
+    for i = 1 to 10 do
+         for j = 1 to 10 do
+        SetStrGateValue("EmailView"+i,j,"");
+        SetStrGateValue("AlarmeEventModifer",j,"");
+          end
+    end
+    //Bouton_Tableaux_Report_Navigator();
+end
+
+Function Void LayoutRemplissage()
+
+    MessageBox(TotalLayout,NumLayout);
+   // if then
+
+        if /*FetchBU(Admin_View_CurrentLine,24,";")!=""  && */ TotalLayout==NumLayout then
+           SetNumGateValue("Template_Control",0,15);
+             Admin_View_CurrentLine=FR_Report_Char(Admin_View_CurrentLine,Current_Line_Object,24,";");
+       // MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+        end
+   // end
+  SetNumGateValue("E15min",1,0);
+MessageBox(GetNumGateValue("Template_Control",0),GetNumGateValue("E15min",1));
+
+End
+
+
+function Void Open_CL()
+int i=0;
+String PathFileCL=REPORT_PATH_CL+"Lists\CL.csv";
+
+EVM_Max_Items=scanfile(PathFileCL);
+List_Display(1,2,PathFileCL,1);
+        /*For i = 1 to 10 do
+            SetStrGateValue("EmailView"+i,4,"");
+              SetStrGateValue("EmailView"+i,6,"");
+        End*/
+//
+  SetNumGateValue("E15min",1,1);
+ShowPoPUPs("Popup_CL_Request");
+//List_Display(Int Page,Int List,String PathFile,int Pos);
+End
+
+
+
+function Void Open_ML()
+int i=0;
+String PathFileML=REPORT_PATH_ML+"Lists\ML.csv";
+
+EVM_Max_Items=scanfile(PathFileML);
+List_Display(1,2,PathFileML,1);
+        /*For i = 1 to 10 do
+            SetStrGateValue("EmailView"+i,4,"");
+              SetStrGateValue("EmailView"+i,6,"");
+        End*/
+//
+  SetNumGateValue("E15min",1,1);
+ShowPoPUPs("Popup_ML_Request");
+//List_Display(Int Page,Int List,String PathFile,int Pos);
+End
+

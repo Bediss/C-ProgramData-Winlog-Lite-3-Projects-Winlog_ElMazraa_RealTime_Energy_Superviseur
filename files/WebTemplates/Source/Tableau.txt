@@ -1,0 +1,7 @@
+CODE;NAME;ACCESS
+10;¤ Bilan Energetique.    ;32767
+11;¤ Synoptique Par Energ. ;32767
+12;¤ Synoptique Par Unite. ;32767
+13;¤ Bilan Matiere.        ;32767
+14;¤ Compteur Mosaique.    ;32767
+15;¤ Partage d'une energi. ;32767

@@ -1,0 +1,588 @@
+Global String Admin_View_Temp_File_AUX;
+Global String Admin_View_Original_File_AUX;
+Global String Admin_View_Recycle_Code_AUX;
+Global String Admin_View_CurrentLine_AUX;
+
+
+Function Void Create_New_Table()
+
+LenPrefix=0;
+Confirme_Save();
+PageOpen="Tableaux";
+DBON=True;
+
+        Admin_View_Temp_File_AUX=Admin_View_Temp_File;
+        Admin_View_Original_File_AUX=Admin_View_Original_File;
+        Admin_View_Recycle_Code_AUX=Admin_View_Recycle_Code;
+       Temp_Admin_View_Recycle_Code=ENV_PATH+"\Files\Display_Templates\Temp_Recycler_Tableaux_Code.txt";
+        Admin_View_CurrentLine_AUX=Admin_View_CurrentLine;
+
+        Admin_View_Temp_File=ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
+        Admin_View_Original_File=ENV_PATH+"\Files\Display_Templates\Tableaux.csv";
+        Admin_View_Recycle_Code=ENV_PATH+"\Files\Display_Templates\Recycler_Tableaux_Code.txt";
+
+        Path_File_DB=ENV_PATH+"\Files\Display_Templates\";
+        NameTableDB="Tableaux";
+
+       //DisplayDBTable("*","*");
+
+        //Init_DB_Tables();
+DBON=False;
+        Initfile(Admin_View_Original_File,Admin_View_Temp_File);
+ DBON=True;
+
+        Highest_Code_Initialisation(Admin_View_Temp_File,Admin_View_Recycle_Code);
+        //Init_DB_Tables();
+        //Admin_View_Display(1 ,PageOpen );
+
+        TotEm=GetNumGateValue("AdminTotalItems",0);
+
+ DBON=False;
+    AP_Groupes();
+    SetNumGateValue("AP_Value",0,0);
+    SetNumGateValue("AP_Value",1,0);
+    ShowPoPUPs("Create_New_Tableaux");
+
+End
+
+Function void Popup_Name_Table()
+SetStrGateValue("AlarmeEventModifer",1,"");
+SetStrGateValue("AlarmeEventModifer",19,"");
+ShowPoPUPsNoClose("Report_Tableau_Name");
+
+End
+
+Function void OK_Set_Name_Table()
+
+String Name = GetStrGateValue("AlarmeEventModifer",19);
+Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,Name,3);
+SetStrGateValue("AlarmeEventModifer",1,Name);
+SetStrGateValue("AlarmeEventModifer",19,"");
+
+End
+
+Function  void Popup_Group_Table()
+
+    AP_Groupes();
+    SetNumGateValue("AP_Value",0,0);
+ShowPoPUPsNoClose("SET_Access_Privilege_New_Tableaux");
+End
+
+Function  void OK_Set_Group_Table()
+int Access;
+
+
+    Access=GetNumGateValue("AP_Value",0);
+        Admin_View_CurrentLine=FR_Views(Admin_View_CurrentLine,Access,7);
+//MessageBox(Admin_View_CurrentLine,Access);
+    SetStrGateValue("AlarmeEventModifer",2,Access);
+     SetNumGateValue("Template_Control",0,2);
+   // TPageCloseByName("SET_Access_Privilege_Tableaux");
+
+End
+
+Function void Popup_Energie_ONOFF_Table()
+ShowPoPUPsNoClose("Energie_New_Tableaux_ONOFF");
+End
+
+Function void OK_SET_Energie_ONOFF_Table()
+
+    if ( GetNumGateValue("EventEmailEventType",0) == 1 ) then
+        SetStrGateValue("AlarmeEventModifer",3,"1");
+        Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"1",9);
+              if Fetch_Alarm_search(Admin_View_CurrentLine,1,";")=="" then
+
+            SetNumGateValue("Template_Control",0,3);
+      else
+             SetNumGateValue("Template_Control",0,2);
+      end
+
+    else
+        SetStrGateValue("AlarmeEventModifer",3,"0");
+        Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0",9);
+              if Fetch_Alarm_search(Admin_View_CurrentLine,1,";")=="" then
+
+            SetNumGateValue("Template_Control",0,3);
+      else
+             SetNumGateValue("Template_Control",0,2);
+      end
+    end
+
+End
+
+
+/*Function void Popup_TCF_Table()
+
+String FullPathFileName=ENV_PATH+"\Files\Display_Templates\TCF.csv";
+int FileHandle=FileOpen(FullPathFileName,"rt");
+    EVM_Max_Items = scanfileBouton(FullPathFileName);
+    EVM_LIST_FILE=FullPathFileName;
+    TCF_Display(1);
+    SetNumGateValue("PageAlarmeEventView",0,1);
+   // ShowPoPUPs( "Report_Select_TABLEAUX" );
+ShowPoPUPsNoClose("Report_Select_TCF");
+
+
+FileClose(FileHandle);
+
+
+End
+
+
+
+function void Report_Select_TCF_1()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView1",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView1",2);
+
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+      SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+         SetNumGateValue("Template_Control",0,2);
+       //  MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+   //   TPageCloseByName("Report_Select_TABLEAUX");
+
+    End
+end
+
+function void Report_Select_TCF_2()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView2",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView2",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+    //  TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_3()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView3",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView3",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+    //  TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+
+function void Report_Select_TCF_4()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView4",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView4",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+  //    TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_5()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView5",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView5",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+    //  TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_6()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView6",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView6",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+      //TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_7()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView7",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView7",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+
+      //TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_8()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView8",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView8",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+
+            //TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_9()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView9",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView9",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+
+     // TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+function void Report_Select_TCF_10()
+String NomTableaux;
+String CodeTableaux;
+    NomTableaux = GetStrGateValue("EmailView10",3);
+    IF ( NomTableaux != "" ) Then
+      CodeTableaux=GetStrGateValue("EmailView10",2);
+   Admin_View_CurrentLine=FR_Report(Admin_View_CurrentLine,CodeTableaux,6);
+            SetStrGateValue("AlarmeEventModifer",3,NomTableaux);
+                 SetNumGateValue("Template_Control",0,2);
+
+     // TPageCloseByName("Report_Select_TCF");
+
+    End
+end
+
+*/
+Function Void Add_New_Table()
+String CodeNewAlarme ;
+
+
+
+    CodeNewAlarme=FetchCodeAdd(ENV_PATH+"\Files\Display_Templates\","L");
+     //Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,GetStrGateValue("AlarmeEventModifer",0),2);
+     // Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,GetStrGateValue("AlarmeEventModifer",6),8);
+
+     // MessageBox(Admin_View_CurrentLine,"");
+   //Admin_View_Temp_File=ENV_PATH+"\Files\Display_Templates\Tableaux.csv";
+   SetNumGateValue("Template_Control",0,2);
+    //DBFileQuerry(2);
+    Admin_New_Ligne("Tableaux",CodeNewAlarme);
+
+        Confirme_Save=True;
+
+end
+
+Function Void Add_New_Table_Report()
+String Ligne=";;;;;;;;;;;;;;;";
+String CodeNewAlarme ;
+String EPVC="0/0/0/0";
+int Energy=0;
+int View=0;
+String PostCode="0";
+int Compteur=0;
+///MessageBox(GetNumGateValue("AP_Value",1),"Value1");
+//MessageBox(GetNumGateValue("AP_Value",2),"Value2");
+
+    if GetNumGateValue("AP_Value",1)==1 then
+
+        Energy=1;
+        View=0;
+        PostCode="0";
+        Compteur=0;
+     end
+        if GetNumGateValue("AP_Value",1)==2 then
+        Energy=0;
+        View=1;
+        PostCode="0";
+        Compteur=0;
+     end
+       if GetNumGateValue("AP_Value",1)==3 then
+        Energy=1;
+        View=1;
+        PostCode="0";
+        Compteur=0;
+     end
+          if GetNumGateValue("AP_Value",1)==4 then
+        Energy=0;
+        View=0;
+        PostCode="0";
+        Compteur=1;
+     end
+       if GetNumGateValue("AP_Value",1)==5 then
+        Energy=1;
+        View=0;
+        PostCode="0";
+        Compteur=1;
+     end
+      if GetNumGateValue("AP_Value",1)==6 then
+        Energy=1;
+        View=0;
+        PostCode="0";
+        Compteur=1;
+     end
+           if GetNumGateValue("AP_Value",1)==7 then
+        Energy=1;
+        View=1;
+        PostCode="0";
+        Compteur=1;
+     end
+           if GetNumGateValue("AP_Value",1)==8 then
+        Energy=0;
+        View=0;
+        Compteur=0;
+
+         if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+        else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+
+ end
+
+          if GetNumGateValue("AP_Value",1)==9 then
+        Energy=1;
+        View=0;
+
+        Compteur=0;
+      if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+            end
+
+
+        if GetNumGateValue("AP_Value",1)==10 then
+        Energy=0;
+        View=1;
+
+        Compteur=0;
+        if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+
+
+  end
+        if GetNumGateValue("AP_Value",1)==11 then
+        Energy=1;
+        View=1;
+
+        Compteur=0;
+       if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+  end
+       if GetNumGateValue("AP_Value",1)==12 then
+        Energy=0;
+        View=1;
+
+        Compteur=0;
+        if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+
+
+  end
+       if GetNumGateValue("AP_Value",1)==13 then
+        Energy=1;
+        View=0;
+
+        Compteur=0;
+       if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+
+  end
+
+               if GetNumGateValue("AP_Value",1)==14 then
+        Energy=0;
+        View=1;
+
+        Compteur=1;
+          if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+
+        end
+        end
+
+        if GetNumGateValue("AP_Value",1)==15 then
+        Energy=1;
+        View=1;
+        Compteur=1;
+
+        if (GetNumGateValue("AP_Value",2)==4)then
+            PostCode="D";
+          else
+            PostCode="C";
+          end
+                if (GetNumGateValue("AP_Value",2)==6)then
+            PostCode="P";
+            end
+        end
+
+
+    //MessageBox(GetNumGateValue("AP_Value",1),GetNumGateValue("AP_Value",2));
+    EPVC=Energy+"/"+PostCode+"/"+View+"/"+Compteur;
+
+Admin_View_CurrentLine=";;;;;;;;;;;;;;;;;";
+
+  CodeNewAlarme=FetchCodeAdd(ENV_PATH+"\Files\Display_Templates\","");
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,GetStrGateValue("AlarmeEventModifer",2),3);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"TL",2);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,EPVC,4);//Selon TCF
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0",5);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,GetNumGateValue("AP_Value",0),7);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,Energy,9);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,PostCode,10);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,View,11);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,Compteur,12);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0",13);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0",14);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0001",15);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"0",14);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"1_1",17);
+    Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"Administrateur",16);
+     Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"1",18);
+    //  Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,"2",19);
+    AuteurTableau="Administrateur";
+      //Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,CodeNewAlarme,3);
+      //Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,GetStrGateValue("AlarmeEventModifer",2),4);
+      SetStrGateValue("AlarmeEventModifer",4,GetStrGateValue("AlarmeEventModifer",2));
+     // MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+          // MessageBox(Admin_View_CurrentLine_AUX,"Admin_View_CurrentLine_AUX");
+  Admin_View_Temp_File=ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv";
+  // SetNumGateValue("Template_Control",0,2);
+    //DBFileQuerry(2);
+    Admin_New_Ligne_request_TABLEAU(CodeNewAlarme);
+  //  Bouton_Tableaux_Report_Navigator();
+        EVM_LIST_FILE = Admin_View_Temp_File;
+    EVM_Max_Items = scanfileBouton(EVM_LIST_FILE);
+    Tableaux_Display(1);
+    SetNumGateValue("PageAllCommpteurView",0,1);
+    SetNumGateValue("Template_Control",0,12);
+
+
+       // Confirme_Save=True;
+end
+
+Function Void Tableaux_Commit_Report()
+
+Confirme_Save=False;
+String BackFullPathFileName=ENV_PATH+"\Files\Display_Templates\Back_Tableaux.csv";
+
+//Admin_Commit(BackFullPathFileName);
+Filecopy(ENV_PATH+"\Files\Display_Templates\Temp_Tableaux.csv",ENV_PATH+"\Files\Display_Templates\Tableaux.csv",False);
+            //FileDelete(Admin_View_Temp_File);
+ //Copy_Truncate_DB(ENV_PATH+"\Files\Display_Templates\Tableaux.csv","Tableaux");
+
+        //Bouton_Tableaux_Report();
+
+//Read_Tableau_Tableaux();
+//CommitDBTable("");
+End
+
+
+Function Void Admin_New_Ligne_request_TABLEAU(String CodeNewAlarme)
+
+Bool QB;
+String FullPathFileName;
+int FileHandle;
+int CurrentPage;
+int AlarmsTotalItems;
+String Nom;
+
+    QB=QuestionBox("  Voulez-vous vraiment Ajouter Une nouvelle Tableau ?","Attention:");
+    if QB==False then return; end
+
+
+        FullPathFileName =      Admin_View_Temp_File;
+
+    FileHandle=FileOpen(FullPathFileName,"at");
+     if (FileHandle==0) then
+       MessageBox("File Tableau not Found","Error");
+       return;
+     end
+
+    AlarmsTotalItems=GetNumGateValue("AdminTotalItems",0);
+
+    AlarmsTotalItems=AlarmsTotalItems+1;
+    //MessageBox(Admin_View_Temp_File,"Admin_View_Temp_File");
+          Admin_View_CurrentLine=FR_Formule(Admin_View_CurrentLine,CodeNewAlarme,1);
+//MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+            FileWriteLn(FileHandle,Admin_View_CurrentLine);
+FileClose(FileHandle);
+//MessageBox("","Admin_View_CurrentLine");
+            CurrentPage=AlarmsTotalItems/MaxRow;
+            If (Mod(AlarmsTotalItems,MaxRow) != 0 ) Then CurrentPage =  CurrentPage +1; end
+
+               // MessageBox(AlarmsTotalItems,"AlarmsTotalItems");
+         SetNumGateValue("AdminTotalItems",0,AlarmsTotalItems);
+        // MessageBox(CurrentPage,"Page");
+         SetNumGateValue("EmailPageView",0,CurrentPage);
+                 SetNumGateValue("Template_Control",0,0);
+                 SetNumGateValue("E15min",0,1);
+       Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,Fetch_Alarm_search(Admin_View_CurrentLine,1,";"),3);
+        Admin_View_CurrentLine_AUX=FR_Formule(Admin_View_CurrentLine_AUX,Fetch_Alarm_search(Admin_View_CurrentLine,3,";"),4);
+        //MessageBox(Admin_View_CurrentLine,"Admin_View_CurrentLine");
+
+        Admin_View_Temp_File=Admin_View_Temp_File_AUX;
+        Admin_View_Original_File=Admin_View_Original_File_AUX;
+        Admin_View_Recycle_Code=Admin_View_Recycle_Code_AUX;
+        Admin_View_CurrentLine   =  Admin_View_CurrentLine_AUX;
+
+ //MessageBox(Admin_View_Temp_File,"Admin_View_CurrentLine");
+
+
+
+end
+
+
+

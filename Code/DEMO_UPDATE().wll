@@ -1,0 +1,3 @@
+function void DEMO_UPDATE()
+    UpdateHistory("DAILY");
+end
